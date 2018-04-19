@@ -1,10 +1,21 @@
 import re
+import sys
 
 from setuptools import setup, Extension
-from Cython.Build import cythonize
+
+USE_CYTHON = False
+
+if "--use-cython" in sys.argv:
+    USE_CYTHON = True
+    sys.argv.remove("--use-cython")
 
 ext_modules = [Extension('kovit.citers', sources=['extensions/citers.cpp']),
-               Extension('kovit.cjson',  sources=['kovit/pjson.py'])]
+               Extension('kovit.cjson', sources=['kovit/pjson.{}'.format('py' if USE_CYTHON else 'c')])]
+
+if USE_CYTHON:
+    from Cython.Build import cythonize
+
+    ext_modules = cythonize(ext_modules)
 
 version = ''
 with open('kovit/__init__.py') as f:
@@ -16,7 +27,6 @@ if not version:
 readme = ''
 with open('README.rst', 'r', encoding='utf-8') as f:
     readme = f.read()
-
 
 setup(
     name='kovit',
@@ -30,7 +40,7 @@ setup(
     description='Generic incrementally build-able Markov chains for text generation and other purposes.',
     long_description=readme,
     install_requires=['cffi', 'ijson', 'ujson'],
-    ext_modules=cythonize(ext_modules),
+    ext_modules=ext_modules,
     classifiers=[
         'Development Status :: 2 - Pre Alpha',
         'License :: OSI Approved :: BSD License',
