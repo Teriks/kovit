@@ -61,7 +61,7 @@ def dump():
 
 def load():
     with open('model.json', 'rb') as f:
-        chain2.load_json(f, large_file=True)
+        chain2.load_json(f)
 
 
 print("Build Time: {}".format(timeit.timeit(read, number=1)))
