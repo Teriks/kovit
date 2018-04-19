@@ -794,7 +794,7 @@ struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_10_genexpr;
 struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_11_load_json_big;
 struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_12_genexpr;
 
-/* "kovit/pjson.py":22
+/* "kovit/pjson.py":41
  * 
  * 
  * def dump_json_small(chain, file, frequency_compress=True):             # <<<<<<<<<<<<<<
@@ -810,7 +810,7 @@ struct __pyx_obj_5kovit_5cjson___pyx_scope_struct__dump_json_small {
 };
 
 
-/* "kovit/pjson.py":42
+/* "kovit/pjson.py":61
  *             return codes[start]
  * 
  *         def gen_next_start(choices):             # <<<<<<<<<<<<<<
@@ -830,7 +830,7 @@ struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_1_gen_next_start {
 };
 
 
-/* "kovit/pjson.py":44
+/* "kovit/pjson.py":63
  *         def gen_next_start(choices):
  *             for val, cnt in choices:
  *                 yield tuple(codes[s] for s in val)             # <<<<<<<<<<<<<<
@@ -847,7 +847,7 @@ struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_2_genexpr {
 };
 
 
-/* "kovit/pjson.py":50
+/* "kovit/pjson.py":69
  *             return start
  * 
  *         def gen_next_start(choices):             # <<<<<<<<<<<<<<
@@ -865,7 +865,7 @@ struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_3_gen_next_start {
 };
 
 
-/* "kovit/pjson.py":55
+/* "kovit/pjson.py":74
  *                 yield cnt
  * 
  *     def gen_chain():             # <<<<<<<<<<<<<<
@@ -883,12 +883,12 @@ struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_4_gen_chain {
 };
 
 
-/* "kovit/pjson.py":63
+/* "kovit/pjson.py":82
  * 
  * 
  * def load_json_small(chain, file, merge=False):             # <<<<<<<<<<<<<<
- * 
  *     obj = json.load(file)
+ * 
  */
 struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_5_load_json_small {
   PyObject_HEAD
@@ -897,7 +897,7 @@ struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_5_load_json_small {
 };
 
 
-/* "kovit/pjson.py":77
+/* "kovit/pjson.py":95
  *                 i_bag = iter(bag)
  *                 for items, count in zip(i_bag, i_bag):
  *                     chain.add_to_bag(codes[start], tuple(codes[i] for i in items), count=count)             # <<<<<<<<<<<<<<
@@ -914,7 +914,7 @@ struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_6_genexpr {
 };
 
 
-/* "kovit/pjson.py":91
+/* "kovit/pjson.py":109
  *                 b = ProbabilityBag()
  *                 for items, count in zip(i_bag, i_bag):
  *                     b.add(tuple(codes[i] for i in items), count=count)             # <<<<<<<<<<<<<<
@@ -931,7 +931,7 @@ struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_7_genexpr {
 };
 
 
-/* "kovit/pjson.py":102
+/* "kovit/pjson.py":120
  * 
  * 
  * def dump_json_big(chain, file, frequency_compress=True):             # <<<<<<<<<<<<<<
@@ -945,7 +945,7 @@ struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_8_dump_json_big {
 };
 
 
-/* "kovit/pjson.py":126
+/* "kovit/pjson.py":144
  *             file.write('{},['.format(codes[start]))
  * 
  *         def write_next_start(next_start):             # <<<<<<<<<<<<<<
@@ -959,7 +959,7 @@ struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_9_write_next_start {
 };
 
 
-/* "kovit/pjson.py":127
+/* "kovit/pjson.py":145
  * 
  *         def write_next_start(next_start):
  *             file.write('[' + ','.join(str(codes[n]) for n in next_start) + ']')             # <<<<<<<<<<<<<<
@@ -976,7 +976,7 @@ struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_10_genexpr {
 };
 
 
-/* "kovit/pjson.py":156
+/* "kovit/pjson.py":174
  * 
  * 
  * def load_json_big(chain, file, merge=False):             # <<<<<<<<<<<<<<
@@ -990,7 +990,7 @@ struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_11_load_json_big {
 };
 
 
-/* "kovit/pjson.py":227
+/* "kovit/pjson.py":245
  *             else:
  *                 if codes:
  *                     chain.add_to_bag(codes[start], (codes[i] for i in builder.value), count=value)             # <<<<<<<<<<<<<<
@@ -1871,7 +1871,7 @@ static PyObject *__pyx_codeobj__40;
 static PyObject *__pyx_codeobj__43;
 /* Late includes */
 
-/* "kovit/pjson.py":22
+/* "kovit/pjson.py":41
  * 
  * 
  * def dump_json_small(chain, file, frequency_compress=True):             # <<<<<<<<<<<<<<
@@ -1915,7 +1915,7 @@ static PyObject *__pyx_pw_5kovit_5cjson_1dump_json_small(PyObject *__pyx_self, P
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_file)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("dump_json_small", 0, 2, 3, 1); __PYX_ERR(0, 22, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("dump_json_small", 0, 2, 3, 1); __PYX_ERR(0, 41, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -1925,7 +1925,7 @@ static PyObject *__pyx_pw_5kovit_5cjson_1dump_json_small(PyObject *__pyx_self, P
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "dump_json_small") < 0)) __PYX_ERR(0, 22, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "dump_json_small") < 0)) __PYX_ERR(0, 41, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -1943,7 +1943,7 @@ static PyObject *__pyx_pw_5kovit_5cjson_1dump_json_small(PyObject *__pyx_self, P
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("dump_json_small", 0, 2, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 22, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("dump_json_small", 0, 2, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 41, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("kovit.cjson.dump_json_small", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -1956,7 +1956,7 @@ static PyObject *__pyx_pw_5kovit_5cjson_1dump_json_small(PyObject *__pyx_self, P
   return __pyx_r;
 }
 
-/* "kovit/pjson.py":39
+/* "kovit/pjson.py":58
  *                 codes_list.append(v)
  * 
  *         def gen_start(start):             # <<<<<<<<<<<<<<
@@ -1988,7 +1988,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_15dump_json_small_gen_start(PyObject *__
   __pyx_outer_scope = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct__dump_json_small *) __Pyx_CyFunction_GetClosure(__pyx_self);
   __pyx_cur_scope = __pyx_outer_scope;
 
-  /* "kovit/pjson.py":40
+  /* "kovit/pjson.py":59
  * 
  *         def gen_start(start):
  *             return codes[start]             # <<<<<<<<<<<<<<
@@ -1996,18 +1996,18 @@ static PyObject *__pyx_pf_5kovit_5cjson_15dump_json_small_gen_start(PyObject *__
  *         def gen_next_start(choices):
  */
   __Pyx_XDECREF(__pyx_r);
-  if (unlikely(!__pyx_cur_scope->__pyx_v_codes)) { __Pyx_RaiseClosureNameError("codes"); __PYX_ERR(0, 40, __pyx_L1_error) }
+  if (unlikely(!__pyx_cur_scope->__pyx_v_codes)) { __Pyx_RaiseClosureNameError("codes"); __PYX_ERR(0, 59, __pyx_L1_error) }
   if (unlikely(__pyx_cur_scope->__pyx_v_codes == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-    __PYX_ERR(0, 40, __pyx_L1_error)
+    __PYX_ERR(0, 59, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_PyDict_GetItem(__pyx_cur_scope->__pyx_v_codes, __pyx_v_start); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 40, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_GetItem(__pyx_cur_scope->__pyx_v_codes, __pyx_v_start); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 59, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "kovit/pjson.py":39
+  /* "kovit/pjson.py":58
  *                 codes_list.append(v)
  * 
  *         def gen_start(start):             # <<<<<<<<<<<<<<
@@ -2027,7 +2027,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_15dump_json_small_gen_start(PyObject *__
 }
 static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_4generator(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
-/* "kovit/pjson.py":42
+/* "kovit/pjson.py":61
  *             return codes[start]
  * 
  *         def gen_next_start(choices):             # <<<<<<<<<<<<<<
@@ -2050,7 +2050,7 @@ static PyObject *__pyx_pw_5kovit_5cjson_15dump_json_small_3gen_next_start(PyObje
 }
 static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_14gen_next_start_2generator3(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
-/* "kovit/pjson.py":44
+/* "kovit/pjson.py":63
  *         def gen_next_start(choices):
  *             for val, cnt in choices:
  *                 yield tuple(codes[s] for s in val)             # <<<<<<<<<<<<<<
@@ -2067,7 +2067,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_15dump_json_small_14gen_next_start_genex
   if (unlikely(!__pyx_cur_scope)) {
     __pyx_cur_scope = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_2_genexpr *)Py_None);
     __Pyx_INCREF(Py_None);
-    __PYX_ERR(0, 44, __pyx_L1_error)
+    __PYX_ERR(0, 63, __pyx_L1_error)
   } else {
     __Pyx_GOTREF(__pyx_cur_scope);
   }
@@ -2075,7 +2075,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_15dump_json_small_14gen_next_start_genex
   __Pyx_INCREF(((PyObject *)__pyx_cur_scope->__pyx_outer_scope));
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_outer_scope);
   {
-    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_5kovit_5cjson_15dump_json_small_14gen_next_start_2generator3, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_genexpr, __pyx_n_s_dump_json_small_locals_gen_next, __pyx_n_s_kovit_cjson); if (unlikely(!gen)) __PYX_ERR(0, 44, __pyx_L1_error)
+    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_5kovit_5cjson_15dump_json_small_14gen_next_start_2generator3, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_genexpr, __pyx_n_s_dump_json_small_locals_gen_next, __pyx_n_s_kovit_cjson); if (unlikely(!gen)) __PYX_ERR(0, 63, __pyx_L1_error)
     __Pyx_DECREF(__pyx_cur_scope);
     __Pyx_RefNannyFinishContext();
     return (PyObject *) gen;
@@ -2109,32 +2109,32 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_14gen_next_start_2gene
     return NULL;
   }
   __pyx_L3_first_run:;
-  if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 44, __pyx_L1_error)
-  if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_val)) { __Pyx_RaiseClosureNameError("val"); __PYX_ERR(0, 44, __pyx_L1_error) }
+  if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 63, __pyx_L1_error)
+  if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_val)) { __Pyx_RaiseClosureNameError("val"); __PYX_ERR(0, 63, __pyx_L1_error) }
   if (likely(PyList_CheckExact(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_val)) || PyTuple_CheckExact(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_val)) {
     __pyx_t_1 = __pyx_cur_scope->__pyx_outer_scope->__pyx_v_val; __Pyx_INCREF(__pyx_t_1); __pyx_t_2 = 0;
     __pyx_t_3 = NULL;
   } else {
-    __pyx_t_2 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_val); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 44, __pyx_L1_error)
+    __pyx_t_2 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_val); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 63, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_3 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 44, __pyx_L1_error)
+    __pyx_t_3 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 63, __pyx_L1_error)
   }
   for (;;) {
     if (likely(!__pyx_t_3)) {
       if (likely(PyList_CheckExact(__pyx_t_1))) {
         if (__pyx_t_2 >= PyList_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 44, __pyx_L1_error)
+        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 63, __pyx_L1_error)
         #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 44, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 63, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       } else {
         if (__pyx_t_2 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 44, __pyx_L1_error)
+        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 63, __pyx_L1_error)
         #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 44, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 63, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       }
@@ -2144,7 +2144,7 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_14gen_next_start_2gene
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 44, __pyx_L1_error)
+          else __PYX_ERR(0, 63, __pyx_L1_error)
         }
         break;
       }
@@ -2154,12 +2154,12 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_14gen_next_start_2gene
     __Pyx_XDECREF_SET(__pyx_cur_scope->__pyx_v_s, __pyx_t_4);
     __Pyx_GIVEREF(__pyx_t_4);
     __pyx_t_4 = 0;
-    if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_outer_scope->__pyx_v_codes)) { __Pyx_RaiseClosureNameError("codes"); __PYX_ERR(0, 44, __pyx_L1_error) }
+    if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_outer_scope->__pyx_v_codes)) { __Pyx_RaiseClosureNameError("codes"); __PYX_ERR(0, 63, __pyx_L1_error) }
     if (unlikely(__pyx_cur_scope->__pyx_outer_scope->__pyx_outer_scope->__pyx_v_codes == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(0, 44, __pyx_L1_error)
+      __PYX_ERR(0, 63, __pyx_L1_error)
     }
-    __pyx_t_4 = __Pyx_PyDict_GetItem(__pyx_cur_scope->__pyx_outer_scope->__pyx_outer_scope->__pyx_v_codes, __pyx_cur_scope->__pyx_v_s); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 44, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyDict_GetItem(__pyx_cur_scope->__pyx_outer_scope->__pyx_outer_scope->__pyx_v_codes, __pyx_cur_scope->__pyx_v_s); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 63, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_r = __pyx_t_4;
     __pyx_t_4 = 0;
@@ -2179,7 +2179,7 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_14gen_next_start_2gene
     __Pyx_XGOTREF(__pyx_t_1);
     __pyx_t_2 = __pyx_cur_scope->__pyx_t_1;
     __pyx_t_3 = __pyx_cur_scope->__pyx_t_2;
-    if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 44, __pyx_L1_error)
+    if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 63, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
@@ -2200,7 +2200,7 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_14gen_next_start_2gene
   return __pyx_r;
 }
 
-/* "kovit/pjson.py":42
+/* "kovit/pjson.py":61
  *             return codes[start]
  * 
  *         def gen_next_start(choices):             # <<<<<<<<<<<<<<
@@ -2217,7 +2217,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_15dump_json_small_2gen_next_start(PyObje
   if (unlikely(!__pyx_cur_scope)) {
     __pyx_cur_scope = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_1_gen_next_start *)Py_None);
     __Pyx_INCREF(Py_None);
-    __PYX_ERR(0, 42, __pyx_L1_error)
+    __PYX_ERR(0, 61, __pyx_L1_error)
   } else {
     __Pyx_GOTREF(__pyx_cur_scope);
   }
@@ -2228,7 +2228,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_15dump_json_small_2gen_next_start(PyObje
   __Pyx_INCREF(__pyx_cur_scope->__pyx_v_choices);
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_choices);
   {
-    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_5kovit_5cjson_15dump_json_small_4generator, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_gen_next_start, __pyx_n_s_dump_json_small_locals_gen_next_2, __pyx_n_s_kovit_cjson); if (unlikely(!gen)) __PYX_ERR(0, 42, __pyx_L1_error)
+    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_5kovit_5cjson_15dump_json_small_4generator, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_gen_next_start, __pyx_n_s_dump_json_small_locals_gen_next_2, __pyx_n_s_kovit_cjson); if (unlikely(!gen)) __PYX_ERR(0, 61, __pyx_L1_error)
     __Pyx_DECREF(__pyx_cur_scope);
     __Pyx_RefNannyFinishContext();
     return (PyObject *) gen;
@@ -2267,9 +2267,9 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_4generator(__pyx_Corou
     return NULL;
   }
   __pyx_L3_first_run:;
-  if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 42, __pyx_L1_error)
+  if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 61, __pyx_L1_error)
 
-  /* "kovit/pjson.py":43
+  /* "kovit/pjson.py":62
  * 
  *         def gen_next_start(choices):
  *             for val, cnt in choices:             # <<<<<<<<<<<<<<
@@ -2280,26 +2280,26 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_4generator(__pyx_Corou
     __pyx_t_1 = __pyx_cur_scope->__pyx_v_choices; __Pyx_INCREF(__pyx_t_1); __pyx_t_2 = 0;
     __pyx_t_3 = NULL;
   } else {
-    __pyx_t_2 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_cur_scope->__pyx_v_choices); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 43, __pyx_L1_error)
+    __pyx_t_2 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_cur_scope->__pyx_v_choices); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 62, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_3 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 43, __pyx_L1_error)
+    __pyx_t_3 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 62, __pyx_L1_error)
   }
   for (;;) {
     if (likely(!__pyx_t_3)) {
       if (likely(PyList_CheckExact(__pyx_t_1))) {
         if (__pyx_t_2 >= PyList_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 43, __pyx_L1_error)
+        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 62, __pyx_L1_error)
         #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 43, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 62, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       } else {
         if (__pyx_t_2 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 43, __pyx_L1_error)
+        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 62, __pyx_L1_error)
         #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 43, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 62, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       }
@@ -2309,7 +2309,7 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_4generator(__pyx_Corou
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 43, __pyx_L1_error)
+          else __PYX_ERR(0, 62, __pyx_L1_error)
         }
         break;
       }
@@ -2321,7 +2321,7 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_4generator(__pyx_Corou
       if (unlikely(size != 2)) {
         if (size > 2) __Pyx_RaiseTooManyValuesError(2);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        __PYX_ERR(0, 43, __pyx_L1_error)
+        __PYX_ERR(0, 62, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -2334,15 +2334,15 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_4generator(__pyx_Corou
       __Pyx_INCREF(__pyx_t_5);
       __Pyx_INCREF(__pyx_t_6);
       #else
-      __pyx_t_5 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 43, __pyx_L1_error)
+      __pyx_t_5 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 62, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
-      __pyx_t_6 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 43, __pyx_L1_error)
+      __pyx_t_6 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 62, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
       #endif
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     } else {
       Py_ssize_t index = -1;
-      __pyx_t_7 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 43, __pyx_L1_error)
+      __pyx_t_7 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 62, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __pyx_t_8 = Py_TYPE(__pyx_t_7)->tp_iternext;
@@ -2350,7 +2350,7 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_4generator(__pyx_Corou
       __Pyx_GOTREF(__pyx_t_5);
       index = 1; __pyx_t_6 = __pyx_t_8(__pyx_t_7); if (unlikely(!__pyx_t_6)) goto __pyx_L6_unpacking_failed;
       __Pyx_GOTREF(__pyx_t_6);
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_8(__pyx_t_7), 2) < 0) __PYX_ERR(0, 43, __pyx_L1_error)
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_8(__pyx_t_7), 2) < 0) __PYX_ERR(0, 62, __pyx_L1_error)
       __pyx_t_8 = NULL;
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       goto __pyx_L7_unpacking_done;
@@ -2358,7 +2358,7 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_4generator(__pyx_Corou
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       __pyx_t_8 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      __PYX_ERR(0, 43, __pyx_L1_error)
+      __PYX_ERR(0, 62, __pyx_L1_error)
       __pyx_L7_unpacking_done:;
     }
     __Pyx_XGOTREF(__pyx_cur_scope->__pyx_v_val);
@@ -2370,16 +2370,16 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_4generator(__pyx_Corou
     __Pyx_GIVEREF(__pyx_t_6);
     __pyx_t_6 = 0;
 
-    /* "kovit/pjson.py":44
+    /* "kovit/pjson.py":63
  *         def gen_next_start(choices):
  *             for val, cnt in choices:
  *                 yield tuple(codes[s] for s in val)             # <<<<<<<<<<<<<<
  *                 yield cnt
  *     else:
  */
-    __pyx_t_4 = __pyx_pf_5kovit_5cjson_15dump_json_small_14gen_next_start_genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 44, __pyx_L1_error)
+    __pyx_t_4 = __pyx_pf_5kovit_5cjson_15dump_json_small_14gen_next_start_genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 63, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_6 = __Pyx_PySequence_Tuple(__pyx_t_4); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 44, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PySequence_Tuple(__pyx_t_4); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 63, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_r = __pyx_t_6;
@@ -2400,9 +2400,9 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_4generator(__pyx_Corou
     __Pyx_XGOTREF(__pyx_t_1);
     __pyx_t_2 = __pyx_cur_scope->__pyx_t_1;
     __pyx_t_3 = __pyx_cur_scope->__pyx_t_2;
-    if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 44, __pyx_L1_error)
+    if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 63, __pyx_L1_error)
 
-    /* "kovit/pjson.py":45
+    /* "kovit/pjson.py":64
  *             for val, cnt in choices:
  *                 yield tuple(codes[s] for s in val)
  *                 yield cnt             # <<<<<<<<<<<<<<
@@ -2427,9 +2427,9 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_4generator(__pyx_Corou
     __Pyx_XGOTREF(__pyx_t_1);
     __pyx_t_2 = __pyx_cur_scope->__pyx_t_1;
     __pyx_t_3 = __pyx_cur_scope->__pyx_t_2;
-    if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 45, __pyx_L1_error)
+    if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 64, __pyx_L1_error)
 
-    /* "kovit/pjson.py":43
+    /* "kovit/pjson.py":62
  * 
  *         def gen_next_start(choices):
  *             for val, cnt in choices:             # <<<<<<<<<<<<<<
@@ -2440,7 +2440,7 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_4generator(__pyx_Corou
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
-  /* "kovit/pjson.py":42
+  /* "kovit/pjson.py":61
  *             return codes[start]
  * 
  *         def gen_next_start(choices):             # <<<<<<<<<<<<<<
@@ -2467,7 +2467,7 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_4generator(__pyx_Corou
   return __pyx_r;
 }
 
-/* "kovit/pjson.py":47
+/* "kovit/pjson.py":66
  *                 yield cnt
  *     else:
  *         def gen_start(start):             # <<<<<<<<<<<<<<
@@ -2494,7 +2494,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_15dump_json_small_5gen_start(CYTHON_UNUS
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("gen_start", 0);
 
-  /* "kovit/pjson.py":48
+  /* "kovit/pjson.py":67
  *     else:
  *         def gen_start(start):
  *             return start             # <<<<<<<<<<<<<<
@@ -2506,7 +2506,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_15dump_json_small_5gen_start(CYTHON_UNUS
   __pyx_r = __pyx_v_start;
   goto __pyx_L0;
 
-  /* "kovit/pjson.py":47
+  /* "kovit/pjson.py":66
  *                 yield cnt
  *     else:
  *         def gen_start(start):             # <<<<<<<<<<<<<<
@@ -2522,7 +2522,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_15dump_json_small_5gen_start(CYTHON_UNUS
 }
 static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_9generator1(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
-/* "kovit/pjson.py":50
+/* "kovit/pjson.py":69
  *             return start
  * 
  *         def gen_next_start(choices):             # <<<<<<<<<<<<<<
@@ -2553,7 +2553,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_15dump_json_small_7gen_next_start(CYTHON
   if (unlikely(!__pyx_cur_scope)) {
     __pyx_cur_scope = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_3_gen_next_start *)Py_None);
     __Pyx_INCREF(Py_None);
-    __PYX_ERR(0, 50, __pyx_L1_error)
+    __PYX_ERR(0, 69, __pyx_L1_error)
   } else {
     __Pyx_GOTREF(__pyx_cur_scope);
   }
@@ -2561,7 +2561,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_15dump_json_small_7gen_next_start(CYTHON
   __Pyx_INCREF(__pyx_cur_scope->__pyx_v_choices);
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_choices);
   {
-    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_5kovit_5cjson_15dump_json_small_9generator1, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_gen_next_start, __pyx_n_s_dump_json_small_locals_gen_next_2, __pyx_n_s_kovit_cjson); if (unlikely(!gen)) __PYX_ERR(0, 50, __pyx_L1_error)
+    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_5kovit_5cjson_15dump_json_small_9generator1, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_gen_next_start, __pyx_n_s_dump_json_small_locals_gen_next_2, __pyx_n_s_kovit_cjson); if (unlikely(!gen)) __PYX_ERR(0, 69, __pyx_L1_error)
     __Pyx_DECREF(__pyx_cur_scope);
     __Pyx_RefNannyFinishContext();
     return (PyObject *) gen;
@@ -2600,9 +2600,9 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_9generator1(__pyx_Coro
     return NULL;
   }
   __pyx_L3_first_run:;
-  if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 50, __pyx_L1_error)
+  if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 69, __pyx_L1_error)
 
-  /* "kovit/pjson.py":51
+  /* "kovit/pjson.py":70
  * 
  *         def gen_next_start(choices):
  *             for val, cnt in choices:             # <<<<<<<<<<<<<<
@@ -2613,26 +2613,26 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_9generator1(__pyx_Coro
     __pyx_t_1 = __pyx_cur_scope->__pyx_v_choices; __Pyx_INCREF(__pyx_t_1); __pyx_t_2 = 0;
     __pyx_t_3 = NULL;
   } else {
-    __pyx_t_2 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_cur_scope->__pyx_v_choices); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 51, __pyx_L1_error)
+    __pyx_t_2 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_cur_scope->__pyx_v_choices); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 70, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_3 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 51, __pyx_L1_error)
+    __pyx_t_3 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 70, __pyx_L1_error)
   }
   for (;;) {
     if (likely(!__pyx_t_3)) {
       if (likely(PyList_CheckExact(__pyx_t_1))) {
         if (__pyx_t_2 >= PyList_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 51, __pyx_L1_error)
+        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 70, __pyx_L1_error)
         #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 51, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 70, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       } else {
         if (__pyx_t_2 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 51, __pyx_L1_error)
+        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 70, __pyx_L1_error)
         #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 51, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 70, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       }
@@ -2642,7 +2642,7 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_9generator1(__pyx_Coro
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 51, __pyx_L1_error)
+          else __PYX_ERR(0, 70, __pyx_L1_error)
         }
         break;
       }
@@ -2654,7 +2654,7 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_9generator1(__pyx_Coro
       if (unlikely(size != 2)) {
         if (size > 2) __Pyx_RaiseTooManyValuesError(2);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        __PYX_ERR(0, 51, __pyx_L1_error)
+        __PYX_ERR(0, 70, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -2667,15 +2667,15 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_9generator1(__pyx_Coro
       __Pyx_INCREF(__pyx_t_5);
       __Pyx_INCREF(__pyx_t_6);
       #else
-      __pyx_t_5 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 51, __pyx_L1_error)
+      __pyx_t_5 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 70, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
-      __pyx_t_6 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 51, __pyx_L1_error)
+      __pyx_t_6 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 70, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
       #endif
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     } else {
       Py_ssize_t index = -1;
-      __pyx_t_7 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 51, __pyx_L1_error)
+      __pyx_t_7 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 70, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __pyx_t_8 = Py_TYPE(__pyx_t_7)->tp_iternext;
@@ -2683,7 +2683,7 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_9generator1(__pyx_Coro
       __Pyx_GOTREF(__pyx_t_5);
       index = 1; __pyx_t_6 = __pyx_t_8(__pyx_t_7); if (unlikely(!__pyx_t_6)) goto __pyx_L6_unpacking_failed;
       __Pyx_GOTREF(__pyx_t_6);
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_8(__pyx_t_7), 2) < 0) __PYX_ERR(0, 51, __pyx_L1_error)
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_8(__pyx_t_7), 2) < 0) __PYX_ERR(0, 70, __pyx_L1_error)
       __pyx_t_8 = NULL;
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       goto __pyx_L7_unpacking_done;
@@ -2691,7 +2691,7 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_9generator1(__pyx_Coro
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       __pyx_t_8 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      __PYX_ERR(0, 51, __pyx_L1_error)
+      __PYX_ERR(0, 70, __pyx_L1_error)
       __pyx_L7_unpacking_done:;
     }
     __Pyx_XGOTREF(__pyx_cur_scope->__pyx_v_val);
@@ -2703,7 +2703,7 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_9generator1(__pyx_Coro
     __Pyx_GIVEREF(__pyx_t_6);
     __pyx_t_6 = 0;
 
-    /* "kovit/pjson.py":52
+    /* "kovit/pjson.py":71
  *         def gen_next_start(choices):
  *             for val, cnt in choices:
  *                 yield val             # <<<<<<<<<<<<<<
@@ -2728,9 +2728,9 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_9generator1(__pyx_Coro
     __Pyx_XGOTREF(__pyx_t_1);
     __pyx_t_2 = __pyx_cur_scope->__pyx_t_1;
     __pyx_t_3 = __pyx_cur_scope->__pyx_t_2;
-    if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 52, __pyx_L1_error)
+    if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 71, __pyx_L1_error)
 
-    /* "kovit/pjson.py":53
+    /* "kovit/pjson.py":72
  *             for val, cnt in choices:
  *                 yield val
  *                 yield cnt             # <<<<<<<<<<<<<<
@@ -2755,9 +2755,9 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_9generator1(__pyx_Coro
     __Pyx_XGOTREF(__pyx_t_1);
     __pyx_t_2 = __pyx_cur_scope->__pyx_t_1;
     __pyx_t_3 = __pyx_cur_scope->__pyx_t_2;
-    if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 53, __pyx_L1_error)
+    if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 72, __pyx_L1_error)
 
-    /* "kovit/pjson.py":51
+    /* "kovit/pjson.py":70
  * 
  *         def gen_next_start(choices):
  *             for val, cnt in choices:             # <<<<<<<<<<<<<<
@@ -2768,7 +2768,7 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_9generator1(__pyx_Coro
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
-  /* "kovit/pjson.py":50
+  /* "kovit/pjson.py":69
  *             return start
  * 
  *         def gen_next_start(choices):             # <<<<<<<<<<<<<<
@@ -2796,7 +2796,7 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_9generator1(__pyx_Coro
 }
 static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_12generator2(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
-/* "kovit/pjson.py":55
+/* "kovit/pjson.py":74
  *                 yield cnt
  * 
  *     def gen_chain():             # <<<<<<<<<<<<<<
@@ -2827,7 +2827,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_15dump_json_small_10gen_chain(PyObject *
   if (unlikely(!__pyx_cur_scope)) {
     __pyx_cur_scope = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_4_gen_chain *)Py_None);
     __Pyx_INCREF(Py_None);
-    __PYX_ERR(0, 55, __pyx_L1_error)
+    __PYX_ERR(0, 74, __pyx_L1_error)
   } else {
     __Pyx_GOTREF(__pyx_cur_scope);
   }
@@ -2835,7 +2835,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_15dump_json_small_10gen_chain(PyObject *
   __Pyx_INCREF(((PyObject *)__pyx_cur_scope->__pyx_outer_scope));
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_outer_scope);
   {
-    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_5kovit_5cjson_15dump_json_small_12generator2, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_gen_chain, __pyx_n_s_dump_json_small_locals_gen_chain, __pyx_n_s_kovit_cjson); if (unlikely(!gen)) __PYX_ERR(0, 55, __pyx_L1_error)
+    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_5kovit_5cjson_15dump_json_small_12generator2, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_gen_chain, __pyx_n_s_dump_json_small_locals_gen_chain, __pyx_n_s_kovit_cjson); if (unlikely(!gen)) __PYX_ERR(0, 74, __pyx_L1_error)
     __Pyx_DECREF(__pyx_cur_scope);
     __Pyx_RefNannyFinishContext();
     return (PyObject *) gen;
@@ -2874,17 +2874,17 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_12generator2(__pyx_Cor
     return NULL;
   }
   __pyx_L3_first_run:;
-  if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 55, __pyx_L1_error)
+  if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 74, __pyx_L1_error)
 
-  /* "kovit/pjson.py":56
+  /* "kovit/pjson.py":75
  * 
  *     def gen_chain():
  *         for start, bag in chain.items():             # <<<<<<<<<<<<<<
  *             yield gen_start(start)
  *             yield tuple(gen_next_start(bag.choices()))
  */
-  if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_chain)) { __Pyx_RaiseClosureNameError("chain"); __PYX_ERR(0, 56, __pyx_L1_error) }
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_chain, __pyx_n_s_items); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 56, __pyx_L1_error)
+  if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_chain)) { __Pyx_RaiseClosureNameError("chain"); __PYX_ERR(0, 75, __pyx_L1_error) }
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_chain, __pyx_n_s_items); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 75, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_3 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -2897,10 +2897,10 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_12generator2(__pyx_Cor
     }
   }
   if (__pyx_t_3) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 56, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 75, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   } else {
-    __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 56, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 75, __pyx_L1_error)
   }
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -2908,9 +2908,9 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_12generator2(__pyx_Cor
     __pyx_t_2 = __pyx_t_1; __Pyx_INCREF(__pyx_t_2); __pyx_t_4 = 0;
     __pyx_t_5 = NULL;
   } else {
-    __pyx_t_4 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 56, __pyx_L1_error)
+    __pyx_t_4 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 75, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_5 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 56, __pyx_L1_error)
+    __pyx_t_5 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 75, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   for (;;) {
@@ -2918,17 +2918,17 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_12generator2(__pyx_Cor
       if (likely(PyList_CheckExact(__pyx_t_2))) {
         if (__pyx_t_4 >= PyList_GET_SIZE(__pyx_t_2)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_1 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_4); __Pyx_INCREF(__pyx_t_1); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 56, __pyx_L1_error)
+        __pyx_t_1 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_4); __Pyx_INCREF(__pyx_t_1); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 75, __pyx_L1_error)
         #else
-        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 56, __pyx_L1_error)
+        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 75, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         #endif
       } else {
         if (__pyx_t_4 >= PyTuple_GET_SIZE(__pyx_t_2)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_4); __Pyx_INCREF(__pyx_t_1); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 56, __pyx_L1_error)
+        __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_4); __Pyx_INCREF(__pyx_t_1); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 75, __pyx_L1_error)
         #else
-        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 56, __pyx_L1_error)
+        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 75, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         #endif
       }
@@ -2938,7 +2938,7 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_12generator2(__pyx_Cor
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 56, __pyx_L1_error)
+          else __PYX_ERR(0, 75, __pyx_L1_error)
         }
         break;
       }
@@ -2950,7 +2950,7 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_12generator2(__pyx_Cor
       if (unlikely(size != 2)) {
         if (size > 2) __Pyx_RaiseTooManyValuesError(2);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        __PYX_ERR(0, 56, __pyx_L1_error)
+        __PYX_ERR(0, 75, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -2963,15 +2963,15 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_12generator2(__pyx_Cor
       __Pyx_INCREF(__pyx_t_3);
       __Pyx_INCREF(__pyx_t_6);
       #else
-      __pyx_t_3 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 56, __pyx_L1_error)
+      __pyx_t_3 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 75, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_6 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 56, __pyx_L1_error)
+      __pyx_t_6 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 75, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
       #endif
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     } else {
       Py_ssize_t index = -1;
-      __pyx_t_7 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 56, __pyx_L1_error)
+      __pyx_t_7 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 75, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       __pyx_t_8 = Py_TYPE(__pyx_t_7)->tp_iternext;
@@ -2979,7 +2979,7 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_12generator2(__pyx_Cor
       __Pyx_GOTREF(__pyx_t_3);
       index = 1; __pyx_t_6 = __pyx_t_8(__pyx_t_7); if (unlikely(!__pyx_t_6)) goto __pyx_L6_unpacking_failed;
       __Pyx_GOTREF(__pyx_t_6);
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_8(__pyx_t_7), 2) < 0) __PYX_ERR(0, 56, __pyx_L1_error)
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_8(__pyx_t_7), 2) < 0) __PYX_ERR(0, 75, __pyx_L1_error)
       __pyx_t_8 = NULL;
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       goto __pyx_L7_unpacking_done;
@@ -2987,7 +2987,7 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_12generator2(__pyx_Cor
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       __pyx_t_8 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      __PYX_ERR(0, 56, __pyx_L1_error)
+      __PYX_ERR(0, 75, __pyx_L1_error)
       __pyx_L7_unpacking_done:;
     }
     __Pyx_XGOTREF(__pyx_cur_scope->__pyx_v_start);
@@ -2999,15 +2999,15 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_12generator2(__pyx_Cor
     __Pyx_GIVEREF(__pyx_t_6);
     __pyx_t_6 = 0;
 
-    /* "kovit/pjson.py":57
+    /* "kovit/pjson.py":76
  *     def gen_chain():
  *         for start, bag in chain.items():
  *             yield gen_start(start)             # <<<<<<<<<<<<<<
  *             yield tuple(gen_next_start(bag.choices()))
  * 
  */
-    if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_gen_start)) { __Pyx_RaiseClosureNameError("gen_start"); __PYX_ERR(0, 57, __pyx_L1_error) }
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_gen_start, __pyx_cur_scope->__pyx_v_start); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 57, __pyx_L1_error)
+    if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_gen_start)) { __Pyx_RaiseClosureNameError("gen_start"); __PYX_ERR(0, 76, __pyx_L1_error) }
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_gen_start, __pyx_cur_scope->__pyx_v_start); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 76, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __pyx_r = __pyx_t_1;
     __pyx_t_1 = 0;
@@ -3027,17 +3027,17 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_12generator2(__pyx_Cor
     __Pyx_XGOTREF(__pyx_t_2);
     __pyx_t_4 = __pyx_cur_scope->__pyx_t_1;
     __pyx_t_5 = __pyx_cur_scope->__pyx_t_2;
-    if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 57, __pyx_L1_error)
+    if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 76, __pyx_L1_error)
 
-    /* "kovit/pjson.py":58
+    /* "kovit/pjson.py":77
  *         for start, bag in chain.items():
  *             yield gen_start(start)
  *             yield tuple(gen_next_start(bag.choices()))             # <<<<<<<<<<<<<<
  * 
  *     json.dump(OrderedDict((('codes', codes_list), ('chain', tuple(gen_chain())))), file)
  */
-    if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_gen_next_start)) { __Pyx_RaiseClosureNameError("gen_next_start"); __PYX_ERR(0, 58, __pyx_L1_error) }
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_bag, __pyx_n_s_choices); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 58, __pyx_L1_error)
+    if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_gen_next_start)) { __Pyx_RaiseClosureNameError("gen_next_start"); __PYX_ERR(0, 77, __pyx_L1_error) }
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_bag, __pyx_n_s_choices); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __pyx_t_3 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_6))) {
@@ -3050,17 +3050,17 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_12generator2(__pyx_Cor
       }
     }
     if (__pyx_t_3) {
-      __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 58, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 77, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     } else {
-      __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 58, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 77, __pyx_L1_error)
     }
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = __Pyx_PyObject_CallOneArg(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_gen_next_start, __pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 58, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_CallOneArg(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_gen_next_start, __pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PySequence_Tuple(__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 58, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PySequence_Tuple(__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_r = __pyx_t_1;
@@ -3081,9 +3081,9 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_12generator2(__pyx_Cor
     __Pyx_XGOTREF(__pyx_t_2);
     __pyx_t_4 = __pyx_cur_scope->__pyx_t_1;
     __pyx_t_5 = __pyx_cur_scope->__pyx_t_2;
-    if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 58, __pyx_L1_error)
+    if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 77, __pyx_L1_error)
 
-    /* "kovit/pjson.py":56
+    /* "kovit/pjson.py":75
  * 
  *     def gen_chain():
  *         for start, bag in chain.items():             # <<<<<<<<<<<<<<
@@ -3094,7 +3094,7 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_12generator2(__pyx_Cor
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
-  /* "kovit/pjson.py":55
+  /* "kovit/pjson.py":74
  *                 yield cnt
  * 
  *     def gen_chain():             # <<<<<<<<<<<<<<
@@ -3121,7 +3121,7 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_12generator2(__pyx_Cor
   return __pyx_r;
 }
 
-/* "kovit/pjson.py":27
+/* "kovit/pjson.py":46
  * 
  *     if frequency_compress:
  *         for code, v in enumerate(sorted(chain.build_frequency_dict().items(), key=lambda x: -x[1])):             # <<<<<<<<<<<<<<
@@ -3150,9 +3150,9 @@ static PyObject *__pyx_lambda_funcdef_lambda(CYTHON_UNUSED PyObject *__pyx_self,
   PyObject *__pyx_t_2 = NULL;
   __Pyx_RefNannySetupContext("lambda", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_GetItemInt(__pyx_v_x, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 27, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt(__pyx_v_x, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 46, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyNumber_Negative(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 27, __pyx_L1_error)
+  __pyx_t_2 = PyNumber_Negative(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 46, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_r = __pyx_t_2;
@@ -3171,7 +3171,7 @@ static PyObject *__pyx_lambda_funcdef_lambda(CYTHON_UNUSED PyObject *__pyx_self,
   return __pyx_r;
 }
 
-/* "kovit/pjson.py":22
+/* "kovit/pjson.py":41
  * 
  * 
  * def dump_json_small(chain, file, frequency_compress=True):             # <<<<<<<<<<<<<<
@@ -3207,7 +3207,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_dump_json_small(CYTHON_UNUSED PyObject *
   if (unlikely(!__pyx_cur_scope)) {
     __pyx_cur_scope = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct__dump_json_small *)Py_None);
     __Pyx_INCREF(Py_None);
-    __PYX_ERR(0, 22, __pyx_L1_error)
+    __PYX_ERR(0, 41, __pyx_L1_error)
   } else {
     __Pyx_GOTREF(__pyx_cur_scope);
   }
@@ -3215,42 +3215,42 @@ static PyObject *__pyx_pf_5kovit_5cjson_dump_json_small(CYTHON_UNUSED PyObject *
   __Pyx_INCREF(__pyx_cur_scope->__pyx_v_chain);
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_chain);
 
-  /* "kovit/pjson.py":23
+  /* "kovit/pjson.py":42
  * 
  * def dump_json_small(chain, file, frequency_compress=True):
  *     codes = {}             # <<<<<<<<<<<<<<
  *     codes_list = []
  * 
  */
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 23, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 42, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_1);
   __pyx_cur_scope->__pyx_v_codes = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "kovit/pjson.py":24
+  /* "kovit/pjson.py":43
  * def dump_json_small(chain, file, frequency_compress=True):
  *     codes = {}
  *     codes_list = []             # <<<<<<<<<<<<<<
  * 
  *     if frequency_compress:
  */
-  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 24, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 43, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_codes_list = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "kovit/pjson.py":26
+  /* "kovit/pjson.py":45
  *     codes_list = []
  * 
  *     if frequency_compress:             # <<<<<<<<<<<<<<
  *         for code, v in enumerate(sorted(chain.build_frequency_dict().items(), key=lambda x: -x[1])):
  *             v = v[0]
  */
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_frequency_compress); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 26, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_frequency_compress); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 45, __pyx_L1_error)
   if (__pyx_t_2) {
 
-    /* "kovit/pjson.py":27
+    /* "kovit/pjson.py":46
  * 
  *     if frequency_compress:
  *         for code, v in enumerate(sorted(chain.build_frequency_dict().items(), key=lambda x: -x[1])):             # <<<<<<<<<<<<<<
@@ -3259,7 +3259,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_dump_json_small(CYTHON_UNUSED PyObject *
  */
     __Pyx_INCREF(__pyx_int_0);
     __pyx_t_1 = __pyx_int_0;
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_chain, __pyx_n_s_build_frequency_dict); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 27, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_chain, __pyx_n_s_build_frequency_dict); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 46, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __pyx_t_6 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
@@ -3272,14 +3272,14 @@ static PyObject *__pyx_pf_5kovit_5cjson_dump_json_small(CYTHON_UNUSED PyObject *
       }
     }
     if (__pyx_t_6) {
-      __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_6); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 27, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_6); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 46, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     } else {
-      __pyx_t_4 = __Pyx_PyObject_CallNoArg(__pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 27, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyObject_CallNoArg(__pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 46, __pyx_L1_error)
     }
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_items); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 27, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_items); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 46, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_t_4 = NULL;
@@ -3293,25 +3293,25 @@ static PyObject *__pyx_pf_5kovit_5cjson_dump_json_small(CYTHON_UNUSED PyObject *
       }
     }
     if (__pyx_t_4) {
-      __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 27, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 46, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     } else {
-      __pyx_t_3 = __Pyx_PyObject_CallNoArg(__pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 27, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_CallNoArg(__pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 46, __pyx_L1_error)
     }
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_5 = PyTuple_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 27, __pyx_L1_error)
+    __pyx_t_5 = PyTuple_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 46, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_GIVEREF(__pyx_t_3);
     PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_3);
     __pyx_t_3 = 0;
-    __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 27, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 46, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_15dump_json_small_13lambda, 0, __pyx_n_s_dump_json_small_locals_lambda, NULL, __pyx_n_s_kovit_cjson, __pyx_d, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 27, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_15dump_json_small_13lambda, 0, __pyx_n_s_dump_json_small_locals_lambda, NULL, __pyx_n_s_kovit_cjson, __pyx_d, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 46, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_key, __pyx_t_4) < 0) __PYX_ERR(0, 27, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_key, __pyx_t_4) < 0) __PYX_ERR(0, 46, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_sorted, __pyx_t_5, __pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 27, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_sorted, __pyx_t_5, __pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 46, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -3319,9 +3319,9 @@ static PyObject *__pyx_pf_5kovit_5cjson_dump_json_small(CYTHON_UNUSED PyObject *
       __pyx_t_3 = __pyx_t_4; __Pyx_INCREF(__pyx_t_3); __pyx_t_7 = 0;
       __pyx_t_8 = NULL;
     } else {
-      __pyx_t_7 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 27, __pyx_L1_error)
+      __pyx_t_7 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 46, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_8 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 27, __pyx_L1_error)
+      __pyx_t_8 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 46, __pyx_L1_error)
     }
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     for (;;) {
@@ -3329,17 +3329,17 @@ static PyObject *__pyx_pf_5kovit_5cjson_dump_json_small(CYTHON_UNUSED PyObject *
         if (likely(PyList_CheckExact(__pyx_t_3))) {
           if (__pyx_t_7 >= PyList_GET_SIZE(__pyx_t_3)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_4 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_7); __Pyx_INCREF(__pyx_t_4); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 27, __pyx_L1_error)
+          __pyx_t_4 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_7); __Pyx_INCREF(__pyx_t_4); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 46, __pyx_L1_error)
           #else
-          __pyx_t_4 = PySequence_ITEM(__pyx_t_3, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 27, __pyx_L1_error)
+          __pyx_t_4 = PySequence_ITEM(__pyx_t_3, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 46, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_4);
           #endif
         } else {
           if (__pyx_t_7 >= PyTuple_GET_SIZE(__pyx_t_3)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_7); __Pyx_INCREF(__pyx_t_4); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 27, __pyx_L1_error)
+          __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_7); __Pyx_INCREF(__pyx_t_4); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 46, __pyx_L1_error)
           #else
-          __pyx_t_4 = PySequence_ITEM(__pyx_t_3, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 27, __pyx_L1_error)
+          __pyx_t_4 = PySequence_ITEM(__pyx_t_3, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 46, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_4);
           #endif
         }
@@ -3349,7 +3349,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_dump_json_small(CYTHON_UNUSED PyObject *
           PyObject* exc_type = PyErr_Occurred();
           if (exc_type) {
             if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-            else __PYX_ERR(0, 27, __pyx_L1_error)
+            else __PYX_ERR(0, 46, __pyx_L1_error)
           }
           break;
         }
@@ -3359,34 +3359,34 @@ static PyObject *__pyx_pf_5kovit_5cjson_dump_json_small(CYTHON_UNUSED PyObject *
       __pyx_t_4 = 0;
       __Pyx_INCREF(__pyx_t_1);
       __Pyx_XDECREF_SET(__pyx_v_code, __pyx_t_1);
-      __pyx_t_4 = __Pyx_PyInt_AddObjC(__pyx_t_1, __pyx_int_1, 1, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 27, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyInt_AddObjC(__pyx_t_1, __pyx_int_1, 1, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 46, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_1);
       __pyx_t_1 = __pyx_t_4;
       __pyx_t_4 = 0;
 
-      /* "kovit/pjson.py":28
+      /* "kovit/pjson.py":47
  *     if frequency_compress:
  *         for code, v in enumerate(sorted(chain.build_frequency_dict().items(), key=lambda x: -x[1])):
  *             v = v[0]             # <<<<<<<<<<<<<<
  *             value = json.dumps(v)
  *             if code > 9 and (int(math.log10(code)) + 1) >= len(value):
  */
-      __pyx_t_4 = __Pyx_GetItemInt(__pyx_v_v, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 28, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_GetItemInt(__pyx_v_v, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 47, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF_SET(__pyx_v_v, __pyx_t_4);
       __pyx_t_4 = 0;
 
-      /* "kovit/pjson.py":29
+      /* "kovit/pjson.py":48
  *         for code, v in enumerate(sorted(chain.build_frequency_dict().items(), key=lambda x: -x[1])):
  *             v = v[0]
  *             value = json.dumps(v)             # <<<<<<<<<<<<<<
  *             if code > 9 and (int(math.log10(code)) + 1) >= len(value):
  *                 codes[v] = v
  */
-      __pyx_t_5 = __Pyx_GetModuleGlobalName(__pyx_n_s_json); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 29, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_GetModuleGlobalName(__pyx_n_s_json); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 48, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
-      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_dumps); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 29, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_dumps); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 48, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       __pyx_t_5 = NULL;
@@ -3400,13 +3400,13 @@ static PyObject *__pyx_pf_5kovit_5cjson_dump_json_small(CYTHON_UNUSED PyObject *
         }
       }
       if (!__pyx_t_5) {
-        __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_v_v); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 29, __pyx_L1_error)
+        __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_v_v); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 48, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
       } else {
         #if CYTHON_FAST_PYCALL
         if (PyFunction_Check(__pyx_t_6)) {
           PyObject *__pyx_temp[2] = {__pyx_t_5, __pyx_v_v};
-          __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_6, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 29, __pyx_L1_error)
+          __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_6, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 48, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
           __Pyx_GOTREF(__pyx_t_4);
         } else
@@ -3414,19 +3414,19 @@ static PyObject *__pyx_pf_5kovit_5cjson_dump_json_small(CYTHON_UNUSED PyObject *
         #if CYTHON_FAST_PYCCALL
         if (__Pyx_PyFastCFunction_Check(__pyx_t_6)) {
           PyObject *__pyx_temp[2] = {__pyx_t_5, __pyx_v_v};
-          __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_6, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 29, __pyx_L1_error)
+          __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_6, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 48, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
           __Pyx_GOTREF(__pyx_t_4);
         } else
         #endif
         {
-          __pyx_t_9 = PyTuple_New(1+1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 29, __pyx_L1_error)
+          __pyx_t_9 = PyTuple_New(1+1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 48, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_9);
           __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_t_5); __pyx_t_5 = NULL;
           __Pyx_INCREF(__pyx_v_v);
           __Pyx_GIVEREF(__pyx_v_v);
           PyTuple_SET_ITEM(__pyx_t_9, 0+1, __pyx_v_v);
-          __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_9, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 29, __pyx_L1_error)
+          __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_9, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 48, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_4);
           __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
         }
@@ -3435,24 +3435,24 @@ static PyObject *__pyx_pf_5kovit_5cjson_dump_json_small(CYTHON_UNUSED PyObject *
       __Pyx_XDECREF_SET(__pyx_v_value, __pyx_t_4);
       __pyx_t_4 = 0;
 
-      /* "kovit/pjson.py":30
+      /* "kovit/pjson.py":49
  *             v = v[0]
  *             value = json.dumps(v)
  *             if code > 9 and (int(math.log10(code)) + 1) >= len(value):             # <<<<<<<<<<<<<<
  *                 codes[v] = v
  *                 codes_list.append(v)
  */
-      __pyx_t_4 = PyObject_RichCompare(__pyx_v_code, __pyx_int_9, Py_GT); __Pyx_XGOTREF(__pyx_t_4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 30, __pyx_L1_error)
-      __pyx_t_10 = __Pyx_PyObject_IsTrue(__pyx_t_4); if (unlikely(__pyx_t_10 < 0)) __PYX_ERR(0, 30, __pyx_L1_error)
+      __pyx_t_4 = PyObject_RichCompare(__pyx_v_code, __pyx_int_9, Py_GT); __Pyx_XGOTREF(__pyx_t_4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 49, __pyx_L1_error)
+      __pyx_t_10 = __Pyx_PyObject_IsTrue(__pyx_t_4); if (unlikely(__pyx_t_10 < 0)) __PYX_ERR(0, 49, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       if (__pyx_t_10) {
       } else {
         __pyx_t_2 = __pyx_t_10;
         goto __pyx_L7_bool_binop_done;
       }
-      __pyx_t_6 = __Pyx_GetModuleGlobalName(__pyx_n_s_math); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 30, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_GetModuleGlobalName(__pyx_n_s_math); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 49, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
-      __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_log10); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 30, __pyx_L1_error)
+      __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_log10); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 49, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       __pyx_t_6 = NULL;
@@ -3466,13 +3466,13 @@ static PyObject *__pyx_pf_5kovit_5cjson_dump_json_small(CYTHON_UNUSED PyObject *
         }
       }
       if (!__pyx_t_6) {
-        __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_t_9, __pyx_v_code); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 30, __pyx_L1_error)
+        __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_t_9, __pyx_v_code); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 49, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
       } else {
         #if CYTHON_FAST_PYCALL
         if (PyFunction_Check(__pyx_t_9)) {
           PyObject *__pyx_temp[2] = {__pyx_t_6, __pyx_v_code};
-          __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_9, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 30, __pyx_L1_error)
+          __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_9, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 49, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
           __Pyx_GOTREF(__pyx_t_4);
         } else
@@ -3480,70 +3480,70 @@ static PyObject *__pyx_pf_5kovit_5cjson_dump_json_small(CYTHON_UNUSED PyObject *
         #if CYTHON_FAST_PYCCALL
         if (__Pyx_PyFastCFunction_Check(__pyx_t_9)) {
           PyObject *__pyx_temp[2] = {__pyx_t_6, __pyx_v_code};
-          __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_9, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 30, __pyx_L1_error)
+          __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_9, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 49, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
           __Pyx_GOTREF(__pyx_t_4);
         } else
         #endif
         {
-          __pyx_t_5 = PyTuple_New(1+1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 30, __pyx_L1_error)
+          __pyx_t_5 = PyTuple_New(1+1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 49, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_5);
           __Pyx_GIVEREF(__pyx_t_6); PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_6); __pyx_t_6 = NULL;
           __Pyx_INCREF(__pyx_v_code);
           __Pyx_GIVEREF(__pyx_v_code);
           PyTuple_SET_ITEM(__pyx_t_5, 0+1, __pyx_v_code);
-          __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_9, __pyx_t_5, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 30, __pyx_L1_error)
+          __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_9, __pyx_t_5, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 49, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_4);
           __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
         }
       }
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-      __pyx_t_9 = __Pyx_PyNumber_Int(__pyx_t_4); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 30, __pyx_L1_error)
+      __pyx_t_9 = __Pyx_PyNumber_Int(__pyx_t_4); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 49, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-      __pyx_t_4 = __Pyx_PyInt_AddObjC(__pyx_t_9, __pyx_int_1, 1, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 30, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyInt_AddObjC(__pyx_t_9, __pyx_int_1, 1, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 49, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-      __pyx_t_11 = PyObject_Length(__pyx_v_value); if (unlikely(__pyx_t_11 == ((Py_ssize_t)-1))) __PYX_ERR(0, 30, __pyx_L1_error)
-      __pyx_t_9 = PyInt_FromSsize_t(__pyx_t_11); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 30, __pyx_L1_error)
+      __pyx_t_11 = PyObject_Length(__pyx_v_value); if (unlikely(__pyx_t_11 == ((Py_ssize_t)-1))) __PYX_ERR(0, 49, __pyx_L1_error)
+      __pyx_t_9 = PyInt_FromSsize_t(__pyx_t_11); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 49, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
-      __pyx_t_5 = PyObject_RichCompare(__pyx_t_4, __pyx_t_9, Py_GE); __Pyx_XGOTREF(__pyx_t_5); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 30, __pyx_L1_error)
+      __pyx_t_5 = PyObject_RichCompare(__pyx_t_4, __pyx_t_9, Py_GE); __Pyx_XGOTREF(__pyx_t_5); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 49, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-      __pyx_t_10 = __Pyx_PyObject_IsTrue(__pyx_t_5); if (unlikely(__pyx_t_10 < 0)) __PYX_ERR(0, 30, __pyx_L1_error)
+      __pyx_t_10 = __Pyx_PyObject_IsTrue(__pyx_t_5); if (unlikely(__pyx_t_10 < 0)) __PYX_ERR(0, 49, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       __pyx_t_2 = __pyx_t_10;
       __pyx_L7_bool_binop_done:;
       if (__pyx_t_2) {
 
-        /* "kovit/pjson.py":31
+        /* "kovit/pjson.py":50
  *             value = json.dumps(v)
  *             if code > 9 and (int(math.log10(code)) + 1) >= len(value):
  *                 codes[v] = v             # <<<<<<<<<<<<<<
  *                 codes_list.append(v)
  *                 codes_list.append(v)
  */
-        if (unlikely(PyDict_SetItem(__pyx_cur_scope->__pyx_v_codes, __pyx_v_v, __pyx_v_v) < 0)) __PYX_ERR(0, 31, __pyx_L1_error)
+        if (unlikely(PyDict_SetItem(__pyx_cur_scope->__pyx_v_codes, __pyx_v_v, __pyx_v_v) < 0)) __PYX_ERR(0, 50, __pyx_L1_error)
 
-        /* "kovit/pjson.py":32
+        /* "kovit/pjson.py":51
  *             if code > 9 and (int(math.log10(code)) + 1) >= len(value):
  *                 codes[v] = v
  *                 codes_list.append(v)             # <<<<<<<<<<<<<<
  *                 codes_list.append(v)
  *             else:
  */
-        __pyx_t_12 = __Pyx_PyList_Append(__pyx_v_codes_list, __pyx_v_v); if (unlikely(__pyx_t_12 == ((int)-1))) __PYX_ERR(0, 32, __pyx_L1_error)
+        __pyx_t_12 = __Pyx_PyList_Append(__pyx_v_codes_list, __pyx_v_v); if (unlikely(__pyx_t_12 == ((int)-1))) __PYX_ERR(0, 51, __pyx_L1_error)
 
-        /* "kovit/pjson.py":33
+        /* "kovit/pjson.py":52
  *                 codes[v] = v
  *                 codes_list.append(v)
  *                 codes_list.append(v)             # <<<<<<<<<<<<<<
  *             else:
  *                 codes[v] = code
  */
-        __pyx_t_12 = __Pyx_PyList_Append(__pyx_v_codes_list, __pyx_v_v); if (unlikely(__pyx_t_12 == ((int)-1))) __PYX_ERR(0, 33, __pyx_L1_error)
+        __pyx_t_12 = __Pyx_PyList_Append(__pyx_v_codes_list, __pyx_v_v); if (unlikely(__pyx_t_12 == ((int)-1))) __PYX_ERR(0, 52, __pyx_L1_error)
 
-        /* "kovit/pjson.py":30
+        /* "kovit/pjson.py":49
  *             v = v[0]
  *             value = json.dumps(v)
  *             if code > 9 and (int(math.log10(code)) + 1) >= len(value):             # <<<<<<<<<<<<<<
@@ -3553,7 +3553,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_dump_json_small(CYTHON_UNUSED PyObject *
         goto __pyx_L6;
       }
 
-      /* "kovit/pjson.py":35
+      /* "kovit/pjson.py":54
  *                 codes_list.append(v)
  *             else:
  *                 codes[v] = code             # <<<<<<<<<<<<<<
@@ -3561,29 +3561,29 @@ static PyObject *__pyx_pf_5kovit_5cjson_dump_json_small(CYTHON_UNUSED PyObject *
  *                 codes_list.append(v)
  */
       /*else*/ {
-        if (unlikely(PyDict_SetItem(__pyx_cur_scope->__pyx_v_codes, __pyx_v_v, __pyx_v_code) < 0)) __PYX_ERR(0, 35, __pyx_L1_error)
+        if (unlikely(PyDict_SetItem(__pyx_cur_scope->__pyx_v_codes, __pyx_v_v, __pyx_v_code) < 0)) __PYX_ERR(0, 54, __pyx_L1_error)
 
-        /* "kovit/pjson.py":36
+        /* "kovit/pjson.py":55
  *             else:
  *                 codes[v] = code
  *                 codes_list.append(code)             # <<<<<<<<<<<<<<
  *                 codes_list.append(v)
  * 
  */
-        __pyx_t_12 = __Pyx_PyList_Append(__pyx_v_codes_list, __pyx_v_code); if (unlikely(__pyx_t_12 == ((int)-1))) __PYX_ERR(0, 36, __pyx_L1_error)
+        __pyx_t_12 = __Pyx_PyList_Append(__pyx_v_codes_list, __pyx_v_code); if (unlikely(__pyx_t_12 == ((int)-1))) __PYX_ERR(0, 55, __pyx_L1_error)
 
-        /* "kovit/pjson.py":37
+        /* "kovit/pjson.py":56
  *                 codes[v] = code
  *                 codes_list.append(code)
  *                 codes_list.append(v)             # <<<<<<<<<<<<<<
  * 
  *         def gen_start(start):
  */
-        __pyx_t_12 = __Pyx_PyList_Append(__pyx_v_codes_list, __pyx_v_v); if (unlikely(__pyx_t_12 == ((int)-1))) __PYX_ERR(0, 37, __pyx_L1_error)
+        __pyx_t_12 = __Pyx_PyList_Append(__pyx_v_codes_list, __pyx_v_v); if (unlikely(__pyx_t_12 == ((int)-1))) __PYX_ERR(0, 56, __pyx_L1_error)
       }
       __pyx_L6:;
 
-      /* "kovit/pjson.py":27
+      /* "kovit/pjson.py":46
  * 
  *     if frequency_compress:
  *         for code, v in enumerate(sorted(chain.build_frequency_dict().items(), key=lambda x: -x[1])):             # <<<<<<<<<<<<<<
@@ -3594,33 +3594,33 @@ static PyObject *__pyx_pf_5kovit_5cjson_dump_json_small(CYTHON_UNUSED PyObject *
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "kovit/pjson.py":39
+    /* "kovit/pjson.py":58
  *                 codes_list.append(v)
  * 
  *         def gen_start(start):             # <<<<<<<<<<<<<<
  *             return codes[start]
  * 
  */
-    __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_15dump_json_small_1gen_start, 0, __pyx_n_s_dump_json_small_locals_gen_start, ((PyObject*)__pyx_cur_scope), __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__2)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 39, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_15dump_json_small_1gen_start, 0, __pyx_n_s_dump_json_small_locals_gen_start, ((PyObject*)__pyx_cur_scope), __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__2)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 58, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_GIVEREF(__pyx_t_1);
     __pyx_cur_scope->__pyx_v_gen_start = __pyx_t_1;
     __pyx_t_1 = 0;
 
-    /* "kovit/pjson.py":42
+    /* "kovit/pjson.py":61
  *             return codes[start]
  * 
  *         def gen_next_start(choices):             # <<<<<<<<<<<<<<
  *             for val, cnt in choices:
  *                 yield tuple(codes[s] for s in val)
  */
-    __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_15dump_json_small_3gen_next_start, 0, __pyx_n_s_dump_json_small_locals_gen_next_2, ((PyObject*)__pyx_cur_scope), __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__4)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 42, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_15dump_json_small_3gen_next_start, 0, __pyx_n_s_dump_json_small_locals_gen_next_2, ((PyObject*)__pyx_cur_scope), __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__4)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 61, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_GIVEREF(__pyx_t_1);
     __pyx_cur_scope->__pyx_v_gen_next_start = __pyx_t_1;
     __pyx_t_1 = 0;
 
-    /* "kovit/pjson.py":26
+    /* "kovit/pjson.py":45
  *     codes_list = []
  * 
  *     if frequency_compress:             # <<<<<<<<<<<<<<
@@ -3630,7 +3630,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_dump_json_small(CYTHON_UNUSED PyObject *
     goto __pyx_L3;
   }
 
-  /* "kovit/pjson.py":47
+  /* "kovit/pjson.py":66
  *                 yield cnt
  *     else:
  *         def gen_start(start):             # <<<<<<<<<<<<<<
@@ -3638,20 +3638,20 @@ static PyObject *__pyx_pf_5kovit_5cjson_dump_json_small(CYTHON_UNUSED PyObject *
  * 
  */
   /*else*/ {
-    __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_15dump_json_small_6gen_start, 0, __pyx_n_s_dump_json_small_locals_gen_start, NULL, __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__6)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 47, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_15dump_json_small_6gen_start, 0, __pyx_n_s_dump_json_small_locals_gen_start, NULL, __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__6)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 66, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_GIVEREF(__pyx_t_1);
     __pyx_cur_scope->__pyx_v_gen_start = __pyx_t_1;
     __pyx_t_1 = 0;
 
-    /* "kovit/pjson.py":50
+    /* "kovit/pjson.py":69
  *             return start
  * 
  *         def gen_next_start(choices):             # <<<<<<<<<<<<<<
  *             for val, cnt in choices:
  *                 yield val
  */
-    __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_15dump_json_small_8gen_next_start, 0, __pyx_n_s_dump_json_small_locals_gen_next_2, NULL, __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__8)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 50, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_15dump_json_small_8gen_next_start, 0, __pyx_n_s_dump_json_small_locals_gen_next_2, NULL, __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__8)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 69, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_GIVEREF(__pyx_t_1);
     __pyx_cur_scope->__pyx_v_gen_next_start = __pyx_t_1;
@@ -3659,33 +3659,33 @@ static PyObject *__pyx_pf_5kovit_5cjson_dump_json_small(CYTHON_UNUSED PyObject *
   }
   __pyx_L3:;
 
-  /* "kovit/pjson.py":55
+  /* "kovit/pjson.py":74
  *                 yield cnt
  * 
  *     def gen_chain():             # <<<<<<<<<<<<<<
  *         for start, bag in chain.items():
  *             yield gen_start(start)
  */
-  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_15dump_json_small_11gen_chain, 0, __pyx_n_s_dump_json_small_locals_gen_chain, ((PyObject*)__pyx_cur_scope), __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__10)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 55, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_15dump_json_small_11gen_chain, 0, __pyx_n_s_dump_json_small_locals_gen_chain, ((PyObject*)__pyx_cur_scope), __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__10)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 74, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_gen_chain = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "kovit/pjson.py":60
+  /* "kovit/pjson.py":79
  *             yield tuple(gen_next_start(bag.choices()))
  * 
  *     json.dump(OrderedDict((('codes', codes_list), ('chain', tuple(gen_chain())))), file)             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __pyx_t_3 = __Pyx_GetModuleGlobalName(__pyx_n_s_json); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 60, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_GetModuleGlobalName(__pyx_n_s_json); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_dump); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 60, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_dump); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_9 = __Pyx_GetModuleGlobalName(__pyx_n_s_OrderedDict); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 60, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_GetModuleGlobalName(__pyx_n_s_OrderedDict); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
-  __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 60, __pyx_L1_error)
+  __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_INCREF(__pyx_n_s_codes);
   __Pyx_GIVEREF(__pyx_n_s_codes);
@@ -3693,12 +3693,12 @@ static PyObject *__pyx_pf_5kovit_5cjson_dump_json_small(CYTHON_UNUSED PyObject *
   __Pyx_INCREF(__pyx_v_codes_list);
   __Pyx_GIVEREF(__pyx_v_codes_list);
   PyTuple_SET_ITEM(__pyx_t_4, 1, __pyx_v_codes_list);
-  __pyx_t_6 = __pyx_pf_5kovit_5cjson_15dump_json_small_10gen_chain(__pyx_v_gen_chain); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 60, __pyx_L1_error)
+  __pyx_t_6 = __pyx_pf_5kovit_5cjson_15dump_json_small_10gen_chain(__pyx_v_gen_chain); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_13 = __Pyx_PySequence_Tuple(__pyx_t_6); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 60, __pyx_L1_error)
+  __pyx_t_13 = __Pyx_PySequence_Tuple(__pyx_t_6); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_13);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __pyx_t_6 = PyTuple_New(2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 60, __pyx_L1_error)
+  __pyx_t_6 = PyTuple_New(2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_INCREF(__pyx_n_s_chain);
   __Pyx_GIVEREF(__pyx_n_s_chain);
@@ -3706,7 +3706,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_dump_json_small(CYTHON_UNUSED PyObject *
   __Pyx_GIVEREF(__pyx_t_13);
   PyTuple_SET_ITEM(__pyx_t_6, 1, __pyx_t_13);
   __pyx_t_13 = 0;
-  __pyx_t_13 = PyTuple_New(2); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 60, __pyx_L1_error)
+  __pyx_t_13 = PyTuple_New(2); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_13);
   __Pyx_GIVEREF(__pyx_t_4);
   PyTuple_SET_ITEM(__pyx_t_13, 0, __pyx_t_4);
@@ -3725,14 +3725,14 @@ static PyObject *__pyx_pf_5kovit_5cjson_dump_json_small(CYTHON_UNUSED PyObject *
     }
   }
   if (!__pyx_t_6) {
-    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_9, __pyx_t_13); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 60, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_9, __pyx_t_13); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 79, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
     __Pyx_GOTREF(__pyx_t_3);
   } else {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_9)) {
       PyObject *__pyx_temp[2] = {__pyx_t_6, __pyx_t_13};
-      __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_9, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 60, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_9, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 79, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
@@ -3741,20 +3741,20 @@ static PyObject *__pyx_pf_5kovit_5cjson_dump_json_small(CYTHON_UNUSED PyObject *
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_9)) {
       PyObject *__pyx_temp[2] = {__pyx_t_6, __pyx_t_13};
-      __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_9, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 60, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_9, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 79, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
     } else
     #endif
     {
-      __pyx_t_4 = PyTuple_New(1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 60, __pyx_L1_error)
+      __pyx_t_4 = PyTuple_New(1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 79, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_GIVEREF(__pyx_t_6); PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_6); __pyx_t_6 = NULL;
       __Pyx_GIVEREF(__pyx_t_13);
       PyTuple_SET_ITEM(__pyx_t_4, 0+1, __pyx_t_13);
       __pyx_t_13 = 0;
-      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_9, __pyx_t_4, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 60, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_9, __pyx_t_4, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 79, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     }
@@ -3775,7 +3775,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_dump_json_small(CYTHON_UNUSED PyObject *
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_5)) {
     PyObject *__pyx_temp[3] = {__pyx_t_9, __pyx_t_3, __pyx_v_file};
-    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_14, 2+__pyx_t_14); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 60, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_14, 2+__pyx_t_14); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 79, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -3784,14 +3784,14 @@ static PyObject *__pyx_pf_5kovit_5cjson_dump_json_small(CYTHON_UNUSED PyObject *
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_5)) {
     PyObject *__pyx_temp[3] = {__pyx_t_9, __pyx_t_3, __pyx_v_file};
-    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_14, 2+__pyx_t_14); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 60, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_14, 2+__pyx_t_14); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 79, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   } else
   #endif
   {
-    __pyx_t_4 = PyTuple_New(2+__pyx_t_14); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 60, __pyx_L1_error)
+    __pyx_t_4 = PyTuple_New(2+__pyx_t_14); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 79, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     if (__pyx_t_9) {
       __Pyx_GIVEREF(__pyx_t_9); PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_9); __pyx_t_9 = NULL;
@@ -3802,14 +3802,14 @@ static PyObject *__pyx_pf_5kovit_5cjson_dump_json_small(CYTHON_UNUSED PyObject *
     __Pyx_GIVEREF(__pyx_v_file);
     PyTuple_SET_ITEM(__pyx_t_4, 1+__pyx_t_14, __pyx_v_file);
     __pyx_t_3 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_4, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 60, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_4, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 79, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   }
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "kovit/pjson.py":22
+  /* "kovit/pjson.py":41
  * 
  * 
  * def dump_json_small(chain, file, frequency_compress=True):             # <<<<<<<<<<<<<<
@@ -3842,12 +3842,12 @@ static PyObject *__pyx_pf_5kovit_5cjson_dump_json_small(CYTHON_UNUSED PyObject *
   return __pyx_r;
 }
 
-/* "kovit/pjson.py":63
+/* "kovit/pjson.py":82
  * 
  * 
  * def load_json_small(chain, file, merge=False):             # <<<<<<<<<<<<<<
- * 
  *     obj = json.load(file)
+ * 
  */
 
 /* Python wrapper */
@@ -3886,7 +3886,7 @@ static PyObject *__pyx_pw_5kovit_5cjson_3load_json_small(PyObject *__pyx_self, P
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_file)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("load_json_small", 0, 2, 3, 1); __PYX_ERR(0, 63, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("load_json_small", 0, 2, 3, 1); __PYX_ERR(0, 82, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -3896,7 +3896,7 @@ static PyObject *__pyx_pw_5kovit_5cjson_3load_json_small(PyObject *__pyx_self, P
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "load_json_small") < 0)) __PYX_ERR(0, 63, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "load_json_small") < 0)) __PYX_ERR(0, 82, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -3914,7 +3914,7 @@ static PyObject *__pyx_pw_5kovit_5cjson_3load_json_small(PyObject *__pyx_self, P
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("load_json_small", 0, 2, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 63, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("load_json_small", 0, 2, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 82, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("kovit.cjson.load_json_small", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -3928,7 +3928,7 @@ static PyObject *__pyx_pw_5kovit_5cjson_3load_json_small(PyObject *__pyx_self, P
 }
 static PyObject *__pyx_gb_5kovit_5cjson_15load_json_small_2generator4(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
-/* "kovit/pjson.py":77
+/* "kovit/pjson.py":95
  *                 i_bag = iter(bag)
  *                 for items, count in zip(i_bag, i_bag):
  *                     chain.add_to_bag(codes[start], tuple(codes[i] for i in items), count=count)             # <<<<<<<<<<<<<<
@@ -3945,7 +3945,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_15load_json_small_genexpr(PyObject *__py
   if (unlikely(!__pyx_cur_scope)) {
     __pyx_cur_scope = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_6_genexpr *)Py_None);
     __Pyx_INCREF(Py_None);
-    __PYX_ERR(0, 77, __pyx_L1_error)
+    __PYX_ERR(0, 95, __pyx_L1_error)
   } else {
     __Pyx_GOTREF(__pyx_cur_scope);
   }
@@ -3953,7 +3953,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_15load_json_small_genexpr(PyObject *__py
   __Pyx_INCREF(((PyObject *)__pyx_cur_scope->__pyx_outer_scope));
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_outer_scope);
   {
-    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_5kovit_5cjson_15load_json_small_2generator4, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_genexpr, __pyx_n_s_load_json_small_locals_genexpr, __pyx_n_s_kovit_cjson); if (unlikely(!gen)) __PYX_ERR(0, 77, __pyx_L1_error)
+    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_5kovit_5cjson_15load_json_small_2generator4, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_genexpr, __pyx_n_s_load_json_small_locals_genexpr, __pyx_n_s_kovit_cjson); if (unlikely(!gen)) __PYX_ERR(0, 95, __pyx_L1_error)
     __Pyx_DECREF(__pyx_cur_scope);
     __Pyx_RefNannyFinishContext();
     return (PyObject *) gen;
@@ -3987,32 +3987,32 @@ static PyObject *__pyx_gb_5kovit_5cjson_15load_json_small_2generator4(__pyx_Coro
     return NULL;
   }
   __pyx_L3_first_run:;
-  if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 77, __pyx_L1_error)
-  if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_items)) { __Pyx_RaiseClosureNameError("items"); __PYX_ERR(0, 77, __pyx_L1_error) }
+  if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 95, __pyx_L1_error)
+  if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_items)) { __Pyx_RaiseClosureNameError("items"); __PYX_ERR(0, 95, __pyx_L1_error) }
   if (likely(PyList_CheckExact(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_items)) || PyTuple_CheckExact(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_items)) {
     __pyx_t_1 = __pyx_cur_scope->__pyx_outer_scope->__pyx_v_items; __Pyx_INCREF(__pyx_t_1); __pyx_t_2 = 0;
     __pyx_t_3 = NULL;
   } else {
-    __pyx_t_2 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_items); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 77, __pyx_L1_error)
+    __pyx_t_2 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_items); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 95, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_3 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 77, __pyx_L1_error)
+    __pyx_t_3 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 95, __pyx_L1_error)
   }
   for (;;) {
     if (likely(!__pyx_t_3)) {
       if (likely(PyList_CheckExact(__pyx_t_1))) {
         if (__pyx_t_2 >= PyList_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 77, __pyx_L1_error)
+        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 95, __pyx_L1_error)
         #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 77, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 95, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       } else {
         if (__pyx_t_2 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 77, __pyx_L1_error)
+        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 95, __pyx_L1_error)
         #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 77, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 95, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       }
@@ -4022,7 +4022,7 @@ static PyObject *__pyx_gb_5kovit_5cjson_15load_json_small_2generator4(__pyx_Coro
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 77, __pyx_L1_error)
+          else __PYX_ERR(0, 95, __pyx_L1_error)
         }
         break;
       }
@@ -4032,12 +4032,12 @@ static PyObject *__pyx_gb_5kovit_5cjson_15load_json_small_2generator4(__pyx_Coro
     __Pyx_XDECREF_SET(__pyx_cur_scope->__pyx_v_i, __pyx_t_4);
     __Pyx_GIVEREF(__pyx_t_4);
     __pyx_t_4 = 0;
-    if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_codes)) { __Pyx_RaiseClosureNameError("codes"); __PYX_ERR(0, 77, __pyx_L1_error) }
+    if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_codes)) { __Pyx_RaiseClosureNameError("codes"); __PYX_ERR(0, 95, __pyx_L1_error) }
     if (unlikely(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_codes == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(0, 77, __pyx_L1_error)
+      __PYX_ERR(0, 95, __pyx_L1_error)
     }
-    __pyx_t_4 = __Pyx_PyDict_GetItem(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_codes, __pyx_cur_scope->__pyx_v_i); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 77, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyDict_GetItem(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_codes, __pyx_cur_scope->__pyx_v_i); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 95, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_r = __pyx_t_4;
     __pyx_t_4 = 0;
@@ -4057,7 +4057,7 @@ static PyObject *__pyx_gb_5kovit_5cjson_15load_json_small_2generator4(__pyx_Coro
     __Pyx_XGOTREF(__pyx_t_1);
     __pyx_t_2 = __pyx_cur_scope->__pyx_t_1;
     __pyx_t_3 = __pyx_cur_scope->__pyx_t_2;
-    if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 77, __pyx_L1_error)
+    if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 95, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
@@ -4079,7 +4079,7 @@ static PyObject *__pyx_gb_5kovit_5cjson_15load_json_small_2generator4(__pyx_Coro
 }
 static PyObject *__pyx_gb_5kovit_5cjson_15load_json_small_5generator5(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
-/* "kovit/pjson.py":91
+/* "kovit/pjson.py":109
  *                 b = ProbabilityBag()
  *                 for items, count in zip(i_bag, i_bag):
  *                     b.add(tuple(codes[i] for i in items), count=count)             # <<<<<<<<<<<<<<
@@ -4096,7 +4096,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_15load_json_small_3genexpr(PyObject *__p
   if (unlikely(!__pyx_cur_scope)) {
     __pyx_cur_scope = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_7_genexpr *)Py_None);
     __Pyx_INCREF(Py_None);
-    __PYX_ERR(0, 91, __pyx_L1_error)
+    __PYX_ERR(0, 109, __pyx_L1_error)
   } else {
     __Pyx_GOTREF(__pyx_cur_scope);
   }
@@ -4104,7 +4104,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_15load_json_small_3genexpr(PyObject *__p
   __Pyx_INCREF(((PyObject *)__pyx_cur_scope->__pyx_outer_scope));
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_outer_scope);
   {
-    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_5kovit_5cjson_15load_json_small_5generator5, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_genexpr, __pyx_n_s_load_json_small_locals_genexpr, __pyx_n_s_kovit_cjson); if (unlikely(!gen)) __PYX_ERR(0, 91, __pyx_L1_error)
+    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_5kovit_5cjson_15load_json_small_5generator5, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_genexpr, __pyx_n_s_load_json_small_locals_genexpr, __pyx_n_s_kovit_cjson); if (unlikely(!gen)) __PYX_ERR(0, 109, __pyx_L1_error)
     __Pyx_DECREF(__pyx_cur_scope);
     __Pyx_RefNannyFinishContext();
     return (PyObject *) gen;
@@ -4138,32 +4138,32 @@ static PyObject *__pyx_gb_5kovit_5cjson_15load_json_small_5generator5(__pyx_Coro
     return NULL;
   }
   __pyx_L3_first_run:;
-  if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 91, __pyx_L1_error)
-  if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_items)) { __Pyx_RaiseClosureNameError("items"); __PYX_ERR(0, 91, __pyx_L1_error) }
+  if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 109, __pyx_L1_error)
+  if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_items)) { __Pyx_RaiseClosureNameError("items"); __PYX_ERR(0, 109, __pyx_L1_error) }
   if (likely(PyList_CheckExact(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_items)) || PyTuple_CheckExact(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_items)) {
     __pyx_t_1 = __pyx_cur_scope->__pyx_outer_scope->__pyx_v_items; __Pyx_INCREF(__pyx_t_1); __pyx_t_2 = 0;
     __pyx_t_3 = NULL;
   } else {
-    __pyx_t_2 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_items); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 91, __pyx_L1_error)
+    __pyx_t_2 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_items); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 109, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_3 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 91, __pyx_L1_error)
+    __pyx_t_3 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 109, __pyx_L1_error)
   }
   for (;;) {
     if (likely(!__pyx_t_3)) {
       if (likely(PyList_CheckExact(__pyx_t_1))) {
         if (__pyx_t_2 >= PyList_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 91, __pyx_L1_error)
+        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 109, __pyx_L1_error)
         #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 91, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 109, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       } else {
         if (__pyx_t_2 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 91, __pyx_L1_error)
+        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 109, __pyx_L1_error)
         #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 91, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 109, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       }
@@ -4173,7 +4173,7 @@ static PyObject *__pyx_gb_5kovit_5cjson_15load_json_small_5generator5(__pyx_Coro
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 91, __pyx_L1_error)
+          else __PYX_ERR(0, 109, __pyx_L1_error)
         }
         break;
       }
@@ -4183,12 +4183,12 @@ static PyObject *__pyx_gb_5kovit_5cjson_15load_json_small_5generator5(__pyx_Coro
     __Pyx_XDECREF_SET(__pyx_cur_scope->__pyx_v_i, __pyx_t_4);
     __Pyx_GIVEREF(__pyx_t_4);
     __pyx_t_4 = 0;
-    if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_codes)) { __Pyx_RaiseClosureNameError("codes"); __PYX_ERR(0, 91, __pyx_L1_error) }
+    if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_codes)) { __Pyx_RaiseClosureNameError("codes"); __PYX_ERR(0, 109, __pyx_L1_error) }
     if (unlikely(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_codes == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(0, 91, __pyx_L1_error)
+      __PYX_ERR(0, 109, __pyx_L1_error)
     }
-    __pyx_t_4 = __Pyx_PyDict_GetItem(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_codes, __pyx_cur_scope->__pyx_v_i); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 91, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyDict_GetItem(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_codes, __pyx_cur_scope->__pyx_v_i); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 109, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_r = __pyx_t_4;
     __pyx_t_4 = 0;
@@ -4208,7 +4208,7 @@ static PyObject *__pyx_gb_5kovit_5cjson_15load_json_small_5generator5(__pyx_Coro
     __Pyx_XGOTREF(__pyx_t_1);
     __pyx_t_2 = __pyx_cur_scope->__pyx_t_1;
     __pyx_t_3 = __pyx_cur_scope->__pyx_t_2;
-    if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 91, __pyx_L1_error)
+    if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 109, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
@@ -4229,12 +4229,12 @@ static PyObject *__pyx_gb_5kovit_5cjson_15load_json_small_5generator5(__pyx_Coro
   return __pyx_r;
 }
 
-/* "kovit/pjson.py":63
+/* "kovit/pjson.py":82
  * 
  * 
  * def load_json_small(chain, file, merge=False):             # <<<<<<<<<<<<<<
- * 
  *     obj = json.load(file)
+ * 
  */
 
 static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_chain, PyObject *__pyx_v_file, PyObject *__pyx_v_merge) {
@@ -4267,21 +4267,21 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
   if (unlikely(!__pyx_cur_scope)) {
     __pyx_cur_scope = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_5_load_json_small *)Py_None);
     __Pyx_INCREF(Py_None);
-    __PYX_ERR(0, 63, __pyx_L1_error)
+    __PYX_ERR(0, 82, __pyx_L1_error)
   } else {
     __Pyx_GOTREF(__pyx_cur_scope);
   }
 
-  /* "kovit/pjson.py":65
- * def load_json_small(chain, file, merge=False):
+  /* "kovit/pjson.py":83
  * 
+ * def load_json_small(chain, file, merge=False):
  *     obj = json.load(file)             # <<<<<<<<<<<<<<
  * 
  *     c_iter = iter(obj['codes'])
  */
-  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_json); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 65, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_json); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 83, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_load); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 65, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_load); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 83, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_t_2 = NULL;
@@ -4295,13 +4295,13 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
     }
   }
   if (!__pyx_t_2) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_file); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 65, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_file); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 83, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
   } else {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_3)) {
       PyObject *__pyx_temp[2] = {__pyx_t_2, __pyx_v_file};
-      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 65, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 83, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_GOTREF(__pyx_t_1);
     } else
@@ -4309,19 +4309,19 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_3)) {
       PyObject *__pyx_temp[2] = {__pyx_t_2, __pyx_v_file};
-      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 65, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 83, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_GOTREF(__pyx_t_1);
     } else
     #endif
     {
-      __pyx_t_4 = PyTuple_New(1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 65, __pyx_L1_error)
+      __pyx_t_4 = PyTuple_New(1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 83, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_GIVEREF(__pyx_t_2); PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_2); __pyx_t_2 = NULL;
       __Pyx_INCREF(__pyx_v_file);
       __Pyx_GIVEREF(__pyx_v_file);
       PyTuple_SET_ITEM(__pyx_t_4, 0+1, __pyx_v_file);
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_4, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 65, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_4, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 83, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     }
@@ -4330,29 +4330,29 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
   __pyx_v_obj = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "kovit/pjson.py":67
+  /* "kovit/pjson.py":85
  *     obj = json.load(file)
  * 
  *     c_iter = iter(obj['codes'])             # <<<<<<<<<<<<<<
  *     codes = dict(zip(c_iter, c_iter))
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_v_obj, __pyx_n_s_codes); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 67, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_v_obj, __pyx_n_s_codes); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 85, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 67, __pyx_L1_error)
+  __pyx_t_3 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 85, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_c_iter = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "kovit/pjson.py":68
+  /* "kovit/pjson.py":86
  * 
  *     c_iter = iter(obj['codes'])
  *     codes = dict(zip(c_iter, c_iter))             # <<<<<<<<<<<<<<
  * 
  *     c_list = iter(obj['chain'])
  */
-  __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 68, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 86, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_INCREF(__pyx_v_c_iter);
   __Pyx_GIVEREF(__pyx_v_c_iter);
@@ -4360,59 +4360,59 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
   __Pyx_INCREF(__pyx_v_c_iter);
   __Pyx_GIVEREF(__pyx_v_c_iter);
   PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_v_c_iter);
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_3, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 68, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_3, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 86, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyObject_CallOneArg(((PyObject *)(&PyDict_Type)), __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 68, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_CallOneArg(((PyObject *)(&PyDict_Type)), __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 86, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_GIVEREF(__pyx_t_3);
   __pyx_cur_scope->__pyx_v_codes = ((PyObject*)__pyx_t_3);
   __pyx_t_3 = 0;
 
-  /* "kovit/pjson.py":70
+  /* "kovit/pjson.py":88
  *     codes = dict(zip(c_iter, c_iter))
  * 
  *     c_list = iter(obj['chain'])             # <<<<<<<<<<<<<<
  * 
  *     if merge:
  */
-  __pyx_t_3 = __Pyx_PyObject_Dict_GetItem(__pyx_v_obj, __pyx_n_s_chain); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 70, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_Dict_GetItem(__pyx_v_obj, __pyx_n_s_chain); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 88, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_1 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 70, __pyx_L1_error)
+  __pyx_t_1 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 88, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_v_c_list = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "kovit/pjson.py":72
+  /* "kovit/pjson.py":90
  *     c_list = iter(obj['chain'])
  * 
  *     if merge:             # <<<<<<<<<<<<<<
  *         if codes:
  *             for start, bag in zip(c_list, c_list):
  */
-  __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_v_merge); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 72, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_v_merge); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 90, __pyx_L1_error)
   if (__pyx_t_5) {
 
-    /* "kovit/pjson.py":73
+    /* "kovit/pjson.py":91
  * 
  *     if merge:
  *         if codes:             # <<<<<<<<<<<<<<
  *             for start, bag in zip(c_list, c_list):
  *                 i_bag = iter(bag)
  */
-    __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_cur_scope->__pyx_v_codes); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 73, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_cur_scope->__pyx_v_codes); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 91, __pyx_L1_error)
     if (__pyx_t_5) {
 
-      /* "kovit/pjson.py":74
+      /* "kovit/pjson.py":92
  *     if merge:
  *         if codes:
  *             for start, bag in zip(c_list, c_list):             # <<<<<<<<<<<<<<
  *                 i_bag = iter(bag)
  *                 for items, count in zip(i_bag, i_bag):
  */
-      __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 74, __pyx_L1_error)
+      __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 92, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_INCREF(__pyx_v_c_list);
       __Pyx_GIVEREF(__pyx_v_c_list);
@@ -4420,16 +4420,16 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
       __Pyx_INCREF(__pyx_v_c_list);
       __Pyx_GIVEREF(__pyx_v_c_list);
       PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_v_c_list);
-      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_1, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 74, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_1, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 92, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       if (likely(PyList_CheckExact(__pyx_t_3)) || PyTuple_CheckExact(__pyx_t_3)) {
         __pyx_t_1 = __pyx_t_3; __Pyx_INCREF(__pyx_t_1); __pyx_t_6 = 0;
         __pyx_t_7 = NULL;
       } else {
-        __pyx_t_6 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 74, __pyx_L1_error)
+        __pyx_t_6 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 92, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
-        __pyx_t_7 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 74, __pyx_L1_error)
+        __pyx_t_7 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 92, __pyx_L1_error)
       }
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       for (;;) {
@@ -4437,17 +4437,17 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
           if (likely(PyList_CheckExact(__pyx_t_1))) {
             if (__pyx_t_6 >= PyList_GET_SIZE(__pyx_t_1)) break;
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_3 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_6); __Pyx_INCREF(__pyx_t_3); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 74, __pyx_L1_error)
+            __pyx_t_3 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_6); __Pyx_INCREF(__pyx_t_3); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 92, __pyx_L1_error)
             #else
-            __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 74, __pyx_L1_error)
+            __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 92, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_3);
             #endif
           } else {
             if (__pyx_t_6 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_6); __Pyx_INCREF(__pyx_t_3); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 74, __pyx_L1_error)
+            __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_6); __Pyx_INCREF(__pyx_t_3); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 92, __pyx_L1_error)
             #else
-            __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 74, __pyx_L1_error)
+            __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 92, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_3);
             #endif
           }
@@ -4457,7 +4457,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
             PyObject* exc_type = PyErr_Occurred();
             if (exc_type) {
               if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-              else __PYX_ERR(0, 74, __pyx_L1_error)
+              else __PYX_ERR(0, 92, __pyx_L1_error)
             }
             break;
           }
@@ -4469,7 +4469,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
           if (unlikely(size != 2)) {
             if (size > 2) __Pyx_RaiseTooManyValuesError(2);
             else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-            __PYX_ERR(0, 74, __pyx_L1_error)
+            __PYX_ERR(0, 92, __pyx_L1_error)
           }
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
           if (likely(PyTuple_CheckExact(sequence))) {
@@ -4482,15 +4482,15 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
           __Pyx_INCREF(__pyx_t_4);
           __Pyx_INCREF(__pyx_t_2);
           #else
-          __pyx_t_4 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 74, __pyx_L1_error)
+          __pyx_t_4 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 92, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_4);
-          __pyx_t_2 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 74, __pyx_L1_error)
+          __pyx_t_2 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 92, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_2);
           #endif
           __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         } else {
           Py_ssize_t index = -1;
-          __pyx_t_8 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 74, __pyx_L1_error)
+          __pyx_t_8 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 92, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_8);
           __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
           __pyx_t_9 = Py_TYPE(__pyx_t_8)->tp_iternext;
@@ -4498,7 +4498,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
           __Pyx_GOTREF(__pyx_t_4);
           index = 1; __pyx_t_2 = __pyx_t_9(__pyx_t_8); if (unlikely(!__pyx_t_2)) goto __pyx_L7_unpacking_failed;
           __Pyx_GOTREF(__pyx_t_2);
-          if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_8), 2) < 0) __PYX_ERR(0, 74, __pyx_L1_error)
+          if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_8), 2) < 0) __PYX_ERR(0, 92, __pyx_L1_error)
           __pyx_t_9 = NULL;
           __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
           goto __pyx_L8_unpacking_done;
@@ -4506,7 +4506,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
           __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
           __pyx_t_9 = NULL;
           if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-          __PYX_ERR(0, 74, __pyx_L1_error)
+          __PYX_ERR(0, 92, __pyx_L1_error)
           __pyx_L8_unpacking_done:;
         }
         __Pyx_XDECREF_SET(__pyx_v_start, __pyx_t_4);
@@ -4514,26 +4514,26 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
         __Pyx_XDECREF_SET(__pyx_v_bag, __pyx_t_2);
         __pyx_t_2 = 0;
 
-        /* "kovit/pjson.py":75
+        /* "kovit/pjson.py":93
  *         if codes:
  *             for start, bag in zip(c_list, c_list):
  *                 i_bag = iter(bag)             # <<<<<<<<<<<<<<
  *                 for items, count in zip(i_bag, i_bag):
  *                     chain.add_to_bag(codes[start], tuple(codes[i] for i in items), count=count)
  */
-        __pyx_t_3 = PyObject_GetIter(__pyx_v_bag); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 75, __pyx_L1_error)
+        __pyx_t_3 = PyObject_GetIter(__pyx_v_bag); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 93, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_XDECREF_SET(__pyx_v_i_bag, __pyx_t_3);
         __pyx_t_3 = 0;
 
-        /* "kovit/pjson.py":76
+        /* "kovit/pjson.py":94
  *             for start, bag in zip(c_list, c_list):
  *                 i_bag = iter(bag)
  *                 for items, count in zip(i_bag, i_bag):             # <<<<<<<<<<<<<<
  *                     chain.add_to_bag(codes[start], tuple(codes[i] for i in items), count=count)
  *         else:
  */
-        __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 76, __pyx_L1_error)
+        __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 94, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_INCREF(__pyx_v_i_bag);
         __Pyx_GIVEREF(__pyx_v_i_bag);
@@ -4541,16 +4541,16 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
         __Pyx_INCREF(__pyx_v_i_bag);
         __Pyx_GIVEREF(__pyx_v_i_bag);
         PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_v_i_bag);
-        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_3, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 76, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_3, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 94, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         if (likely(PyList_CheckExact(__pyx_t_2)) || PyTuple_CheckExact(__pyx_t_2)) {
           __pyx_t_3 = __pyx_t_2; __Pyx_INCREF(__pyx_t_3); __pyx_t_10 = 0;
           __pyx_t_11 = NULL;
         } else {
-          __pyx_t_10 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 76, __pyx_L1_error)
+          __pyx_t_10 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 94, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_3);
-          __pyx_t_11 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 76, __pyx_L1_error)
+          __pyx_t_11 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 94, __pyx_L1_error)
         }
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         for (;;) {
@@ -4558,17 +4558,17 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
             if (likely(PyList_CheckExact(__pyx_t_3))) {
               if (__pyx_t_10 >= PyList_GET_SIZE(__pyx_t_3)) break;
               #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-              __pyx_t_2 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_10); __Pyx_INCREF(__pyx_t_2); __pyx_t_10++; if (unlikely(0 < 0)) __PYX_ERR(0, 76, __pyx_L1_error)
+              __pyx_t_2 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_10); __Pyx_INCREF(__pyx_t_2); __pyx_t_10++; if (unlikely(0 < 0)) __PYX_ERR(0, 94, __pyx_L1_error)
               #else
-              __pyx_t_2 = PySequence_ITEM(__pyx_t_3, __pyx_t_10); __pyx_t_10++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 76, __pyx_L1_error)
+              __pyx_t_2 = PySequence_ITEM(__pyx_t_3, __pyx_t_10); __pyx_t_10++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 94, __pyx_L1_error)
               __Pyx_GOTREF(__pyx_t_2);
               #endif
             } else {
               if (__pyx_t_10 >= PyTuple_GET_SIZE(__pyx_t_3)) break;
               #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-              __pyx_t_2 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_10); __Pyx_INCREF(__pyx_t_2); __pyx_t_10++; if (unlikely(0 < 0)) __PYX_ERR(0, 76, __pyx_L1_error)
+              __pyx_t_2 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_10); __Pyx_INCREF(__pyx_t_2); __pyx_t_10++; if (unlikely(0 < 0)) __PYX_ERR(0, 94, __pyx_L1_error)
               #else
-              __pyx_t_2 = PySequence_ITEM(__pyx_t_3, __pyx_t_10); __pyx_t_10++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 76, __pyx_L1_error)
+              __pyx_t_2 = PySequence_ITEM(__pyx_t_3, __pyx_t_10); __pyx_t_10++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 94, __pyx_L1_error)
               __Pyx_GOTREF(__pyx_t_2);
               #endif
             }
@@ -4578,7 +4578,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
               PyObject* exc_type = PyErr_Occurred();
               if (exc_type) {
                 if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-                else __PYX_ERR(0, 76, __pyx_L1_error)
+                else __PYX_ERR(0, 94, __pyx_L1_error)
               }
               break;
             }
@@ -4590,7 +4590,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
             if (unlikely(size != 2)) {
               if (size > 2) __Pyx_RaiseTooManyValuesError(2);
               else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-              __PYX_ERR(0, 76, __pyx_L1_error)
+              __PYX_ERR(0, 94, __pyx_L1_error)
             }
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
             if (likely(PyTuple_CheckExact(sequence))) {
@@ -4603,15 +4603,15 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
             __Pyx_INCREF(__pyx_t_4);
             __Pyx_INCREF(__pyx_t_8);
             #else
-            __pyx_t_4 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 76, __pyx_L1_error)
+            __pyx_t_4 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 94, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_4);
-            __pyx_t_8 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 76, __pyx_L1_error)
+            __pyx_t_8 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 94, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_8);
             #endif
             __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
           } else {
             Py_ssize_t index = -1;
-            __pyx_t_12 = PyObject_GetIter(__pyx_t_2); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 76, __pyx_L1_error)
+            __pyx_t_12 = PyObject_GetIter(__pyx_t_2); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 94, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_12);
             __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
             __pyx_t_9 = Py_TYPE(__pyx_t_12)->tp_iternext;
@@ -4619,7 +4619,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
             __Pyx_GOTREF(__pyx_t_4);
             index = 1; __pyx_t_8 = __pyx_t_9(__pyx_t_12); if (unlikely(!__pyx_t_8)) goto __pyx_L11_unpacking_failed;
             __Pyx_GOTREF(__pyx_t_8);
-            if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_12), 2) < 0) __PYX_ERR(0, 76, __pyx_L1_error)
+            if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_12), 2) < 0) __PYX_ERR(0, 94, __pyx_L1_error)
             __pyx_t_9 = NULL;
             __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
             goto __pyx_L12_unpacking_done;
@@ -4627,7 +4627,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
             __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
             __pyx_t_9 = NULL;
             if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-            __PYX_ERR(0, 76, __pyx_L1_error)
+            __PYX_ERR(0, 94, __pyx_L1_error)
             __pyx_L12_unpacking_done:;
           }
           __Pyx_XGOTREF(__pyx_cur_scope->__pyx_v_items);
@@ -4637,23 +4637,23 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
           __Pyx_XDECREF_SET(__pyx_v_count, __pyx_t_8);
           __pyx_t_8 = 0;
 
-          /* "kovit/pjson.py":77
+          /* "kovit/pjson.py":95
  *                 i_bag = iter(bag)
  *                 for items, count in zip(i_bag, i_bag):
  *                     chain.add_to_bag(codes[start], tuple(codes[i] for i in items), count=count)             # <<<<<<<<<<<<<<
  *         else:
  *             for start, bag in zip(c_list, c_list):
  */
-          __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_chain, __pyx_n_s_add_to_bag); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 77, __pyx_L1_error)
+          __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_chain, __pyx_n_s_add_to_bag); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 95, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_2);
-          __pyx_t_8 = __Pyx_PyDict_GetItem(__pyx_cur_scope->__pyx_v_codes, __pyx_v_start); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 77, __pyx_L1_error)
+          __pyx_t_8 = __Pyx_PyDict_GetItem(__pyx_cur_scope->__pyx_v_codes, __pyx_v_start); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 95, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_8);
-          __pyx_t_4 = __pyx_pf_5kovit_5cjson_15load_json_small_genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 77, __pyx_L1_error)
+          __pyx_t_4 = __pyx_pf_5kovit_5cjson_15load_json_small_genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 95, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_4);
-          __pyx_t_12 = __Pyx_PySequence_Tuple(__pyx_t_4); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 77, __pyx_L1_error)
+          __pyx_t_12 = __Pyx_PySequence_Tuple(__pyx_t_4); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 95, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_12);
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-          __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 77, __pyx_L1_error)
+          __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 95, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_4);
           __Pyx_GIVEREF(__pyx_t_8);
           PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_8);
@@ -4661,17 +4661,17 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
           PyTuple_SET_ITEM(__pyx_t_4, 1, __pyx_t_12);
           __pyx_t_8 = 0;
           __pyx_t_12 = 0;
-          __pyx_t_12 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 77, __pyx_L1_error)
+          __pyx_t_12 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 95, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_12);
-          if (PyDict_SetItem(__pyx_t_12, __pyx_n_s_count, __pyx_v_count) < 0) __PYX_ERR(0, 77, __pyx_L1_error)
-          __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, __pyx_t_12); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 77, __pyx_L1_error)
+          if (PyDict_SetItem(__pyx_t_12, __pyx_n_s_count, __pyx_v_count) < 0) __PYX_ERR(0, 95, __pyx_L1_error)
+          __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, __pyx_t_12); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 95, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_8);
           __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
           __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
           __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
-          /* "kovit/pjson.py":76
+          /* "kovit/pjson.py":94
  *             for start, bag in zip(c_list, c_list):
  *                 i_bag = iter(bag)
  *                 for items, count in zip(i_bag, i_bag):             # <<<<<<<<<<<<<<
@@ -4681,7 +4681,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
         }
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-        /* "kovit/pjson.py":74
+        /* "kovit/pjson.py":92
  *     if merge:
  *         if codes:
  *             for start, bag in zip(c_list, c_list):             # <<<<<<<<<<<<<<
@@ -4691,7 +4691,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
       }
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-      /* "kovit/pjson.py":73
+      /* "kovit/pjson.py":91
  * 
  *     if merge:
  *         if codes:             # <<<<<<<<<<<<<<
@@ -4701,7 +4701,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
       goto __pyx_L4;
     }
 
-    /* "kovit/pjson.py":79
+    /* "kovit/pjson.py":97
  *                     chain.add_to_bag(codes[start], tuple(codes[i] for i in items), count=count)
  *         else:
  *             for start, bag in zip(c_list, c_list):             # <<<<<<<<<<<<<<
@@ -4709,7 +4709,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
  *                 for items, count in zip(i_bag, i_bag):
  */
     /*else*/ {
-      __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 79, __pyx_L1_error)
+      __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 97, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_INCREF(__pyx_v_c_list);
       __Pyx_GIVEREF(__pyx_v_c_list);
@@ -4717,16 +4717,16 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
       __Pyx_INCREF(__pyx_v_c_list);
       __Pyx_GIVEREF(__pyx_v_c_list);
       PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_v_c_list);
-      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_1, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 79, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_1, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 97, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       if (likely(PyList_CheckExact(__pyx_t_3)) || PyTuple_CheckExact(__pyx_t_3)) {
         __pyx_t_1 = __pyx_t_3; __Pyx_INCREF(__pyx_t_1); __pyx_t_6 = 0;
         __pyx_t_7 = NULL;
       } else {
-        __pyx_t_6 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 79, __pyx_L1_error)
+        __pyx_t_6 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 97, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
-        __pyx_t_7 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 79, __pyx_L1_error)
+        __pyx_t_7 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 97, __pyx_L1_error)
       }
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       for (;;) {
@@ -4734,17 +4734,17 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
           if (likely(PyList_CheckExact(__pyx_t_1))) {
             if (__pyx_t_6 >= PyList_GET_SIZE(__pyx_t_1)) break;
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_3 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_6); __Pyx_INCREF(__pyx_t_3); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 79, __pyx_L1_error)
+            __pyx_t_3 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_6); __Pyx_INCREF(__pyx_t_3); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 97, __pyx_L1_error)
             #else
-            __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 79, __pyx_L1_error)
+            __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 97, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_3);
             #endif
           } else {
             if (__pyx_t_6 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_6); __Pyx_INCREF(__pyx_t_3); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 79, __pyx_L1_error)
+            __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_6); __Pyx_INCREF(__pyx_t_3); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 97, __pyx_L1_error)
             #else
-            __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 79, __pyx_L1_error)
+            __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 97, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_3);
             #endif
           }
@@ -4754,7 +4754,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
             PyObject* exc_type = PyErr_Occurred();
             if (exc_type) {
               if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-              else __PYX_ERR(0, 79, __pyx_L1_error)
+              else __PYX_ERR(0, 97, __pyx_L1_error)
             }
             break;
           }
@@ -4766,7 +4766,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
           if (unlikely(size != 2)) {
             if (size > 2) __Pyx_RaiseTooManyValuesError(2);
             else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-            __PYX_ERR(0, 79, __pyx_L1_error)
+            __PYX_ERR(0, 97, __pyx_L1_error)
           }
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
           if (likely(PyTuple_CheckExact(sequence))) {
@@ -4779,15 +4779,15 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
           __Pyx_INCREF(__pyx_t_8);
           __Pyx_INCREF(__pyx_t_12);
           #else
-          __pyx_t_8 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 79, __pyx_L1_error)
+          __pyx_t_8 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 97, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_8);
-          __pyx_t_12 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 79, __pyx_L1_error)
+          __pyx_t_12 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 97, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_12);
           #endif
           __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         } else {
           Py_ssize_t index = -1;
-          __pyx_t_4 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 79, __pyx_L1_error)
+          __pyx_t_4 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 97, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_4);
           __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
           __pyx_t_9 = Py_TYPE(__pyx_t_4)->tp_iternext;
@@ -4795,7 +4795,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
           __Pyx_GOTREF(__pyx_t_8);
           index = 1; __pyx_t_12 = __pyx_t_9(__pyx_t_4); if (unlikely(!__pyx_t_12)) goto __pyx_L15_unpacking_failed;
           __Pyx_GOTREF(__pyx_t_12);
-          if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_4), 2) < 0) __PYX_ERR(0, 79, __pyx_L1_error)
+          if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_4), 2) < 0) __PYX_ERR(0, 97, __pyx_L1_error)
           __pyx_t_9 = NULL;
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
           goto __pyx_L16_unpacking_done;
@@ -4803,7 +4803,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
           __pyx_t_9 = NULL;
           if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-          __PYX_ERR(0, 79, __pyx_L1_error)
+          __PYX_ERR(0, 97, __pyx_L1_error)
           __pyx_L16_unpacking_done:;
         }
         __Pyx_XDECREF_SET(__pyx_v_start, __pyx_t_8);
@@ -4811,26 +4811,26 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
         __Pyx_XDECREF_SET(__pyx_v_bag, __pyx_t_12);
         __pyx_t_12 = 0;
 
-        /* "kovit/pjson.py":80
+        /* "kovit/pjson.py":98
  *         else:
  *             for start, bag in zip(c_list, c_list):
  *                 i_bag = iter(bag)             # <<<<<<<<<<<<<<
  *                 for items, count in zip(i_bag, i_bag):
  *                     chain.add_to_bag(start, items, count=count)
  */
-        __pyx_t_3 = PyObject_GetIter(__pyx_v_bag); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 80, __pyx_L1_error)
+        __pyx_t_3 = PyObject_GetIter(__pyx_v_bag); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 98, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_XDECREF_SET(__pyx_v_i_bag, __pyx_t_3);
         __pyx_t_3 = 0;
 
-        /* "kovit/pjson.py":81
+        /* "kovit/pjson.py":99
  *             for start, bag in zip(c_list, c_list):
  *                 i_bag = iter(bag)
  *                 for items, count in zip(i_bag, i_bag):             # <<<<<<<<<<<<<<
  *                     chain.add_to_bag(start, items, count=count)
  *     else:
  */
-        __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 81, __pyx_L1_error)
+        __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 99, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_INCREF(__pyx_v_i_bag);
         __Pyx_GIVEREF(__pyx_v_i_bag);
@@ -4838,16 +4838,16 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
         __Pyx_INCREF(__pyx_v_i_bag);
         __Pyx_GIVEREF(__pyx_v_i_bag);
         PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_v_i_bag);
-        __pyx_t_12 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_3, NULL); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 81, __pyx_L1_error)
+        __pyx_t_12 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_3, NULL); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 99, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_12);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         if (likely(PyList_CheckExact(__pyx_t_12)) || PyTuple_CheckExact(__pyx_t_12)) {
           __pyx_t_3 = __pyx_t_12; __Pyx_INCREF(__pyx_t_3); __pyx_t_10 = 0;
           __pyx_t_11 = NULL;
         } else {
-          __pyx_t_10 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_t_12); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 81, __pyx_L1_error)
+          __pyx_t_10 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_t_12); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 99, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_3);
-          __pyx_t_11 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 81, __pyx_L1_error)
+          __pyx_t_11 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 99, __pyx_L1_error)
         }
         __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
         for (;;) {
@@ -4855,17 +4855,17 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
             if (likely(PyList_CheckExact(__pyx_t_3))) {
               if (__pyx_t_10 >= PyList_GET_SIZE(__pyx_t_3)) break;
               #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-              __pyx_t_12 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_10); __Pyx_INCREF(__pyx_t_12); __pyx_t_10++; if (unlikely(0 < 0)) __PYX_ERR(0, 81, __pyx_L1_error)
+              __pyx_t_12 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_10); __Pyx_INCREF(__pyx_t_12); __pyx_t_10++; if (unlikely(0 < 0)) __PYX_ERR(0, 99, __pyx_L1_error)
               #else
-              __pyx_t_12 = PySequence_ITEM(__pyx_t_3, __pyx_t_10); __pyx_t_10++; if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 81, __pyx_L1_error)
+              __pyx_t_12 = PySequence_ITEM(__pyx_t_3, __pyx_t_10); __pyx_t_10++; if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 99, __pyx_L1_error)
               __Pyx_GOTREF(__pyx_t_12);
               #endif
             } else {
               if (__pyx_t_10 >= PyTuple_GET_SIZE(__pyx_t_3)) break;
               #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-              __pyx_t_12 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_10); __Pyx_INCREF(__pyx_t_12); __pyx_t_10++; if (unlikely(0 < 0)) __PYX_ERR(0, 81, __pyx_L1_error)
+              __pyx_t_12 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_10); __Pyx_INCREF(__pyx_t_12); __pyx_t_10++; if (unlikely(0 < 0)) __PYX_ERR(0, 99, __pyx_L1_error)
               #else
-              __pyx_t_12 = PySequence_ITEM(__pyx_t_3, __pyx_t_10); __pyx_t_10++; if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 81, __pyx_L1_error)
+              __pyx_t_12 = PySequence_ITEM(__pyx_t_3, __pyx_t_10); __pyx_t_10++; if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 99, __pyx_L1_error)
               __Pyx_GOTREF(__pyx_t_12);
               #endif
             }
@@ -4875,7 +4875,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
               PyObject* exc_type = PyErr_Occurred();
               if (exc_type) {
                 if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-                else __PYX_ERR(0, 81, __pyx_L1_error)
+                else __PYX_ERR(0, 99, __pyx_L1_error)
               }
               break;
             }
@@ -4887,7 +4887,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
             if (unlikely(size != 2)) {
               if (size > 2) __Pyx_RaiseTooManyValuesError(2);
               else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-              __PYX_ERR(0, 81, __pyx_L1_error)
+              __PYX_ERR(0, 99, __pyx_L1_error)
             }
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
             if (likely(PyTuple_CheckExact(sequence))) {
@@ -4900,15 +4900,15 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
             __Pyx_INCREF(__pyx_t_8);
             __Pyx_INCREF(__pyx_t_4);
             #else
-            __pyx_t_8 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 81, __pyx_L1_error)
+            __pyx_t_8 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 99, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_8);
-            __pyx_t_4 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 81, __pyx_L1_error)
+            __pyx_t_4 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 99, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_4);
             #endif
             __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
           } else {
             Py_ssize_t index = -1;
-            __pyx_t_2 = PyObject_GetIter(__pyx_t_12); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 81, __pyx_L1_error)
+            __pyx_t_2 = PyObject_GetIter(__pyx_t_12); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 99, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_2);
             __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
             __pyx_t_9 = Py_TYPE(__pyx_t_2)->tp_iternext;
@@ -4916,7 +4916,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
             __Pyx_GOTREF(__pyx_t_8);
             index = 1; __pyx_t_4 = __pyx_t_9(__pyx_t_2); if (unlikely(!__pyx_t_4)) goto __pyx_L19_unpacking_failed;
             __Pyx_GOTREF(__pyx_t_4);
-            if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_2), 2) < 0) __PYX_ERR(0, 81, __pyx_L1_error)
+            if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_2), 2) < 0) __PYX_ERR(0, 99, __pyx_L1_error)
             __pyx_t_9 = NULL;
             __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
             goto __pyx_L20_unpacking_done;
@@ -4924,7 +4924,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
             __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
             __pyx_t_9 = NULL;
             if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-            __PYX_ERR(0, 81, __pyx_L1_error)
+            __PYX_ERR(0, 99, __pyx_L1_error)
             __pyx_L20_unpacking_done:;
           }
           __Pyx_XGOTREF(__pyx_cur_scope->__pyx_v_items);
@@ -4934,16 +4934,16 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
           __Pyx_XDECREF_SET(__pyx_v_count, __pyx_t_4);
           __pyx_t_4 = 0;
 
-          /* "kovit/pjson.py":82
+          /* "kovit/pjson.py":100
  *                 i_bag = iter(bag)
  *                 for items, count in zip(i_bag, i_bag):
  *                     chain.add_to_bag(start, items, count=count)             # <<<<<<<<<<<<<<
  *     else:
  *         chain.clear()
  */
-          __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_v_chain, __pyx_n_s_add_to_bag); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 82, __pyx_L1_error)
+          __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_v_chain, __pyx_n_s_add_to_bag); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 100, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_12);
-          __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 82, __pyx_L1_error)
+          __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 100, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_4);
           __Pyx_INCREF(__pyx_v_start);
           __Pyx_GIVEREF(__pyx_v_start);
@@ -4951,17 +4951,17 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
           __Pyx_INCREF(__pyx_cur_scope->__pyx_v_items);
           __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_items);
           PyTuple_SET_ITEM(__pyx_t_4, 1, __pyx_cur_scope->__pyx_v_items);
-          __pyx_t_8 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 82, __pyx_L1_error)
+          __pyx_t_8 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 100, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_8);
-          if (PyDict_SetItem(__pyx_t_8, __pyx_n_s_count, __pyx_v_count) < 0) __PYX_ERR(0, 82, __pyx_L1_error)
-          __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_12, __pyx_t_4, __pyx_t_8); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 82, __pyx_L1_error)
+          if (PyDict_SetItem(__pyx_t_8, __pyx_n_s_count, __pyx_v_count) < 0) __PYX_ERR(0, 100, __pyx_L1_error)
+          __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_12, __pyx_t_4, __pyx_t_8); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 100, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_2);
           __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
           __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
           __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-          /* "kovit/pjson.py":81
+          /* "kovit/pjson.py":99
  *             for start, bag in zip(c_list, c_list):
  *                 i_bag = iter(bag)
  *                 for items, count in zip(i_bag, i_bag):             # <<<<<<<<<<<<<<
@@ -4971,7 +4971,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
         }
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-        /* "kovit/pjson.py":79
+        /* "kovit/pjson.py":97
  *                     chain.add_to_bag(codes[start], tuple(codes[i] for i in items), count=count)
  *         else:
  *             for start, bag in zip(c_list, c_list):             # <<<<<<<<<<<<<<
@@ -4983,7 +4983,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
     }
     __pyx_L4:;
 
-    /* "kovit/pjson.py":72
+    /* "kovit/pjson.py":90
  *     c_list = iter(obj['chain'])
  * 
  *     if merge:             # <<<<<<<<<<<<<<
@@ -4993,7 +4993,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
     goto __pyx_L3;
   }
 
-  /* "kovit/pjson.py":84
+  /* "kovit/pjson.py":102
  *                     chain.add_to_bag(start, items, count=count)
  *     else:
  *         chain.clear()             # <<<<<<<<<<<<<<
@@ -5001,7 +5001,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
  *         if codes:
  */
   /*else*/ {
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_chain, __pyx_n_s_clear); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 84, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_chain, __pyx_n_s_clear); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 102, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_t_2 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
@@ -5014,33 +5014,33 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
       }
     }
     if (__pyx_t_2) {
-      __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 84, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 102, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     } else {
-      __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 84, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 102, __pyx_L1_error)
     }
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "kovit/pjson.py":86
+    /* "kovit/pjson.py":104
  *         chain.clear()
  * 
  *         if codes:             # <<<<<<<<<<<<<<
  *             for start, bag in zip(c_list, c_list):
  *                 i_bag = iter(bag)
  */
-    __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_cur_scope->__pyx_v_codes); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 86, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_cur_scope->__pyx_v_codes); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 104, __pyx_L1_error)
     if (__pyx_t_5) {
 
-      /* "kovit/pjson.py":87
+      /* "kovit/pjson.py":105
  * 
  *         if codes:
  *             for start, bag in zip(c_list, c_list):             # <<<<<<<<<<<<<<
  *                 i_bag = iter(bag)
  *                 b = ProbabilityBag()
  */
-      __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 87, __pyx_L1_error)
+      __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 105, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_INCREF(__pyx_v_c_list);
       __Pyx_GIVEREF(__pyx_v_c_list);
@@ -5048,16 +5048,16 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
       __Pyx_INCREF(__pyx_v_c_list);
       __Pyx_GIVEREF(__pyx_v_c_list);
       PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_v_c_list);
-      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_1, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 87, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_1, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 105, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       if (likely(PyList_CheckExact(__pyx_t_3)) || PyTuple_CheckExact(__pyx_t_3)) {
         __pyx_t_1 = __pyx_t_3; __Pyx_INCREF(__pyx_t_1); __pyx_t_6 = 0;
         __pyx_t_7 = NULL;
       } else {
-        __pyx_t_6 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 87, __pyx_L1_error)
+        __pyx_t_6 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 105, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
-        __pyx_t_7 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 87, __pyx_L1_error)
+        __pyx_t_7 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 105, __pyx_L1_error)
       }
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       for (;;) {
@@ -5065,17 +5065,17 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
           if (likely(PyList_CheckExact(__pyx_t_1))) {
             if (__pyx_t_6 >= PyList_GET_SIZE(__pyx_t_1)) break;
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_3 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_6); __Pyx_INCREF(__pyx_t_3); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 87, __pyx_L1_error)
+            __pyx_t_3 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_6); __Pyx_INCREF(__pyx_t_3); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 105, __pyx_L1_error)
             #else
-            __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 87, __pyx_L1_error)
+            __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 105, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_3);
             #endif
           } else {
             if (__pyx_t_6 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_6); __Pyx_INCREF(__pyx_t_3); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 87, __pyx_L1_error)
+            __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_6); __Pyx_INCREF(__pyx_t_3); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 105, __pyx_L1_error)
             #else
-            __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 87, __pyx_L1_error)
+            __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 105, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_3);
             #endif
           }
@@ -5085,7 +5085,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
             PyObject* exc_type = PyErr_Occurred();
             if (exc_type) {
               if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-              else __PYX_ERR(0, 87, __pyx_L1_error)
+              else __PYX_ERR(0, 105, __pyx_L1_error)
             }
             break;
           }
@@ -5097,7 +5097,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
           if (unlikely(size != 2)) {
             if (size > 2) __Pyx_RaiseTooManyValuesError(2);
             else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-            __PYX_ERR(0, 87, __pyx_L1_error)
+            __PYX_ERR(0, 105, __pyx_L1_error)
           }
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
           if (likely(PyTuple_CheckExact(sequence))) {
@@ -5110,15 +5110,15 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
           __Pyx_INCREF(__pyx_t_2);
           __Pyx_INCREF(__pyx_t_8);
           #else
-          __pyx_t_2 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 87, __pyx_L1_error)
+          __pyx_t_2 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 105, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_2);
-          __pyx_t_8 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 87, __pyx_L1_error)
+          __pyx_t_8 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 105, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_8);
           #endif
           __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         } else {
           Py_ssize_t index = -1;
-          __pyx_t_4 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 87, __pyx_L1_error)
+          __pyx_t_4 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 105, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_4);
           __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
           __pyx_t_9 = Py_TYPE(__pyx_t_4)->tp_iternext;
@@ -5126,7 +5126,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
           __Pyx_GOTREF(__pyx_t_2);
           index = 1; __pyx_t_8 = __pyx_t_9(__pyx_t_4); if (unlikely(!__pyx_t_8)) goto __pyx_L24_unpacking_failed;
           __Pyx_GOTREF(__pyx_t_8);
-          if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_4), 2) < 0) __PYX_ERR(0, 87, __pyx_L1_error)
+          if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_4), 2) < 0) __PYX_ERR(0, 105, __pyx_L1_error)
           __pyx_t_9 = NULL;
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
           goto __pyx_L25_unpacking_done;
@@ -5134,7 +5134,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
           __pyx_t_9 = NULL;
           if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-          __PYX_ERR(0, 87, __pyx_L1_error)
+          __PYX_ERR(0, 105, __pyx_L1_error)
           __pyx_L25_unpacking_done:;
         }
         __Pyx_XDECREF_SET(__pyx_v_start, __pyx_t_2);
@@ -5142,26 +5142,26 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
         __Pyx_XDECREF_SET(__pyx_v_bag, __pyx_t_8);
         __pyx_t_8 = 0;
 
-        /* "kovit/pjson.py":88
+        /* "kovit/pjson.py":106
  *         if codes:
  *             for start, bag in zip(c_list, c_list):
  *                 i_bag = iter(bag)             # <<<<<<<<<<<<<<
  *                 b = ProbabilityBag()
  *                 for items, count in zip(i_bag, i_bag):
  */
-        __pyx_t_3 = PyObject_GetIter(__pyx_v_bag); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 88, __pyx_L1_error)
+        __pyx_t_3 = PyObject_GetIter(__pyx_v_bag); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 106, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_XDECREF_SET(__pyx_v_i_bag, __pyx_t_3);
         __pyx_t_3 = 0;
 
-        /* "kovit/pjson.py":89
+        /* "kovit/pjson.py":107
  *             for start, bag in zip(c_list, c_list):
  *                 i_bag = iter(bag)
  *                 b = ProbabilityBag()             # <<<<<<<<<<<<<<
  *                 for items, count in zip(i_bag, i_bag):
  *                     b.add(tuple(codes[i] for i in items), count=count)
  */
-        __pyx_t_8 = __Pyx_GetModuleGlobalName(__pyx_n_s_ProbabilityBag); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 89, __pyx_L1_error)
+        __pyx_t_8 = __Pyx_GetModuleGlobalName(__pyx_n_s_ProbabilityBag); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 107, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_8);
         __pyx_t_2 = NULL;
         if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_8))) {
@@ -5174,24 +5174,24 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
           }
         }
         if (__pyx_t_2) {
-          __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_8, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 89, __pyx_L1_error)
+          __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_8, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 107, __pyx_L1_error)
           __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         } else {
-          __pyx_t_3 = __Pyx_PyObject_CallNoArg(__pyx_t_8); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 89, __pyx_L1_error)
+          __pyx_t_3 = __Pyx_PyObject_CallNoArg(__pyx_t_8); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 107, __pyx_L1_error)
         }
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
         __Pyx_XDECREF_SET(__pyx_v_b, __pyx_t_3);
         __pyx_t_3 = 0;
 
-        /* "kovit/pjson.py":90
+        /* "kovit/pjson.py":108
  *                 i_bag = iter(bag)
  *                 b = ProbabilityBag()
  *                 for items, count in zip(i_bag, i_bag):             # <<<<<<<<<<<<<<
  *                     b.add(tuple(codes[i] for i in items), count=count)
  *                 chain.set_bag(codes[start], b)
  */
-        __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 90, __pyx_L1_error)
+        __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 108, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_INCREF(__pyx_v_i_bag);
         __Pyx_GIVEREF(__pyx_v_i_bag);
@@ -5199,16 +5199,16 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
         __Pyx_INCREF(__pyx_v_i_bag);
         __Pyx_GIVEREF(__pyx_v_i_bag);
         PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_v_i_bag);
-        __pyx_t_8 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_3, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 90, __pyx_L1_error)
+        __pyx_t_8 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_3, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 108, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_8);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         if (likely(PyList_CheckExact(__pyx_t_8)) || PyTuple_CheckExact(__pyx_t_8)) {
           __pyx_t_3 = __pyx_t_8; __Pyx_INCREF(__pyx_t_3); __pyx_t_10 = 0;
           __pyx_t_11 = NULL;
         } else {
-          __pyx_t_10 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_t_8); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 90, __pyx_L1_error)
+          __pyx_t_10 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_t_8); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 108, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_3);
-          __pyx_t_11 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 90, __pyx_L1_error)
+          __pyx_t_11 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 108, __pyx_L1_error)
         }
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
         for (;;) {
@@ -5216,17 +5216,17 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
             if (likely(PyList_CheckExact(__pyx_t_3))) {
               if (__pyx_t_10 >= PyList_GET_SIZE(__pyx_t_3)) break;
               #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-              __pyx_t_8 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_10); __Pyx_INCREF(__pyx_t_8); __pyx_t_10++; if (unlikely(0 < 0)) __PYX_ERR(0, 90, __pyx_L1_error)
+              __pyx_t_8 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_10); __Pyx_INCREF(__pyx_t_8); __pyx_t_10++; if (unlikely(0 < 0)) __PYX_ERR(0, 108, __pyx_L1_error)
               #else
-              __pyx_t_8 = PySequence_ITEM(__pyx_t_3, __pyx_t_10); __pyx_t_10++; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 90, __pyx_L1_error)
+              __pyx_t_8 = PySequence_ITEM(__pyx_t_3, __pyx_t_10); __pyx_t_10++; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 108, __pyx_L1_error)
               __Pyx_GOTREF(__pyx_t_8);
               #endif
             } else {
               if (__pyx_t_10 >= PyTuple_GET_SIZE(__pyx_t_3)) break;
               #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-              __pyx_t_8 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_10); __Pyx_INCREF(__pyx_t_8); __pyx_t_10++; if (unlikely(0 < 0)) __PYX_ERR(0, 90, __pyx_L1_error)
+              __pyx_t_8 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_10); __Pyx_INCREF(__pyx_t_8); __pyx_t_10++; if (unlikely(0 < 0)) __PYX_ERR(0, 108, __pyx_L1_error)
               #else
-              __pyx_t_8 = PySequence_ITEM(__pyx_t_3, __pyx_t_10); __pyx_t_10++; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 90, __pyx_L1_error)
+              __pyx_t_8 = PySequence_ITEM(__pyx_t_3, __pyx_t_10); __pyx_t_10++; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 108, __pyx_L1_error)
               __Pyx_GOTREF(__pyx_t_8);
               #endif
             }
@@ -5236,7 +5236,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
               PyObject* exc_type = PyErr_Occurred();
               if (exc_type) {
                 if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-                else __PYX_ERR(0, 90, __pyx_L1_error)
+                else __PYX_ERR(0, 108, __pyx_L1_error)
               }
               break;
             }
@@ -5248,7 +5248,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
             if (unlikely(size != 2)) {
               if (size > 2) __Pyx_RaiseTooManyValuesError(2);
               else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-              __PYX_ERR(0, 90, __pyx_L1_error)
+              __PYX_ERR(0, 108, __pyx_L1_error)
             }
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
             if (likely(PyTuple_CheckExact(sequence))) {
@@ -5261,15 +5261,15 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
             __Pyx_INCREF(__pyx_t_2);
             __Pyx_INCREF(__pyx_t_4);
             #else
-            __pyx_t_2 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 90, __pyx_L1_error)
+            __pyx_t_2 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 108, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_2);
-            __pyx_t_4 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 90, __pyx_L1_error)
+            __pyx_t_4 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 108, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_4);
             #endif
             __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
           } else {
             Py_ssize_t index = -1;
-            __pyx_t_12 = PyObject_GetIter(__pyx_t_8); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 90, __pyx_L1_error)
+            __pyx_t_12 = PyObject_GetIter(__pyx_t_8); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 108, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_12);
             __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
             __pyx_t_9 = Py_TYPE(__pyx_t_12)->tp_iternext;
@@ -5277,7 +5277,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
             __Pyx_GOTREF(__pyx_t_2);
             index = 1; __pyx_t_4 = __pyx_t_9(__pyx_t_12); if (unlikely(!__pyx_t_4)) goto __pyx_L28_unpacking_failed;
             __Pyx_GOTREF(__pyx_t_4);
-            if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_12), 2) < 0) __PYX_ERR(0, 90, __pyx_L1_error)
+            if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_12), 2) < 0) __PYX_ERR(0, 108, __pyx_L1_error)
             __pyx_t_9 = NULL;
             __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
             goto __pyx_L29_unpacking_done;
@@ -5285,7 +5285,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
             __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
             __pyx_t_9 = NULL;
             if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-            __PYX_ERR(0, 90, __pyx_L1_error)
+            __PYX_ERR(0, 108, __pyx_L1_error)
             __pyx_L29_unpacking_done:;
           }
           __Pyx_XGOTREF(__pyx_cur_scope->__pyx_v_items);
@@ -5295,36 +5295,36 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
           __Pyx_XDECREF_SET(__pyx_v_count, __pyx_t_4);
           __pyx_t_4 = 0;
 
-          /* "kovit/pjson.py":91
+          /* "kovit/pjson.py":109
  *                 b = ProbabilityBag()
  *                 for items, count in zip(i_bag, i_bag):
  *                     b.add(tuple(codes[i] for i in items), count=count)             # <<<<<<<<<<<<<<
  *                 chain.set_bag(codes[start], b)
  *         else:
  */
-          __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_v_b, __pyx_n_s_add); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 91, __pyx_L1_error)
+          __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_v_b, __pyx_n_s_add); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 109, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_8);
-          __pyx_t_4 = __pyx_pf_5kovit_5cjson_15load_json_small_3genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 91, __pyx_L1_error)
+          __pyx_t_4 = __pyx_pf_5kovit_5cjson_15load_json_small_3genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 109, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_4);
-          __pyx_t_2 = __Pyx_PySequence_Tuple(__pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 91, __pyx_L1_error)
+          __pyx_t_2 = __Pyx_PySequence_Tuple(__pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 109, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_2);
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-          __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 91, __pyx_L1_error)
+          __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 109, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_4);
           __Pyx_GIVEREF(__pyx_t_2);
           PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_2);
           __pyx_t_2 = 0;
-          __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 91, __pyx_L1_error)
+          __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 109, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_2);
-          if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_count, __pyx_v_count) < 0) __PYX_ERR(0, 91, __pyx_L1_error)
-          __pyx_t_12 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 91, __pyx_L1_error)
+          if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_count, __pyx_v_count) < 0) __PYX_ERR(0, 109, __pyx_L1_error)
+          __pyx_t_12 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 109, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_12);
           __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
           __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
           __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
 
-          /* "kovit/pjson.py":90
+          /* "kovit/pjson.py":108
  *                 i_bag = iter(bag)
  *                 b = ProbabilityBag()
  *                 for items, count in zip(i_bag, i_bag):             # <<<<<<<<<<<<<<
@@ -5334,16 +5334,16 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
         }
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-        /* "kovit/pjson.py":92
+        /* "kovit/pjson.py":110
  *                 for items, count in zip(i_bag, i_bag):
  *                     b.add(tuple(codes[i] for i in items), count=count)
  *                 chain.set_bag(codes[start], b)             # <<<<<<<<<<<<<<
  *         else:
  *             for start, bag in zip(c_list, c_list):
  */
-        __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_v_chain, __pyx_n_s_set_bag); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 92, __pyx_L1_error)
+        __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_v_chain, __pyx_n_s_set_bag); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 110, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_12);
-        __pyx_t_2 = __Pyx_PyDict_GetItem(__pyx_cur_scope->__pyx_v_codes, __pyx_v_start); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 92, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyDict_GetItem(__pyx_cur_scope->__pyx_v_codes, __pyx_v_start); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 110, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __pyx_t_4 = NULL;
         __pyx_t_13 = 0;
@@ -5360,7 +5360,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
         #if CYTHON_FAST_PYCALL
         if (PyFunction_Check(__pyx_t_12)) {
           PyObject *__pyx_temp[3] = {__pyx_t_4, __pyx_t_2, __pyx_v_b};
-          __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_12, __pyx_temp+1-__pyx_t_13, 2+__pyx_t_13); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 92, __pyx_L1_error)
+          __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_12, __pyx_temp+1-__pyx_t_13, 2+__pyx_t_13); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 110, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
           __Pyx_GOTREF(__pyx_t_3);
           __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -5369,14 +5369,14 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
         #if CYTHON_FAST_PYCCALL
         if (__Pyx_PyFastCFunction_Check(__pyx_t_12)) {
           PyObject *__pyx_temp[3] = {__pyx_t_4, __pyx_t_2, __pyx_v_b};
-          __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_12, __pyx_temp+1-__pyx_t_13, 2+__pyx_t_13); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 92, __pyx_L1_error)
+          __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_12, __pyx_temp+1-__pyx_t_13, 2+__pyx_t_13); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 110, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
           __Pyx_GOTREF(__pyx_t_3);
           __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         } else
         #endif
         {
-          __pyx_t_8 = PyTuple_New(2+__pyx_t_13); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 92, __pyx_L1_error)
+          __pyx_t_8 = PyTuple_New(2+__pyx_t_13); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 110, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_8);
           if (__pyx_t_4) {
             __Pyx_GIVEREF(__pyx_t_4); PyTuple_SET_ITEM(__pyx_t_8, 0, __pyx_t_4); __pyx_t_4 = NULL;
@@ -5387,14 +5387,14 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
           __Pyx_GIVEREF(__pyx_v_b);
           PyTuple_SET_ITEM(__pyx_t_8, 1+__pyx_t_13, __pyx_v_b);
           __pyx_t_2 = 0;
-          __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_12, __pyx_t_8, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 92, __pyx_L1_error)
+          __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_12, __pyx_t_8, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 110, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_3);
           __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
         }
         __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-        /* "kovit/pjson.py":87
+        /* "kovit/pjson.py":105
  * 
  *         if codes:
  *             for start, bag in zip(c_list, c_list):             # <<<<<<<<<<<<<<
@@ -5404,7 +5404,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
       }
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-      /* "kovit/pjson.py":86
+      /* "kovit/pjson.py":104
  *         chain.clear()
  * 
  *         if codes:             # <<<<<<<<<<<<<<
@@ -5414,7 +5414,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
       goto __pyx_L21;
     }
 
-    /* "kovit/pjson.py":94
+    /* "kovit/pjson.py":112
  *                 chain.set_bag(codes[start], b)
  *         else:
  *             for start, bag in zip(c_list, c_list):             # <<<<<<<<<<<<<<
@@ -5422,7 +5422,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
  *                 b = ProbabilityBag()
  */
     /*else*/ {
-      __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 94, __pyx_L1_error)
+      __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 112, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_INCREF(__pyx_v_c_list);
       __Pyx_GIVEREF(__pyx_v_c_list);
@@ -5430,16 +5430,16 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
       __Pyx_INCREF(__pyx_v_c_list);
       __Pyx_GIVEREF(__pyx_v_c_list);
       PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_v_c_list);
-      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_1, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 94, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_1, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 112, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       if (likely(PyList_CheckExact(__pyx_t_3)) || PyTuple_CheckExact(__pyx_t_3)) {
         __pyx_t_1 = __pyx_t_3; __Pyx_INCREF(__pyx_t_1); __pyx_t_6 = 0;
         __pyx_t_7 = NULL;
       } else {
-        __pyx_t_6 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 94, __pyx_L1_error)
+        __pyx_t_6 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 112, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
-        __pyx_t_7 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 94, __pyx_L1_error)
+        __pyx_t_7 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 112, __pyx_L1_error)
       }
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       for (;;) {
@@ -5447,17 +5447,17 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
           if (likely(PyList_CheckExact(__pyx_t_1))) {
             if (__pyx_t_6 >= PyList_GET_SIZE(__pyx_t_1)) break;
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_3 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_6); __Pyx_INCREF(__pyx_t_3); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 94, __pyx_L1_error)
+            __pyx_t_3 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_6); __Pyx_INCREF(__pyx_t_3); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 112, __pyx_L1_error)
             #else
-            __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 94, __pyx_L1_error)
+            __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 112, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_3);
             #endif
           } else {
             if (__pyx_t_6 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_6); __Pyx_INCREF(__pyx_t_3); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 94, __pyx_L1_error)
+            __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_6); __Pyx_INCREF(__pyx_t_3); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 112, __pyx_L1_error)
             #else
-            __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 94, __pyx_L1_error)
+            __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 112, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_3);
             #endif
           }
@@ -5467,7 +5467,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
             PyObject* exc_type = PyErr_Occurred();
             if (exc_type) {
               if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-              else __PYX_ERR(0, 94, __pyx_L1_error)
+              else __PYX_ERR(0, 112, __pyx_L1_error)
             }
             break;
           }
@@ -5479,7 +5479,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
           if (unlikely(size != 2)) {
             if (size > 2) __Pyx_RaiseTooManyValuesError(2);
             else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-            __PYX_ERR(0, 94, __pyx_L1_error)
+            __PYX_ERR(0, 112, __pyx_L1_error)
           }
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
           if (likely(PyTuple_CheckExact(sequence))) {
@@ -5492,15 +5492,15 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
           __Pyx_INCREF(__pyx_t_12);
           __Pyx_INCREF(__pyx_t_8);
           #else
-          __pyx_t_12 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 94, __pyx_L1_error)
+          __pyx_t_12 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 112, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_12);
-          __pyx_t_8 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 94, __pyx_L1_error)
+          __pyx_t_8 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 112, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_8);
           #endif
           __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         } else {
           Py_ssize_t index = -1;
-          __pyx_t_2 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 94, __pyx_L1_error)
+          __pyx_t_2 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 112, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_2);
           __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
           __pyx_t_9 = Py_TYPE(__pyx_t_2)->tp_iternext;
@@ -5508,7 +5508,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
           __Pyx_GOTREF(__pyx_t_12);
           index = 1; __pyx_t_8 = __pyx_t_9(__pyx_t_2); if (unlikely(!__pyx_t_8)) goto __pyx_L32_unpacking_failed;
           __Pyx_GOTREF(__pyx_t_8);
-          if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_2), 2) < 0) __PYX_ERR(0, 94, __pyx_L1_error)
+          if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_2), 2) < 0) __PYX_ERR(0, 112, __pyx_L1_error)
           __pyx_t_9 = NULL;
           __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
           goto __pyx_L33_unpacking_done;
@@ -5516,7 +5516,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
           __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
           __pyx_t_9 = NULL;
           if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-          __PYX_ERR(0, 94, __pyx_L1_error)
+          __PYX_ERR(0, 112, __pyx_L1_error)
           __pyx_L33_unpacking_done:;
         }
         __Pyx_XDECREF_SET(__pyx_v_start, __pyx_t_12);
@@ -5524,26 +5524,26 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
         __Pyx_XDECREF_SET(__pyx_v_bag, __pyx_t_8);
         __pyx_t_8 = 0;
 
-        /* "kovit/pjson.py":95
+        /* "kovit/pjson.py":113
  *         else:
  *             for start, bag in zip(c_list, c_list):
  *                 i_bag = iter(bag)             # <<<<<<<<<<<<<<
  *                 b = ProbabilityBag()
  *                 for items, count in zip(i_bag, i_bag):
  */
-        __pyx_t_3 = PyObject_GetIter(__pyx_v_bag); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 95, __pyx_L1_error)
+        __pyx_t_3 = PyObject_GetIter(__pyx_v_bag); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 113, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_XDECREF_SET(__pyx_v_i_bag, __pyx_t_3);
         __pyx_t_3 = 0;
 
-        /* "kovit/pjson.py":96
+        /* "kovit/pjson.py":114
  *             for start, bag in zip(c_list, c_list):
  *                 i_bag = iter(bag)
  *                 b = ProbabilityBag()             # <<<<<<<<<<<<<<
  *                 for items, count in zip(i_bag, i_bag):
  *                     b.add(tuple(items), count=count)
  */
-        __pyx_t_8 = __Pyx_GetModuleGlobalName(__pyx_n_s_ProbabilityBag); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 96, __pyx_L1_error)
+        __pyx_t_8 = __Pyx_GetModuleGlobalName(__pyx_n_s_ProbabilityBag); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 114, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_8);
         __pyx_t_12 = NULL;
         if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_8))) {
@@ -5556,24 +5556,24 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
           }
         }
         if (__pyx_t_12) {
-          __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_8, __pyx_t_12); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 96, __pyx_L1_error)
+          __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_8, __pyx_t_12); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 114, __pyx_L1_error)
           __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
         } else {
-          __pyx_t_3 = __Pyx_PyObject_CallNoArg(__pyx_t_8); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 96, __pyx_L1_error)
+          __pyx_t_3 = __Pyx_PyObject_CallNoArg(__pyx_t_8); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 114, __pyx_L1_error)
         }
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
         __Pyx_XDECREF_SET(__pyx_v_b, __pyx_t_3);
         __pyx_t_3 = 0;
 
-        /* "kovit/pjson.py":97
+        /* "kovit/pjson.py":115
  *                 i_bag = iter(bag)
  *                 b = ProbabilityBag()
  *                 for items, count in zip(i_bag, i_bag):             # <<<<<<<<<<<<<<
  *                     b.add(tuple(items), count=count)
  *                 chain.set_bag(start, b)
  */
-        __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 97, __pyx_L1_error)
+        __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 115, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_INCREF(__pyx_v_i_bag);
         __Pyx_GIVEREF(__pyx_v_i_bag);
@@ -5581,16 +5581,16 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
         __Pyx_INCREF(__pyx_v_i_bag);
         __Pyx_GIVEREF(__pyx_v_i_bag);
         PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_v_i_bag);
-        __pyx_t_8 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_3, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 97, __pyx_L1_error)
+        __pyx_t_8 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_3, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 115, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_8);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         if (likely(PyList_CheckExact(__pyx_t_8)) || PyTuple_CheckExact(__pyx_t_8)) {
           __pyx_t_3 = __pyx_t_8; __Pyx_INCREF(__pyx_t_3); __pyx_t_10 = 0;
           __pyx_t_11 = NULL;
         } else {
-          __pyx_t_10 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_t_8); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 97, __pyx_L1_error)
+          __pyx_t_10 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_t_8); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 115, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_3);
-          __pyx_t_11 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 97, __pyx_L1_error)
+          __pyx_t_11 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 115, __pyx_L1_error)
         }
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
         for (;;) {
@@ -5598,17 +5598,17 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
             if (likely(PyList_CheckExact(__pyx_t_3))) {
               if (__pyx_t_10 >= PyList_GET_SIZE(__pyx_t_3)) break;
               #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-              __pyx_t_8 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_10); __Pyx_INCREF(__pyx_t_8); __pyx_t_10++; if (unlikely(0 < 0)) __PYX_ERR(0, 97, __pyx_L1_error)
+              __pyx_t_8 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_10); __Pyx_INCREF(__pyx_t_8); __pyx_t_10++; if (unlikely(0 < 0)) __PYX_ERR(0, 115, __pyx_L1_error)
               #else
-              __pyx_t_8 = PySequence_ITEM(__pyx_t_3, __pyx_t_10); __pyx_t_10++; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 97, __pyx_L1_error)
+              __pyx_t_8 = PySequence_ITEM(__pyx_t_3, __pyx_t_10); __pyx_t_10++; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 115, __pyx_L1_error)
               __Pyx_GOTREF(__pyx_t_8);
               #endif
             } else {
               if (__pyx_t_10 >= PyTuple_GET_SIZE(__pyx_t_3)) break;
               #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-              __pyx_t_8 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_10); __Pyx_INCREF(__pyx_t_8); __pyx_t_10++; if (unlikely(0 < 0)) __PYX_ERR(0, 97, __pyx_L1_error)
+              __pyx_t_8 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_10); __Pyx_INCREF(__pyx_t_8); __pyx_t_10++; if (unlikely(0 < 0)) __PYX_ERR(0, 115, __pyx_L1_error)
               #else
-              __pyx_t_8 = PySequence_ITEM(__pyx_t_3, __pyx_t_10); __pyx_t_10++; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 97, __pyx_L1_error)
+              __pyx_t_8 = PySequence_ITEM(__pyx_t_3, __pyx_t_10); __pyx_t_10++; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 115, __pyx_L1_error)
               __Pyx_GOTREF(__pyx_t_8);
               #endif
             }
@@ -5618,7 +5618,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
               PyObject* exc_type = PyErr_Occurred();
               if (exc_type) {
                 if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-                else __PYX_ERR(0, 97, __pyx_L1_error)
+                else __PYX_ERR(0, 115, __pyx_L1_error)
               }
               break;
             }
@@ -5630,7 +5630,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
             if (unlikely(size != 2)) {
               if (size > 2) __Pyx_RaiseTooManyValuesError(2);
               else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-              __PYX_ERR(0, 97, __pyx_L1_error)
+              __PYX_ERR(0, 115, __pyx_L1_error)
             }
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
             if (likely(PyTuple_CheckExact(sequence))) {
@@ -5643,15 +5643,15 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
             __Pyx_INCREF(__pyx_t_12);
             __Pyx_INCREF(__pyx_t_2);
             #else
-            __pyx_t_12 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 97, __pyx_L1_error)
+            __pyx_t_12 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 115, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_12);
-            __pyx_t_2 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 97, __pyx_L1_error)
+            __pyx_t_2 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 115, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_2);
             #endif
             __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
           } else {
             Py_ssize_t index = -1;
-            __pyx_t_4 = PyObject_GetIter(__pyx_t_8); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 97, __pyx_L1_error)
+            __pyx_t_4 = PyObject_GetIter(__pyx_t_8); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 115, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_4);
             __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
             __pyx_t_9 = Py_TYPE(__pyx_t_4)->tp_iternext;
@@ -5659,7 +5659,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
             __Pyx_GOTREF(__pyx_t_12);
             index = 1; __pyx_t_2 = __pyx_t_9(__pyx_t_4); if (unlikely(!__pyx_t_2)) goto __pyx_L36_unpacking_failed;
             __Pyx_GOTREF(__pyx_t_2);
-            if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_4), 2) < 0) __PYX_ERR(0, 97, __pyx_L1_error)
+            if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_4), 2) < 0) __PYX_ERR(0, 115, __pyx_L1_error)
             __pyx_t_9 = NULL;
             __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
             goto __pyx_L37_unpacking_done;
@@ -5667,7 +5667,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
             __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
             __pyx_t_9 = NULL;
             if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-            __PYX_ERR(0, 97, __pyx_L1_error)
+            __PYX_ERR(0, 115, __pyx_L1_error)
             __pyx_L37_unpacking_done:;
           }
           __Pyx_XGOTREF(__pyx_cur_scope->__pyx_v_items);
@@ -5677,33 +5677,33 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
           __Pyx_XDECREF_SET(__pyx_v_count, __pyx_t_2);
           __pyx_t_2 = 0;
 
-          /* "kovit/pjson.py":98
+          /* "kovit/pjson.py":116
  *                 b = ProbabilityBag()
  *                 for items, count in zip(i_bag, i_bag):
  *                     b.add(tuple(items), count=count)             # <<<<<<<<<<<<<<
  *                 chain.set_bag(start, b)
  * 
  */
-          __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_v_b, __pyx_n_s_add); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 98, __pyx_L1_error)
+          __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_v_b, __pyx_n_s_add); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 116, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_8);
-          __pyx_t_2 = __Pyx_PySequence_Tuple(__pyx_cur_scope->__pyx_v_items); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 98, __pyx_L1_error)
+          __pyx_t_2 = __Pyx_PySequence_Tuple(__pyx_cur_scope->__pyx_v_items); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 116, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_2);
-          __pyx_t_12 = PyTuple_New(1); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 98, __pyx_L1_error)
+          __pyx_t_12 = PyTuple_New(1); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 116, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_12);
           __Pyx_GIVEREF(__pyx_t_2);
           PyTuple_SET_ITEM(__pyx_t_12, 0, __pyx_t_2);
           __pyx_t_2 = 0;
-          __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 98, __pyx_L1_error)
+          __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 116, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_2);
-          if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_count, __pyx_v_count) < 0) __PYX_ERR(0, 98, __pyx_L1_error)
-          __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_t_12, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 98, __pyx_L1_error)
+          if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_count, __pyx_v_count) < 0) __PYX_ERR(0, 116, __pyx_L1_error)
+          __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_t_12, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 116, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_4);
           __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
           __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
           __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-          /* "kovit/pjson.py":97
+          /* "kovit/pjson.py":115
  *                 i_bag = iter(bag)
  *                 b = ProbabilityBag()
  *                 for items, count in zip(i_bag, i_bag):             # <<<<<<<<<<<<<<
@@ -5713,14 +5713,14 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
         }
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-        /* "kovit/pjson.py":99
+        /* "kovit/pjson.py":117
  *                 for items, count in zip(i_bag, i_bag):
  *                     b.add(tuple(items), count=count)
  *                 chain.set_bag(start, b)             # <<<<<<<<<<<<<<
  * 
  * 
  */
-        __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_chain, __pyx_n_s_set_bag); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 99, __pyx_L1_error)
+        __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_chain, __pyx_n_s_set_bag); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 117, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         __pyx_t_2 = NULL;
         __pyx_t_13 = 0;
@@ -5737,7 +5737,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
         #if CYTHON_FAST_PYCALL
         if (PyFunction_Check(__pyx_t_4)) {
           PyObject *__pyx_temp[3] = {__pyx_t_2, __pyx_v_start, __pyx_v_b};
-          __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_13, 2+__pyx_t_13); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 99, __pyx_L1_error)
+          __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_13, 2+__pyx_t_13); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 117, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
           __Pyx_GOTREF(__pyx_t_3);
         } else
@@ -5745,13 +5745,13 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
         #if CYTHON_FAST_PYCCALL
         if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
           PyObject *__pyx_temp[3] = {__pyx_t_2, __pyx_v_start, __pyx_v_b};
-          __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_13, 2+__pyx_t_13); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 99, __pyx_L1_error)
+          __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_13, 2+__pyx_t_13); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 117, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
           __Pyx_GOTREF(__pyx_t_3);
         } else
         #endif
         {
-          __pyx_t_12 = PyTuple_New(2+__pyx_t_13); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 99, __pyx_L1_error)
+          __pyx_t_12 = PyTuple_New(2+__pyx_t_13); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 117, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_12);
           if (__pyx_t_2) {
             __Pyx_GIVEREF(__pyx_t_2); PyTuple_SET_ITEM(__pyx_t_12, 0, __pyx_t_2); __pyx_t_2 = NULL;
@@ -5762,14 +5762,14 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
           __Pyx_INCREF(__pyx_v_b);
           __Pyx_GIVEREF(__pyx_v_b);
           PyTuple_SET_ITEM(__pyx_t_12, 1+__pyx_t_13, __pyx_v_b);
-          __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_12, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 99, __pyx_L1_error)
+          __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_12, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 117, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_3);
           __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
         }
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-        /* "kovit/pjson.py":94
+        /* "kovit/pjson.py":112
  *                 chain.set_bag(codes[start], b)
  *         else:
  *             for start, bag in zip(c_list, c_list):             # <<<<<<<<<<<<<<
@@ -5783,12 +5783,12 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
   }
   __pyx_L3:;
 
-  /* "kovit/pjson.py":63
+  /* "kovit/pjson.py":82
  * 
  * 
  * def load_json_small(chain, file, merge=False):             # <<<<<<<<<<<<<<
- * 
  *     obj = json.load(file)
+ * 
  */
 
   /* function exit code */
@@ -5818,7 +5818,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
   return __pyx_r;
 }
 
-/* "kovit/pjson.py":102
+/* "kovit/pjson.py":120
  * 
  * 
  * def dump_json_big(chain, file, frequency_compress=True):             # <<<<<<<<<<<<<<
@@ -5862,7 +5862,7 @@ static PyObject *__pyx_pw_5kovit_5cjson_5dump_json_big(PyObject *__pyx_self, PyO
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_file)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("dump_json_big", 0, 2, 3, 1); __PYX_ERR(0, 102, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("dump_json_big", 0, 2, 3, 1); __PYX_ERR(0, 120, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -5872,7 +5872,7 @@ static PyObject *__pyx_pw_5kovit_5cjson_5dump_json_big(PyObject *__pyx_self, PyO
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "dump_json_big") < 0)) __PYX_ERR(0, 102, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "dump_json_big") < 0)) __PYX_ERR(0, 120, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -5890,7 +5890,7 @@ static PyObject *__pyx_pw_5kovit_5cjson_5dump_json_big(PyObject *__pyx_self, PyO
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("dump_json_big", 0, 2, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 102, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("dump_json_big", 0, 2, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 120, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("kovit.cjson.dump_json_big", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -5903,7 +5903,7 @@ static PyObject *__pyx_pw_5kovit_5cjson_5dump_json_big(PyObject *__pyx_self, PyO
   return __pyx_r;
 }
 
-/* "kovit/pjson.py":123
+/* "kovit/pjson.py":141
  *             file.write('{},{}{}'.format(w_code, value, ',' if code != end_freqs else ''))
  * 
  *         def write_start(start):             # <<<<<<<<<<<<<<
@@ -5941,24 +5941,24 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_write_start(PyObject *__
   __pyx_outer_scope = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_8_dump_json_big *) __Pyx_CyFunction_GetClosure(__pyx_self);
   __pyx_cur_scope = __pyx_outer_scope;
 
-  /* "kovit/pjson.py":124
+  /* "kovit/pjson.py":142
  * 
  *         def write_start(start):
  *             file.write('{},['.format(codes[start]))             # <<<<<<<<<<<<<<
  * 
  *         def write_next_start(next_start):
  */
-  if (unlikely(!__pyx_cur_scope->__pyx_v_file)) { __Pyx_RaiseClosureNameError("file"); __PYX_ERR(0, 124, __pyx_L1_error) }
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_file, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 124, __pyx_L1_error)
+  if (unlikely(!__pyx_cur_scope->__pyx_v_file)) { __Pyx_RaiseClosureNameError("file"); __PYX_ERR(0, 142, __pyx_L1_error) }
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_file, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 142, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_kp_s__11, __pyx_n_s_format); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 124, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_kp_s__11, __pyx_n_s_format); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 142, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (unlikely(!__pyx_cur_scope->__pyx_v_codes)) { __Pyx_RaiseClosureNameError("codes"); __PYX_ERR(0, 124, __pyx_L1_error) }
+  if (unlikely(!__pyx_cur_scope->__pyx_v_codes)) { __Pyx_RaiseClosureNameError("codes"); __PYX_ERR(0, 142, __pyx_L1_error) }
   if (unlikely(__pyx_cur_scope->__pyx_v_codes == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-    __PYX_ERR(0, 124, __pyx_L1_error)
+    __PYX_ERR(0, 142, __pyx_L1_error)
   }
-  __pyx_t_5 = __Pyx_PyDict_GetItem(__pyx_cur_scope->__pyx_v_codes, __pyx_v_start); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 124, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyDict_GetItem(__pyx_cur_scope->__pyx_v_codes, __pyx_v_start); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 142, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __pyx_t_6 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_4))) {
@@ -5971,14 +5971,14 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_write_start(PyObject *__
     }
   }
   if (!__pyx_t_6) {
-    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 124, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 142, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_GOTREF(__pyx_t_3);
   } else {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_4)) {
       PyObject *__pyx_temp[2] = {__pyx_t_6, __pyx_t_5};
-      __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 124, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 142, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -5987,20 +5987,20 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_write_start(PyObject *__
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
       PyObject *__pyx_temp[2] = {__pyx_t_6, __pyx_t_5};
-      __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 124, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 142, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     } else
     #endif
     {
-      __pyx_t_7 = PyTuple_New(1+1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 124, __pyx_L1_error)
+      __pyx_t_7 = PyTuple_New(1+1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 142, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       __Pyx_GIVEREF(__pyx_t_6); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_6); __pyx_t_6 = NULL;
       __Pyx_GIVEREF(__pyx_t_5);
       PyTuple_SET_ITEM(__pyx_t_7, 0+1, __pyx_t_5);
       __pyx_t_5 = 0;
-      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_7, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 124, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_7, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 142, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     }
@@ -6017,14 +6017,14 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_write_start(PyObject *__
     }
   }
   if (!__pyx_t_4) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 124, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 142, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_GOTREF(__pyx_t_1);
   } else {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_2)) {
       PyObject *__pyx_temp[2] = {__pyx_t_4, __pyx_t_3};
-      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 124, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 142, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -6033,20 +6033,20 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_write_start(PyObject *__
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
       PyObject *__pyx_temp[2] = {__pyx_t_4, __pyx_t_3};
-      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 124, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 142, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     } else
     #endif
     {
-      __pyx_t_7 = PyTuple_New(1+1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 124, __pyx_L1_error)
+      __pyx_t_7 = PyTuple_New(1+1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 142, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       __Pyx_GIVEREF(__pyx_t_4); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_4); __pyx_t_4 = NULL;
       __Pyx_GIVEREF(__pyx_t_3);
       PyTuple_SET_ITEM(__pyx_t_7, 0+1, __pyx_t_3);
       __pyx_t_3 = 0;
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_7, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 124, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_7, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 142, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     }
@@ -6054,7 +6054,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_write_start(PyObject *__
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "kovit/pjson.py":123
+  /* "kovit/pjson.py":141
  *             file.write('{},{}{}'.format(w_code, value, ',' if code != end_freqs else ''))
  * 
  *         def write_start(start):             # <<<<<<<<<<<<<<
@@ -6081,7 +6081,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_write_start(PyObject *__
   return __pyx_r;
 }
 
-/* "kovit/pjson.py":126
+/* "kovit/pjson.py":144
  *             file.write('{},['.format(codes[start]))
  * 
  *         def write_next_start(next_start):             # <<<<<<<<<<<<<<
@@ -6104,7 +6104,7 @@ static PyObject *__pyx_pw_5kovit_5cjson_13dump_json_big_3write_next_start(PyObje
 }
 static PyObject *__pyx_gb_5kovit_5cjson_13dump_json_big_16write_next_start_2generator6(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
-/* "kovit/pjson.py":127
+/* "kovit/pjson.py":145
  * 
  *         def write_next_start(next_start):
  *             file.write('[' + ','.join(str(codes[n]) for n in next_start) + ']')             # <<<<<<<<<<<<<<
@@ -6121,7 +6121,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_16write_next_start_genex
   if (unlikely(!__pyx_cur_scope)) {
     __pyx_cur_scope = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_10_genexpr *)Py_None);
     __Pyx_INCREF(Py_None);
-    __PYX_ERR(0, 127, __pyx_L1_error)
+    __PYX_ERR(0, 145, __pyx_L1_error)
   } else {
     __Pyx_GOTREF(__pyx_cur_scope);
   }
@@ -6129,7 +6129,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_16write_next_start_genex
   __Pyx_INCREF(((PyObject *)__pyx_cur_scope->__pyx_outer_scope));
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_outer_scope);
   {
-    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_5kovit_5cjson_13dump_json_big_16write_next_start_2generator6, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_genexpr, __pyx_n_s_dump_json_big_locals_write_next, __pyx_n_s_kovit_cjson); if (unlikely(!gen)) __PYX_ERR(0, 127, __pyx_L1_error)
+    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_5kovit_5cjson_13dump_json_big_16write_next_start_2generator6, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_genexpr, __pyx_n_s_dump_json_big_locals_write_next, __pyx_n_s_kovit_cjson); if (unlikely(!gen)) __PYX_ERR(0, 145, __pyx_L1_error)
     __Pyx_DECREF(__pyx_cur_scope);
     __Pyx_RefNannyFinishContext();
     return (PyObject *) gen;
@@ -6164,32 +6164,32 @@ static PyObject *__pyx_gb_5kovit_5cjson_13dump_json_big_16write_next_start_2gene
     return NULL;
   }
   __pyx_L3_first_run:;
-  if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 127, __pyx_L1_error)
-  if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_next_start)) { __Pyx_RaiseClosureNameError("next_start"); __PYX_ERR(0, 127, __pyx_L1_error) }
+  if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 145, __pyx_L1_error)
+  if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_next_start)) { __Pyx_RaiseClosureNameError("next_start"); __PYX_ERR(0, 145, __pyx_L1_error) }
   if (likely(PyList_CheckExact(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_next_start)) || PyTuple_CheckExact(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_next_start)) {
     __pyx_t_1 = __pyx_cur_scope->__pyx_outer_scope->__pyx_v_next_start; __Pyx_INCREF(__pyx_t_1); __pyx_t_2 = 0;
     __pyx_t_3 = NULL;
   } else {
-    __pyx_t_2 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_next_start); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 127, __pyx_L1_error)
+    __pyx_t_2 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_next_start); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 145, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_3 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 127, __pyx_L1_error)
+    __pyx_t_3 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 145, __pyx_L1_error)
   }
   for (;;) {
     if (likely(!__pyx_t_3)) {
       if (likely(PyList_CheckExact(__pyx_t_1))) {
         if (__pyx_t_2 >= PyList_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 127, __pyx_L1_error)
+        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 145, __pyx_L1_error)
         #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 127, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 145, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       } else {
         if (__pyx_t_2 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 127, __pyx_L1_error)
+        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 145, __pyx_L1_error)
         #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 127, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 145, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       }
@@ -6199,7 +6199,7 @@ static PyObject *__pyx_gb_5kovit_5cjson_13dump_json_big_16write_next_start_2gene
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 127, __pyx_L1_error)
+          else __PYX_ERR(0, 145, __pyx_L1_error)
         }
         break;
       }
@@ -6209,14 +6209,14 @@ static PyObject *__pyx_gb_5kovit_5cjson_13dump_json_big_16write_next_start_2gene
     __Pyx_XDECREF_SET(__pyx_cur_scope->__pyx_v_n, __pyx_t_4);
     __Pyx_GIVEREF(__pyx_t_4);
     __pyx_t_4 = 0;
-    if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_outer_scope->__pyx_v_codes)) { __Pyx_RaiseClosureNameError("codes"); __PYX_ERR(0, 127, __pyx_L1_error) }
+    if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_outer_scope->__pyx_v_codes)) { __Pyx_RaiseClosureNameError("codes"); __PYX_ERR(0, 145, __pyx_L1_error) }
     if (unlikely(__pyx_cur_scope->__pyx_outer_scope->__pyx_outer_scope->__pyx_v_codes == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(0, 127, __pyx_L1_error)
+      __PYX_ERR(0, 145, __pyx_L1_error)
     }
-    __pyx_t_4 = __Pyx_PyDict_GetItem(__pyx_cur_scope->__pyx_outer_scope->__pyx_outer_scope->__pyx_v_codes, __pyx_cur_scope->__pyx_v_n); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 127, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyDict_GetItem(__pyx_cur_scope->__pyx_outer_scope->__pyx_outer_scope->__pyx_v_codes, __pyx_cur_scope->__pyx_v_n); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 145, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = __Pyx_PyObject_CallOneArg(((PyObject *)(&PyString_Type)), __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 127, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_CallOneArg(((PyObject *)(&PyString_Type)), __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 145, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_r = __pyx_t_5;
@@ -6237,7 +6237,7 @@ static PyObject *__pyx_gb_5kovit_5cjson_13dump_json_big_16write_next_start_2gene
     __Pyx_XGOTREF(__pyx_t_1);
     __pyx_t_2 = __pyx_cur_scope->__pyx_t_1;
     __pyx_t_3 = __pyx_cur_scope->__pyx_t_2;
-    if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 127, __pyx_L1_error)
+    if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 145, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
@@ -6259,7 +6259,7 @@ static PyObject *__pyx_gb_5kovit_5cjson_13dump_json_big_16write_next_start_2gene
   return __pyx_r;
 }
 
-/* "kovit/pjson.py":126
+/* "kovit/pjson.py":144
  *             file.write('{},['.format(codes[start]))
  * 
  *         def write_next_start(next_start):             # <<<<<<<<<<<<<<
@@ -6281,7 +6281,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_2write_next_start(PyObje
   if (unlikely(!__pyx_cur_scope)) {
     __pyx_cur_scope = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_9_write_next_start *)Py_None);
     __Pyx_INCREF(Py_None);
-    __PYX_ERR(0, 126, __pyx_L1_error)
+    __PYX_ERR(0, 144, __pyx_L1_error)
   } else {
     __Pyx_GOTREF(__pyx_cur_scope);
   }
@@ -6292,25 +6292,25 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_2write_next_start(PyObje
   __Pyx_INCREF(__pyx_cur_scope->__pyx_v_next_start);
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_next_start);
 
-  /* "kovit/pjson.py":127
+  /* "kovit/pjson.py":145
  * 
  *         def write_next_start(next_start):
  *             file.write('[' + ','.join(str(codes[n]) for n in next_start) + ']')             # <<<<<<<<<<<<<<
  *     else:
  *         def write_start(start):
  */
-  if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_file)) { __Pyx_RaiseClosureNameError("file"); __PYX_ERR(0, 127, __pyx_L1_error) }
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_file, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 127, __pyx_L1_error)
+  if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_file)) { __Pyx_RaiseClosureNameError("file"); __PYX_ERR(0, 145, __pyx_L1_error) }
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_file, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 145, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __pyx_pf_5kovit_5cjson_13dump_json_big_16write_next_start_genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 127, __pyx_L1_error)
+  __pyx_t_3 = __pyx_pf_5kovit_5cjson_13dump_json_big_16write_next_start_genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 145, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyString_Join(__pyx_kp_s__13, __pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 127, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyString_Join(__pyx_kp_s__13, __pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 145, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = PyNumber_Add(__pyx_kp_s__12, __pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 127, __pyx_L1_error)
+  __pyx_t_3 = PyNumber_Add(__pyx_kp_s__12, __pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 145, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = PyNumber_Add(__pyx_t_3, __pyx_kp_s__14); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 127, __pyx_L1_error)
+  __pyx_t_4 = PyNumber_Add(__pyx_t_3, __pyx_kp_s__14); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 145, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_3 = NULL;
@@ -6324,14 +6324,14 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_2write_next_start(PyObje
     }
   }
   if (!__pyx_t_3) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 127, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 145, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_GOTREF(__pyx_t_1);
   } else {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_2)) {
       PyObject *__pyx_temp[2] = {__pyx_t_3, __pyx_t_4};
-      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 127, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 145, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -6340,20 +6340,20 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_2write_next_start(PyObje
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
       PyObject *__pyx_temp[2] = {__pyx_t_3, __pyx_t_4};
-      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 127, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 145, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     } else
     #endif
     {
-      __pyx_t_5 = PyTuple_New(1+1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 127, __pyx_L1_error)
+      __pyx_t_5 = PyTuple_New(1+1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 145, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_GIVEREF(__pyx_t_3); PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_3); __pyx_t_3 = NULL;
       __Pyx_GIVEREF(__pyx_t_4);
       PyTuple_SET_ITEM(__pyx_t_5, 0+1, __pyx_t_4);
       __pyx_t_4 = 0;
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_5, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 127, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_5, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 145, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     }
@@ -6361,7 +6361,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_2write_next_start(PyObje
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "kovit/pjson.py":126
+  /* "kovit/pjson.py":144
  *             file.write('{},['.format(codes[start]))
  * 
  *         def write_next_start(next_start):             # <<<<<<<<<<<<<<
@@ -6387,7 +6387,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_2write_next_start(PyObje
   return __pyx_r;
 }
 
-/* "kovit/pjson.py":129
+/* "kovit/pjson.py":147
  *             file.write('[' + ','.join(str(codes[n]) for n in next_start) + ']')
  *     else:
  *         def write_start(start):             # <<<<<<<<<<<<<<
@@ -6426,21 +6426,21 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_4write_start(PyObject *_
   __pyx_outer_scope = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_8_dump_json_big *) __Pyx_CyFunction_GetClosure(__pyx_self);
   __pyx_cur_scope = __pyx_outer_scope;
 
-  /* "kovit/pjson.py":130
+  /* "kovit/pjson.py":148
  *     else:
  *         def write_start(start):
  *             file.write('{},['.format(json.dumps(start)))             # <<<<<<<<<<<<<<
  * 
  *         def write_next_start(next_start):
  */
-  if (unlikely(!__pyx_cur_scope->__pyx_v_file)) { __Pyx_RaiseClosureNameError("file"); __PYX_ERR(0, 130, __pyx_L1_error) }
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_file, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 130, __pyx_L1_error)
+  if (unlikely(!__pyx_cur_scope->__pyx_v_file)) { __Pyx_RaiseClosureNameError("file"); __PYX_ERR(0, 148, __pyx_L1_error) }
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_file, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 148, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_kp_s__11, __pyx_n_s_format); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 130, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_kp_s__11, __pyx_n_s_format); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 148, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_6 = __Pyx_GetModuleGlobalName(__pyx_n_s_json); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 130, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_GetModuleGlobalName(__pyx_n_s_json); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 148, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_dumps); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 130, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_dumps); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 148, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __pyx_t_6 = NULL;
@@ -6454,13 +6454,13 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_4write_start(PyObject *_
     }
   }
   if (!__pyx_t_6) {
-    __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_t_7, __pyx_v_start); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 130, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_t_7, __pyx_v_start); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 148, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
   } else {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_7)) {
       PyObject *__pyx_temp[2] = {__pyx_t_6, __pyx_v_start};
-      __pyx_t_5 = __Pyx_PyFunction_FastCall(__pyx_t_7, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 130, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyFunction_FastCall(__pyx_t_7, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 148, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
       __Pyx_GOTREF(__pyx_t_5);
     } else
@@ -6468,19 +6468,19 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_4write_start(PyObject *_
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_7)) {
       PyObject *__pyx_temp[2] = {__pyx_t_6, __pyx_v_start};
-      __pyx_t_5 = __Pyx_PyCFunction_FastCall(__pyx_t_7, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 130, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyCFunction_FastCall(__pyx_t_7, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 148, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
       __Pyx_GOTREF(__pyx_t_5);
     } else
     #endif
     {
-      __pyx_t_8 = PyTuple_New(1+1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 130, __pyx_L1_error)
+      __pyx_t_8 = PyTuple_New(1+1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 148, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
       __Pyx_GIVEREF(__pyx_t_6); PyTuple_SET_ITEM(__pyx_t_8, 0, __pyx_t_6); __pyx_t_6 = NULL;
       __Pyx_INCREF(__pyx_v_start);
       __Pyx_GIVEREF(__pyx_v_start);
       PyTuple_SET_ITEM(__pyx_t_8, 0+1, __pyx_v_start);
-      __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_t_8, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 130, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_t_8, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 148, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     }
@@ -6497,14 +6497,14 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_4write_start(PyObject *_
     }
   }
   if (!__pyx_t_7) {
-    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 130, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 148, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_GOTREF(__pyx_t_3);
   } else {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_4)) {
       PyObject *__pyx_temp[2] = {__pyx_t_7, __pyx_t_5};
-      __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 130, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 148, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -6513,20 +6513,20 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_4write_start(PyObject *_
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
       PyObject *__pyx_temp[2] = {__pyx_t_7, __pyx_t_5};
-      __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 130, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 148, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     } else
     #endif
     {
-      __pyx_t_8 = PyTuple_New(1+1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 130, __pyx_L1_error)
+      __pyx_t_8 = PyTuple_New(1+1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 148, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
       __Pyx_GIVEREF(__pyx_t_7); PyTuple_SET_ITEM(__pyx_t_8, 0, __pyx_t_7); __pyx_t_7 = NULL;
       __Pyx_GIVEREF(__pyx_t_5);
       PyTuple_SET_ITEM(__pyx_t_8, 0+1, __pyx_t_5);
       __pyx_t_5 = 0;
-      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_8, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 130, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_8, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 148, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     }
@@ -6543,14 +6543,14 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_4write_start(PyObject *_
     }
   }
   if (!__pyx_t_4) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 130, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 148, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_GOTREF(__pyx_t_1);
   } else {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_2)) {
       PyObject *__pyx_temp[2] = {__pyx_t_4, __pyx_t_3};
-      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 130, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 148, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -6559,20 +6559,20 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_4write_start(PyObject *_
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
       PyObject *__pyx_temp[2] = {__pyx_t_4, __pyx_t_3};
-      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 130, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 148, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     } else
     #endif
     {
-      __pyx_t_8 = PyTuple_New(1+1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 130, __pyx_L1_error)
+      __pyx_t_8 = PyTuple_New(1+1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 148, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
       __Pyx_GIVEREF(__pyx_t_4); PyTuple_SET_ITEM(__pyx_t_8, 0, __pyx_t_4); __pyx_t_4 = NULL;
       __Pyx_GIVEREF(__pyx_t_3);
       PyTuple_SET_ITEM(__pyx_t_8, 0+1, __pyx_t_3);
       __pyx_t_3 = 0;
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_8, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 130, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_8, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 148, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     }
@@ -6580,7 +6580,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_4write_start(PyObject *_
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "kovit/pjson.py":129
+  /* "kovit/pjson.py":147
  *             file.write('[' + ','.join(str(codes[n]) for n in next_start) + ']')
  *     else:
  *         def write_start(start):             # <<<<<<<<<<<<<<
@@ -6608,7 +6608,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_4write_start(PyObject *_
   return __pyx_r;
 }
 
-/* "kovit/pjson.py":132
+/* "kovit/pjson.py":150
  *             file.write('{},['.format(json.dumps(start)))
  * 
  *         def write_next_start(next_start):             # <<<<<<<<<<<<<<
@@ -6645,19 +6645,19 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_6write_next_start(PyObje
   __pyx_outer_scope = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_8_dump_json_big *) __Pyx_CyFunction_GetClosure(__pyx_self);
   __pyx_cur_scope = __pyx_outer_scope;
 
-  /* "kovit/pjson.py":133
+  /* "kovit/pjson.py":151
  * 
  *         def write_next_start(next_start):
  *             file.write(json.dumps(next_start))             # <<<<<<<<<<<<<<
  * 
  *     file.write('],"chain":[')
  */
-  if (unlikely(!__pyx_cur_scope->__pyx_v_file)) { __Pyx_RaiseClosureNameError("file"); __PYX_ERR(0, 133, __pyx_L1_error) }
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_file, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 133, __pyx_L1_error)
+  if (unlikely(!__pyx_cur_scope->__pyx_v_file)) { __Pyx_RaiseClosureNameError("file"); __PYX_ERR(0, 151, __pyx_L1_error) }
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_file, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 151, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = __Pyx_GetModuleGlobalName(__pyx_n_s_json); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 133, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_GetModuleGlobalName(__pyx_n_s_json); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 151, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_dumps); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 133, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_dumps); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 151, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_4 = NULL;
@@ -6671,13 +6671,13 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_6write_next_start(PyObje
     }
   }
   if (!__pyx_t_4) {
-    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_v_next_start); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 133, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_v_next_start); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 151, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
   } else {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_5)) {
       PyObject *__pyx_temp[2] = {__pyx_t_4, __pyx_v_next_start};
-      __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 133, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 151, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_GOTREF(__pyx_t_3);
     } else
@@ -6685,19 +6685,19 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_6write_next_start(PyObje
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_5)) {
       PyObject *__pyx_temp[2] = {__pyx_t_4, __pyx_v_next_start};
-      __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 133, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 151, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_GOTREF(__pyx_t_3);
     } else
     #endif
     {
-      __pyx_t_6 = PyTuple_New(1+1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 133, __pyx_L1_error)
+      __pyx_t_6 = PyTuple_New(1+1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 151, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GIVEREF(__pyx_t_4); PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_4); __pyx_t_4 = NULL;
       __Pyx_INCREF(__pyx_v_next_start);
       __Pyx_GIVEREF(__pyx_v_next_start);
       PyTuple_SET_ITEM(__pyx_t_6, 0+1, __pyx_v_next_start);
-      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_6, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 133, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_6, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 151, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     }
@@ -6714,14 +6714,14 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_6write_next_start(PyObje
     }
   }
   if (!__pyx_t_5) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 133, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 151, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_GOTREF(__pyx_t_1);
   } else {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_2)) {
       PyObject *__pyx_temp[2] = {__pyx_t_5, __pyx_t_3};
-      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 133, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 151, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -6730,20 +6730,20 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_6write_next_start(PyObje
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
       PyObject *__pyx_temp[2] = {__pyx_t_5, __pyx_t_3};
-      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 133, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 151, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     } else
     #endif
     {
-      __pyx_t_6 = PyTuple_New(1+1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 133, __pyx_L1_error)
+      __pyx_t_6 = PyTuple_New(1+1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 151, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_5); __pyx_t_5 = NULL;
       __Pyx_GIVEREF(__pyx_t_3);
       PyTuple_SET_ITEM(__pyx_t_6, 0+1, __pyx_t_3);
       __pyx_t_3 = 0;
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_6, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 133, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_6, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 151, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     }
@@ -6751,7 +6751,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_6write_next_start(PyObje
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "kovit/pjson.py":132
+  /* "kovit/pjson.py":150
  *             file.write('{},['.format(json.dumps(start)))
  * 
  *         def write_next_start(next_start):             # <<<<<<<<<<<<<<
@@ -6777,7 +6777,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_6write_next_start(PyObje
   return __pyx_r;
 }
 
-/* "kovit/pjson.py":111
+/* "kovit/pjson.py":129
  *         end_freqs = len(freq_dict) - 1
  * 
  *         for code, v in enumerate(sorted(freq_dict, key=lambda x: -x[1])):             # <<<<<<<<<<<<<<
@@ -6806,9 +6806,9 @@ static PyObject *__pyx_lambda_funcdef_lambda4(CYTHON_UNUSED PyObject *__pyx_self
   PyObject *__pyx_t_2 = NULL;
   __Pyx_RefNannySetupContext("lambda4", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_GetItemInt(__pyx_v_x, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 111, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt(__pyx_v_x, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 129, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyNumber_Negative(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 111, __pyx_L1_error)
+  __pyx_t_2 = PyNumber_Negative(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 129, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_r = __pyx_t_2;
@@ -6827,7 +6827,7 @@ static PyObject *__pyx_lambda_funcdef_lambda4(CYTHON_UNUSED PyObject *__pyx_self
   return __pyx_r;
 }
 
-/* "kovit/pjson.py":102
+/* "kovit/pjson.py":120
  * 
  * 
  * def dump_json_big(chain, file, frequency_compress=True):             # <<<<<<<<<<<<<<
@@ -6880,7 +6880,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
   if (unlikely(!__pyx_cur_scope)) {
     __pyx_cur_scope = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_8_dump_json_big *)Py_None);
     __Pyx_INCREF(Py_None);
-    __PYX_ERR(0, 102, __pyx_L1_error)
+    __PYX_ERR(0, 120, __pyx_L1_error)
   } else {
     __Pyx_GOTREF(__pyx_cur_scope);
   }
@@ -6888,51 +6888,51 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
   __Pyx_INCREF(__pyx_cur_scope->__pyx_v_file);
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_file);
 
-  /* "kovit/pjson.py":103
+  /* "kovit/pjson.py":121
  * 
  * def dump_json_big(chain, file, frequency_compress=True):
  *     file.write('{"codes":[')             # <<<<<<<<<<<<<<
  * 
  *     if frequency_compress:
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_file, __pyx_n_s_write); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 103, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_file, __pyx_n_s_write); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 121, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__15, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 103, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__15, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 121, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "kovit/pjson.py":105
+  /* "kovit/pjson.py":123
  *     file.write('{"codes":[')
  * 
  *     if frequency_compress:             # <<<<<<<<<<<<<<
  *         codes = {}
  * 
  */
-  __pyx_t_3 = __Pyx_PyObject_IsTrue(__pyx_v_frequency_compress); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 105, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_IsTrue(__pyx_v_frequency_compress); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 123, __pyx_L1_error)
   if (__pyx_t_3) {
 
-    /* "kovit/pjson.py":106
+    /* "kovit/pjson.py":124
  * 
  *     if frequency_compress:
  *         codes = {}             # <<<<<<<<<<<<<<
  * 
  *         freq_dict = chain.build_frequency_dict().items()
  */
-    __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 106, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 124, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_GIVEREF(__pyx_t_2);
     __pyx_cur_scope->__pyx_v_codes = ((PyObject*)__pyx_t_2);
     __pyx_t_2 = 0;
 
-    /* "kovit/pjson.py":108
+    /* "kovit/pjson.py":126
  *         codes = {}
  * 
  *         freq_dict = chain.build_frequency_dict().items()             # <<<<<<<<<<<<<<
  *         end_freqs = len(freq_dict) - 1
  * 
  */
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_chain, __pyx_n_s_build_frequency_dict); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 108, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_chain, __pyx_n_s_build_frequency_dict); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 126, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_t_5 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_4))) {
@@ -6945,14 +6945,14 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
       }
     }
     if (__pyx_t_5) {
-      __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 108, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 126, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     } else {
-      __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 108, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 126, __pyx_L1_error)
     }
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_items); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 108, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_items); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 126, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_t_1 = NULL;
@@ -6966,27 +6966,27 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
       }
     }
     if (__pyx_t_1) {
-      __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 108, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 126, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     } else {
-      __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 108, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 126, __pyx_L1_error)
     }
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_v_freq_dict = __pyx_t_2;
     __pyx_t_2 = 0;
 
-    /* "kovit/pjson.py":109
+    /* "kovit/pjson.py":127
  * 
  *         freq_dict = chain.build_frequency_dict().items()
  *         end_freqs = len(freq_dict) - 1             # <<<<<<<<<<<<<<
  * 
  *         for code, v in enumerate(sorted(freq_dict, key=lambda x: -x[1])):
  */
-    __pyx_t_6 = PyObject_Length(__pyx_v_freq_dict); if (unlikely(__pyx_t_6 == ((Py_ssize_t)-1))) __PYX_ERR(0, 109, __pyx_L1_error)
+    __pyx_t_6 = PyObject_Length(__pyx_v_freq_dict); if (unlikely(__pyx_t_6 == ((Py_ssize_t)-1))) __PYX_ERR(0, 127, __pyx_L1_error)
     __pyx_v_end_freqs = (__pyx_t_6 - 1);
 
-    /* "kovit/pjson.py":111
+    /* "kovit/pjson.py":129
  *         end_freqs = len(freq_dict) - 1
  * 
  *         for code, v in enumerate(sorted(freq_dict, key=lambda x: -x[1])):             # <<<<<<<<<<<<<<
@@ -6995,18 +6995,18 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
  */
     __Pyx_INCREF(__pyx_int_0);
     __pyx_t_2 = __pyx_int_0;
-    __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 111, __pyx_L1_error)
+    __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 129, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_INCREF(__pyx_v_freq_dict);
     __Pyx_GIVEREF(__pyx_v_freq_dict);
     PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_v_freq_dict);
-    __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 111, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 129, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_5 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_13dump_json_big_8lambda4, 0, __pyx_n_s_dump_json_big_locals_lambda, NULL, __pyx_n_s_kovit_cjson, __pyx_d, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 111, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_13dump_json_big_8lambda4, 0, __pyx_n_s_dump_json_big_locals_lambda, NULL, __pyx_n_s_kovit_cjson, __pyx_d, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 129, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_key, __pyx_t_5) < 0) __PYX_ERR(0, 111, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_key, __pyx_t_5) < 0) __PYX_ERR(0, 129, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_builtin_sorted, __pyx_t_4, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 111, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_builtin_sorted, __pyx_t_4, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 129, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -7014,9 +7014,9 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
       __pyx_t_1 = __pyx_t_5; __Pyx_INCREF(__pyx_t_1); __pyx_t_6 = 0;
       __pyx_t_7 = NULL;
     } else {
-      __pyx_t_6 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 111, __pyx_L1_error)
+      __pyx_t_6 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 129, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      __pyx_t_7 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 111, __pyx_L1_error)
+      __pyx_t_7 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 129, __pyx_L1_error)
     }
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     for (;;) {
@@ -7024,17 +7024,17 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
         if (likely(PyList_CheckExact(__pyx_t_1))) {
           if (__pyx_t_6 >= PyList_GET_SIZE(__pyx_t_1)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_5 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_6); __Pyx_INCREF(__pyx_t_5); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 111, __pyx_L1_error)
+          __pyx_t_5 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_6); __Pyx_INCREF(__pyx_t_5); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 129, __pyx_L1_error)
           #else
-          __pyx_t_5 = PySequence_ITEM(__pyx_t_1, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 111, __pyx_L1_error)
+          __pyx_t_5 = PySequence_ITEM(__pyx_t_1, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 129, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_5);
           #endif
         } else {
           if (__pyx_t_6 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_5 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_6); __Pyx_INCREF(__pyx_t_5); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 111, __pyx_L1_error)
+          __pyx_t_5 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_6); __Pyx_INCREF(__pyx_t_5); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 129, __pyx_L1_error)
           #else
-          __pyx_t_5 = PySequence_ITEM(__pyx_t_1, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 111, __pyx_L1_error)
+          __pyx_t_5 = PySequence_ITEM(__pyx_t_1, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 129, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_5);
           #endif
         }
@@ -7044,7 +7044,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
           PyObject* exc_type = PyErr_Occurred();
           if (exc_type) {
             if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-            else __PYX_ERR(0, 111, __pyx_L1_error)
+            else __PYX_ERR(0, 129, __pyx_L1_error)
           }
           break;
         }
@@ -7054,25 +7054,25 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
       __pyx_t_5 = 0;
       __Pyx_INCREF(__pyx_t_2);
       __Pyx_XDECREF_SET(__pyx_v_code, __pyx_t_2);
-      __pyx_t_5 = __Pyx_PyInt_AddObjC(__pyx_t_2, __pyx_int_1, 1, 0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 111, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyInt_AddObjC(__pyx_t_2, __pyx_int_1, 1, 0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 129, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_DECREF(__pyx_t_2);
       __pyx_t_2 = __pyx_t_5;
       __pyx_t_5 = 0;
 
-      /* "kovit/pjson.py":112
+      /* "kovit/pjson.py":130
  * 
  *         for code, v in enumerate(sorted(freq_dict, key=lambda x: -x[1])):
  *             value = json.dumps(v[0])             # <<<<<<<<<<<<<<
  *             w_code = code
  * 
  */
-      __pyx_t_4 = __Pyx_GetModuleGlobalName(__pyx_n_s_json); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 112, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_GetModuleGlobalName(__pyx_n_s_json); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 130, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_dumps); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 112, __pyx_L1_error)
+      __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_dumps); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 130, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-      __pyx_t_4 = __Pyx_GetItemInt(__pyx_v_v, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 112, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_GetItemInt(__pyx_v_v, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 130, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __pyx_t_9 = NULL;
       if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_8))) {
@@ -7085,14 +7085,14 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
         }
       }
       if (!__pyx_t_9) {
-        __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_t_8, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 112, __pyx_L1_error)
+        __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_t_8, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 130, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         __Pyx_GOTREF(__pyx_t_5);
       } else {
         #if CYTHON_FAST_PYCALL
         if (PyFunction_Check(__pyx_t_8)) {
           PyObject *__pyx_temp[2] = {__pyx_t_9, __pyx_t_4};
-          __pyx_t_5 = __Pyx_PyFunction_FastCall(__pyx_t_8, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 112, __pyx_L1_error)
+          __pyx_t_5 = __Pyx_PyFunction_FastCall(__pyx_t_8, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 130, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
           __Pyx_GOTREF(__pyx_t_5);
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -7101,20 +7101,20 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
         #if CYTHON_FAST_PYCCALL
         if (__Pyx_PyFastCFunction_Check(__pyx_t_8)) {
           PyObject *__pyx_temp[2] = {__pyx_t_9, __pyx_t_4};
-          __pyx_t_5 = __Pyx_PyCFunction_FastCall(__pyx_t_8, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 112, __pyx_L1_error)
+          __pyx_t_5 = __Pyx_PyCFunction_FastCall(__pyx_t_8, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 130, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
           __Pyx_GOTREF(__pyx_t_5);
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         } else
         #endif
         {
-          __pyx_t_10 = PyTuple_New(1+1); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 112, __pyx_L1_error)
+          __pyx_t_10 = PyTuple_New(1+1); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 130, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_10);
           __Pyx_GIVEREF(__pyx_t_9); PyTuple_SET_ITEM(__pyx_t_10, 0, __pyx_t_9); __pyx_t_9 = NULL;
           __Pyx_GIVEREF(__pyx_t_4);
           PyTuple_SET_ITEM(__pyx_t_10, 0+1, __pyx_t_4);
           __pyx_t_4 = 0;
-          __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_t_10, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 112, __pyx_L1_error)
+          __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_t_10, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 130, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_5);
           __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
         }
@@ -7123,7 +7123,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
       __Pyx_XDECREF_SET(__pyx_v_value, __pyx_t_5);
       __pyx_t_5 = 0;
 
-      /* "kovit/pjson.py":113
+      /* "kovit/pjson.py":131
  *         for code, v in enumerate(sorted(freq_dict, key=lambda x: -x[1])):
  *             value = json.dumps(v[0])
  *             w_code = code             # <<<<<<<<<<<<<<
@@ -7133,24 +7133,24 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
       __Pyx_INCREF(__pyx_v_code);
       __Pyx_XDECREF_SET(__pyx_v_w_code, __pyx_v_code);
 
-      /* "kovit/pjson.py":115
+      /* "kovit/pjson.py":133
  *             w_code = code
  * 
  *             if code > 9 and (int(math.log10(code)) + 1) >= len(value):             # <<<<<<<<<<<<<<
  *                 codes[v[0]] = value
  *                 w_code = value
  */
-      __pyx_t_5 = PyObject_RichCompare(__pyx_v_code, __pyx_int_9, Py_GT); __Pyx_XGOTREF(__pyx_t_5); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 115, __pyx_L1_error)
-      __pyx_t_11 = __Pyx_PyObject_IsTrue(__pyx_t_5); if (unlikely(__pyx_t_11 < 0)) __PYX_ERR(0, 115, __pyx_L1_error)
+      __pyx_t_5 = PyObject_RichCompare(__pyx_v_code, __pyx_int_9, Py_GT); __Pyx_XGOTREF(__pyx_t_5); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 133, __pyx_L1_error)
+      __pyx_t_11 = __Pyx_PyObject_IsTrue(__pyx_t_5); if (unlikely(__pyx_t_11 < 0)) __PYX_ERR(0, 133, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       if (__pyx_t_11) {
       } else {
         __pyx_t_3 = __pyx_t_11;
         goto __pyx_L7_bool_binop_done;
       }
-      __pyx_t_8 = __Pyx_GetModuleGlobalName(__pyx_n_s_math); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 115, __pyx_L1_error)
+      __pyx_t_8 = __Pyx_GetModuleGlobalName(__pyx_n_s_math); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 133, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
-      __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_log10); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 115, __pyx_L1_error)
+      __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_log10); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 133, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
       __pyx_t_8 = NULL;
@@ -7164,13 +7164,13 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
         }
       }
       if (!__pyx_t_8) {
-        __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_t_10, __pyx_v_code); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 115, __pyx_L1_error)
+        __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_t_10, __pyx_v_code); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 133, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
       } else {
         #if CYTHON_FAST_PYCALL
         if (PyFunction_Check(__pyx_t_10)) {
           PyObject *__pyx_temp[2] = {__pyx_t_8, __pyx_v_code};
-          __pyx_t_5 = __Pyx_PyFunction_FastCall(__pyx_t_10, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 115, __pyx_L1_error)
+          __pyx_t_5 = __Pyx_PyFunction_FastCall(__pyx_t_10, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 133, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
           __Pyx_GOTREF(__pyx_t_5);
         } else
@@ -7178,55 +7178,55 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
         #if CYTHON_FAST_PYCCALL
         if (__Pyx_PyFastCFunction_Check(__pyx_t_10)) {
           PyObject *__pyx_temp[2] = {__pyx_t_8, __pyx_v_code};
-          __pyx_t_5 = __Pyx_PyCFunction_FastCall(__pyx_t_10, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 115, __pyx_L1_error)
+          __pyx_t_5 = __Pyx_PyCFunction_FastCall(__pyx_t_10, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 133, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
           __Pyx_GOTREF(__pyx_t_5);
         } else
         #endif
         {
-          __pyx_t_4 = PyTuple_New(1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 115, __pyx_L1_error)
+          __pyx_t_4 = PyTuple_New(1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 133, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_4);
           __Pyx_GIVEREF(__pyx_t_8); PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_8); __pyx_t_8 = NULL;
           __Pyx_INCREF(__pyx_v_code);
           __Pyx_GIVEREF(__pyx_v_code);
           PyTuple_SET_ITEM(__pyx_t_4, 0+1, __pyx_v_code);
-          __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_10, __pyx_t_4, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 115, __pyx_L1_error)
+          __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_10, __pyx_t_4, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 133, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_5);
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         }
       }
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-      __pyx_t_10 = __Pyx_PyNumber_Int(__pyx_t_5); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 115, __pyx_L1_error)
+      __pyx_t_10 = __Pyx_PyNumber_Int(__pyx_t_5); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 133, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-      __pyx_t_5 = __Pyx_PyInt_AddObjC(__pyx_t_10, __pyx_int_1, 1, 0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 115, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyInt_AddObjC(__pyx_t_10, __pyx_int_1, 1, 0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 133, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-      __pyx_t_12 = PyObject_Length(__pyx_v_value); if (unlikely(__pyx_t_12 == ((Py_ssize_t)-1))) __PYX_ERR(0, 115, __pyx_L1_error)
-      __pyx_t_10 = PyInt_FromSsize_t(__pyx_t_12); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 115, __pyx_L1_error)
+      __pyx_t_12 = PyObject_Length(__pyx_v_value); if (unlikely(__pyx_t_12 == ((Py_ssize_t)-1))) __PYX_ERR(0, 133, __pyx_L1_error)
+      __pyx_t_10 = PyInt_FromSsize_t(__pyx_t_12); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 133, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
-      __pyx_t_4 = PyObject_RichCompare(__pyx_t_5, __pyx_t_10, Py_GE); __Pyx_XGOTREF(__pyx_t_4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 115, __pyx_L1_error)
+      __pyx_t_4 = PyObject_RichCompare(__pyx_t_5, __pyx_t_10, Py_GE); __Pyx_XGOTREF(__pyx_t_4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 133, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-      __pyx_t_11 = __Pyx_PyObject_IsTrue(__pyx_t_4); if (unlikely(__pyx_t_11 < 0)) __PYX_ERR(0, 115, __pyx_L1_error)
+      __pyx_t_11 = __Pyx_PyObject_IsTrue(__pyx_t_4); if (unlikely(__pyx_t_11 < 0)) __PYX_ERR(0, 133, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __pyx_t_3 = __pyx_t_11;
       __pyx_L7_bool_binop_done:;
       if (__pyx_t_3) {
 
-        /* "kovit/pjson.py":116
+        /* "kovit/pjson.py":134
  * 
  *             if code > 9 and (int(math.log10(code)) + 1) >= len(value):
  *                 codes[v[0]] = value             # <<<<<<<<<<<<<<
  *                 w_code = value
  *             else:
  */
-        __pyx_t_4 = __Pyx_GetItemInt(__pyx_v_v, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 116, __pyx_L1_error)
+        __pyx_t_4 = __Pyx_GetItemInt(__pyx_v_v, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 134, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
-        if (unlikely(PyDict_SetItem(__pyx_cur_scope->__pyx_v_codes, __pyx_t_4, __pyx_v_value) < 0)) __PYX_ERR(0, 116, __pyx_L1_error)
+        if (unlikely(PyDict_SetItem(__pyx_cur_scope->__pyx_v_codes, __pyx_t_4, __pyx_v_value) < 0)) __PYX_ERR(0, 134, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-        /* "kovit/pjson.py":117
+        /* "kovit/pjson.py":135
  *             if code > 9 and (int(math.log10(code)) + 1) >= len(value):
  *                 codes[v[0]] = value
  *                 w_code = value             # <<<<<<<<<<<<<<
@@ -7236,7 +7236,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
         __Pyx_INCREF(__pyx_v_value);
         __Pyx_DECREF_SET(__pyx_v_w_code, __pyx_v_value);
 
-        /* "kovit/pjson.py":115
+        /* "kovit/pjson.py":133
  *             w_code = code
  * 
  *             if code > 9 and (int(math.log10(code)) + 1) >= len(value):             # <<<<<<<<<<<<<<
@@ -7246,7 +7246,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
         goto __pyx_L6;
       }
 
-      /* "kovit/pjson.py":119
+      /* "kovit/pjson.py":137
  *                 w_code = value
  *             else:
  *                 codes[v[0]] = code             # <<<<<<<<<<<<<<
@@ -7254,29 +7254,29 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
  *             file.write('{},{}{}'.format(w_code, value, ',' if code != end_freqs else ''))
  */
       /*else*/ {
-        __pyx_t_4 = __Pyx_GetItemInt(__pyx_v_v, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 119, __pyx_L1_error)
+        __pyx_t_4 = __Pyx_GetItemInt(__pyx_v_v, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 137, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
-        if (unlikely(PyDict_SetItem(__pyx_cur_scope->__pyx_v_codes, __pyx_t_4, __pyx_v_code) < 0)) __PYX_ERR(0, 119, __pyx_L1_error)
+        if (unlikely(PyDict_SetItem(__pyx_cur_scope->__pyx_v_codes, __pyx_t_4, __pyx_v_code) < 0)) __PYX_ERR(0, 137, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       }
       __pyx_L6:;
 
-      /* "kovit/pjson.py":121
+      /* "kovit/pjson.py":139
  *                 codes[v[0]] = code
  * 
  *             file.write('{},{}{}'.format(w_code, value, ',' if code != end_freqs else ''))             # <<<<<<<<<<<<<<
  * 
  *         def write_start(start):
  */
-      __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_file, __pyx_n_s_write); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 121, __pyx_L1_error)
+      __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_file, __pyx_n_s_write); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 139, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
-      __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_kp_s__16, __pyx_n_s_format); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 121, __pyx_L1_error)
+      __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_kp_s__16, __pyx_n_s_format); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 139, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
-      __pyx_t_13 = PyInt_FromSsize_t(__pyx_v_end_freqs); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 121, __pyx_L1_error)
+      __pyx_t_13 = PyInt_FromSsize_t(__pyx_v_end_freqs); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 139, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_13);
-      __pyx_t_14 = PyObject_RichCompare(__pyx_v_code, __pyx_t_13, Py_NE); __Pyx_XGOTREF(__pyx_t_14); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 121, __pyx_L1_error)
+      __pyx_t_14 = PyObject_RichCompare(__pyx_v_code, __pyx_t_13, Py_NE); __Pyx_XGOTREF(__pyx_t_14); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 139, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
-      __pyx_t_3 = __Pyx_PyObject_IsTrue(__pyx_t_14); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 121, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_IsTrue(__pyx_t_14); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 139, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_14); __pyx_t_14 = 0;
       if (__pyx_t_3) {
         __Pyx_INCREF(__pyx_kp_s__13);
@@ -7300,7 +7300,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
       #if CYTHON_FAST_PYCALL
       if (PyFunction_Check(__pyx_t_8)) {
         PyObject *__pyx_temp[4] = {__pyx_t_14, __pyx_v_w_code, __pyx_v_value, __pyx_t_9};
-        __pyx_t_5 = __Pyx_PyFunction_FastCall(__pyx_t_8, __pyx_temp+1-__pyx_t_15, 3+__pyx_t_15); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 121, __pyx_L1_error)
+        __pyx_t_5 = __Pyx_PyFunction_FastCall(__pyx_t_8, __pyx_temp+1-__pyx_t_15, 3+__pyx_t_15); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 139, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_14); __pyx_t_14 = 0;
         __Pyx_GOTREF(__pyx_t_5);
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
@@ -7309,14 +7309,14 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
       #if CYTHON_FAST_PYCCALL
       if (__Pyx_PyFastCFunction_Check(__pyx_t_8)) {
         PyObject *__pyx_temp[4] = {__pyx_t_14, __pyx_v_w_code, __pyx_v_value, __pyx_t_9};
-        __pyx_t_5 = __Pyx_PyCFunction_FastCall(__pyx_t_8, __pyx_temp+1-__pyx_t_15, 3+__pyx_t_15); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 121, __pyx_L1_error)
+        __pyx_t_5 = __Pyx_PyCFunction_FastCall(__pyx_t_8, __pyx_temp+1-__pyx_t_15, 3+__pyx_t_15); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 139, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_14); __pyx_t_14 = 0;
         __Pyx_GOTREF(__pyx_t_5);
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
       } else
       #endif
       {
-        __pyx_t_13 = PyTuple_New(3+__pyx_t_15); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 121, __pyx_L1_error)
+        __pyx_t_13 = PyTuple_New(3+__pyx_t_15); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 139, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_13);
         if (__pyx_t_14) {
           __Pyx_GIVEREF(__pyx_t_14); PyTuple_SET_ITEM(__pyx_t_13, 0, __pyx_t_14); __pyx_t_14 = NULL;
@@ -7330,7 +7330,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
         __Pyx_GIVEREF(__pyx_t_9);
         PyTuple_SET_ITEM(__pyx_t_13, 2+__pyx_t_15, __pyx_t_9);
         __pyx_t_9 = 0;
-        __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_t_13, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 121, __pyx_L1_error)
+        __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_t_13, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 139, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
         __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
       }
@@ -7346,14 +7346,14 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
         }
       }
       if (!__pyx_t_8) {
-        __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_t_10, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 121, __pyx_L1_error)
+        __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_t_10, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 139, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_GOTREF(__pyx_t_4);
       } else {
         #if CYTHON_FAST_PYCALL
         if (PyFunction_Check(__pyx_t_10)) {
           PyObject *__pyx_temp[2] = {__pyx_t_8, __pyx_t_5};
-          __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_10, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 121, __pyx_L1_error)
+          __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_10, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 139, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
           __Pyx_GOTREF(__pyx_t_4);
           __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -7362,20 +7362,20 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
         #if CYTHON_FAST_PYCCALL
         if (__Pyx_PyFastCFunction_Check(__pyx_t_10)) {
           PyObject *__pyx_temp[2] = {__pyx_t_8, __pyx_t_5};
-          __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_10, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 121, __pyx_L1_error)
+          __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_10, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 139, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
           __Pyx_GOTREF(__pyx_t_4);
           __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
         } else
         #endif
         {
-          __pyx_t_13 = PyTuple_New(1+1); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 121, __pyx_L1_error)
+          __pyx_t_13 = PyTuple_New(1+1); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 139, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_13);
           __Pyx_GIVEREF(__pyx_t_8); PyTuple_SET_ITEM(__pyx_t_13, 0, __pyx_t_8); __pyx_t_8 = NULL;
           __Pyx_GIVEREF(__pyx_t_5);
           PyTuple_SET_ITEM(__pyx_t_13, 0+1, __pyx_t_5);
           __pyx_t_5 = 0;
-          __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_10, __pyx_t_13, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 121, __pyx_L1_error)
+          __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_10, __pyx_t_13, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 139, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_4);
           __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
         }
@@ -7383,7 +7383,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-      /* "kovit/pjson.py":111
+      /* "kovit/pjson.py":129
  *         end_freqs = len(freq_dict) - 1
  * 
  *         for code, v in enumerate(sorted(freq_dict, key=lambda x: -x[1])):             # <<<<<<<<<<<<<<
@@ -7394,31 +7394,31 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "kovit/pjson.py":123
+    /* "kovit/pjson.py":141
  *             file.write('{},{}{}'.format(w_code, value, ',' if code != end_freqs else ''))
  * 
  *         def write_start(start):             # <<<<<<<<<<<<<<
  *             file.write('{},['.format(codes[start]))
  * 
  */
-    __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_13dump_json_big_1write_start, 0, __pyx_n_s_dump_json_big_locals_write_start, ((PyObject*)__pyx_cur_scope), __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__19)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 123, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_13dump_json_big_1write_start, 0, __pyx_n_s_dump_json_big_locals_write_start, ((PyObject*)__pyx_cur_scope), __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__19)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 141, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_v_write_start = __pyx_t_2;
     __pyx_t_2 = 0;
 
-    /* "kovit/pjson.py":126
+    /* "kovit/pjson.py":144
  *             file.write('{},['.format(codes[start]))
  * 
  *         def write_next_start(next_start):             # <<<<<<<<<<<<<<
  *             file.write('[' + ','.join(str(codes[n]) for n in next_start) + ']')
  *     else:
  */
-    __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_13dump_json_big_3write_next_start, 0, __pyx_n_s_dump_json_big_locals_write_next_2, ((PyObject*)__pyx_cur_scope), __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__21)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 126, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_13dump_json_big_3write_next_start, 0, __pyx_n_s_dump_json_big_locals_write_next_2, ((PyObject*)__pyx_cur_scope), __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__21)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 144, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_v_write_next_start = __pyx_t_2;
     __pyx_t_2 = 0;
 
-    /* "kovit/pjson.py":105
+    /* "kovit/pjson.py":123
  *     file.write('{"codes":[')
  * 
  *     if frequency_compress:             # <<<<<<<<<<<<<<
@@ -7428,7 +7428,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
     goto __pyx_L3;
   }
 
-  /* "kovit/pjson.py":129
+  /* "kovit/pjson.py":147
  *             file.write('[' + ','.join(str(codes[n]) for n in next_start) + ']')
  *     else:
  *         def write_start(start):             # <<<<<<<<<<<<<<
@@ -7436,50 +7436,50 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
  * 
  */
   /*else*/ {
-    __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_13dump_json_big_5write_start, 0, __pyx_n_s_dump_json_big_locals_write_start, ((PyObject*)__pyx_cur_scope), __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__23)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 129, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_13dump_json_big_5write_start, 0, __pyx_n_s_dump_json_big_locals_write_start, ((PyObject*)__pyx_cur_scope), __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__23)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 147, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_v_write_start = __pyx_t_2;
     __pyx_t_2 = 0;
 
-    /* "kovit/pjson.py":132
+    /* "kovit/pjson.py":150
  *             file.write('{},['.format(json.dumps(start)))
  * 
  *         def write_next_start(next_start):             # <<<<<<<<<<<<<<
  *             file.write(json.dumps(next_start))
  * 
  */
-    __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_13dump_json_big_7write_next_start, 0, __pyx_n_s_dump_json_big_locals_write_next_2, ((PyObject*)__pyx_cur_scope), __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__25)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 132, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_13dump_json_big_7write_next_start, 0, __pyx_n_s_dump_json_big_locals_write_next_2, ((PyObject*)__pyx_cur_scope), __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__25)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 150, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_v_write_next_start = __pyx_t_2;
     __pyx_t_2 = 0;
   }
   __pyx_L3:;
 
-  /* "kovit/pjson.py":135
+  /* "kovit/pjson.py":153
  *             file.write(json.dumps(next_start))
  * 
  *     file.write('],"chain":[')             # <<<<<<<<<<<<<<
  * 
  *     chain_end = len(chain) - 1
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_file, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 135, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_file, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 153, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__26, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 135, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__26, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 153, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "kovit/pjson.py":137
+  /* "kovit/pjson.py":155
  *     file.write('],"chain":[')
  * 
  *     chain_end = len(chain) - 1             # <<<<<<<<<<<<<<
  * 
  *     for idx, v in enumerate(chain.items()):
  */
-  __pyx_t_6 = PyObject_Length(__pyx_v_chain); if (unlikely(__pyx_t_6 == ((Py_ssize_t)-1))) __PYX_ERR(0, 137, __pyx_L1_error)
+  __pyx_t_6 = PyObject_Length(__pyx_v_chain); if (unlikely(__pyx_t_6 == ((Py_ssize_t)-1))) __PYX_ERR(0, 155, __pyx_L1_error)
   __pyx_v_chain_end = (__pyx_t_6 - 1);
 
-  /* "kovit/pjson.py":139
+  /* "kovit/pjson.py":157
  *     chain_end = len(chain) - 1
  * 
  *     for idx, v in enumerate(chain.items()):             # <<<<<<<<<<<<<<
@@ -7488,7 +7488,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
  */
   __Pyx_INCREF(__pyx_int_0);
   __pyx_t_1 = __pyx_int_0;
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_chain, __pyx_n_s_items); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 139, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_chain, __pyx_n_s_items); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 157, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_10 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_4))) {
@@ -7501,10 +7501,10 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
     }
   }
   if (__pyx_t_10) {
-    __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_10); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 139, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_10); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 157, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
   } else {
-    __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 139, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 157, __pyx_L1_error)
   }
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -7512,9 +7512,9 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
     __pyx_t_4 = __pyx_t_2; __Pyx_INCREF(__pyx_t_4); __pyx_t_6 = 0;
     __pyx_t_7 = NULL;
   } else {
-    __pyx_t_6 = -1; __pyx_t_4 = PyObject_GetIter(__pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 139, __pyx_L1_error)
+    __pyx_t_6 = -1; __pyx_t_4 = PyObject_GetIter(__pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 157, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_7 = Py_TYPE(__pyx_t_4)->tp_iternext; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 139, __pyx_L1_error)
+    __pyx_t_7 = Py_TYPE(__pyx_t_4)->tp_iternext; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 157, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   for (;;) {
@@ -7522,17 +7522,17 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
       if (likely(PyList_CheckExact(__pyx_t_4))) {
         if (__pyx_t_6 >= PyList_GET_SIZE(__pyx_t_4)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_2 = PyList_GET_ITEM(__pyx_t_4, __pyx_t_6); __Pyx_INCREF(__pyx_t_2); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 139, __pyx_L1_error)
+        __pyx_t_2 = PyList_GET_ITEM(__pyx_t_4, __pyx_t_6); __Pyx_INCREF(__pyx_t_2); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 157, __pyx_L1_error)
         #else
-        __pyx_t_2 = PySequence_ITEM(__pyx_t_4, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 139, __pyx_L1_error)
+        __pyx_t_2 = PySequence_ITEM(__pyx_t_4, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 157, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         #endif
       } else {
         if (__pyx_t_6 >= PyTuple_GET_SIZE(__pyx_t_4)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_2 = PyTuple_GET_ITEM(__pyx_t_4, __pyx_t_6); __Pyx_INCREF(__pyx_t_2); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 139, __pyx_L1_error)
+        __pyx_t_2 = PyTuple_GET_ITEM(__pyx_t_4, __pyx_t_6); __Pyx_INCREF(__pyx_t_2); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 157, __pyx_L1_error)
         #else
-        __pyx_t_2 = PySequence_ITEM(__pyx_t_4, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 139, __pyx_L1_error)
+        __pyx_t_2 = PySequence_ITEM(__pyx_t_4, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 157, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         #endif
       }
@@ -7542,7 +7542,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 139, __pyx_L1_error)
+          else __PYX_ERR(0, 157, __pyx_L1_error)
         }
         break;
       }
@@ -7552,13 +7552,13 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
     __pyx_t_2 = 0;
     __Pyx_INCREF(__pyx_t_1);
     __Pyx_XDECREF_SET(__pyx_v_idx, __pyx_t_1);
-    __pyx_t_2 = __Pyx_PyInt_AddObjC(__pyx_t_1, __pyx_int_1, 1, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 139, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyInt_AddObjC(__pyx_t_1, __pyx_int_1, 1, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 157, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1);
     __pyx_t_1 = __pyx_t_2;
     __pyx_t_2 = 0;
 
-    /* "kovit/pjson.py":140
+    /* "kovit/pjson.py":158
  * 
  *     for idx, v in enumerate(chain.items()):
  *         start, bag = v             # <<<<<<<<<<<<<<
@@ -7571,7 +7571,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
       if (unlikely(size != 2)) {
         if (size > 2) __Pyx_RaiseTooManyValuesError(2);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        __PYX_ERR(0, 140, __pyx_L1_error)
+        __PYX_ERR(0, 158, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -7584,21 +7584,21 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
       __Pyx_INCREF(__pyx_t_2);
       __Pyx_INCREF(__pyx_t_10);
       #else
-      __pyx_t_2 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 140, __pyx_L1_error)
+      __pyx_t_2 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 158, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_10 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 140, __pyx_L1_error)
+      __pyx_t_10 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 158, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
       #endif
     } else {
       Py_ssize_t index = -1;
-      __pyx_t_13 = PyObject_GetIter(__pyx_v_v); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 140, __pyx_L1_error)
+      __pyx_t_13 = PyObject_GetIter(__pyx_v_v); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 158, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_13);
       __pyx_t_16 = Py_TYPE(__pyx_t_13)->tp_iternext;
       index = 0; __pyx_t_2 = __pyx_t_16(__pyx_t_13); if (unlikely(!__pyx_t_2)) goto __pyx_L11_unpacking_failed;
       __Pyx_GOTREF(__pyx_t_2);
       index = 1; __pyx_t_10 = __pyx_t_16(__pyx_t_13); if (unlikely(!__pyx_t_10)) goto __pyx_L11_unpacking_failed;
       __Pyx_GOTREF(__pyx_t_10);
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_16(__pyx_t_13), 2) < 0) __PYX_ERR(0, 140, __pyx_L1_error)
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_16(__pyx_t_13), 2) < 0) __PYX_ERR(0, 158, __pyx_L1_error)
       __pyx_t_16 = NULL;
       __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
       goto __pyx_L12_unpacking_done;
@@ -7606,7 +7606,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
       __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
       __pyx_t_16 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      __PYX_ERR(0, 140, __pyx_L1_error)
+      __PYX_ERR(0, 158, __pyx_L1_error)
       __pyx_L12_unpacking_done:;
     }
     __Pyx_XDECREF_SET(__pyx_v_start, __pyx_t_2);
@@ -7614,33 +7614,33 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
     __Pyx_XDECREF_SET(__pyx_v_bag, __pyx_t_10);
     __pyx_t_10 = 0;
 
-    /* "kovit/pjson.py":142
+    /* "kovit/pjson.py":160
  *         start, bag = v
  * 
  *         write_start(start)             # <<<<<<<<<<<<<<
  * 
  *         bag_end = bag.unique_count - 1
  */
-    __pyx_t_10 = __Pyx_PyObject_CallOneArg(__pyx_v_write_start, __pyx_v_start); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 142, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyObject_CallOneArg(__pyx_v_write_start, __pyx_v_start); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 160, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-    /* "kovit/pjson.py":144
+    /* "kovit/pjson.py":162
  *         write_start(start)
  * 
  *         bag_end = bag.unique_count - 1             # <<<<<<<<<<<<<<
  * 
  *         for idx2, v2 in enumerate(bag.choices()):
  */
-    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_bag, __pyx_n_s_unique_count); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 144, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_bag, __pyx_n_s_unique_count); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 162, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
-    __pyx_t_2 = __Pyx_PyInt_SubtractObjC(__pyx_t_10, __pyx_int_1, 1, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 144, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyInt_SubtractObjC(__pyx_t_10, __pyx_int_1, 1, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 162, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
     __Pyx_XDECREF_SET(__pyx_v_bag_end, __pyx_t_2);
     __pyx_t_2 = 0;
 
-    /* "kovit/pjson.py":146
+    /* "kovit/pjson.py":164
  *         bag_end = bag.unique_count - 1
  * 
  *         for idx2, v2 in enumerate(bag.choices()):             # <<<<<<<<<<<<<<
@@ -7649,7 +7649,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
  */
     __Pyx_INCREF(__pyx_int_0);
     __pyx_t_2 = __pyx_int_0;
-    __pyx_t_13 = __Pyx_PyObject_GetAttrStr(__pyx_v_bag, __pyx_n_s_choices); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 146, __pyx_L1_error)
+    __pyx_t_13 = __Pyx_PyObject_GetAttrStr(__pyx_v_bag, __pyx_n_s_choices); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 164, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_13);
     __pyx_t_5 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_13))) {
@@ -7662,10 +7662,10 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
       }
     }
     if (__pyx_t_5) {
-      __pyx_t_10 = __Pyx_PyObject_CallOneArg(__pyx_t_13, __pyx_t_5); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 146, __pyx_L1_error)
+      __pyx_t_10 = __Pyx_PyObject_CallOneArg(__pyx_t_13, __pyx_t_5); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 164, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     } else {
-      __pyx_t_10 = __Pyx_PyObject_CallNoArg(__pyx_t_13); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 146, __pyx_L1_error)
+      __pyx_t_10 = __Pyx_PyObject_CallNoArg(__pyx_t_13); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 164, __pyx_L1_error)
     }
     __Pyx_GOTREF(__pyx_t_10);
     __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
@@ -7673,9 +7673,9 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
       __pyx_t_13 = __pyx_t_10; __Pyx_INCREF(__pyx_t_13); __pyx_t_12 = 0;
       __pyx_t_17 = NULL;
     } else {
-      __pyx_t_12 = -1; __pyx_t_13 = PyObject_GetIter(__pyx_t_10); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 146, __pyx_L1_error)
+      __pyx_t_12 = -1; __pyx_t_13 = PyObject_GetIter(__pyx_t_10); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 164, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_13);
-      __pyx_t_17 = Py_TYPE(__pyx_t_13)->tp_iternext; if (unlikely(!__pyx_t_17)) __PYX_ERR(0, 146, __pyx_L1_error)
+      __pyx_t_17 = Py_TYPE(__pyx_t_13)->tp_iternext; if (unlikely(!__pyx_t_17)) __PYX_ERR(0, 164, __pyx_L1_error)
     }
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
     for (;;) {
@@ -7683,17 +7683,17 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
         if (likely(PyList_CheckExact(__pyx_t_13))) {
           if (__pyx_t_12 >= PyList_GET_SIZE(__pyx_t_13)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_10 = PyList_GET_ITEM(__pyx_t_13, __pyx_t_12); __Pyx_INCREF(__pyx_t_10); __pyx_t_12++; if (unlikely(0 < 0)) __PYX_ERR(0, 146, __pyx_L1_error)
+          __pyx_t_10 = PyList_GET_ITEM(__pyx_t_13, __pyx_t_12); __Pyx_INCREF(__pyx_t_10); __pyx_t_12++; if (unlikely(0 < 0)) __PYX_ERR(0, 164, __pyx_L1_error)
           #else
-          __pyx_t_10 = PySequence_ITEM(__pyx_t_13, __pyx_t_12); __pyx_t_12++; if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 146, __pyx_L1_error)
+          __pyx_t_10 = PySequence_ITEM(__pyx_t_13, __pyx_t_12); __pyx_t_12++; if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 164, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_10);
           #endif
         } else {
           if (__pyx_t_12 >= PyTuple_GET_SIZE(__pyx_t_13)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_10 = PyTuple_GET_ITEM(__pyx_t_13, __pyx_t_12); __Pyx_INCREF(__pyx_t_10); __pyx_t_12++; if (unlikely(0 < 0)) __PYX_ERR(0, 146, __pyx_L1_error)
+          __pyx_t_10 = PyTuple_GET_ITEM(__pyx_t_13, __pyx_t_12); __Pyx_INCREF(__pyx_t_10); __pyx_t_12++; if (unlikely(0 < 0)) __PYX_ERR(0, 164, __pyx_L1_error)
           #else
-          __pyx_t_10 = PySequence_ITEM(__pyx_t_13, __pyx_t_12); __pyx_t_12++; if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 146, __pyx_L1_error)
+          __pyx_t_10 = PySequence_ITEM(__pyx_t_13, __pyx_t_12); __pyx_t_12++; if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 164, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_10);
           #endif
         }
@@ -7703,7 +7703,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
           PyObject* exc_type = PyErr_Occurred();
           if (exc_type) {
             if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-            else __PYX_ERR(0, 146, __pyx_L1_error)
+            else __PYX_ERR(0, 164, __pyx_L1_error)
           }
           break;
         }
@@ -7713,13 +7713,13 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
       __pyx_t_10 = 0;
       __Pyx_INCREF(__pyx_t_2);
       __Pyx_XDECREF_SET(__pyx_v_idx2, __pyx_t_2);
-      __pyx_t_10 = __Pyx_PyInt_AddObjC(__pyx_t_2, __pyx_int_1, 1, 0); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 146, __pyx_L1_error)
+      __pyx_t_10 = __Pyx_PyInt_AddObjC(__pyx_t_2, __pyx_int_1, 1, 0); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 164, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
       __Pyx_DECREF(__pyx_t_2);
       __pyx_t_2 = __pyx_t_10;
       __pyx_t_10 = 0;
 
-      /* "kovit/pjson.py":147
+      /* "kovit/pjson.py":165
  * 
  *         for idx2, v2 in enumerate(bag.choices()):
  *             next_start, count = v2             # <<<<<<<<<<<<<<
@@ -7732,7 +7732,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
         if (unlikely(size != 2)) {
           if (size > 2) __Pyx_RaiseTooManyValuesError(2);
           else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-          __PYX_ERR(0, 147, __pyx_L1_error)
+          __PYX_ERR(0, 165, __pyx_L1_error)
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
         if (likely(PyTuple_CheckExact(sequence))) {
@@ -7745,21 +7745,21 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
         __Pyx_INCREF(__pyx_t_10);
         __Pyx_INCREF(__pyx_t_5);
         #else
-        __pyx_t_10 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 147, __pyx_L1_error)
+        __pyx_t_10 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 165, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_10);
-        __pyx_t_5 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 147, __pyx_L1_error)
+        __pyx_t_5 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 165, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
         #endif
       } else {
         Py_ssize_t index = -1;
-        __pyx_t_8 = PyObject_GetIter(__pyx_v_v2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 147, __pyx_L1_error)
+        __pyx_t_8 = PyObject_GetIter(__pyx_v_v2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 165, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_8);
         __pyx_t_16 = Py_TYPE(__pyx_t_8)->tp_iternext;
         index = 0; __pyx_t_10 = __pyx_t_16(__pyx_t_8); if (unlikely(!__pyx_t_10)) goto __pyx_L15_unpacking_failed;
         __Pyx_GOTREF(__pyx_t_10);
         index = 1; __pyx_t_5 = __pyx_t_16(__pyx_t_8); if (unlikely(!__pyx_t_5)) goto __pyx_L15_unpacking_failed;
         __Pyx_GOTREF(__pyx_t_5);
-        if (__Pyx_IternextUnpackEndCheck(__pyx_t_16(__pyx_t_8), 2) < 0) __PYX_ERR(0, 147, __pyx_L1_error)
+        if (__Pyx_IternextUnpackEndCheck(__pyx_t_16(__pyx_t_8), 2) < 0) __PYX_ERR(0, 165, __pyx_L1_error)
         __pyx_t_16 = NULL;
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
         goto __pyx_L16_unpacking_done;
@@ -7767,7 +7767,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
         __pyx_t_16 = NULL;
         if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-        __PYX_ERR(0, 147, __pyx_L1_error)
+        __PYX_ERR(0, 165, __pyx_L1_error)
         __pyx_L16_unpacking_done:;
       }
       __Pyx_XDECREF_SET(__pyx_v_next_start, __pyx_t_10);
@@ -7775,30 +7775,30 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
       __Pyx_XDECREF_SET(__pyx_v_count, __pyx_t_5);
       __pyx_t_5 = 0;
 
-      /* "kovit/pjson.py":148
+      /* "kovit/pjson.py":166
  *         for idx2, v2 in enumerate(bag.choices()):
  *             next_start, count = v2
  *             write_next_start(next_start)             # <<<<<<<<<<<<<<
  *             file.write(',{}{}'.format(count, ',' if idx2 != bag_end else ''))
  * 
  */
-      __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_v_write_next_start, __pyx_v_next_start); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 148, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_v_write_next_start, __pyx_v_next_start); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 166, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-      /* "kovit/pjson.py":149
+      /* "kovit/pjson.py":167
  *             next_start, count = v2
  *             write_next_start(next_start)
  *             file.write(',{}{}'.format(count, ',' if idx2 != bag_end else ''))             # <<<<<<<<<<<<<<
  * 
  *         file.write('],' if idx != chain_end else ']')
  */
-      __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_file, __pyx_n_s_write); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 149, __pyx_L1_error)
+      __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_file, __pyx_n_s_write); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 167, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
-      __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_kp_s__27, __pyx_n_s_format); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 149, __pyx_L1_error)
+      __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_kp_s__27, __pyx_n_s_format); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 167, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
-      __pyx_t_18 = PyObject_RichCompare(__pyx_v_idx2, __pyx_v_bag_end, Py_NE); __Pyx_XGOTREF(__pyx_t_18); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 149, __pyx_L1_error)
-      __pyx_t_3 = __Pyx_PyObject_IsTrue(__pyx_t_18); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 149, __pyx_L1_error)
+      __pyx_t_18 = PyObject_RichCompare(__pyx_v_idx2, __pyx_v_bag_end, Py_NE); __Pyx_XGOTREF(__pyx_t_18); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 167, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_IsTrue(__pyx_t_18); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 167, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
       if (__pyx_t_3) {
         __Pyx_INCREF(__pyx_kp_s__13);
@@ -7822,7 +7822,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
       #if CYTHON_FAST_PYCALL
       if (PyFunction_Check(__pyx_t_9)) {
         PyObject *__pyx_temp[3] = {__pyx_t_18, __pyx_v_count, __pyx_t_14};
-        __pyx_t_8 = __Pyx_PyFunction_FastCall(__pyx_t_9, __pyx_temp+1-__pyx_t_15, 2+__pyx_t_15); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 149, __pyx_L1_error)
+        __pyx_t_8 = __Pyx_PyFunction_FastCall(__pyx_t_9, __pyx_temp+1-__pyx_t_15, 2+__pyx_t_15); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 167, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_18); __pyx_t_18 = 0;
         __Pyx_GOTREF(__pyx_t_8);
         __Pyx_DECREF(__pyx_t_14); __pyx_t_14 = 0;
@@ -7831,14 +7831,14 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
       #if CYTHON_FAST_PYCCALL
       if (__Pyx_PyFastCFunction_Check(__pyx_t_9)) {
         PyObject *__pyx_temp[3] = {__pyx_t_18, __pyx_v_count, __pyx_t_14};
-        __pyx_t_8 = __Pyx_PyCFunction_FastCall(__pyx_t_9, __pyx_temp+1-__pyx_t_15, 2+__pyx_t_15); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 149, __pyx_L1_error)
+        __pyx_t_8 = __Pyx_PyCFunction_FastCall(__pyx_t_9, __pyx_temp+1-__pyx_t_15, 2+__pyx_t_15); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 167, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_18); __pyx_t_18 = 0;
         __Pyx_GOTREF(__pyx_t_8);
         __Pyx_DECREF(__pyx_t_14); __pyx_t_14 = 0;
       } else
       #endif
       {
-        __pyx_t_19 = PyTuple_New(2+__pyx_t_15); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 149, __pyx_L1_error)
+        __pyx_t_19 = PyTuple_New(2+__pyx_t_15); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 167, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_19);
         if (__pyx_t_18) {
           __Pyx_GIVEREF(__pyx_t_18); PyTuple_SET_ITEM(__pyx_t_19, 0, __pyx_t_18); __pyx_t_18 = NULL;
@@ -7849,7 +7849,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
         __Pyx_GIVEREF(__pyx_t_14);
         PyTuple_SET_ITEM(__pyx_t_19, 1+__pyx_t_15, __pyx_t_14);
         __pyx_t_14 = 0;
-        __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_9, __pyx_t_19, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 149, __pyx_L1_error)
+        __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_9, __pyx_t_19, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 167, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_8);
         __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
       }
@@ -7865,14 +7865,14 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
         }
       }
       if (!__pyx_t_9) {
-        __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_t_10, __pyx_t_8); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 149, __pyx_L1_error)
+        __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_t_10, __pyx_t_8); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 167, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
         __Pyx_GOTREF(__pyx_t_5);
       } else {
         #if CYTHON_FAST_PYCALL
         if (PyFunction_Check(__pyx_t_10)) {
           PyObject *__pyx_temp[2] = {__pyx_t_9, __pyx_t_8};
-          __pyx_t_5 = __Pyx_PyFunction_FastCall(__pyx_t_10, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 149, __pyx_L1_error)
+          __pyx_t_5 = __Pyx_PyFunction_FastCall(__pyx_t_10, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 167, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
           __Pyx_GOTREF(__pyx_t_5);
           __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
@@ -7881,20 +7881,20 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
         #if CYTHON_FAST_PYCCALL
         if (__Pyx_PyFastCFunction_Check(__pyx_t_10)) {
           PyObject *__pyx_temp[2] = {__pyx_t_9, __pyx_t_8};
-          __pyx_t_5 = __Pyx_PyCFunction_FastCall(__pyx_t_10, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 149, __pyx_L1_error)
+          __pyx_t_5 = __Pyx_PyCFunction_FastCall(__pyx_t_10, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 167, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
           __Pyx_GOTREF(__pyx_t_5);
           __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
         } else
         #endif
         {
-          __pyx_t_19 = PyTuple_New(1+1); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 149, __pyx_L1_error)
+          __pyx_t_19 = PyTuple_New(1+1); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 167, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_19);
           __Pyx_GIVEREF(__pyx_t_9); PyTuple_SET_ITEM(__pyx_t_19, 0, __pyx_t_9); __pyx_t_9 = NULL;
           __Pyx_GIVEREF(__pyx_t_8);
           PyTuple_SET_ITEM(__pyx_t_19, 0+1, __pyx_t_8);
           __pyx_t_8 = 0;
-          __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_10, __pyx_t_19, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 149, __pyx_L1_error)
+          __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_10, __pyx_t_19, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 167, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_5);
           __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
         }
@@ -7902,7 +7902,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-      /* "kovit/pjson.py":146
+      /* "kovit/pjson.py":164
  *         bag_end = bag.unique_count - 1
  * 
  *         for idx2, v2 in enumerate(bag.choices()):             # <<<<<<<<<<<<<<
@@ -7913,20 +7913,20 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
     __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "kovit/pjson.py":151
+    /* "kovit/pjson.py":169
  *             file.write(',{}{}'.format(count, ',' if idx2 != bag_end else ''))
  * 
  *         file.write('],' if idx != chain_end else ']')             # <<<<<<<<<<<<<<
  * 
  *     file.write(']}')
  */
-    __pyx_t_13 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_file, __pyx_n_s_write); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 151, __pyx_L1_error)
+    __pyx_t_13 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_file, __pyx_n_s_write); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 169, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_13);
-    __pyx_t_10 = PyInt_FromSsize_t(__pyx_v_chain_end); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 151, __pyx_L1_error)
+    __pyx_t_10 = PyInt_FromSsize_t(__pyx_v_chain_end); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 169, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
-    __pyx_t_19 = PyObject_RichCompare(__pyx_v_idx, __pyx_t_10, Py_NE); __Pyx_XGOTREF(__pyx_t_19); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 151, __pyx_L1_error)
+    __pyx_t_19 = PyObject_RichCompare(__pyx_v_idx, __pyx_t_10, Py_NE); __Pyx_XGOTREF(__pyx_t_19); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 169, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-    __pyx_t_3 = __Pyx_PyObject_IsTrue(__pyx_t_19); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 151, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_IsTrue(__pyx_t_19); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 169, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
     if (__pyx_t_3) {
       __Pyx_INCREF(__pyx_kp_s__28);
@@ -7946,14 +7946,14 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
       }
     }
     if (!__pyx_t_19) {
-      __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_13, __pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 151, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_13, __pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 169, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_2);
     } else {
       #if CYTHON_FAST_PYCALL
       if (PyFunction_Check(__pyx_t_13)) {
         PyObject *__pyx_temp[2] = {__pyx_t_19, __pyx_t_5};
-        __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_13, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 151, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_13, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 169, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_19); __pyx_t_19 = 0;
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -7962,20 +7962,20 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
       #if CYTHON_FAST_PYCCALL
       if (__Pyx_PyFastCFunction_Check(__pyx_t_13)) {
         PyObject *__pyx_temp[2] = {__pyx_t_19, __pyx_t_5};
-        __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_13, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 151, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_13, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 169, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_19); __pyx_t_19 = 0;
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       } else
       #endif
       {
-        __pyx_t_10 = PyTuple_New(1+1); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 151, __pyx_L1_error)
+        __pyx_t_10 = PyTuple_New(1+1); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 169, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_10);
         __Pyx_GIVEREF(__pyx_t_19); PyTuple_SET_ITEM(__pyx_t_10, 0, __pyx_t_19); __pyx_t_19 = NULL;
         __Pyx_GIVEREF(__pyx_t_5);
         PyTuple_SET_ITEM(__pyx_t_10, 0+1, __pyx_t_5);
         __pyx_t_5 = 0;
-        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_13, __pyx_t_10, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 151, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_13, __pyx_t_10, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 169, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
       }
@@ -7983,7 +7983,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
     __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "kovit/pjson.py":139
+    /* "kovit/pjson.py":157
  *     chain_end = len(chain) - 1
  * 
  *     for idx, v in enumerate(chain.items()):             # <<<<<<<<<<<<<<
@@ -7994,21 +7994,21 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "kovit/pjson.py":153
+  /* "kovit/pjson.py":171
  *         file.write('],' if idx != chain_end else ']')
  * 
  *     file.write(']}')             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_file, __pyx_n_s_write); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 153, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_file, __pyx_n_s_write); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 171, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__30, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 153, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__30, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 171, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "kovit/pjson.py":102
+  /* "kovit/pjson.py":120
  * 
  * 
  * def dump_json_big(chain, file, frequency_compress=True):             # <<<<<<<<<<<<<<
@@ -8055,7 +8055,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
   return __pyx_r;
 }
 
-/* "kovit/pjson.py":156
+/* "kovit/pjson.py":174
  * 
  * 
  * def load_json_big(chain, file, merge=False):             # <<<<<<<<<<<<<<
@@ -8099,7 +8099,7 @@ static PyObject *__pyx_pw_5kovit_5cjson_7load_json_big(PyObject *__pyx_self, PyO
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_file)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("load_json_big", 0, 2, 3, 1); __PYX_ERR(0, 156, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("load_json_big", 0, 2, 3, 1); __PYX_ERR(0, 174, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -8109,7 +8109,7 @@ static PyObject *__pyx_pw_5kovit_5cjson_7load_json_big(PyObject *__pyx_self, PyO
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "load_json_big") < 0)) __PYX_ERR(0, 156, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "load_json_big") < 0)) __PYX_ERR(0, 174, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -8127,7 +8127,7 @@ static PyObject *__pyx_pw_5kovit_5cjson_7load_json_big(PyObject *__pyx_self, PyO
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("load_json_big", 0, 2, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 156, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("load_json_big", 0, 2, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 174, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("kovit.cjson.load_json_big", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -8141,7 +8141,7 @@ static PyObject *__pyx_pw_5kovit_5cjson_7load_json_big(PyObject *__pyx_self, PyO
 }
 static PyObject *__pyx_gb_5kovit_5cjson_13load_json_big_2generator7(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
-/* "kovit/pjson.py":227
+/* "kovit/pjson.py":245
  *             else:
  *                 if codes:
  *                     chain.add_to_bag(codes[start], (codes[i] for i in builder.value), count=value)             # <<<<<<<<<<<<<<
@@ -8158,7 +8158,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_13load_json_big_genexpr(PyObject *__pyx_
   if (unlikely(!__pyx_cur_scope)) {
     __pyx_cur_scope = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_12_genexpr *)Py_None);
     __Pyx_INCREF(Py_None);
-    __PYX_ERR(0, 227, __pyx_L1_error)
+    __PYX_ERR(0, 245, __pyx_L1_error)
   } else {
     __Pyx_GOTREF(__pyx_cur_scope);
   }
@@ -8166,7 +8166,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_13load_json_big_genexpr(PyObject *__pyx_
   __Pyx_INCREF(((PyObject *)__pyx_cur_scope->__pyx_outer_scope));
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_outer_scope);
   {
-    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_5kovit_5cjson_13load_json_big_2generator7, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_genexpr, __pyx_n_s_load_json_big_locals_genexpr, __pyx_n_s_kovit_cjson); if (unlikely(!gen)) __PYX_ERR(0, 227, __pyx_L1_error)
+    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_5kovit_5cjson_13load_json_big_2generator7, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_genexpr, __pyx_n_s_load_json_big_locals_genexpr, __pyx_n_s_kovit_cjson); if (unlikely(!gen)) __PYX_ERR(0, 245, __pyx_L1_error)
     __Pyx_DECREF(__pyx_cur_scope);
     __Pyx_RefNannyFinishContext();
     return (PyObject *) gen;
@@ -8200,17 +8200,17 @@ static PyObject *__pyx_gb_5kovit_5cjson_13load_json_big_2generator7(__pyx_Corout
     return NULL;
   }
   __pyx_L3_first_run:;
-  if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 227, __pyx_L1_error)
-  if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_builder)) { __Pyx_RaiseClosureNameError("builder"); __PYX_ERR(0, 227, __pyx_L1_error) }
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_builder, __pyx_n_s_value); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 227, __pyx_L1_error)
+  if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 245, __pyx_L1_error)
+  if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_builder)) { __Pyx_RaiseClosureNameError("builder"); __PYX_ERR(0, 245, __pyx_L1_error) }
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_builder, __pyx_n_s_value); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 245, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (likely(PyList_CheckExact(__pyx_t_1)) || PyTuple_CheckExact(__pyx_t_1)) {
     __pyx_t_2 = __pyx_t_1; __Pyx_INCREF(__pyx_t_2); __pyx_t_3 = 0;
     __pyx_t_4 = NULL;
   } else {
-    __pyx_t_3 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 227, __pyx_L1_error)
+    __pyx_t_3 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 245, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_4 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 227, __pyx_L1_error)
+    __pyx_t_4 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 245, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   for (;;) {
@@ -8218,17 +8218,17 @@ static PyObject *__pyx_gb_5kovit_5cjson_13load_json_big_2generator7(__pyx_Corout
       if (likely(PyList_CheckExact(__pyx_t_2))) {
         if (__pyx_t_3 >= PyList_GET_SIZE(__pyx_t_2)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_1 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_3); __Pyx_INCREF(__pyx_t_1); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(0, 227, __pyx_L1_error)
+        __pyx_t_1 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_3); __Pyx_INCREF(__pyx_t_1); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(0, 245, __pyx_L1_error)
         #else
-        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 227, __pyx_L1_error)
+        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 245, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         #endif
       } else {
         if (__pyx_t_3 >= PyTuple_GET_SIZE(__pyx_t_2)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_3); __Pyx_INCREF(__pyx_t_1); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(0, 227, __pyx_L1_error)
+        __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_3); __Pyx_INCREF(__pyx_t_1); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(0, 245, __pyx_L1_error)
         #else
-        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 227, __pyx_L1_error)
+        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 245, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         #endif
       }
@@ -8238,7 +8238,7 @@ static PyObject *__pyx_gb_5kovit_5cjson_13load_json_big_2generator7(__pyx_Corout
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 227, __pyx_L1_error)
+          else __PYX_ERR(0, 245, __pyx_L1_error)
         }
         break;
       }
@@ -8248,12 +8248,12 @@ static PyObject *__pyx_gb_5kovit_5cjson_13load_json_big_2generator7(__pyx_Corout
     __Pyx_XDECREF_SET(__pyx_cur_scope->__pyx_v_i, __pyx_t_1);
     __Pyx_GIVEREF(__pyx_t_1);
     __pyx_t_1 = 0;
-    if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_codes)) { __Pyx_RaiseClosureNameError("codes"); __PYX_ERR(0, 227, __pyx_L1_error) }
+    if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_codes)) { __Pyx_RaiseClosureNameError("codes"); __PYX_ERR(0, 245, __pyx_L1_error) }
     if (unlikely(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_codes == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(0, 227, __pyx_L1_error)
+      __PYX_ERR(0, 245, __pyx_L1_error)
     }
-    __pyx_t_1 = __Pyx_PyDict_GetItem(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_codes, __pyx_cur_scope->__pyx_v_i); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 227, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyDict_GetItem(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_codes, __pyx_cur_scope->__pyx_v_i); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 245, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __pyx_r = __pyx_t_1;
     __pyx_t_1 = 0;
@@ -8273,7 +8273,7 @@ static PyObject *__pyx_gb_5kovit_5cjson_13load_json_big_2generator7(__pyx_Corout
     __Pyx_XGOTREF(__pyx_t_2);
     __pyx_t_3 = __pyx_cur_scope->__pyx_t_1;
     __pyx_t_4 = __pyx_cur_scope->__pyx_t_2;
-    if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 227, __pyx_L1_error)
+    if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 245, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
@@ -8294,7 +8294,7 @@ static PyObject *__pyx_gb_5kovit_5cjson_13load_json_big_2generator7(__pyx_Corout
   return __pyx_r;
 }
 
-/* "kovit/pjson.py":156
+/* "kovit/pjson.py":174
  * 
  * 
  * def load_json_big(chain, file, merge=False):             # <<<<<<<<<<<<<<
@@ -8341,30 +8341,30 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
   if (unlikely(!__pyx_cur_scope)) {
     __pyx_cur_scope = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_11_load_json_big *)Py_None);
     __Pyx_INCREF(Py_None);
-    __PYX_ERR(0, 156, __pyx_L1_error)
+    __PYX_ERR(0, 174, __pyx_L1_error)
   } else {
     __Pyx_GOTREF(__pyx_cur_scope);
   }
 
-  /* "kovit/pjson.py":157
+  /* "kovit/pjson.py":175
  * 
  * def load_json_big(chain, file, merge=False):
  *     if not merge:             # <<<<<<<<<<<<<<
  *         chain.clear()
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_merge); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 157, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_merge); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 175, __pyx_L1_error)
   __pyx_t_2 = ((!__pyx_t_1) != 0);
   if (__pyx_t_2) {
 
-    /* "kovit/pjson.py":158
+    /* "kovit/pjson.py":176
  * def load_json_big(chain, file, merge=False):
  *     if not merge:
  *         chain.clear()             # <<<<<<<<<<<<<<
  * 
  *     parser = ijson.parse(file)
  */
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_chain, __pyx_n_s_clear); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 158, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_chain, __pyx_n_s_clear); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 176, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_t_5 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_4))) {
@@ -8377,16 +8377,16 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
       }
     }
     if (__pyx_t_5) {
-      __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 158, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 176, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     } else {
-      __pyx_t_3 = __Pyx_PyObject_CallNoArg(__pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 158, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_CallNoArg(__pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 176, __pyx_L1_error)
     }
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "kovit/pjson.py":157
+    /* "kovit/pjson.py":175
  * 
  * def load_json_big(chain, file, merge=False):
  *     if not merge:             # <<<<<<<<<<<<<<
@@ -8395,16 +8395,16 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
  */
   }
 
-  /* "kovit/pjson.py":160
+  /* "kovit/pjson.py":178
  *         chain.clear()
  * 
  *     parser = ijson.parse(file)             # <<<<<<<<<<<<<<
  * 
  *     depth = 0
  */
-  __pyx_t_4 = __Pyx_GetModuleGlobalName(__pyx_n_s_ijson); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 160, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_GetModuleGlobalName(__pyx_n_s_ijson); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 178, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_parse); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 160, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_parse); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 178, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_4 = NULL;
@@ -8418,13 +8418,13 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
     }
   }
   if (!__pyx_t_4) {
-    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_v_file); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 160, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_v_file); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 178, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
   } else {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_5)) {
       PyObject *__pyx_temp[2] = {__pyx_t_4, __pyx_v_file};
-      __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 160, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 178, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_GOTREF(__pyx_t_3);
     } else
@@ -8432,19 +8432,19 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_5)) {
       PyObject *__pyx_temp[2] = {__pyx_t_4, __pyx_v_file};
-      __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 160, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 178, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_GOTREF(__pyx_t_3);
     } else
     #endif
     {
-      __pyx_t_6 = PyTuple_New(1+1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 160, __pyx_L1_error)
+      __pyx_t_6 = PyTuple_New(1+1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 178, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GIVEREF(__pyx_t_4); PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_4); __pyx_t_4 = NULL;
       __Pyx_INCREF(__pyx_v_file);
       __Pyx_GIVEREF(__pyx_v_file);
       PyTuple_SET_ITEM(__pyx_t_6, 0+1, __pyx_v_file);
-      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_6, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 160, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_6, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 178, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     }
@@ -8453,7 +8453,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
   __pyx_v_parser = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "kovit/pjson.py":162
+  /* "kovit/pjson.py":180
  *     parser = ijson.parse(file)
  * 
  *     depth = 0             # <<<<<<<<<<<<<<
@@ -8463,14 +8463,14 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
   __Pyx_INCREF(__pyx_int_0);
   __pyx_v_depth = __pyx_int_0;
 
-  /* "kovit/pjson.py":164
+  /* "kovit/pjson.py":182
  *     depth = 0
  * 
  *     builder = ObjectBuilder()             # <<<<<<<<<<<<<<
  * 
  *     codes = None
  */
-  __pyx_t_5 = __Pyx_GetModuleGlobalName(__pyx_n_s_ObjectBuilder); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 164, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_GetModuleGlobalName(__pyx_n_s_ObjectBuilder); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 182, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __pyx_t_6 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_5))) {
@@ -8483,10 +8483,10 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
     }
   }
   if (__pyx_t_6) {
-    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 164, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 182, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   } else {
-    __pyx_t_3 = __Pyx_PyObject_CallNoArg(__pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 164, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_CallNoArg(__pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 182, __pyx_L1_error)
   }
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -8494,7 +8494,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
   __pyx_cur_scope->__pyx_v_builder = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "kovit/pjson.py":166
+  /* "kovit/pjson.py":184
  *     builder = ObjectBuilder()
  * 
  *     codes = None             # <<<<<<<<<<<<<<
@@ -8505,7 +8505,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
   __Pyx_GIVEREF(Py_None);
   __pyx_cur_scope->__pyx_v_codes = ((PyObject*)Py_None);
 
-  /* "kovit/pjson.py":168
+  /* "kovit/pjson.py":186
  *     codes = None
  * 
  *     building_bag_item = False             # <<<<<<<<<<<<<<
@@ -8514,7 +8514,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
  */
   __pyx_v_building_bag_item = 0;
 
-  /* "kovit/pjson.py":170
+  /* "kovit/pjson.py":188
  *     building_bag_item = False
  * 
  *     start = None             # <<<<<<<<<<<<<<
@@ -8524,7 +8524,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
   __Pyx_INCREF(Py_None);
   __pyx_v_start = Py_None;
 
-  /* "kovit/pjson.py":172
+  /* "kovit/pjson.py":190
  *     start = None
  * 
  *     in_bag = False             # <<<<<<<<<<<<<<
@@ -8533,7 +8533,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
  */
   __pyx_v_in_bag = 0;
 
-  /* "kovit/pjson.py":173
+  /* "kovit/pjson.py":191
  * 
  *     in_bag = False
  *     in_chain = False             # <<<<<<<<<<<<<<
@@ -8542,7 +8542,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
  */
   __pyx_v_in_chain = 0;
 
-  /* "kovit/pjson.py":174
+  /* "kovit/pjson.py":192
  *     in_bag = False
  *     in_chain = False
  *     in_codes = False             # <<<<<<<<<<<<<<
@@ -8551,7 +8551,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
  */
   __pyx_v_in_codes = 0;
 
-  /* "kovit/pjson.py":176
+  /* "kovit/pjson.py":194
  *     in_codes = False
  * 
  *     last_value = None             # <<<<<<<<<<<<<<
@@ -8561,7 +8561,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
   __Pyx_INCREF(Py_None);
   __pyx_v_last_value = Py_None;
 
-  /* "kovit/pjson.py":177
+  /* "kovit/pjson.py":195
  * 
  *     last_value = None
  *     last_key = None             # <<<<<<<<<<<<<<
@@ -8571,7 +8571,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
   __Pyx_INCREF(Py_None);
   __pyx_v_last_key = Py_None;
 
-  /* "kovit/pjson.py":179
+  /* "kovit/pjson.py":197
  *     last_key = None
  * 
  *     for prefix, event, value in parser:             # <<<<<<<<<<<<<<
@@ -8582,26 +8582,26 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
     __pyx_t_3 = __pyx_v_parser; __Pyx_INCREF(__pyx_t_3); __pyx_t_7 = 0;
     __pyx_t_8 = NULL;
   } else {
-    __pyx_t_7 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_v_parser); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 179, __pyx_L1_error)
+    __pyx_t_7 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_v_parser); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 197, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_8 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 179, __pyx_L1_error)
+    __pyx_t_8 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 197, __pyx_L1_error)
   }
   for (;;) {
     if (likely(!__pyx_t_8)) {
       if (likely(PyList_CheckExact(__pyx_t_3))) {
         if (__pyx_t_7 >= PyList_GET_SIZE(__pyx_t_3)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_5 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_7); __Pyx_INCREF(__pyx_t_5); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 179, __pyx_L1_error)
+        __pyx_t_5 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_7); __Pyx_INCREF(__pyx_t_5); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 197, __pyx_L1_error)
         #else
-        __pyx_t_5 = PySequence_ITEM(__pyx_t_3, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 179, __pyx_L1_error)
+        __pyx_t_5 = PySequence_ITEM(__pyx_t_3, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 197, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
         #endif
       } else {
         if (__pyx_t_7 >= PyTuple_GET_SIZE(__pyx_t_3)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_5 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_7); __Pyx_INCREF(__pyx_t_5); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 179, __pyx_L1_error)
+        __pyx_t_5 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_7); __Pyx_INCREF(__pyx_t_5); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 197, __pyx_L1_error)
         #else
-        __pyx_t_5 = PySequence_ITEM(__pyx_t_3, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 179, __pyx_L1_error)
+        __pyx_t_5 = PySequence_ITEM(__pyx_t_3, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 197, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
         #endif
       }
@@ -8611,7 +8611,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 179, __pyx_L1_error)
+          else __PYX_ERR(0, 197, __pyx_L1_error)
         }
         break;
       }
@@ -8623,7 +8623,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
       if (unlikely(size != 3)) {
         if (size > 3) __Pyx_RaiseTooManyValuesError(3);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        __PYX_ERR(0, 179, __pyx_L1_error)
+        __PYX_ERR(0, 197, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -8639,17 +8639,17 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
       __Pyx_INCREF(__pyx_t_4);
       __Pyx_INCREF(__pyx_t_9);
       #else
-      __pyx_t_6 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 179, __pyx_L1_error)
+      __pyx_t_6 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 197, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
-      __pyx_t_4 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 179, __pyx_L1_error)
+      __pyx_t_4 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 197, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_9 = PySequence_ITEM(sequence, 2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 179, __pyx_L1_error)
+      __pyx_t_9 = PySequence_ITEM(sequence, 2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 197, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
       #endif
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     } else {
       Py_ssize_t index = -1;
-      __pyx_t_10 = PyObject_GetIter(__pyx_t_5); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 179, __pyx_L1_error)
+      __pyx_t_10 = PyObject_GetIter(__pyx_t_5); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 197, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       __pyx_t_11 = Py_TYPE(__pyx_t_10)->tp_iternext;
@@ -8659,7 +8659,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
       __Pyx_GOTREF(__pyx_t_4);
       index = 2; __pyx_t_9 = __pyx_t_11(__pyx_t_10); if (unlikely(!__pyx_t_9)) goto __pyx_L6_unpacking_failed;
       __Pyx_GOTREF(__pyx_t_9);
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_11(__pyx_t_10), 3) < 0) __PYX_ERR(0, 179, __pyx_L1_error)
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_11(__pyx_t_10), 3) < 0) __PYX_ERR(0, 197, __pyx_L1_error)
       __pyx_t_11 = NULL;
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
       goto __pyx_L7_unpacking_done;
@@ -8667,7 +8667,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
       __pyx_t_11 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      __PYX_ERR(0, 179, __pyx_L1_error)
+      __PYX_ERR(0, 197, __pyx_L1_error)
       __pyx_L7_unpacking_done:;
     }
     __Pyx_XDECREF_SET(__pyx_v_prefix, __pyx_t_6);
@@ -8677,81 +8677,81 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
     __Pyx_XDECREF_SET(__pyx_v_value, __pyx_t_9);
     __pyx_t_9 = 0;
 
-    /* "kovit/pjson.py":181
+    /* "kovit/pjson.py":199
  *     for prefix, event, value in parser:
  * 
  *         is_start = event.startswith('start_')             # <<<<<<<<<<<<<<
  *         is_end = event.startswith('end_')
  *         start_array = event == 'start_array'
  */
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_event, __pyx_n_s_startswith); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 181, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_event, __pyx_n_s_startswith); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 199, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_tuple__31, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 181, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_tuple__31, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 199, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_XDECREF_SET(__pyx_v_is_start, __pyx_t_9);
     __pyx_t_9 = 0;
 
-    /* "kovit/pjson.py":182
+    /* "kovit/pjson.py":200
  * 
  *         is_start = event.startswith('start_')
  *         is_end = event.startswith('end_')             # <<<<<<<<<<<<<<
  *         start_array = event == 'start_array'
  *         end_array = event == 'end_array'
  */
-    __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_event, __pyx_n_s_startswith); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 182, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_event, __pyx_n_s_startswith); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 200, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
-    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_9, __pyx_tuple__32, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 182, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_9, __pyx_tuple__32, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 200, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
     __Pyx_XDECREF_SET(__pyx_v_is_end, __pyx_t_5);
     __pyx_t_5 = 0;
 
-    /* "kovit/pjson.py":183
+    /* "kovit/pjson.py":201
  *         is_start = event.startswith('start_')
  *         is_end = event.startswith('end_')
  *         start_array = event == 'start_array'             # <<<<<<<<<<<<<<
  *         end_array = event == 'end_array'
  * 
  */
-    __pyx_t_5 = PyObject_RichCompare(__pyx_v_event, __pyx_n_s_start_array, Py_EQ); __Pyx_XGOTREF(__pyx_t_5); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 183, __pyx_L1_error)
+    __pyx_t_5 = PyObject_RichCompare(__pyx_v_event, __pyx_n_s_start_array, Py_EQ); __Pyx_XGOTREF(__pyx_t_5); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 201, __pyx_L1_error)
     __Pyx_XDECREF_SET(__pyx_v_start_array, __pyx_t_5);
     __pyx_t_5 = 0;
 
-    /* "kovit/pjson.py":184
+    /* "kovit/pjson.py":202
  *         is_end = event.startswith('end_')
  *         start_array = event == 'start_array'
  *         end_array = event == 'end_array'             # <<<<<<<<<<<<<<
  * 
  *         if is_start:
  */
-    __pyx_t_5 = PyObject_RichCompare(__pyx_v_event, __pyx_n_s_end_array, Py_EQ); __Pyx_XGOTREF(__pyx_t_5); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 184, __pyx_L1_error)
+    __pyx_t_5 = PyObject_RichCompare(__pyx_v_event, __pyx_n_s_end_array, Py_EQ); __Pyx_XGOTREF(__pyx_t_5); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 202, __pyx_L1_error)
     __Pyx_XDECREF_SET(__pyx_v_end_array, __pyx_t_5);
     __pyx_t_5 = 0;
 
-    /* "kovit/pjson.py":186
+    /* "kovit/pjson.py":204
  *         end_array = event == 'end_array'
  * 
  *         if is_start:             # <<<<<<<<<<<<<<
  *             depth += 1
  *         if is_end:
  */
-    __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_is_start); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 186, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_is_start); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 204, __pyx_L1_error)
     if (__pyx_t_2) {
 
-      /* "kovit/pjson.py":187
+      /* "kovit/pjson.py":205
  * 
  *         if is_start:
  *             depth += 1             # <<<<<<<<<<<<<<
  *         if is_end:
  *             depth -= 1
  */
-      __pyx_t_5 = __Pyx_PyInt_AddObjC(__pyx_v_depth, __pyx_int_1, 1, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 187, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyInt_AddObjC(__pyx_v_depth, __pyx_int_1, 1, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 205, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_DECREF_SET(__pyx_v_depth, __pyx_t_5);
       __pyx_t_5 = 0;
 
-      /* "kovit/pjson.py":186
+      /* "kovit/pjson.py":204
  *         end_array = event == 'end_array'
  * 
  *         if is_start:             # <<<<<<<<<<<<<<
@@ -8760,29 +8760,29 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
  */
     }
 
-    /* "kovit/pjson.py":188
+    /* "kovit/pjson.py":206
  *         if is_start:
  *             depth += 1
  *         if is_end:             # <<<<<<<<<<<<<<
  *             depth -= 1
  *         if event == 'map_key':
  */
-    __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_is_end); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 188, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_is_end); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 206, __pyx_L1_error)
     if (__pyx_t_2) {
 
-      /* "kovit/pjson.py":189
+      /* "kovit/pjson.py":207
  *             depth += 1
  *         if is_end:
  *             depth -= 1             # <<<<<<<<<<<<<<
  *         if event == 'map_key':
  *             last_key = value
  */
-      __pyx_t_5 = __Pyx_PyInt_SubtractObjC(__pyx_v_depth, __pyx_int_1, 1, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 189, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyInt_SubtractObjC(__pyx_v_depth, __pyx_int_1, 1, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 207, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_DECREF_SET(__pyx_v_depth, __pyx_t_5);
       __pyx_t_5 = 0;
 
-      /* "kovit/pjson.py":188
+      /* "kovit/pjson.py":206
  *         if is_start:
  *             depth += 1
  *         if is_end:             # <<<<<<<<<<<<<<
@@ -8791,17 +8791,17 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
  */
     }
 
-    /* "kovit/pjson.py":190
+    /* "kovit/pjson.py":208
  *         if is_end:
  *             depth -= 1
  *         if event == 'map_key':             # <<<<<<<<<<<<<<
  *             last_key = value
  *         if event == 'number' or event == 'string':
  */
-    __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_event, __pyx_n_s_map_key, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 190, __pyx_L1_error)
+    __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_event, __pyx_n_s_map_key, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 208, __pyx_L1_error)
     if (__pyx_t_2) {
 
-      /* "kovit/pjson.py":191
+      /* "kovit/pjson.py":209
  *             depth -= 1
  *         if event == 'map_key':
  *             last_key = value             # <<<<<<<<<<<<<<
@@ -8811,7 +8811,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
       __Pyx_INCREF(__pyx_v_value);
       __Pyx_DECREF_SET(__pyx_v_last_key, __pyx_v_value);
 
-      /* "kovit/pjson.py":190
+      /* "kovit/pjson.py":208
  *         if is_end:
  *             depth -= 1
  *         if event == 'map_key':             # <<<<<<<<<<<<<<
@@ -8820,25 +8820,25 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
  */
     }
 
-    /* "kovit/pjson.py":192
+    /* "kovit/pjson.py":210
  *         if event == 'map_key':
  *             last_key = value
  *         if event == 'number' or event == 'string':             # <<<<<<<<<<<<<<
  *             last_value = value
  * 
  */
-    __pyx_t_1 = (__Pyx_PyString_Equals(__pyx_v_event, __pyx_n_s_number, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 192, __pyx_L1_error)
+    __pyx_t_1 = (__Pyx_PyString_Equals(__pyx_v_event, __pyx_n_s_number, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 210, __pyx_L1_error)
     if (!__pyx_t_1) {
     } else {
       __pyx_t_2 = __pyx_t_1;
       goto __pyx_L12_bool_binop_done;
     }
-    __pyx_t_1 = (__Pyx_PyString_Equals(__pyx_v_event, __pyx_n_s_string, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 192, __pyx_L1_error)
+    __pyx_t_1 = (__Pyx_PyString_Equals(__pyx_v_event, __pyx_n_s_string, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 210, __pyx_L1_error)
     __pyx_t_2 = __pyx_t_1;
     __pyx_L12_bool_binop_done:;
     if (__pyx_t_2) {
 
-      /* "kovit/pjson.py":193
+      /* "kovit/pjson.py":211
  *             last_key = value
  *         if event == 'number' or event == 'string':
  *             last_value = value             # <<<<<<<<<<<<<<
@@ -8848,7 +8848,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
       __Pyx_INCREF(__pyx_v_value);
       __Pyx_DECREF_SET(__pyx_v_last_value, __pyx_v_value);
 
-      /* "kovit/pjson.py":192
+      /* "kovit/pjson.py":210
  *         if event == 'map_key':
  *             last_key = value
  *         if event == 'number' or event == 'string':             # <<<<<<<<<<<<<<
@@ -8857,7 +8857,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
  */
     }
 
-    /* "kovit/pjson.py":195
+    /* "kovit/pjson.py":213
  *             last_value = value
  * 
  *         if not (in_codes or in_chain) and start_array and depth == 2:             # <<<<<<<<<<<<<<
@@ -8879,31 +8879,31 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
       __pyx_t_2 = __pyx_t_12;
       goto __pyx_L15_bool_binop_done;
     }
-    __pyx_t_12 = __Pyx_PyObject_IsTrue(__pyx_v_start_array); if (unlikely(__pyx_t_12 < 0)) __PYX_ERR(0, 195, __pyx_L1_error)
+    __pyx_t_12 = __Pyx_PyObject_IsTrue(__pyx_v_start_array); if (unlikely(__pyx_t_12 < 0)) __PYX_ERR(0, 213, __pyx_L1_error)
     if (__pyx_t_12) {
     } else {
       __pyx_t_2 = __pyx_t_12;
       goto __pyx_L15_bool_binop_done;
     }
-    __pyx_t_5 = __Pyx_PyInt_EqObjC(__pyx_v_depth, __pyx_int_2, 2, 0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 195, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyInt_EqObjC(__pyx_v_depth, __pyx_int_2, 2, 0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 213, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_12 = __Pyx_PyObject_IsTrue(__pyx_t_5); if (unlikely(__pyx_t_12 < 0)) __PYX_ERR(0, 195, __pyx_L1_error)
+    __pyx_t_12 = __Pyx_PyObject_IsTrue(__pyx_t_5); if (unlikely(__pyx_t_12 < 0)) __PYX_ERR(0, 213, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __pyx_t_2 = __pyx_t_12;
     __pyx_L15_bool_binop_done:;
     if (__pyx_t_2) {
 
-      /* "kovit/pjson.py":196
+      /* "kovit/pjson.py":214
  * 
  *         if not (in_codes or in_chain) and start_array and depth == 2:
  *             if last_key == 'codes':             # <<<<<<<<<<<<<<
  *                 in_codes = True
  *                 builder.event(event, value)
  */
-      __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_last_key, __pyx_n_s_codes, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 196, __pyx_L1_error)
+      __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_last_key, __pyx_n_s_codes, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 214, __pyx_L1_error)
       if (__pyx_t_2) {
 
-        /* "kovit/pjson.py":197
+        /* "kovit/pjson.py":215
  *         if not (in_codes or in_chain) and start_array and depth == 2:
  *             if last_key == 'codes':
  *                 in_codes = True             # <<<<<<<<<<<<<<
@@ -8912,14 +8912,14 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
  */
         __pyx_v_in_codes = 1;
 
-        /* "kovit/pjson.py":198
+        /* "kovit/pjson.py":216
  *             if last_key == 'codes':
  *                 in_codes = True
  *                 builder.event(event, value)             # <<<<<<<<<<<<<<
  *             elif last_key == 'chain':
  *                 in_chain = True
  */
-        __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_builder, __pyx_n_s_event); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 198, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_builder, __pyx_n_s_event); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 216, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_9);
         __pyx_t_4 = NULL;
         __pyx_t_13 = 0;
@@ -8936,7 +8936,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
         #if CYTHON_FAST_PYCALL
         if (PyFunction_Check(__pyx_t_9)) {
           PyObject *__pyx_temp[3] = {__pyx_t_4, __pyx_v_event, __pyx_v_value};
-          __pyx_t_5 = __Pyx_PyFunction_FastCall(__pyx_t_9, __pyx_temp+1-__pyx_t_13, 2+__pyx_t_13); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 198, __pyx_L1_error)
+          __pyx_t_5 = __Pyx_PyFunction_FastCall(__pyx_t_9, __pyx_temp+1-__pyx_t_13, 2+__pyx_t_13); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 216, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
           __Pyx_GOTREF(__pyx_t_5);
         } else
@@ -8944,13 +8944,13 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
         #if CYTHON_FAST_PYCCALL
         if (__Pyx_PyFastCFunction_Check(__pyx_t_9)) {
           PyObject *__pyx_temp[3] = {__pyx_t_4, __pyx_v_event, __pyx_v_value};
-          __pyx_t_5 = __Pyx_PyCFunction_FastCall(__pyx_t_9, __pyx_temp+1-__pyx_t_13, 2+__pyx_t_13); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 198, __pyx_L1_error)
+          __pyx_t_5 = __Pyx_PyCFunction_FastCall(__pyx_t_9, __pyx_temp+1-__pyx_t_13, 2+__pyx_t_13); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 216, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
           __Pyx_GOTREF(__pyx_t_5);
         } else
         #endif
         {
-          __pyx_t_6 = PyTuple_New(2+__pyx_t_13); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 198, __pyx_L1_error)
+          __pyx_t_6 = PyTuple_New(2+__pyx_t_13); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 216, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
           if (__pyx_t_4) {
             __Pyx_GIVEREF(__pyx_t_4); PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_4); __pyx_t_4 = NULL;
@@ -8961,14 +8961,14 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
           __Pyx_INCREF(__pyx_v_value);
           __Pyx_GIVEREF(__pyx_v_value);
           PyTuple_SET_ITEM(__pyx_t_6, 1+__pyx_t_13, __pyx_v_value);
-          __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_9, __pyx_t_6, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 198, __pyx_L1_error)
+          __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_9, __pyx_t_6, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 216, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_5);
           __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
         }
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-        /* "kovit/pjson.py":196
+        /* "kovit/pjson.py":214
  * 
  *         if not (in_codes or in_chain) and start_array and depth == 2:
  *             if last_key == 'codes':             # <<<<<<<<<<<<<<
@@ -8978,17 +8978,17 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
         goto __pyx_L20;
       }
 
-      /* "kovit/pjson.py":199
+      /* "kovit/pjson.py":217
  *                 in_codes = True
  *                 builder.event(event, value)
  *             elif last_key == 'chain':             # <<<<<<<<<<<<<<
  *                 in_chain = True
  *         elif event == 'end_array' and depth == 1:
  */
-      __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_last_key, __pyx_n_s_chain, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 199, __pyx_L1_error)
+      __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_last_key, __pyx_n_s_chain, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 217, __pyx_L1_error)
       if (__pyx_t_2) {
 
-        /* "kovit/pjson.py":200
+        /* "kovit/pjson.py":218
  *                 builder.event(event, value)
  *             elif last_key == 'chain':
  *                 in_chain = True             # <<<<<<<<<<<<<<
@@ -8997,7 +8997,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
  */
         __pyx_v_in_chain = 1;
 
-        /* "kovit/pjson.py":199
+        /* "kovit/pjson.py":217
  *                 in_codes = True
  *                 builder.event(event, value)
  *             elif last_key == 'chain':             # <<<<<<<<<<<<<<
@@ -9007,7 +9007,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
       }
       __pyx_L20:;
 
-      /* "kovit/pjson.py":195
+      /* "kovit/pjson.py":213
  *             last_value = value
  * 
  *         if not (in_codes or in_chain) and start_array and depth == 2:             # <<<<<<<<<<<<<<
@@ -9017,28 +9017,28 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
       goto __pyx_L14;
     }
 
-    /* "kovit/pjson.py":201
+    /* "kovit/pjson.py":219
  *             elif last_key == 'chain':
  *                 in_chain = True
  *         elif event == 'end_array' and depth == 1:             # <<<<<<<<<<<<<<
  *             if in_codes:
  *                 liter = iter(builder.value)
  */
-    __pyx_t_12 = (__Pyx_PyString_Equals(__pyx_v_event, __pyx_n_s_end_array, Py_EQ)); if (unlikely(__pyx_t_12 < 0)) __PYX_ERR(0, 201, __pyx_L1_error)
+    __pyx_t_12 = (__Pyx_PyString_Equals(__pyx_v_event, __pyx_n_s_end_array, Py_EQ)); if (unlikely(__pyx_t_12 < 0)) __PYX_ERR(0, 219, __pyx_L1_error)
     if (__pyx_t_12) {
     } else {
       __pyx_t_2 = __pyx_t_12;
       goto __pyx_L21_bool_binop_done;
     }
-    __pyx_t_5 = __Pyx_PyInt_EqObjC(__pyx_v_depth, __pyx_int_1, 1, 0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 201, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyInt_EqObjC(__pyx_v_depth, __pyx_int_1, 1, 0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 219, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_12 = __Pyx_PyObject_IsTrue(__pyx_t_5); if (unlikely(__pyx_t_12 < 0)) __PYX_ERR(0, 201, __pyx_L1_error)
+    __pyx_t_12 = __Pyx_PyObject_IsTrue(__pyx_t_5); if (unlikely(__pyx_t_12 < 0)) __PYX_ERR(0, 219, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __pyx_t_2 = __pyx_t_12;
     __pyx_L21_bool_binop_done:;
     if (__pyx_t_2) {
 
-      /* "kovit/pjson.py":202
+      /* "kovit/pjson.py":220
  *                 in_chain = True
  *         elif event == 'end_array' and depth == 1:
  *             if in_codes:             # <<<<<<<<<<<<<<
@@ -9048,29 +9048,29 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
       __pyx_t_2 = (__pyx_v_in_codes != 0);
       if (__pyx_t_2) {
 
-        /* "kovit/pjson.py":203
+        /* "kovit/pjson.py":221
  *         elif event == 'end_array' and depth == 1:
  *             if in_codes:
  *                 liter = iter(builder.value)             # <<<<<<<<<<<<<<
  *                 codes = dict(zip(liter, liter))
  *                 builder.event(event, value)
  */
-        __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_builder, __pyx_n_s_value); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 203, __pyx_L1_error)
+        __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_builder, __pyx_n_s_value); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 221, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
-        __pyx_t_9 = PyObject_GetIter(__pyx_t_5); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 203, __pyx_L1_error)
+        __pyx_t_9 = PyObject_GetIter(__pyx_t_5); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 221, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_XDECREF_SET(__pyx_v_liter, __pyx_t_9);
         __pyx_t_9 = 0;
 
-        /* "kovit/pjson.py":204
+        /* "kovit/pjson.py":222
  *             if in_codes:
  *                 liter = iter(builder.value)
  *                 codes = dict(zip(liter, liter))             # <<<<<<<<<<<<<<
  *                 builder.event(event, value)
  *                 in_codes = False
  */
-        __pyx_t_9 = PyTuple_New(2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 204, __pyx_L1_error)
+        __pyx_t_9 = PyTuple_New(2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 222, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_INCREF(__pyx_v_liter);
         __Pyx_GIVEREF(__pyx_v_liter);
@@ -9078,10 +9078,10 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
         __Pyx_INCREF(__pyx_v_liter);
         __Pyx_GIVEREF(__pyx_v_liter);
         PyTuple_SET_ITEM(__pyx_t_9, 1, __pyx_v_liter);
-        __pyx_t_5 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_9, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 204, __pyx_L1_error)
+        __pyx_t_5 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_9, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 222, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-        __pyx_t_9 = __Pyx_PyObject_CallOneArg(((PyObject *)(&PyDict_Type)), __pyx_t_5); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 204, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyObject_CallOneArg(((PyObject *)(&PyDict_Type)), __pyx_t_5); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 222, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_GOTREF(__pyx_cur_scope->__pyx_v_codes);
@@ -9089,14 +9089,14 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
         __Pyx_GIVEREF(__pyx_t_9);
         __pyx_t_9 = 0;
 
-        /* "kovit/pjson.py":205
+        /* "kovit/pjson.py":223
  *                 liter = iter(builder.value)
  *                 codes = dict(zip(liter, liter))
  *                 builder.event(event, value)             # <<<<<<<<<<<<<<
  *                 in_codes = False
  *             if in_chain:
  */
-        __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_builder, __pyx_n_s_event); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 205, __pyx_L1_error)
+        __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_builder, __pyx_n_s_event); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 223, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
         __pyx_t_6 = NULL;
         __pyx_t_13 = 0;
@@ -9113,7 +9113,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
         #if CYTHON_FAST_PYCALL
         if (PyFunction_Check(__pyx_t_5)) {
           PyObject *__pyx_temp[3] = {__pyx_t_6, __pyx_v_event, __pyx_v_value};
-          __pyx_t_9 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_13, 2+__pyx_t_13); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 205, __pyx_L1_error)
+          __pyx_t_9 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_13, 2+__pyx_t_13); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 223, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
           __Pyx_GOTREF(__pyx_t_9);
         } else
@@ -9121,13 +9121,13 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
         #if CYTHON_FAST_PYCCALL
         if (__Pyx_PyFastCFunction_Check(__pyx_t_5)) {
           PyObject *__pyx_temp[3] = {__pyx_t_6, __pyx_v_event, __pyx_v_value};
-          __pyx_t_9 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_13, 2+__pyx_t_13); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 205, __pyx_L1_error)
+          __pyx_t_9 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_13, 2+__pyx_t_13); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 223, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
           __Pyx_GOTREF(__pyx_t_9);
         } else
         #endif
         {
-          __pyx_t_4 = PyTuple_New(2+__pyx_t_13); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 205, __pyx_L1_error)
+          __pyx_t_4 = PyTuple_New(2+__pyx_t_13); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 223, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_4);
           if (__pyx_t_6) {
             __Pyx_GIVEREF(__pyx_t_6); PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_6); __pyx_t_6 = NULL;
@@ -9138,14 +9138,14 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
           __Pyx_INCREF(__pyx_v_value);
           __Pyx_GIVEREF(__pyx_v_value);
           PyTuple_SET_ITEM(__pyx_t_4, 1+__pyx_t_13, __pyx_v_value);
-          __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_4, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 205, __pyx_L1_error)
+          __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_4, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 223, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_9);
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         }
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
 
-        /* "kovit/pjson.py":206
+        /* "kovit/pjson.py":224
  *                 codes = dict(zip(liter, liter))
  *                 builder.event(event, value)
  *                 in_codes = False             # <<<<<<<<<<<<<<
@@ -9154,7 +9154,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
  */
         __pyx_v_in_codes = 0;
 
-        /* "kovit/pjson.py":202
+        /* "kovit/pjson.py":220
  *                 in_chain = True
  *         elif event == 'end_array' and depth == 1:
  *             if in_codes:             # <<<<<<<<<<<<<<
@@ -9163,7 +9163,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
  */
       }
 
-      /* "kovit/pjson.py":207
+      /* "kovit/pjson.py":225
  *                 builder.event(event, value)
  *                 in_codes = False
  *             if in_chain:             # <<<<<<<<<<<<<<
@@ -9173,7 +9173,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
       __pyx_t_2 = (__pyx_v_in_chain != 0);
       if (__pyx_t_2) {
 
-        /* "kovit/pjson.py":208
+        /* "kovit/pjson.py":226
  *                 in_codes = False
  *             if in_chain:
  *                 in_chain = False             # <<<<<<<<<<<<<<
@@ -9182,7 +9182,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
  */
         __pyx_v_in_chain = 0;
 
-        /* "kovit/pjson.py":207
+        /* "kovit/pjson.py":225
  *                 builder.event(event, value)
  *                 in_codes = False
  *             if in_chain:             # <<<<<<<<<<<<<<
@@ -9191,7 +9191,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
  */
       }
 
-      /* "kovit/pjson.py":201
+      /* "kovit/pjson.py":219
  *             elif last_key == 'chain':
  *                 in_chain = True
  *         elif event == 'end_array' and depth == 1:             # <<<<<<<<<<<<<<
@@ -9201,7 +9201,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
       goto __pyx_L14;
     }
 
-    /* "kovit/pjson.py":209
+    /* "kovit/pjson.py":227
  *             if in_chain:
  *                 in_chain = False
  *         elif in_chain and start_array and depth == 3:             # <<<<<<<<<<<<<<
@@ -9214,21 +9214,21 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
       __pyx_t_2 = __pyx_t_12;
       goto __pyx_L25_bool_binop_done;
     }
-    __pyx_t_12 = __Pyx_PyObject_IsTrue(__pyx_v_start_array); if (unlikely(__pyx_t_12 < 0)) __PYX_ERR(0, 209, __pyx_L1_error)
+    __pyx_t_12 = __Pyx_PyObject_IsTrue(__pyx_v_start_array); if (unlikely(__pyx_t_12 < 0)) __PYX_ERR(0, 227, __pyx_L1_error)
     if (__pyx_t_12) {
     } else {
       __pyx_t_2 = __pyx_t_12;
       goto __pyx_L25_bool_binop_done;
     }
-    __pyx_t_9 = __Pyx_PyInt_EqObjC(__pyx_v_depth, __pyx_int_3, 3, 0); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 209, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyInt_EqObjC(__pyx_v_depth, __pyx_int_3, 3, 0); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 227, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
-    __pyx_t_12 = __Pyx_PyObject_IsTrue(__pyx_t_9); if (unlikely(__pyx_t_12 < 0)) __PYX_ERR(0, 209, __pyx_L1_error)
+    __pyx_t_12 = __Pyx_PyObject_IsTrue(__pyx_t_9); if (unlikely(__pyx_t_12 < 0)) __PYX_ERR(0, 227, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
     __pyx_t_2 = __pyx_t_12;
     __pyx_L25_bool_binop_done:;
     if (__pyx_t_2) {
 
-      /* "kovit/pjson.py":210
+      /* "kovit/pjson.py":228
  *                 in_chain = False
  *         elif in_chain and start_array and depth == 3:
  *             in_bag = True             # <<<<<<<<<<<<<<
@@ -9237,7 +9237,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
  */
       __pyx_v_in_bag = 1;
 
-      /* "kovit/pjson.py":211
+      /* "kovit/pjson.py":229
  *         elif in_chain and start_array and depth == 3:
  *             in_bag = True
  *             start = last_value             # <<<<<<<<<<<<<<
@@ -9247,7 +9247,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
       __Pyx_INCREF(__pyx_v_last_value);
       __Pyx_DECREF_SET(__pyx_v_start, __pyx_v_last_value);
 
-      /* "kovit/pjson.py":209
+      /* "kovit/pjson.py":227
  *             if in_chain:
  *                 in_chain = False
  *         elif in_chain and start_array and depth == 3:             # <<<<<<<<<<<<<<
@@ -9257,7 +9257,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
       goto __pyx_L14;
     }
 
-    /* "kovit/pjson.py":212
+    /* "kovit/pjson.py":230
  *             in_bag = True
  *             start = last_value
  *         elif in_chain and end_array and depth == 2:             # <<<<<<<<<<<<<<
@@ -9270,21 +9270,21 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
       __pyx_t_2 = __pyx_t_12;
       goto __pyx_L28_bool_binop_done;
     }
-    __pyx_t_12 = __Pyx_PyObject_IsTrue(__pyx_v_end_array); if (unlikely(__pyx_t_12 < 0)) __PYX_ERR(0, 212, __pyx_L1_error)
+    __pyx_t_12 = __Pyx_PyObject_IsTrue(__pyx_v_end_array); if (unlikely(__pyx_t_12 < 0)) __PYX_ERR(0, 230, __pyx_L1_error)
     if (__pyx_t_12) {
     } else {
       __pyx_t_2 = __pyx_t_12;
       goto __pyx_L28_bool_binop_done;
     }
-    __pyx_t_9 = __Pyx_PyInt_EqObjC(__pyx_v_depth, __pyx_int_2, 2, 0); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 212, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyInt_EqObjC(__pyx_v_depth, __pyx_int_2, 2, 0); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 230, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
-    __pyx_t_12 = __Pyx_PyObject_IsTrue(__pyx_t_9); if (unlikely(__pyx_t_12 < 0)) __PYX_ERR(0, 212, __pyx_L1_error)
+    __pyx_t_12 = __Pyx_PyObject_IsTrue(__pyx_t_9); if (unlikely(__pyx_t_12 < 0)) __PYX_ERR(0, 230, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
     __pyx_t_2 = __pyx_t_12;
     __pyx_L28_bool_binop_done:;
     if (__pyx_t_2) {
 
-      /* "kovit/pjson.py":213
+      /* "kovit/pjson.py":231
  *             start = last_value
  *         elif in_chain and end_array and depth == 2:
  *             in_bag = False             # <<<<<<<<<<<<<<
@@ -9293,7 +9293,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
  */
       __pyx_v_in_bag = 0;
 
-      /* "kovit/pjson.py":212
+      /* "kovit/pjson.py":230
  *             in_bag = True
  *             start = last_value
  *         elif in_chain and end_array and depth == 2:             # <<<<<<<<<<<<<<
@@ -9303,7 +9303,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
       goto __pyx_L14;
     }
 
-    /* "kovit/pjson.py":214
+    /* "kovit/pjson.py":232
  *         elif in_chain and end_array and depth == 2:
  *             in_bag = False
  *         elif in_codes:             # <<<<<<<<<<<<<<
@@ -9313,14 +9313,14 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
     __pyx_t_2 = (__pyx_v_in_codes != 0);
     if (__pyx_t_2) {
 
-      /* "kovit/pjson.py":215
+      /* "kovit/pjson.py":233
  *             in_bag = False
  *         elif in_codes:
  *             builder.event(event, value)             # <<<<<<<<<<<<<<
  *         elif in_bag:
  *             if not building_bag_item and is_start:
  */
-      __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_builder, __pyx_n_s_event); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 215, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_builder, __pyx_n_s_event); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 233, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __pyx_t_4 = NULL;
       __pyx_t_13 = 0;
@@ -9337,7 +9337,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
       #if CYTHON_FAST_PYCALL
       if (PyFunction_Check(__pyx_t_5)) {
         PyObject *__pyx_temp[3] = {__pyx_t_4, __pyx_v_event, __pyx_v_value};
-        __pyx_t_9 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_13, 2+__pyx_t_13); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 215, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_13, 2+__pyx_t_13); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 233, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
         __Pyx_GOTREF(__pyx_t_9);
       } else
@@ -9345,13 +9345,13 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
       #if CYTHON_FAST_PYCCALL
       if (__Pyx_PyFastCFunction_Check(__pyx_t_5)) {
         PyObject *__pyx_temp[3] = {__pyx_t_4, __pyx_v_event, __pyx_v_value};
-        __pyx_t_9 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_13, 2+__pyx_t_13); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 215, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_13, 2+__pyx_t_13); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 233, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
         __Pyx_GOTREF(__pyx_t_9);
       } else
       #endif
       {
-        __pyx_t_6 = PyTuple_New(2+__pyx_t_13); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 215, __pyx_L1_error)
+        __pyx_t_6 = PyTuple_New(2+__pyx_t_13); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 233, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_6);
         if (__pyx_t_4) {
           __Pyx_GIVEREF(__pyx_t_4); PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_4); __pyx_t_4 = NULL;
@@ -9362,14 +9362,14 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
         __Pyx_INCREF(__pyx_v_value);
         __Pyx_GIVEREF(__pyx_v_value);
         PyTuple_SET_ITEM(__pyx_t_6, 1+__pyx_t_13, __pyx_v_value);
-        __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_6, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 215, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_6, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 233, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       }
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
 
-      /* "kovit/pjson.py":214
+      /* "kovit/pjson.py":232
  *         elif in_chain and end_array and depth == 2:
  *             in_bag = False
  *         elif in_codes:             # <<<<<<<<<<<<<<
@@ -9379,7 +9379,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
       goto __pyx_L14;
     }
 
-    /* "kovit/pjson.py":216
+    /* "kovit/pjson.py":234
  *         elif in_codes:
  *             builder.event(event, value)
  *         elif in_bag:             # <<<<<<<<<<<<<<
@@ -9389,7 +9389,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
     __pyx_t_2 = (__pyx_v_in_bag != 0);
     if (__pyx_t_2) {
 
-      /* "kovit/pjson.py":217
+      /* "kovit/pjson.py":235
  *             builder.event(event, value)
  *         elif in_bag:
  *             if not building_bag_item and is_start:             # <<<<<<<<<<<<<<
@@ -9402,19 +9402,19 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
         __pyx_t_2 = __pyx_t_12;
         goto __pyx_L32_bool_binop_done;
       }
-      __pyx_t_12 = __Pyx_PyObject_IsTrue(__pyx_v_is_start); if (unlikely(__pyx_t_12 < 0)) __PYX_ERR(0, 217, __pyx_L1_error)
+      __pyx_t_12 = __Pyx_PyObject_IsTrue(__pyx_v_is_start); if (unlikely(__pyx_t_12 < 0)) __PYX_ERR(0, 235, __pyx_L1_error)
       __pyx_t_2 = __pyx_t_12;
       __pyx_L32_bool_binop_done:;
       if (__pyx_t_2) {
 
-        /* "kovit/pjson.py":218
+        /* "kovit/pjson.py":236
  *         elif in_bag:
  *             if not building_bag_item and is_start:
  *                 builder.event(event, value)             # <<<<<<<<<<<<<<
  *                 building_bag_item = True
  *             elif building_bag_item and is_end:
  */
-        __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_builder, __pyx_n_s_event); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 218, __pyx_L1_error)
+        __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_builder, __pyx_n_s_event); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 236, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
         __pyx_t_6 = NULL;
         __pyx_t_13 = 0;
@@ -9431,7 +9431,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
         #if CYTHON_FAST_PYCALL
         if (PyFunction_Check(__pyx_t_5)) {
           PyObject *__pyx_temp[3] = {__pyx_t_6, __pyx_v_event, __pyx_v_value};
-          __pyx_t_9 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_13, 2+__pyx_t_13); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 218, __pyx_L1_error)
+          __pyx_t_9 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_13, 2+__pyx_t_13); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 236, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
           __Pyx_GOTREF(__pyx_t_9);
         } else
@@ -9439,13 +9439,13 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
         #if CYTHON_FAST_PYCCALL
         if (__Pyx_PyFastCFunction_Check(__pyx_t_5)) {
           PyObject *__pyx_temp[3] = {__pyx_t_6, __pyx_v_event, __pyx_v_value};
-          __pyx_t_9 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_13, 2+__pyx_t_13); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 218, __pyx_L1_error)
+          __pyx_t_9 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_13, 2+__pyx_t_13); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 236, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
           __Pyx_GOTREF(__pyx_t_9);
         } else
         #endif
         {
-          __pyx_t_4 = PyTuple_New(2+__pyx_t_13); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 218, __pyx_L1_error)
+          __pyx_t_4 = PyTuple_New(2+__pyx_t_13); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 236, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_4);
           if (__pyx_t_6) {
             __Pyx_GIVEREF(__pyx_t_6); PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_6); __pyx_t_6 = NULL;
@@ -9456,14 +9456,14 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
           __Pyx_INCREF(__pyx_v_value);
           __Pyx_GIVEREF(__pyx_v_value);
           PyTuple_SET_ITEM(__pyx_t_4, 1+__pyx_t_13, __pyx_v_value);
-          __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_4, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 218, __pyx_L1_error)
+          __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_4, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 236, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_9);
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         }
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
 
-        /* "kovit/pjson.py":219
+        /* "kovit/pjson.py":237
  *             if not building_bag_item and is_start:
  *                 builder.event(event, value)
  *                 building_bag_item = True             # <<<<<<<<<<<<<<
@@ -9472,7 +9472,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
  */
         __pyx_v_building_bag_item = 1;
 
-        /* "kovit/pjson.py":217
+        /* "kovit/pjson.py":235
  *             builder.event(event, value)
  *         elif in_bag:
  *             if not building_bag_item and is_start:             # <<<<<<<<<<<<<<
@@ -9482,7 +9482,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
         goto __pyx_L31;
       }
 
-      /* "kovit/pjson.py":220
+      /* "kovit/pjson.py":238
  *                 builder.event(event, value)
  *                 building_bag_item = True
  *             elif building_bag_item and is_end:             # <<<<<<<<<<<<<<
@@ -9495,19 +9495,19 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
         __pyx_t_2 = __pyx_t_12;
         goto __pyx_L34_bool_binop_done;
       }
-      __pyx_t_12 = __Pyx_PyObject_IsTrue(__pyx_v_is_end); if (unlikely(__pyx_t_12 < 0)) __PYX_ERR(0, 220, __pyx_L1_error)
+      __pyx_t_12 = __Pyx_PyObject_IsTrue(__pyx_v_is_end); if (unlikely(__pyx_t_12 < 0)) __PYX_ERR(0, 238, __pyx_L1_error)
       __pyx_t_2 = __pyx_t_12;
       __pyx_L34_bool_binop_done:;
       if (__pyx_t_2) {
 
-        /* "kovit/pjson.py":221
+        /* "kovit/pjson.py":239
  *                 building_bag_item = True
  *             elif building_bag_item and is_end:
  *                 builder.event(event, value)             # <<<<<<<<<<<<<<
  *                 building_bag_item = False
  *             elif building_bag_item:
  */
-        __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_builder, __pyx_n_s_event); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 221, __pyx_L1_error)
+        __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_builder, __pyx_n_s_event); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 239, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
         __pyx_t_4 = NULL;
         __pyx_t_13 = 0;
@@ -9524,7 +9524,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
         #if CYTHON_FAST_PYCALL
         if (PyFunction_Check(__pyx_t_5)) {
           PyObject *__pyx_temp[3] = {__pyx_t_4, __pyx_v_event, __pyx_v_value};
-          __pyx_t_9 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_13, 2+__pyx_t_13); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 221, __pyx_L1_error)
+          __pyx_t_9 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_13, 2+__pyx_t_13); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 239, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
           __Pyx_GOTREF(__pyx_t_9);
         } else
@@ -9532,13 +9532,13 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
         #if CYTHON_FAST_PYCCALL
         if (__Pyx_PyFastCFunction_Check(__pyx_t_5)) {
           PyObject *__pyx_temp[3] = {__pyx_t_4, __pyx_v_event, __pyx_v_value};
-          __pyx_t_9 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_13, 2+__pyx_t_13); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 221, __pyx_L1_error)
+          __pyx_t_9 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_13, 2+__pyx_t_13); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 239, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
           __Pyx_GOTREF(__pyx_t_9);
         } else
         #endif
         {
-          __pyx_t_6 = PyTuple_New(2+__pyx_t_13); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 221, __pyx_L1_error)
+          __pyx_t_6 = PyTuple_New(2+__pyx_t_13); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 239, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
           if (__pyx_t_4) {
             __Pyx_GIVEREF(__pyx_t_4); PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_4); __pyx_t_4 = NULL;
@@ -9549,14 +9549,14 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
           __Pyx_INCREF(__pyx_v_value);
           __Pyx_GIVEREF(__pyx_v_value);
           PyTuple_SET_ITEM(__pyx_t_6, 1+__pyx_t_13, __pyx_v_value);
-          __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_6, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 221, __pyx_L1_error)
+          __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_6, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 239, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_9);
           __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
         }
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
 
-        /* "kovit/pjson.py":222
+        /* "kovit/pjson.py":240
  *             elif building_bag_item and is_end:
  *                 builder.event(event, value)
  *                 building_bag_item = False             # <<<<<<<<<<<<<<
@@ -9565,7 +9565,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
  */
         __pyx_v_building_bag_item = 0;
 
-        /* "kovit/pjson.py":220
+        /* "kovit/pjson.py":238
  *                 builder.event(event, value)
  *                 building_bag_item = True
  *             elif building_bag_item and is_end:             # <<<<<<<<<<<<<<
@@ -9575,7 +9575,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
         goto __pyx_L31;
       }
 
-      /* "kovit/pjson.py":223
+      /* "kovit/pjson.py":241
  *                 builder.event(event, value)
  *                 building_bag_item = False
  *             elif building_bag_item:             # <<<<<<<<<<<<<<
@@ -9585,14 +9585,14 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
       __pyx_t_2 = (__pyx_v_building_bag_item != 0);
       if (__pyx_t_2) {
 
-        /* "kovit/pjson.py":224
+        /* "kovit/pjson.py":242
  *                 building_bag_item = False
  *             elif building_bag_item:
  *                 builder.event(event, value)             # <<<<<<<<<<<<<<
  *             else:
  *                 if codes:
  */
-        __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_builder, __pyx_n_s_event); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 224, __pyx_L1_error)
+        __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_builder, __pyx_n_s_event); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 242, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
         __pyx_t_6 = NULL;
         __pyx_t_13 = 0;
@@ -9609,7 +9609,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
         #if CYTHON_FAST_PYCALL
         if (PyFunction_Check(__pyx_t_5)) {
           PyObject *__pyx_temp[3] = {__pyx_t_6, __pyx_v_event, __pyx_v_value};
-          __pyx_t_9 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_13, 2+__pyx_t_13); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 224, __pyx_L1_error)
+          __pyx_t_9 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_13, 2+__pyx_t_13); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 242, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
           __Pyx_GOTREF(__pyx_t_9);
         } else
@@ -9617,13 +9617,13 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
         #if CYTHON_FAST_PYCCALL
         if (__Pyx_PyFastCFunction_Check(__pyx_t_5)) {
           PyObject *__pyx_temp[3] = {__pyx_t_6, __pyx_v_event, __pyx_v_value};
-          __pyx_t_9 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_13, 2+__pyx_t_13); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 224, __pyx_L1_error)
+          __pyx_t_9 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_13, 2+__pyx_t_13); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 242, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
           __Pyx_GOTREF(__pyx_t_9);
         } else
         #endif
         {
-          __pyx_t_4 = PyTuple_New(2+__pyx_t_13); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 224, __pyx_L1_error)
+          __pyx_t_4 = PyTuple_New(2+__pyx_t_13); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 242, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_4);
           if (__pyx_t_6) {
             __Pyx_GIVEREF(__pyx_t_6); PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_6); __pyx_t_6 = NULL;
@@ -9634,14 +9634,14 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
           __Pyx_INCREF(__pyx_v_value);
           __Pyx_GIVEREF(__pyx_v_value);
           PyTuple_SET_ITEM(__pyx_t_4, 1+__pyx_t_13, __pyx_v_value);
-          __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_4, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 224, __pyx_L1_error)
+          __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_4, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 242, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_9);
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         }
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
 
-        /* "kovit/pjson.py":223
+        /* "kovit/pjson.py":241
  *                 builder.event(event, value)
  *                 building_bag_item = False
  *             elif building_bag_item:             # <<<<<<<<<<<<<<
@@ -9651,7 +9651,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
         goto __pyx_L31;
       }
 
-      /* "kovit/pjson.py":226
+      /* "kovit/pjson.py":244
  *                 builder.event(event, value)
  *             else:
  *                 if codes:             # <<<<<<<<<<<<<<
@@ -9659,27 +9659,27 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
  *                 else:
  */
       /*else*/ {
-        __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_cur_scope->__pyx_v_codes); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 226, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_cur_scope->__pyx_v_codes); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 244, __pyx_L1_error)
         if (__pyx_t_2) {
 
-          /* "kovit/pjson.py":227
+          /* "kovit/pjson.py":245
  *             else:
  *                 if codes:
  *                     chain.add_to_bag(codes[start], (codes[i] for i in builder.value), count=value)             # <<<<<<<<<<<<<<
  *                 else:
  *                     chain.add_to_bag(start, builder.value, count=value)
  */
-          __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_chain, __pyx_n_s_add_to_bag); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 227, __pyx_L1_error)
+          __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_chain, __pyx_n_s_add_to_bag); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 245, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_9);
           if (unlikely(__pyx_cur_scope->__pyx_v_codes == Py_None)) {
             PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-            __PYX_ERR(0, 227, __pyx_L1_error)
+            __PYX_ERR(0, 245, __pyx_L1_error)
           }
-          __pyx_t_5 = __Pyx_PyDict_GetItem(__pyx_cur_scope->__pyx_v_codes, __pyx_v_start); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 227, __pyx_L1_error)
+          __pyx_t_5 = __Pyx_PyDict_GetItem(__pyx_cur_scope->__pyx_v_codes, __pyx_v_start); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 245, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_5);
-          __pyx_t_4 = __pyx_pf_5kovit_5cjson_13load_json_big_genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 227, __pyx_L1_error)
+          __pyx_t_4 = __pyx_pf_5kovit_5cjson_13load_json_big_genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 245, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_4);
-          __pyx_t_6 = PyTuple_New(2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 227, __pyx_L1_error)
+          __pyx_t_6 = PyTuple_New(2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 245, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
           __Pyx_GIVEREF(__pyx_t_5);
           PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_5);
@@ -9687,17 +9687,17 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
           PyTuple_SET_ITEM(__pyx_t_6, 1, __pyx_t_4);
           __pyx_t_5 = 0;
           __pyx_t_4 = 0;
-          __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 227, __pyx_L1_error)
+          __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 245, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_4);
-          if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_count, __pyx_v_value) < 0) __PYX_ERR(0, 227, __pyx_L1_error)
-          __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_9, __pyx_t_6, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 227, __pyx_L1_error)
+          if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_count, __pyx_v_value) < 0) __PYX_ERR(0, 245, __pyx_L1_error)
+          __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_9, __pyx_t_6, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 245, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_5);
           __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
           __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
           __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-          /* "kovit/pjson.py":226
+          /* "kovit/pjson.py":244
  *                 builder.event(event, value)
  *             else:
  *                 if codes:             # <<<<<<<<<<<<<<
@@ -9707,17 +9707,17 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
           goto __pyx_L36;
         }
 
-        /* "kovit/pjson.py":229
+        /* "kovit/pjson.py":247
  *                     chain.add_to_bag(codes[start], (codes[i] for i in builder.value), count=value)
  *                 else:
  *                     chain.add_to_bag(start, builder.value, count=value)             # <<<<<<<<<<<<<<
  */
         /*else*/ {
-          __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_chain, __pyx_n_s_add_to_bag); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 229, __pyx_L1_error)
+          __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_chain, __pyx_n_s_add_to_bag); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 247, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_5);
-          __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_builder, __pyx_n_s_value); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 229, __pyx_L1_error)
+          __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_builder, __pyx_n_s_value); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 247, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_4);
-          __pyx_t_6 = PyTuple_New(2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 229, __pyx_L1_error)
+          __pyx_t_6 = PyTuple_New(2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 247, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
           __Pyx_INCREF(__pyx_v_start);
           __Pyx_GIVEREF(__pyx_v_start);
@@ -9725,10 +9725,10 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
           __Pyx_GIVEREF(__pyx_t_4);
           PyTuple_SET_ITEM(__pyx_t_6, 1, __pyx_t_4);
           __pyx_t_4 = 0;
-          __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 229, __pyx_L1_error)
+          __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 247, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_4);
-          if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_count, __pyx_v_value) < 0) __PYX_ERR(0, 229, __pyx_L1_error)
-          __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_6, __pyx_t_4); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 229, __pyx_L1_error)
+          if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_count, __pyx_v_value) < 0) __PYX_ERR(0, 247, __pyx_L1_error)
+          __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_6, __pyx_t_4); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 247, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_9);
           __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
           __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
@@ -9739,7 +9739,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
       }
       __pyx_L31:;
 
-      /* "kovit/pjson.py":216
+      /* "kovit/pjson.py":234
  *         elif in_codes:
  *             builder.event(event, value)
  *         elif in_bag:             # <<<<<<<<<<<<<<
@@ -9749,7 +9749,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
     }
     __pyx_L14:;
 
-    /* "kovit/pjson.py":179
+    /* "kovit/pjson.py":197
  *     last_key = None
  * 
  *     for prefix, event, value in parser:             # <<<<<<<<<<<<<<
@@ -9759,7 +9759,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "kovit/pjson.py":156
+  /* "kovit/pjson.py":174
  * 
  * 
  * def load_json_big(chain, file, merge=False):             # <<<<<<<<<<<<<<
@@ -11377,10 +11377,10 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {0, 0, 0, 0, 0, 0, 0}
 };
 static int __Pyx_InitCachedBuiltins(void) {
-  __pyx_builtin_ImportError = __Pyx_GetBuiltinName(__pyx_n_s_ImportError); if (!__pyx_builtin_ImportError) __PYX_ERR(0, 4, __pyx_L1_error)
-  __pyx_builtin_enumerate = __Pyx_GetBuiltinName(__pyx_n_s_enumerate); if (!__pyx_builtin_enumerate) __PYX_ERR(0, 27, __pyx_L1_error)
-  __pyx_builtin_sorted = __Pyx_GetBuiltinName(__pyx_n_s_sorted); if (!__pyx_builtin_sorted) __PYX_ERR(0, 27, __pyx_L1_error)
-  __pyx_builtin_zip = __Pyx_GetBuiltinName(__pyx_n_s_zip); if (!__pyx_builtin_zip) __PYX_ERR(0, 68, __pyx_L1_error)
+  __pyx_builtin_ImportError = __Pyx_GetBuiltinName(__pyx_n_s_ImportError); if (!__pyx_builtin_ImportError) __PYX_ERR(0, 24, __pyx_L1_error)
+  __pyx_builtin_enumerate = __Pyx_GetBuiltinName(__pyx_n_s_enumerate); if (!__pyx_builtin_enumerate) __PYX_ERR(0, 46, __pyx_L1_error)
+  __pyx_builtin_sorted = __Pyx_GetBuiltinName(__pyx_n_s_sorted); if (!__pyx_builtin_sorted) __PYX_ERR(0, 46, __pyx_L1_error)
+  __pyx_builtin_zip = __Pyx_GetBuiltinName(__pyx_n_s_zip); if (!__pyx_builtin_zip) __PYX_ERR(0, 86, __pyx_L1_error)
   return 0;
   __pyx_L1_error:;
   return -1;
@@ -11390,226 +11390,226 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "kovit/pjson.py":39
+  /* "kovit/pjson.py":58
  *                 codes_list.append(v)
  * 
  *         def gen_start(start):             # <<<<<<<<<<<<<<
  *             return codes[start]
  * 
  */
-  __pyx_tuple_ = PyTuple_Pack(1, __pyx_n_s_start); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 39, __pyx_L1_error)
+  __pyx_tuple_ = PyTuple_Pack(1, __pyx_n_s_start); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 58, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple_);
   __Pyx_GIVEREF(__pyx_tuple_);
-  __pyx_codeobj__2 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple_, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_kovit_pjson_py, __pyx_n_s_gen_start, 39, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__2)) __PYX_ERR(0, 39, __pyx_L1_error)
+  __pyx_codeobj__2 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple_, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_kovit_pjson_py, __pyx_n_s_gen_start, 58, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__2)) __PYX_ERR(0, 58, __pyx_L1_error)
 
-  /* "kovit/pjson.py":42
+  /* "kovit/pjson.py":61
  *             return codes[start]
  * 
  *         def gen_next_start(choices):             # <<<<<<<<<<<<<<
  *             for val, cnt in choices:
  *                 yield tuple(codes[s] for s in val)
  */
-  __pyx_tuple__3 = PyTuple_Pack(5, __pyx_n_s_choices, __pyx_n_s_val, __pyx_n_s_cnt, __pyx_n_s_genexpr, __pyx_n_s_genexpr); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 42, __pyx_L1_error)
+  __pyx_tuple__3 = PyTuple_Pack(5, __pyx_n_s_choices, __pyx_n_s_val, __pyx_n_s_cnt, __pyx_n_s_genexpr, __pyx_n_s_genexpr); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 61, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__3);
   __Pyx_GIVEREF(__pyx_tuple__3);
-  __pyx_codeobj__4 = (PyObject*)__Pyx_PyCode_New(1, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__3, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_kovit_pjson_py, __pyx_n_s_gen_next_start, 42, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__4)) __PYX_ERR(0, 42, __pyx_L1_error)
+  __pyx_codeobj__4 = (PyObject*)__Pyx_PyCode_New(1, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__3, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_kovit_pjson_py, __pyx_n_s_gen_next_start, 61, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__4)) __PYX_ERR(0, 61, __pyx_L1_error)
 
-  /* "kovit/pjson.py":47
+  /* "kovit/pjson.py":66
  *                 yield cnt
  *     else:
  *         def gen_start(start):             # <<<<<<<<<<<<<<
  *             return start
  * 
  */
-  __pyx_tuple__5 = PyTuple_Pack(1, __pyx_n_s_start); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(0, 47, __pyx_L1_error)
+  __pyx_tuple__5 = PyTuple_Pack(1, __pyx_n_s_start); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(0, 66, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__5);
   __Pyx_GIVEREF(__pyx_tuple__5);
-  __pyx_codeobj__6 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__5, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_kovit_pjson_py, __pyx_n_s_gen_start, 47, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__6)) __PYX_ERR(0, 47, __pyx_L1_error)
+  __pyx_codeobj__6 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__5, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_kovit_pjson_py, __pyx_n_s_gen_start, 66, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__6)) __PYX_ERR(0, 66, __pyx_L1_error)
 
-  /* "kovit/pjson.py":50
+  /* "kovit/pjson.py":69
  *             return start
  * 
  *         def gen_next_start(choices):             # <<<<<<<<<<<<<<
  *             for val, cnt in choices:
  *                 yield val
  */
-  __pyx_tuple__7 = PyTuple_Pack(3, __pyx_n_s_choices, __pyx_n_s_val, __pyx_n_s_cnt); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(0, 50, __pyx_L1_error)
+  __pyx_tuple__7 = PyTuple_Pack(3, __pyx_n_s_choices, __pyx_n_s_val, __pyx_n_s_cnt); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(0, 69, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__7);
   __Pyx_GIVEREF(__pyx_tuple__7);
-  __pyx_codeobj__8 = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__7, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_kovit_pjson_py, __pyx_n_s_gen_next_start, 50, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__8)) __PYX_ERR(0, 50, __pyx_L1_error)
+  __pyx_codeobj__8 = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__7, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_kovit_pjson_py, __pyx_n_s_gen_next_start, 69, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__8)) __PYX_ERR(0, 69, __pyx_L1_error)
 
-  /* "kovit/pjson.py":55
+  /* "kovit/pjson.py":74
  *                 yield cnt
  * 
  *     def gen_chain():             # <<<<<<<<<<<<<<
  *         for start, bag in chain.items():
  *             yield gen_start(start)
  */
-  __pyx_tuple__9 = PyTuple_Pack(2, __pyx_n_s_start, __pyx_n_s_bag); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(0, 55, __pyx_L1_error)
+  __pyx_tuple__9 = PyTuple_Pack(2, __pyx_n_s_start, __pyx_n_s_bag); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(0, 74, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__9);
   __Pyx_GIVEREF(__pyx_tuple__9);
-  __pyx_codeobj__10 = (PyObject*)__Pyx_PyCode_New(0, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__9, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_kovit_pjson_py, __pyx_n_s_gen_chain, 55, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__10)) __PYX_ERR(0, 55, __pyx_L1_error)
+  __pyx_codeobj__10 = (PyObject*)__Pyx_PyCode_New(0, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__9, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_kovit_pjson_py, __pyx_n_s_gen_chain, 74, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__10)) __PYX_ERR(0, 74, __pyx_L1_error)
 
-  /* "kovit/pjson.py":103
+  /* "kovit/pjson.py":121
  * 
  * def dump_json_big(chain, file, frequency_compress=True):
  *     file.write('{"codes":[')             # <<<<<<<<<<<<<<
  * 
  *     if frequency_compress:
  */
-  __pyx_tuple__15 = PyTuple_Pack(1, __pyx_kp_s_codes_2); if (unlikely(!__pyx_tuple__15)) __PYX_ERR(0, 103, __pyx_L1_error)
+  __pyx_tuple__15 = PyTuple_Pack(1, __pyx_kp_s_codes_2); if (unlikely(!__pyx_tuple__15)) __PYX_ERR(0, 121, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__15);
   __Pyx_GIVEREF(__pyx_tuple__15);
 
-  /* "kovit/pjson.py":123
+  /* "kovit/pjson.py":141
  *             file.write('{},{}{}'.format(w_code, value, ',' if code != end_freqs else ''))
  * 
  *         def write_start(start):             # <<<<<<<<<<<<<<
  *             file.write('{},['.format(codes[start]))
  * 
  */
-  __pyx_tuple__18 = PyTuple_Pack(1, __pyx_n_s_start); if (unlikely(!__pyx_tuple__18)) __PYX_ERR(0, 123, __pyx_L1_error)
+  __pyx_tuple__18 = PyTuple_Pack(1, __pyx_n_s_start); if (unlikely(!__pyx_tuple__18)) __PYX_ERR(0, 141, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__18);
   __Pyx_GIVEREF(__pyx_tuple__18);
-  __pyx_codeobj__19 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__18, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_kovit_pjson_py, __pyx_n_s_write_start, 123, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__19)) __PYX_ERR(0, 123, __pyx_L1_error)
+  __pyx_codeobj__19 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__18, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_kovit_pjson_py, __pyx_n_s_write_start, 141, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__19)) __PYX_ERR(0, 141, __pyx_L1_error)
 
-  /* "kovit/pjson.py":126
+  /* "kovit/pjson.py":144
  *             file.write('{},['.format(codes[start]))
  * 
  *         def write_next_start(next_start):             # <<<<<<<<<<<<<<
  *             file.write('[' + ','.join(str(codes[n]) for n in next_start) + ']')
  *     else:
  */
-  __pyx_tuple__20 = PyTuple_Pack(3, __pyx_n_s_next_start, __pyx_n_s_genexpr, __pyx_n_s_genexpr); if (unlikely(!__pyx_tuple__20)) __PYX_ERR(0, 126, __pyx_L1_error)
+  __pyx_tuple__20 = PyTuple_Pack(3, __pyx_n_s_next_start, __pyx_n_s_genexpr, __pyx_n_s_genexpr); if (unlikely(!__pyx_tuple__20)) __PYX_ERR(0, 144, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__20);
   __Pyx_GIVEREF(__pyx_tuple__20);
-  __pyx_codeobj__21 = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__20, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_kovit_pjson_py, __pyx_n_s_write_next_start, 126, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__21)) __PYX_ERR(0, 126, __pyx_L1_error)
+  __pyx_codeobj__21 = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__20, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_kovit_pjson_py, __pyx_n_s_write_next_start, 144, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__21)) __PYX_ERR(0, 144, __pyx_L1_error)
 
-  /* "kovit/pjson.py":129
+  /* "kovit/pjson.py":147
  *             file.write('[' + ','.join(str(codes[n]) for n in next_start) + ']')
  *     else:
  *         def write_start(start):             # <<<<<<<<<<<<<<
  *             file.write('{},['.format(json.dumps(start)))
  * 
  */
-  __pyx_tuple__22 = PyTuple_Pack(1, __pyx_n_s_start); if (unlikely(!__pyx_tuple__22)) __PYX_ERR(0, 129, __pyx_L1_error)
+  __pyx_tuple__22 = PyTuple_Pack(1, __pyx_n_s_start); if (unlikely(!__pyx_tuple__22)) __PYX_ERR(0, 147, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__22);
   __Pyx_GIVEREF(__pyx_tuple__22);
-  __pyx_codeobj__23 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__22, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_kovit_pjson_py, __pyx_n_s_write_start, 129, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__23)) __PYX_ERR(0, 129, __pyx_L1_error)
+  __pyx_codeobj__23 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__22, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_kovit_pjson_py, __pyx_n_s_write_start, 147, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__23)) __PYX_ERR(0, 147, __pyx_L1_error)
 
-  /* "kovit/pjson.py":132
+  /* "kovit/pjson.py":150
  *             file.write('{},['.format(json.dumps(start)))
  * 
  *         def write_next_start(next_start):             # <<<<<<<<<<<<<<
  *             file.write(json.dumps(next_start))
  * 
  */
-  __pyx_tuple__24 = PyTuple_Pack(1, __pyx_n_s_next_start); if (unlikely(!__pyx_tuple__24)) __PYX_ERR(0, 132, __pyx_L1_error)
+  __pyx_tuple__24 = PyTuple_Pack(1, __pyx_n_s_next_start); if (unlikely(!__pyx_tuple__24)) __PYX_ERR(0, 150, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__24);
   __Pyx_GIVEREF(__pyx_tuple__24);
-  __pyx_codeobj__25 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__24, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_kovit_pjson_py, __pyx_n_s_write_next_start, 132, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__25)) __PYX_ERR(0, 132, __pyx_L1_error)
+  __pyx_codeobj__25 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__24, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_kovit_pjson_py, __pyx_n_s_write_next_start, 150, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__25)) __PYX_ERR(0, 150, __pyx_L1_error)
 
-  /* "kovit/pjson.py":135
+  /* "kovit/pjson.py":153
  *             file.write(json.dumps(next_start))
  * 
  *     file.write('],"chain":[')             # <<<<<<<<<<<<<<
  * 
  *     chain_end = len(chain) - 1
  */
-  __pyx_tuple__26 = PyTuple_Pack(1, __pyx_kp_s_chain_2); if (unlikely(!__pyx_tuple__26)) __PYX_ERR(0, 135, __pyx_L1_error)
+  __pyx_tuple__26 = PyTuple_Pack(1, __pyx_kp_s_chain_2); if (unlikely(!__pyx_tuple__26)) __PYX_ERR(0, 153, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__26);
   __Pyx_GIVEREF(__pyx_tuple__26);
 
-  /* "kovit/pjson.py":153
+  /* "kovit/pjson.py":171
  *         file.write('],' if idx != chain_end else ']')
  * 
  *     file.write(']}')             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __pyx_tuple__30 = PyTuple_Pack(1, __pyx_kp_s__29); if (unlikely(!__pyx_tuple__30)) __PYX_ERR(0, 153, __pyx_L1_error)
+  __pyx_tuple__30 = PyTuple_Pack(1, __pyx_kp_s__29); if (unlikely(!__pyx_tuple__30)) __PYX_ERR(0, 171, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__30);
   __Pyx_GIVEREF(__pyx_tuple__30);
 
-  /* "kovit/pjson.py":181
+  /* "kovit/pjson.py":199
  *     for prefix, event, value in parser:
  * 
  *         is_start = event.startswith('start_')             # <<<<<<<<<<<<<<
  *         is_end = event.startswith('end_')
  *         start_array = event == 'start_array'
  */
-  __pyx_tuple__31 = PyTuple_Pack(1, __pyx_n_s_start_2); if (unlikely(!__pyx_tuple__31)) __PYX_ERR(0, 181, __pyx_L1_error)
+  __pyx_tuple__31 = PyTuple_Pack(1, __pyx_n_s_start_2); if (unlikely(!__pyx_tuple__31)) __PYX_ERR(0, 199, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__31);
   __Pyx_GIVEREF(__pyx_tuple__31);
 
-  /* "kovit/pjson.py":182
+  /* "kovit/pjson.py":200
  * 
  *         is_start = event.startswith('start_')
  *         is_end = event.startswith('end_')             # <<<<<<<<<<<<<<
  *         start_array = event == 'start_array'
  *         end_array = event == 'end_array'
  */
-  __pyx_tuple__32 = PyTuple_Pack(1, __pyx_n_s_end); if (unlikely(!__pyx_tuple__32)) __PYX_ERR(0, 182, __pyx_L1_error)
+  __pyx_tuple__32 = PyTuple_Pack(1, __pyx_n_s_end); if (unlikely(!__pyx_tuple__32)) __PYX_ERR(0, 200, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__32);
   __Pyx_GIVEREF(__pyx_tuple__32);
 
-  /* "kovit/pjson.py":22
+  /* "kovit/pjson.py":41
  * 
  * 
  * def dump_json_small(chain, file, frequency_compress=True):             # <<<<<<<<<<<<<<
  *     codes = {}
  *     codes_list = []
  */
-  __pyx_tuple__33 = PyTuple_Pack(16, __pyx_n_s_chain, __pyx_n_s_file, __pyx_n_s_frequency_compress, __pyx_n_s_codes, __pyx_n_s_codes_list, __pyx_n_s_code, __pyx_n_s_v, __pyx_n_s_value, __pyx_n_s_gen_start, __pyx_n_s_gen_start, __pyx_n_s_gen_next_start, __pyx_n_s_gen_next_start, __pyx_n_s_gen_start, __pyx_n_s_gen_next_start, __pyx_n_s_gen_chain, __pyx_n_s_gen_chain); if (unlikely(!__pyx_tuple__33)) __PYX_ERR(0, 22, __pyx_L1_error)
+  __pyx_tuple__33 = PyTuple_Pack(16, __pyx_n_s_chain, __pyx_n_s_file, __pyx_n_s_frequency_compress, __pyx_n_s_codes, __pyx_n_s_codes_list, __pyx_n_s_code, __pyx_n_s_v, __pyx_n_s_value, __pyx_n_s_gen_start, __pyx_n_s_gen_start, __pyx_n_s_gen_next_start, __pyx_n_s_gen_next_start, __pyx_n_s_gen_start, __pyx_n_s_gen_next_start, __pyx_n_s_gen_chain, __pyx_n_s_gen_chain); if (unlikely(!__pyx_tuple__33)) __PYX_ERR(0, 41, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__33);
   __Pyx_GIVEREF(__pyx_tuple__33);
-  __pyx_codeobj__34 = (PyObject*)__Pyx_PyCode_New(3, 0, 16, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__33, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_kovit_pjson_py, __pyx_n_s_dump_json_small, 22, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__34)) __PYX_ERR(0, 22, __pyx_L1_error)
-  __pyx_tuple__35 = PyTuple_Pack(1, ((PyObject *)Py_True)); if (unlikely(!__pyx_tuple__35)) __PYX_ERR(0, 22, __pyx_L1_error)
+  __pyx_codeobj__34 = (PyObject*)__Pyx_PyCode_New(3, 0, 16, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__33, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_kovit_pjson_py, __pyx_n_s_dump_json_small, 41, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__34)) __PYX_ERR(0, 41, __pyx_L1_error)
+  __pyx_tuple__35 = PyTuple_Pack(1, ((PyObject *)Py_True)); if (unlikely(!__pyx_tuple__35)) __PYX_ERR(0, 41, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__35);
   __Pyx_GIVEREF(__pyx_tuple__35);
 
-  /* "kovit/pjson.py":63
+  /* "kovit/pjson.py":82
  * 
  * 
  * def load_json_small(chain, file, merge=False):             # <<<<<<<<<<<<<<
- * 
  *     obj = json.load(file)
+ * 
  */
-  __pyx_tuple__36 = PyTuple_Pack(16, __pyx_n_s_chain, __pyx_n_s_file, __pyx_n_s_merge, __pyx_n_s_obj, __pyx_n_s_c_iter, __pyx_n_s_codes, __pyx_n_s_c_list, __pyx_n_s_start, __pyx_n_s_bag, __pyx_n_s_i_bag, __pyx_n_s_items, __pyx_n_s_count, __pyx_n_s_b, __pyx_n_s_genexpr, __pyx_n_s_genexpr, __pyx_n_s_genexpr); if (unlikely(!__pyx_tuple__36)) __PYX_ERR(0, 63, __pyx_L1_error)
+  __pyx_tuple__36 = PyTuple_Pack(16, __pyx_n_s_chain, __pyx_n_s_file, __pyx_n_s_merge, __pyx_n_s_obj, __pyx_n_s_c_iter, __pyx_n_s_codes, __pyx_n_s_c_list, __pyx_n_s_start, __pyx_n_s_bag, __pyx_n_s_i_bag, __pyx_n_s_items, __pyx_n_s_count, __pyx_n_s_b, __pyx_n_s_genexpr, __pyx_n_s_genexpr, __pyx_n_s_genexpr); if (unlikely(!__pyx_tuple__36)) __PYX_ERR(0, 82, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__36);
   __Pyx_GIVEREF(__pyx_tuple__36);
-  __pyx_codeobj__37 = (PyObject*)__Pyx_PyCode_New(3, 0, 16, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__36, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_kovit_pjson_py, __pyx_n_s_load_json_small, 63, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__37)) __PYX_ERR(0, 63, __pyx_L1_error)
-  __pyx_tuple__38 = PyTuple_Pack(1, ((PyObject *)Py_False)); if (unlikely(!__pyx_tuple__38)) __PYX_ERR(0, 63, __pyx_L1_error)
+  __pyx_codeobj__37 = (PyObject*)__Pyx_PyCode_New(3, 0, 16, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__36, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_kovit_pjson_py, __pyx_n_s_load_json_small, 82, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__37)) __PYX_ERR(0, 82, __pyx_L1_error)
+  __pyx_tuple__38 = PyTuple_Pack(1, ((PyObject *)Py_False)); if (unlikely(!__pyx_tuple__38)) __PYX_ERR(0, 82, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__38);
   __Pyx_GIVEREF(__pyx_tuple__38);
 
-  /* "kovit/pjson.py":102
+  /* "kovit/pjson.py":120
  * 
  * 
  * def dump_json_big(chain, file, frequency_compress=True):             # <<<<<<<<<<<<<<
  *     file.write('{"codes":[')
  * 
  */
-  __pyx_tuple__39 = PyTuple_Pack(25, __pyx_n_s_chain, __pyx_n_s_file, __pyx_n_s_frequency_compress, __pyx_n_s_codes, __pyx_n_s_freq_dict, __pyx_n_s_end_freqs, __pyx_n_s_code, __pyx_n_s_v, __pyx_n_s_value, __pyx_n_s_w_code, __pyx_n_s_write_start, __pyx_n_s_write_start, __pyx_n_s_write_next_start, __pyx_n_s_write_next_start, __pyx_n_s_write_start, __pyx_n_s_write_next_start, __pyx_n_s_chain_end, __pyx_n_s_idx, __pyx_n_s_start, __pyx_n_s_bag, __pyx_n_s_bag_end, __pyx_n_s_idx2, __pyx_n_s_v2, __pyx_n_s_next_start, __pyx_n_s_count); if (unlikely(!__pyx_tuple__39)) __PYX_ERR(0, 102, __pyx_L1_error)
+  __pyx_tuple__39 = PyTuple_Pack(25, __pyx_n_s_chain, __pyx_n_s_file, __pyx_n_s_frequency_compress, __pyx_n_s_codes, __pyx_n_s_freq_dict, __pyx_n_s_end_freqs, __pyx_n_s_code, __pyx_n_s_v, __pyx_n_s_value, __pyx_n_s_w_code, __pyx_n_s_write_start, __pyx_n_s_write_start, __pyx_n_s_write_next_start, __pyx_n_s_write_next_start, __pyx_n_s_write_start, __pyx_n_s_write_next_start, __pyx_n_s_chain_end, __pyx_n_s_idx, __pyx_n_s_start, __pyx_n_s_bag, __pyx_n_s_bag_end, __pyx_n_s_idx2, __pyx_n_s_v2, __pyx_n_s_next_start, __pyx_n_s_count); if (unlikely(!__pyx_tuple__39)) __PYX_ERR(0, 120, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__39);
   __Pyx_GIVEREF(__pyx_tuple__39);
-  __pyx_codeobj__40 = (PyObject*)__Pyx_PyCode_New(3, 0, 25, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__39, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_kovit_pjson_py, __pyx_n_s_dump_json_big, 102, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__40)) __PYX_ERR(0, 102, __pyx_L1_error)
-  __pyx_tuple__41 = PyTuple_Pack(1, ((PyObject *)Py_True)); if (unlikely(!__pyx_tuple__41)) __PYX_ERR(0, 102, __pyx_L1_error)
+  __pyx_codeobj__40 = (PyObject*)__Pyx_PyCode_New(3, 0, 25, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__39, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_kovit_pjson_py, __pyx_n_s_dump_json_big, 120, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__40)) __PYX_ERR(0, 120, __pyx_L1_error)
+  __pyx_tuple__41 = PyTuple_Pack(1, ((PyObject *)Py_True)); if (unlikely(!__pyx_tuple__41)) __PYX_ERR(0, 120, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__41);
   __Pyx_GIVEREF(__pyx_tuple__41);
 
-  /* "kovit/pjson.py":156
+  /* "kovit/pjson.py":174
  * 
  * 
  * def load_json_big(chain, file, merge=False):             # <<<<<<<<<<<<<<
  *     if not merge:
  *         chain.clear()
  */
-  __pyx_tuple__42 = PyTuple_Pack(24, __pyx_n_s_chain, __pyx_n_s_file, __pyx_n_s_merge, __pyx_n_s_parser, __pyx_n_s_depth, __pyx_n_s_builder, __pyx_n_s_codes, __pyx_n_s_building_bag_item, __pyx_n_s_start, __pyx_n_s_in_bag, __pyx_n_s_in_chain, __pyx_n_s_in_codes, __pyx_n_s_last_value, __pyx_n_s_last_key, __pyx_n_s_prefix, __pyx_n_s_event, __pyx_n_s_value, __pyx_n_s_is_start, __pyx_n_s_is_end, __pyx_n_s_start_array, __pyx_n_s_end_array, __pyx_n_s_liter, __pyx_n_s_genexpr, __pyx_n_s_genexpr); if (unlikely(!__pyx_tuple__42)) __PYX_ERR(0, 156, __pyx_L1_error)
+  __pyx_tuple__42 = PyTuple_Pack(24, __pyx_n_s_chain, __pyx_n_s_file, __pyx_n_s_merge, __pyx_n_s_parser, __pyx_n_s_depth, __pyx_n_s_builder, __pyx_n_s_codes, __pyx_n_s_building_bag_item, __pyx_n_s_start, __pyx_n_s_in_bag, __pyx_n_s_in_chain, __pyx_n_s_in_codes, __pyx_n_s_last_value, __pyx_n_s_last_key, __pyx_n_s_prefix, __pyx_n_s_event, __pyx_n_s_value, __pyx_n_s_is_start, __pyx_n_s_is_end, __pyx_n_s_start_array, __pyx_n_s_end_array, __pyx_n_s_liter, __pyx_n_s_genexpr, __pyx_n_s_genexpr); if (unlikely(!__pyx_tuple__42)) __PYX_ERR(0, 174, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__42);
   __Pyx_GIVEREF(__pyx_tuple__42);
-  __pyx_codeobj__43 = (PyObject*)__Pyx_PyCode_New(3, 0, 24, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__42, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_kovit_pjson_py, __pyx_n_s_load_json_big, 156, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__43)) __PYX_ERR(0, 156, __pyx_L1_error)
-  __pyx_tuple__44 = PyTuple_Pack(1, ((PyObject *)Py_False)); if (unlikely(!__pyx_tuple__44)) __PYX_ERR(0, 156, __pyx_L1_error)
+  __pyx_codeobj__43 = (PyObject*)__Pyx_PyCode_New(3, 0, 24, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__42, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_kovit_pjson_py, __pyx_n_s_load_json_big, 174, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__43)) __PYX_ERR(0, 174, __pyx_L1_error)
+  __pyx_tuple__44 = PyTuple_Pack(1, ((PyObject *)Py_False)); if (unlikely(!__pyx_tuple__44)) __PYX_ERR(0, 174, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__44);
   __Pyx_GIVEREF(__pyx_tuple__44);
   __Pyx_RefNannyFinishContext();
@@ -11620,12 +11620,12 @@ static int __Pyx_InitCachedConstants(void) {
 }
 
 static int __Pyx_InitGlobals(void) {
-  if (__Pyx_InitStrings(__pyx_string_tab) < 0) __PYX_ERR(0, 2, __pyx_L1_error);
-  __pyx_int_0 = PyInt_FromLong(0); if (unlikely(!__pyx_int_0)) __PYX_ERR(0, 2, __pyx_L1_error)
-  __pyx_int_1 = PyInt_FromLong(1); if (unlikely(!__pyx_int_1)) __PYX_ERR(0, 2, __pyx_L1_error)
-  __pyx_int_2 = PyInt_FromLong(2); if (unlikely(!__pyx_int_2)) __PYX_ERR(0, 2, __pyx_L1_error)
-  __pyx_int_3 = PyInt_FromLong(3); if (unlikely(!__pyx_int_3)) __PYX_ERR(0, 2, __pyx_L1_error)
-  __pyx_int_9 = PyInt_FromLong(9); if (unlikely(!__pyx_int_9)) __PYX_ERR(0, 2, __pyx_L1_error)
+  if (__Pyx_InitStrings(__pyx_string_tab) < 0) __PYX_ERR(0, 1, __pyx_L1_error);
+  __pyx_int_0 = PyInt_FromLong(0); if (unlikely(!__pyx_int_0)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_int_1 = PyInt_FromLong(1); if (unlikely(!__pyx_int_1)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_int_2 = PyInt_FromLong(2); if (unlikely(!__pyx_int_2)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_int_3 = PyInt_FromLong(3); if (unlikely(!__pyx_int_3)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_int_9 = PyInt_FromLong(9); if (unlikely(!__pyx_int_9)) __PYX_ERR(0, 1, __pyx_L1_error)
   return 0;
   __pyx_L1_error:;
   return -1;
@@ -11667,79 +11667,79 @@ static int __Pyx_modinit_type_init_code(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_modinit_type_init_code", 0);
   /*--- Type init code ---*/
-  if (PyType_Ready(&__pyx_type_5kovit_5cjson___pyx_scope_struct__dump_json_small) < 0) __PYX_ERR(0, 22, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_5kovit_5cjson___pyx_scope_struct__dump_json_small) < 0) __PYX_ERR(0, 41, __pyx_L1_error)
   __pyx_type_5kovit_5cjson___pyx_scope_struct__dump_json_small.tp_print = 0;
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_5kovit_5cjson___pyx_scope_struct__dump_json_small.tp_dictoffset && __pyx_type_5kovit_5cjson___pyx_scope_struct__dump_json_small.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_5kovit_5cjson___pyx_scope_struct__dump_json_small.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
   }
   __pyx_ptype_5kovit_5cjson___pyx_scope_struct__dump_json_small = &__pyx_type_5kovit_5cjson___pyx_scope_struct__dump_json_small;
-  if (PyType_Ready(&__pyx_type_5kovit_5cjson___pyx_scope_struct_1_gen_next_start) < 0) __PYX_ERR(0, 42, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_5kovit_5cjson___pyx_scope_struct_1_gen_next_start) < 0) __PYX_ERR(0, 61, __pyx_L1_error)
   __pyx_type_5kovit_5cjson___pyx_scope_struct_1_gen_next_start.tp_print = 0;
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_5kovit_5cjson___pyx_scope_struct_1_gen_next_start.tp_dictoffset && __pyx_type_5kovit_5cjson___pyx_scope_struct_1_gen_next_start.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_5kovit_5cjson___pyx_scope_struct_1_gen_next_start.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
   }
   __pyx_ptype_5kovit_5cjson___pyx_scope_struct_1_gen_next_start = &__pyx_type_5kovit_5cjson___pyx_scope_struct_1_gen_next_start;
-  if (PyType_Ready(&__pyx_type_5kovit_5cjson___pyx_scope_struct_2_genexpr) < 0) __PYX_ERR(0, 44, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_5kovit_5cjson___pyx_scope_struct_2_genexpr) < 0) __PYX_ERR(0, 63, __pyx_L1_error)
   __pyx_type_5kovit_5cjson___pyx_scope_struct_2_genexpr.tp_print = 0;
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_5kovit_5cjson___pyx_scope_struct_2_genexpr.tp_dictoffset && __pyx_type_5kovit_5cjson___pyx_scope_struct_2_genexpr.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_5kovit_5cjson___pyx_scope_struct_2_genexpr.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
   }
   __pyx_ptype_5kovit_5cjson___pyx_scope_struct_2_genexpr = &__pyx_type_5kovit_5cjson___pyx_scope_struct_2_genexpr;
-  if (PyType_Ready(&__pyx_type_5kovit_5cjson___pyx_scope_struct_3_gen_next_start) < 0) __PYX_ERR(0, 50, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_5kovit_5cjson___pyx_scope_struct_3_gen_next_start) < 0) __PYX_ERR(0, 69, __pyx_L1_error)
   __pyx_type_5kovit_5cjson___pyx_scope_struct_3_gen_next_start.tp_print = 0;
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_5kovit_5cjson___pyx_scope_struct_3_gen_next_start.tp_dictoffset && __pyx_type_5kovit_5cjson___pyx_scope_struct_3_gen_next_start.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_5kovit_5cjson___pyx_scope_struct_3_gen_next_start.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
   }
   __pyx_ptype_5kovit_5cjson___pyx_scope_struct_3_gen_next_start = &__pyx_type_5kovit_5cjson___pyx_scope_struct_3_gen_next_start;
-  if (PyType_Ready(&__pyx_type_5kovit_5cjson___pyx_scope_struct_4_gen_chain) < 0) __PYX_ERR(0, 55, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_5kovit_5cjson___pyx_scope_struct_4_gen_chain) < 0) __PYX_ERR(0, 74, __pyx_L1_error)
   __pyx_type_5kovit_5cjson___pyx_scope_struct_4_gen_chain.tp_print = 0;
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_5kovit_5cjson___pyx_scope_struct_4_gen_chain.tp_dictoffset && __pyx_type_5kovit_5cjson___pyx_scope_struct_4_gen_chain.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_5kovit_5cjson___pyx_scope_struct_4_gen_chain.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
   }
   __pyx_ptype_5kovit_5cjson___pyx_scope_struct_4_gen_chain = &__pyx_type_5kovit_5cjson___pyx_scope_struct_4_gen_chain;
-  if (PyType_Ready(&__pyx_type_5kovit_5cjson___pyx_scope_struct_5_load_json_small) < 0) __PYX_ERR(0, 63, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_5kovit_5cjson___pyx_scope_struct_5_load_json_small) < 0) __PYX_ERR(0, 82, __pyx_L1_error)
   __pyx_type_5kovit_5cjson___pyx_scope_struct_5_load_json_small.tp_print = 0;
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_5kovit_5cjson___pyx_scope_struct_5_load_json_small.tp_dictoffset && __pyx_type_5kovit_5cjson___pyx_scope_struct_5_load_json_small.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_5kovit_5cjson___pyx_scope_struct_5_load_json_small.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
   }
   __pyx_ptype_5kovit_5cjson___pyx_scope_struct_5_load_json_small = &__pyx_type_5kovit_5cjson___pyx_scope_struct_5_load_json_small;
-  if (PyType_Ready(&__pyx_type_5kovit_5cjson___pyx_scope_struct_6_genexpr) < 0) __PYX_ERR(0, 77, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_5kovit_5cjson___pyx_scope_struct_6_genexpr) < 0) __PYX_ERR(0, 95, __pyx_L1_error)
   __pyx_type_5kovit_5cjson___pyx_scope_struct_6_genexpr.tp_print = 0;
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_5kovit_5cjson___pyx_scope_struct_6_genexpr.tp_dictoffset && __pyx_type_5kovit_5cjson___pyx_scope_struct_6_genexpr.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_5kovit_5cjson___pyx_scope_struct_6_genexpr.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
   }
   __pyx_ptype_5kovit_5cjson___pyx_scope_struct_6_genexpr = &__pyx_type_5kovit_5cjson___pyx_scope_struct_6_genexpr;
-  if (PyType_Ready(&__pyx_type_5kovit_5cjson___pyx_scope_struct_7_genexpr) < 0) __PYX_ERR(0, 91, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_5kovit_5cjson___pyx_scope_struct_7_genexpr) < 0) __PYX_ERR(0, 109, __pyx_L1_error)
   __pyx_type_5kovit_5cjson___pyx_scope_struct_7_genexpr.tp_print = 0;
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_5kovit_5cjson___pyx_scope_struct_7_genexpr.tp_dictoffset && __pyx_type_5kovit_5cjson___pyx_scope_struct_7_genexpr.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_5kovit_5cjson___pyx_scope_struct_7_genexpr.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
   }
   __pyx_ptype_5kovit_5cjson___pyx_scope_struct_7_genexpr = &__pyx_type_5kovit_5cjson___pyx_scope_struct_7_genexpr;
-  if (PyType_Ready(&__pyx_type_5kovit_5cjson___pyx_scope_struct_8_dump_json_big) < 0) __PYX_ERR(0, 102, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_5kovit_5cjson___pyx_scope_struct_8_dump_json_big) < 0) __PYX_ERR(0, 120, __pyx_L1_error)
   __pyx_type_5kovit_5cjson___pyx_scope_struct_8_dump_json_big.tp_print = 0;
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_5kovit_5cjson___pyx_scope_struct_8_dump_json_big.tp_dictoffset && __pyx_type_5kovit_5cjson___pyx_scope_struct_8_dump_json_big.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_5kovit_5cjson___pyx_scope_struct_8_dump_json_big.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
   }
   __pyx_ptype_5kovit_5cjson___pyx_scope_struct_8_dump_json_big = &__pyx_type_5kovit_5cjson___pyx_scope_struct_8_dump_json_big;
-  if (PyType_Ready(&__pyx_type_5kovit_5cjson___pyx_scope_struct_9_write_next_start) < 0) __PYX_ERR(0, 126, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_5kovit_5cjson___pyx_scope_struct_9_write_next_start) < 0) __PYX_ERR(0, 144, __pyx_L1_error)
   __pyx_type_5kovit_5cjson___pyx_scope_struct_9_write_next_start.tp_print = 0;
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_5kovit_5cjson___pyx_scope_struct_9_write_next_start.tp_dictoffset && __pyx_type_5kovit_5cjson___pyx_scope_struct_9_write_next_start.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_5kovit_5cjson___pyx_scope_struct_9_write_next_start.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
   }
   __pyx_ptype_5kovit_5cjson___pyx_scope_struct_9_write_next_start = &__pyx_type_5kovit_5cjson___pyx_scope_struct_9_write_next_start;
-  if (PyType_Ready(&__pyx_type_5kovit_5cjson___pyx_scope_struct_10_genexpr) < 0) __PYX_ERR(0, 127, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_5kovit_5cjson___pyx_scope_struct_10_genexpr) < 0) __PYX_ERR(0, 145, __pyx_L1_error)
   __pyx_type_5kovit_5cjson___pyx_scope_struct_10_genexpr.tp_print = 0;
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_5kovit_5cjson___pyx_scope_struct_10_genexpr.tp_dictoffset && __pyx_type_5kovit_5cjson___pyx_scope_struct_10_genexpr.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_5kovit_5cjson___pyx_scope_struct_10_genexpr.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
   }
   __pyx_ptype_5kovit_5cjson___pyx_scope_struct_10_genexpr = &__pyx_type_5kovit_5cjson___pyx_scope_struct_10_genexpr;
-  if (PyType_Ready(&__pyx_type_5kovit_5cjson___pyx_scope_struct_11_load_json_big) < 0) __PYX_ERR(0, 156, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_5kovit_5cjson___pyx_scope_struct_11_load_json_big) < 0) __PYX_ERR(0, 174, __pyx_L1_error)
   __pyx_type_5kovit_5cjson___pyx_scope_struct_11_load_json_big.tp_print = 0;
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_5kovit_5cjson___pyx_scope_struct_11_load_json_big.tp_dictoffset && __pyx_type_5kovit_5cjson___pyx_scope_struct_11_load_json_big.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_5kovit_5cjson___pyx_scope_struct_11_load_json_big.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
   }
   __pyx_ptype_5kovit_5cjson___pyx_scope_struct_11_load_json_big = &__pyx_type_5kovit_5cjson___pyx_scope_struct_11_load_json_big;
-  if (PyType_Ready(&__pyx_type_5kovit_5cjson___pyx_scope_struct_12_genexpr) < 0) __PYX_ERR(0, 227, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_5kovit_5cjson___pyx_scope_struct_12_genexpr) < 0) __PYX_ERR(0, 245, __pyx_L1_error)
   __pyx_type_5kovit_5cjson___pyx_scope_struct_12_genexpr.tp_print = 0;
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_5kovit_5cjson___pyx_scope_struct_12_genexpr.tp_dictoffset && __pyx_type_5kovit_5cjson___pyx_scope_struct_12_genexpr.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_5kovit_5cjson___pyx_scope_struct_12_genexpr.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
@@ -11874,27 +11874,27 @@ if (!__Pyx_RefNanny) {
 }
 #endif
   __Pyx_RefNannySetupContext("__Pyx_PyMODINIT_FUNC PyInit_cjson(void)", 0);
-  if (__Pyx_check_binary_version() < 0) __PYX_ERR(0, 2, __pyx_L1_error)
-  __pyx_empty_tuple = PyTuple_New(0); if (unlikely(!__pyx_empty_tuple)) __PYX_ERR(0, 2, __pyx_L1_error)
-  __pyx_empty_bytes = PyBytes_FromStringAndSize("", 0); if (unlikely(!__pyx_empty_bytes)) __PYX_ERR(0, 2, __pyx_L1_error)
-  __pyx_empty_unicode = PyUnicode_FromStringAndSize("", 0); if (unlikely(!__pyx_empty_unicode)) __PYX_ERR(0, 2, __pyx_L1_error)
+  if (__Pyx_check_binary_version() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_empty_tuple = PyTuple_New(0); if (unlikely(!__pyx_empty_tuple)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_empty_bytes = PyBytes_FromStringAndSize("", 0); if (unlikely(!__pyx_empty_bytes)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_empty_unicode = PyUnicode_FromStringAndSize("", 0); if (unlikely(!__pyx_empty_unicode)) __PYX_ERR(0, 1, __pyx_L1_error)
   #ifdef __Pyx_CyFunction_USED
-  if (__pyx_CyFunction_init() < 0) __PYX_ERR(0, 2, __pyx_L1_error)
+  if (__pyx_CyFunction_init() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
   #ifdef __Pyx_FusedFunction_USED
-  if (__pyx_FusedFunction_init() < 0) __PYX_ERR(0, 2, __pyx_L1_error)
+  if (__pyx_FusedFunction_init() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
   #ifdef __Pyx_Coroutine_USED
-  if (__pyx_Coroutine_init() < 0) __PYX_ERR(0, 2, __pyx_L1_error)
+  if (__pyx_Coroutine_init() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
   #ifdef __Pyx_Generator_USED
-  if (__pyx_Generator_init() < 0) __PYX_ERR(0, 2, __pyx_L1_error)
+  if (__pyx_Generator_init() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
   #ifdef __Pyx_AsyncGen_USED
-  if (__pyx_AsyncGen_init() < 0) __PYX_ERR(0, 2, __pyx_L1_error)
+  if (__pyx_AsyncGen_init() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
   #ifdef __Pyx_StopAsyncIteration_USED
-  if (__pyx_StopAsyncIteration_init() < 0) __PYX_ERR(0, 2, __pyx_L1_error)
+  if (__pyx_StopAsyncIteration_init() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
   /*--- Library function declarations ---*/
   /*--- Threads initialization code ---*/
@@ -11913,36 +11913,36 @@ if (!__Pyx_RefNanny) {
   #else
   __pyx_m = PyModule_Create(&__pyx_moduledef);
   #endif
-  if (unlikely(!__pyx_m)) __PYX_ERR(0, 2, __pyx_L1_error)
+  if (unlikely(!__pyx_m)) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
-  __pyx_d = PyModule_GetDict(__pyx_m); if (unlikely(!__pyx_d)) __PYX_ERR(0, 2, __pyx_L1_error)
+  __pyx_d = PyModule_GetDict(__pyx_m); if (unlikely(!__pyx_d)) __PYX_ERR(0, 1, __pyx_L1_error)
   Py_INCREF(__pyx_d);
-  __pyx_b = PyImport_AddModule(__Pyx_BUILTIN_MODULE_NAME); if (unlikely(!__pyx_b)) __PYX_ERR(0, 2, __pyx_L1_error)
-  __pyx_cython_runtime = PyImport_AddModule((char *) "cython_runtime"); if (unlikely(!__pyx_cython_runtime)) __PYX_ERR(0, 2, __pyx_L1_error)
+  __pyx_b = PyImport_AddModule(__Pyx_BUILTIN_MODULE_NAME); if (unlikely(!__pyx_b)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_cython_runtime = PyImport_AddModule((char *) "cython_runtime"); if (unlikely(!__pyx_cython_runtime)) __PYX_ERR(0, 1, __pyx_L1_error)
   #if CYTHON_COMPILING_IN_PYPY
   Py_INCREF(__pyx_b);
   #endif
-  if (PyObject_SetAttrString(__pyx_m, "__builtins__", __pyx_b) < 0) __PYX_ERR(0, 2, __pyx_L1_error);
+  if (PyObject_SetAttrString(__pyx_m, "__builtins__", __pyx_b) < 0) __PYX_ERR(0, 1, __pyx_L1_error);
   /*--- Initialize various global constants etc. ---*/
-  if (__Pyx_InitGlobals() < 0) __PYX_ERR(0, 2, __pyx_L1_error)
+  if (__Pyx_InitGlobals() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
-  if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(0, 2, __pyx_L1_error)
+  if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
   if (__pyx_module_is_main_kovit__cjson) {
-    if (PyObject_SetAttrString(__pyx_m, "__name__", __pyx_n_s_main) < 0) __PYX_ERR(0, 2, __pyx_L1_error)
+    if (PyObject_SetAttrString(__pyx_m, "__name__", __pyx_n_s_main) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
-    PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(0, 2, __pyx_L1_error)
+    PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(0, 1, __pyx_L1_error)
     if (!PyDict_GetItemString(modules, "kovit.cjson")) {
-      if (unlikely(PyDict_SetItemString(modules, "kovit.cjson", __pyx_m) < 0)) __PYX_ERR(0, 2, __pyx_L1_error)
+      if (unlikely(PyDict_SetItemString(modules, "kovit.cjson", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
     }
   }
   #endif
   /*--- Builtin init code ---*/
-  if (__Pyx_InitCachedBuiltins() < 0) __PYX_ERR(0, 2, __pyx_L1_error)
+  if (__Pyx_InitCachedBuiltins() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   /*--- Constants init code ---*/
-  if (__Pyx_InitCachedConstants() < 0) __PYX_ERR(0, 2, __pyx_L1_error)
+  if (__Pyx_InitCachedConstants() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   /*--- Global type/function init code ---*/
   (void)__Pyx_modinit_global_init_code();
   (void)__Pyx_modinit_variable_export_code();
@@ -11953,10 +11953,11 @@ if (!__Pyx_RefNanny) {
   (void)__Pyx_modinit_function_import_code();
   /*--- Execution code ---*/
   #if defined(__Pyx_Generator_USED) || defined(__Pyx_Coroutine_USED)
-  if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 2, __pyx_L1_error)
+  if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "kovit/pjson.py":2
+  /* "kovit/pjson.py":22
+ * 
  * 
  * try:             # <<<<<<<<<<<<<<
  *     import ujson as json
@@ -11971,19 +11972,20 @@ if (!__Pyx_RefNanny) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "kovit/pjson.py":3
+      /* "kovit/pjson.py":23
  * 
  * try:
  *     import ujson as json             # <<<<<<<<<<<<<<
  * except ImportError:
  *     import json
  */
-      __pyx_t_4 = __Pyx_Import(__pyx_n_s_ujson, 0, -1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 3, __pyx_L2_error)
+      __pyx_t_4 = __Pyx_Import(__pyx_n_s_ujson, 0, -1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 23, __pyx_L2_error)
       __Pyx_GOTREF(__pyx_t_4);
-      if (PyDict_SetItem(__pyx_d, __pyx_n_s_json, __pyx_t_4) < 0) __PYX_ERR(0, 3, __pyx_L2_error)
+      if (PyDict_SetItem(__pyx_d, __pyx_n_s_json, __pyx_t_4) < 0) __PYX_ERR(0, 23, __pyx_L2_error)
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-      /* "kovit/pjson.py":2
+      /* "kovit/pjson.py":22
+ * 
  * 
  * try:             # <<<<<<<<<<<<<<
  *     import ujson as json
@@ -11997,7 +11999,7 @@ if (!__Pyx_RefNanny) {
     __pyx_L2_error:;
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "kovit/pjson.py":4
+    /* "kovit/pjson.py":24
  * try:
  *     import ujson as json
  * except ImportError:             # <<<<<<<<<<<<<<
@@ -12007,21 +12009,21 @@ if (!__Pyx_RefNanny) {
     __pyx_t_5 = __Pyx_PyErr_ExceptionMatches(__pyx_builtin_ImportError);
     if (__pyx_t_5) {
       __Pyx_AddTraceback("kovit.cjson", __pyx_clineno, __pyx_lineno, __pyx_filename);
-      if (__Pyx_GetException(&__pyx_t_4, &__pyx_t_6, &__pyx_t_7) < 0) __PYX_ERR(0, 4, __pyx_L4_except_error)
+      if (__Pyx_GetException(&__pyx_t_4, &__pyx_t_6, &__pyx_t_7) < 0) __PYX_ERR(0, 24, __pyx_L4_except_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GOTREF(__pyx_t_7);
 
-      /* "kovit/pjson.py":5
+      /* "kovit/pjson.py":25
  *     import ujson as json
  * except ImportError:
  *     import json             # <<<<<<<<<<<<<<
  * 
- * 
+ * import math
  */
-      __pyx_t_8 = __Pyx_Import(__pyx_n_s_json, 0, -1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 5, __pyx_L4_except_error)
+      __pyx_t_8 = __Pyx_Import(__pyx_n_s_json, 0, -1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 25, __pyx_L4_except_error)
       __Pyx_GOTREF(__pyx_t_8);
-      if (PyDict_SetItem(__pyx_d, __pyx_n_s_json, __pyx_t_8) < 0) __PYX_ERR(0, 5, __pyx_L4_except_error)
+      if (PyDict_SetItem(__pyx_d, __pyx_n_s_json, __pyx_t_8) < 0) __PYX_ERR(0, 25, __pyx_L4_except_error)
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
@@ -12031,7 +12033,8 @@ if (!__Pyx_RefNanny) {
     goto __pyx_L4_except_error;
     __pyx_L4_except_error:;
 
-    /* "kovit/pjson.py":2
+    /* "kovit/pjson.py":22
+ * 
  * 
  * try:             # <<<<<<<<<<<<<<
  *     import ujson as json
@@ -12050,82 +12053,82 @@ if (!__Pyx_RefNanny) {
     __pyx_L7_try_end:;
   }
 
-  /* "kovit/pjson.py":8
- * 
+  /* "kovit/pjson.py":27
+ *     import json
  * 
  * import math             # <<<<<<<<<<<<<<
  * 
  * from collections import OrderedDict
  */
-  __pyx_t_7 = __Pyx_Import(__pyx_n_s_math, 0, -1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 8, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_Import(__pyx_n_s_math, 0, -1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 27, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_math, __pyx_t_7) < 0) __PYX_ERR(0, 8, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_math, __pyx_t_7) < 0) __PYX_ERR(0, 27, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "kovit/pjson.py":10
+  /* "kovit/pjson.py":29
  * import math
  * 
  * from collections import OrderedDict             # <<<<<<<<<<<<<<
  * 
  * from ijson import ObjectBuilder
  */
-  __pyx_t_7 = PyList_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 10, __pyx_L1_error)
+  __pyx_t_7 = PyList_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_INCREF(__pyx_n_s_OrderedDict);
   __Pyx_GIVEREF(__pyx_n_s_OrderedDict);
   PyList_SET_ITEM(__pyx_t_7, 0, __pyx_n_s_OrderedDict);
-  __pyx_t_6 = __Pyx_Import(__pyx_n_s_collections, __pyx_t_7, -1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 10, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_Import(__pyx_n_s_collections, __pyx_t_7, -1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  __pyx_t_7 = __Pyx_ImportFrom(__pyx_t_6, __pyx_n_s_OrderedDict); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 10, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_ImportFrom(__pyx_t_6, __pyx_n_s_OrderedDict); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_OrderedDict, __pyx_t_7) < 0) __PYX_ERR(0, 10, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_OrderedDict, __pyx_t_7) < 0) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "kovit/pjson.py":12
+  /* "kovit/pjson.py":31
  * from collections import OrderedDict
  * 
  * from ijson import ObjectBuilder             # <<<<<<<<<<<<<<
  * 
  * from kovit.bag import ProbabilityBag
  */
-  __pyx_t_6 = PyList_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 12, __pyx_L1_error)
+  __pyx_t_6 = PyList_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 31, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_INCREF(__pyx_n_s_ObjectBuilder);
   __Pyx_GIVEREF(__pyx_n_s_ObjectBuilder);
   PyList_SET_ITEM(__pyx_t_6, 0, __pyx_n_s_ObjectBuilder);
-  __pyx_t_7 = __Pyx_Import(__pyx_n_s_ijson, __pyx_t_6, -1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 12, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_Import(__pyx_n_s_ijson, __pyx_t_6, -1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 31, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __pyx_t_6 = __Pyx_ImportFrom(__pyx_t_7, __pyx_n_s_ObjectBuilder); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 12, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_ImportFrom(__pyx_t_7, __pyx_n_s_ObjectBuilder); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 31, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_ObjectBuilder, __pyx_t_6) < 0) __PYX_ERR(0, 12, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_ObjectBuilder, __pyx_t_6) < 0) __PYX_ERR(0, 31, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "kovit/pjson.py":14
+  /* "kovit/pjson.py":33
  * from ijson import ObjectBuilder
  * 
  * from kovit.bag import ProbabilityBag             # <<<<<<<<<<<<<<
  * 
  * try:
  */
-  __pyx_t_7 = PyList_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 14, __pyx_L1_error)
+  __pyx_t_7 = PyList_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_INCREF(__pyx_n_s_ProbabilityBag);
   __Pyx_GIVEREF(__pyx_n_s_ProbabilityBag);
   PyList_SET_ITEM(__pyx_t_7, 0, __pyx_n_s_ProbabilityBag);
-  __pyx_t_6 = __Pyx_Import(__pyx_n_s_kovit_bag, __pyx_t_7, -1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 14, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_Import(__pyx_n_s_kovit_bag, __pyx_t_7, -1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  __pyx_t_7 = __Pyx_ImportFrom(__pyx_t_6, __pyx_n_s_ProbabilityBag); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 14, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_ImportFrom(__pyx_t_6, __pyx_n_s_ProbabilityBag); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_ProbabilityBag, __pyx_t_7) < 0) __PYX_ERR(0, 14, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_ProbabilityBag, __pyx_t_7) < 0) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "kovit/pjson.py":16
+  /* "kovit/pjson.py":35
  * from kovit.bag import ProbabilityBag
  * 
  * try:             # <<<<<<<<<<<<<<
@@ -12141,28 +12144,28 @@ if (!__Pyx_RefNanny) {
     __Pyx_XGOTREF(__pyx_t_1);
     /*try:*/ {
 
-      /* "kovit/pjson.py":17
+      /* "kovit/pjson.py":36
  * 
  * try:
  *     from ijson.backends import yajl2_cffi as ijson             # <<<<<<<<<<<<<<
  * except ImportError as e:
  *     import ijson
  */
-      __pyx_t_6 = PyList_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 17, __pyx_L10_error)
+      __pyx_t_6 = PyList_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 36, __pyx_L10_error)
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_INCREF(__pyx_n_s_yajl2_cffi);
       __Pyx_GIVEREF(__pyx_n_s_yajl2_cffi);
       PyList_SET_ITEM(__pyx_t_6, 0, __pyx_n_s_yajl2_cffi);
-      __pyx_t_7 = __Pyx_Import(__pyx_n_s_ijson_backends, __pyx_t_6, -1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 17, __pyx_L10_error)
+      __pyx_t_7 = __Pyx_Import(__pyx_n_s_ijson_backends, __pyx_t_6, -1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 36, __pyx_L10_error)
       __Pyx_GOTREF(__pyx_t_7);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-      __pyx_t_6 = __Pyx_ImportFrom(__pyx_t_7, __pyx_n_s_yajl2_cffi); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 17, __pyx_L10_error)
+      __pyx_t_6 = __Pyx_ImportFrom(__pyx_t_7, __pyx_n_s_yajl2_cffi); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 36, __pyx_L10_error)
       __Pyx_GOTREF(__pyx_t_6);
-      if (PyDict_SetItem(__pyx_d, __pyx_n_s_ijson, __pyx_t_6) < 0) __PYX_ERR(0, 17, __pyx_L10_error)
+      if (PyDict_SetItem(__pyx_d, __pyx_n_s_ijson, __pyx_t_6) < 0) __PYX_ERR(0, 36, __pyx_L10_error)
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-      /* "kovit/pjson.py":16
+      /* "kovit/pjson.py":35
  * from kovit.bag import ProbabilityBag
  * 
  * try:             # <<<<<<<<<<<<<<
@@ -12180,7 +12183,7 @@ if (!__Pyx_RefNanny) {
     __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-    /* "kovit/pjson.py":18
+    /* "kovit/pjson.py":37
  * try:
  *     from ijson.backends import yajl2_cffi as ijson
  * except ImportError as e:             # <<<<<<<<<<<<<<
@@ -12190,22 +12193,22 @@ if (!__Pyx_RefNanny) {
     __pyx_t_5 = __Pyx_PyErr_ExceptionMatches(__pyx_builtin_ImportError);
     if (__pyx_t_5) {
       __Pyx_AddTraceback("kovit.cjson", __pyx_clineno, __pyx_lineno, __pyx_filename);
-      if (__Pyx_GetException(&__pyx_t_7, &__pyx_t_6, &__pyx_t_4) < 0) __PYX_ERR(0, 18, __pyx_L12_except_error)
+      if (__Pyx_GetException(&__pyx_t_7, &__pyx_t_6, &__pyx_t_4) < 0) __PYX_ERR(0, 37, __pyx_L12_except_error)
       __Pyx_GOTREF(__pyx_t_7);
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GOTREF(__pyx_t_4);
-      if (PyDict_SetItem(__pyx_d, __pyx_n_s_e, __pyx_t_6) < 0) __PYX_ERR(0, 18, __pyx_L12_except_error)
+      if (PyDict_SetItem(__pyx_d, __pyx_n_s_e, __pyx_t_6) < 0) __PYX_ERR(0, 37, __pyx_L12_except_error)
 
-      /* "kovit/pjson.py":19
+      /* "kovit/pjson.py":38
  *     from ijson.backends import yajl2_cffi as ijson
  * except ImportError as e:
  *     import ijson             # <<<<<<<<<<<<<<
  * 
  * 
  */
-      __pyx_t_8 = __Pyx_Import(__pyx_n_s_ijson, 0, -1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 19, __pyx_L12_except_error)
+      __pyx_t_8 = __Pyx_Import(__pyx_n_s_ijson, 0, -1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 38, __pyx_L12_except_error)
       __Pyx_GOTREF(__pyx_t_8);
-      if (PyDict_SetItem(__pyx_d, __pyx_n_s_ijson, __pyx_t_8) < 0) __PYX_ERR(0, 19, __pyx_L12_except_error)
+      if (PyDict_SetItem(__pyx_d, __pyx_n_s_ijson, __pyx_t_8) < 0) __PYX_ERR(0, 38, __pyx_L12_except_error)
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
@@ -12215,7 +12218,7 @@ if (!__Pyx_RefNanny) {
     goto __pyx_L12_except_error;
     __pyx_L12_except_error:;
 
-    /* "kovit/pjson.py":16
+    /* "kovit/pjson.py":35
  * from kovit.bag import ProbabilityBag
  * 
  * try:             # <<<<<<<<<<<<<<
@@ -12235,67 +12238,66 @@ if (!__Pyx_RefNanny) {
     __pyx_L15_try_end:;
   }
 
-  /* "kovit/pjson.py":22
+  /* "kovit/pjson.py":41
  * 
  * 
  * def dump_json_small(chain, file, frequency_compress=True):             # <<<<<<<<<<<<<<
  *     codes = {}
  *     codes_list = []
  */
-  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_1dump_json_small, 0, __pyx_n_s_dump_json_small, NULL, __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__34)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 22, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_1dump_json_small, 0, __pyx_n_s_dump_json_small, NULL, __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__34)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 41, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_4, __pyx_tuple__35);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_dump_json_small, __pyx_t_4) < 0) __PYX_ERR(0, 22, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_dump_json_small, __pyx_t_4) < 0) __PYX_ERR(0, 41, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "kovit/pjson.py":63
+  /* "kovit/pjson.py":82
  * 
  * 
  * def load_json_small(chain, file, merge=False):             # <<<<<<<<<<<<<<
- * 
  *     obj = json.load(file)
+ * 
  */
-  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_3load_json_small, 0, __pyx_n_s_load_json_small, NULL, __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__37)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 63, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_3load_json_small, 0, __pyx_n_s_load_json_small, NULL, __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__37)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 82, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_4, __pyx_tuple__38);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_load_json_small, __pyx_t_4) < 0) __PYX_ERR(0, 63, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_load_json_small, __pyx_t_4) < 0) __PYX_ERR(0, 82, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "kovit/pjson.py":102
+  /* "kovit/pjson.py":120
  * 
  * 
  * def dump_json_big(chain, file, frequency_compress=True):             # <<<<<<<<<<<<<<
  *     file.write('{"codes":[')
  * 
  */
-  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_5dump_json_big, 0, __pyx_n_s_dump_json_big, NULL, __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__40)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 102, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_5dump_json_big, 0, __pyx_n_s_dump_json_big, NULL, __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__40)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 120, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_4, __pyx_tuple__41);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_dump_json_big, __pyx_t_4) < 0) __PYX_ERR(0, 102, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_dump_json_big, __pyx_t_4) < 0) __PYX_ERR(0, 120, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "kovit/pjson.py":156
+  /* "kovit/pjson.py":174
  * 
  * 
  * def load_json_big(chain, file, merge=False):             # <<<<<<<<<<<<<<
  *     if not merge:
  *         chain.clear()
  */
-  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_7load_json_big, 0, __pyx_n_s_load_json_big, NULL, __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__43)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 156, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_7load_json_big, 0, __pyx_n_s_load_json_big, NULL, __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__43)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 174, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_4, __pyx_tuple__44);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_load_json_big, __pyx_t_4) < 0) __PYX_ERR(0, 156, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_load_json_big, __pyx_t_4) < 0) __PYX_ERR(0, 174, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "kovit/pjson.py":2
- * 
- * try:             # <<<<<<<<<<<<<<
- *     import ujson as json
- * except ImportError:
+  /* "kovit/pjson.py":1
+ * # Copyright (c) 2018, Teriks             # <<<<<<<<<<<<<<
+ * # All rights reserved.
+ * #
  */
-  __pyx_t_4 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 2, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_test, __pyx_t_4) < 0) __PYX_ERR(0, 2, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_test, __pyx_t_4) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /*--- Wrapped vars code ---*/
