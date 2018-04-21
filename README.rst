@@ -1,4 +1,4 @@
-.. |codecov| image:: https://codecov.io/gh/Teriks/dschema/kovit/master/graph/badge.svg
+.. |codecov| image:: https://codecov.io/gh/Teriks/kovit/branch/master/graph/badge.svg
     :target: https://codecov.io/gh/Teriks/kovit
 
 .. |Master Documentation Status| image:: https://readthedocs.org/projects/kovit/badge/?version=latest
