@@ -19,11 +19,12 @@
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
-from kovit.bag import ProbabilityBag
+from kovit.bag import ProbabilityBag, BagItem
 from kovit.chain import Chain
 
 
 __version__ = '0.1.0.0a1'
 
 __all__ = ['Chain',
-           'ProbabilityBag']
+           'ProbabilityBag',
+           'BagItem']

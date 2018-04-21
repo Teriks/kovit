@@ -21,7 +21,9 @@
 import random
 from collections import namedtuple
 
-Item = namedtuple('Item', ['value', 'count'])
+__all__ = ['BagItem', 'ProbabilityBag']
+
+BagItem = namedtuple('BagItem', ['value', 'count'])
 
 
 class _NoItem:
@@ -29,16 +31,49 @@ class _NoItem:
 
 
 class ProbabilityBag:
+    """
+    Represents a bag of items which have varying quantities.
+    """
 
     @staticmethod
-    def from_iterable_counts(i):
+    def from_flat_choices(iterable):
+        """
+        Construct a bag from a flat iterable of values followed by their count/quantity.
+
+        .. code-block:: python
+
+            ProbabilityBag.from_flat_choices(["two-of-me", 2, "five-of-me", 5, "one-of-me", 1])
+
+        Items that appear more than once will have their count accumulated.
+
+        :param iterable: items followed by their count/quantity
+        :return: :py:class:`kovit.ProbabilityBag`
+        """
+
         r = ProbabilityBag()
-        i = iter(i)
+        i = iter(iterable)
+
         for value, count in zip(i, i):
-            r._items[value] = Item(value, count)
+            existing = r._items.get(value, _NoItem)
+
+            if existing is _NoItem:
+                r._items[value] = BagItem(value, count)
+            else:
+                r._items[value] = BagItem(value, count + existing.count)
+
             r._count += count
 
     def __init__(self, items=None):
+        """
+        Construct a bag.
+
+        Optionally from a sequence of items.
+
+        A frequency dictionary is built from any given items.
+
+
+        :param items:
+        """
         self._items = {}
         self._count = 0
         if items:
@@ -46,45 +81,125 @@ class ProbabilityBag:
                 self.add(i)
 
     def __len__(self):
+        """
+        :return: :py:func:`kovit.ProbabilityBag.count`
+        """
+
         return self._count
 
     def get(self, item, default=None):
+        """
+        Get an items container by reference.
+
+        :return: :py:class:`kovit.BagItem`
+        """
         return self._items.get(item, default)
 
     def merge(self, other):
+        """
+        Merge in the items from another bag.
+
+        :param other: :py:class:`kovit.ProbabilityBag`
+        """
         for value, count in other.choices():
             self.add(value, count)
 
     def add(self, item, count=1):
+        """
+        Add an item to the bag with an optional quantity.
+
+        If the item already exists in the bag, its count will be incremented by **count**.
+
+        :param item: The item to add
+        :param count: int
+        """
+
         i = self.get(item, default=_NoItem)
 
         if i is _NoItem:
-            self._items[item] = Item(item, count)
+            self._items[item] = BagItem(item, count)
         else:
-            self._items[item] = Item(item, i.count + count)
+            self._items[item] = BagItem(item, i.count + count)
 
         self._count += count
 
     @property
     def count(self):
+        """
+        Return the number of items that have been added to this bag.
+
+        This is the sum total of all item occurrences.
+
+        :return: int
+        """
         return self._count
 
     @property
     def unique_count(self):
+        """
+        Return the number of unique items that have been added to this bag.
+
+        Items that appear more than once only count as 1.
+
+        :return: int
+        """
         return len(self._items)
 
     def choices_weights(self):
+        """
+        Iterate over tuples of items and their probability weight in the bag.
+
+        :return: iterator over tuples (item_value, weight)
+        """
         for i in self._items.values():
             yield (i.value, i.count / len(self))
 
+    def choices_weights_flat(self):
+        """
+        Iterate over items followed by their probability weight in the bag.
+
+        :return: iterator over sequence [item_value, weight, item_value, weight ...]
+        """
+
+        for i in self._items.values():
+            yield i.value
+            yield i.count / len(self)
+
     def choices(self):
+        """
+        Iterate over tuples of items and their frequency count in the bag.
+
+        :return: iterator over tuples (item_value, count)
+        """
         for i in self._items.values():
             yield (i.value, i.count)
 
+    def choices_flat(self):
+        """
+        Iterate over items followed by their frequency count in the bag.
+
+        :return: iterator over tuples [item_value, count, item_value, count ...]
+        """
+        for i in self._items.values():
+            yield i.value
+            yield i.count
+
     def values(self):
+        """
+        Iterate over :py:class:`kovit.BagItem` nodes in the bag.
+
+        :return: iterator over :py:class:`kovit.BagItem` objects
+        """
         return (v.value for v in self._items.values())
 
     def __eq__(self, other):
+        """
+        Compare for equality with another :py:class:`kovit.ProbabilityBag`
+
+        :param other: :py:class:`kovit.ProbabilityBag`
+        :return: bool
+        """
+
         if not isinstance(other, ProbabilityBag):
             raise ValueError('Cannot compare ProbabilityBag to "{}"'.format(type(other).__name__))
 
@@ -99,9 +214,21 @@ class ProbabilityBag:
         return True
 
     def __ne__(self, other):
+        """
+        Compare for inequality with another :py:class:`kovit.ProbabilityBag`
+
+        :param other: :py:class:`kovit.ProbabilityBag`
+        :return: bool
+        """
+
         return not self.__eq__(other)
 
     def choose(self):
+        """
+        Choose a random bag item based on probability/item frequency
+
+        :return: raw **BagItem.value**
+        """
         r = random.uniform(0, self._count)
         up_to = 0
         for item in self._items.values():
