@@ -37,7 +37,7 @@ setup(
     license='BSD 3-Clause',
     author='Teriks',
     author_email='Teriks@users.noreply.github.com',
-    description='Generic incrementally build-able Markov chains for text generation and other purposes.',
+    description='Generic incrementally buildable Markov chains for text generation and other purposes.',
     long_description=readme,
     install_requires=['cffi', 'ijson', 'ujson'],
     ext_modules=ext_modules,
