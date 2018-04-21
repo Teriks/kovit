@@ -318,7 +318,7 @@ class Chain:
 
         :param file: file object
 
-        :param merge: Whether or not to merge the chain data with the exiting chain.
+        :param merge: Whether or not to merge the chain data with the existing chain.
 
         :param large_file: Whether or not to optimize the file load to use less memory, if **True** the chain
                            will be read and built progressively from the file instead of all at once, which is
