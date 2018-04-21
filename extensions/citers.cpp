@@ -164,6 +164,13 @@ iter_runs_next(Iter_Runs_State *istate)
         return r;
     }
 
+    if(first){
+        PyObject* tup = PyTuple_New(0);
+        PyObject* r = PyTuple_Pack(2, first, tup);
+        Py_DECREF(tup);
+        return r;
+    }
+
     return NULL;
 }
 

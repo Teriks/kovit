@@ -21,7 +21,7 @@
 from itertools import islice
 
 
-def iter_runs(items, run_size=1, trim=False):
+def iter_runs(items, run_size=1):
     items = iter(items)
 
     item_start = next(items, None)
@@ -33,13 +33,12 @@ def iter_runs(items, run_size=1, trim=False):
         for i in range(0, run_size):
             item_next = next(items, None)
             if item_next is None:
-                if not trim:
-                    yield (item_start, item_run)
-                item_start = None
+                yield (item_start, tuple(item_run))
+                item_start = item_run[-1] if item_run else None
                 break
             item_run.append(item_next)
         else:
-            yield (item_start, item_run)
+            yield (item_start, tuple(item_run))
             item_start = item_next
 
 
@@ -51,4 +50,4 @@ def iter_window(items, window_size=1):
             item_next = next(items, None)
             if item_next is not None:
                 stack.append(item_next)
-            yield (stack.pop(0), stack.copy())
+            yield (stack.pop(0), tuple(stack.copy()))
