@@ -42,7 +42,7 @@ setup(
     install_requires=['cffi', 'ijson', 'ujson'],
     ext_modules=ext_modules,
     classifiers=[
-        'Development Status :: 2 - Pre Alpha',
+        'Development Status :: 3 - Alpha',
         'License :: OSI Approved :: BSD License',
         'Intended Audience :: Developers',
         'Natural Language :: English',
