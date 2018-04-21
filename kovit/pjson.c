@@ -3,12 +3,12 @@
 /* BEGIN: Cython Metadata
 {
     "distutils": {
-        "name": "kovit.cjson",
+        "name": "kovit_cjson",
         "sources": [
             "kovit/pjson.py"
         ]
     },
-    "module_name": "kovit.cjson"
+    "module_name": "kovit_cjson"
 }
 END: Cython Metadata */
 
@@ -570,8 +570,8 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE__kovit__cjson
-#define __PYX_HAVE_API__kovit__cjson
+#define __PYX_HAVE__kovit_cjson
+#define __PYX_HAVE_API__kovit_cjson
 /* Early includes */
 #ifdef _OPENMP
 #include <omp.h>
@@ -780,19 +780,19 @@ static const char *__pyx_f[] = {
 };
 
 /*--- Type declarations ---*/
-struct __pyx_obj_5kovit_5cjson___pyx_scope_struct__dump_json_small;
-struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_1_gen_next_start;
-struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_2_genexpr;
-struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_3_gen_next_start;
-struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_4_gen_chain;
-struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_5_load_json_small;
-struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_6_genexpr;
-struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_7_genexpr;
-struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_8_dump_json_big;
-struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_9_write_next_start;
-struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_10_genexpr;
-struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_11_load_json_big;
-struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_12_genexpr;
+struct __pyx_obj_11kovit_cjson___pyx_scope_struct__dump_json_small;
+struct __pyx_obj_11kovit_cjson___pyx_scope_struct_1_gen_next_start;
+struct __pyx_obj_11kovit_cjson___pyx_scope_struct_2_genexpr;
+struct __pyx_obj_11kovit_cjson___pyx_scope_struct_3_gen_next_start;
+struct __pyx_obj_11kovit_cjson___pyx_scope_struct_4_gen_chain;
+struct __pyx_obj_11kovit_cjson___pyx_scope_struct_5_load_json_small;
+struct __pyx_obj_11kovit_cjson___pyx_scope_struct_6_genexpr;
+struct __pyx_obj_11kovit_cjson___pyx_scope_struct_7_genexpr;
+struct __pyx_obj_11kovit_cjson___pyx_scope_struct_8_dump_json_big;
+struct __pyx_obj_11kovit_cjson___pyx_scope_struct_9_write_next_start;
+struct __pyx_obj_11kovit_cjson___pyx_scope_struct_10_genexpr;
+struct __pyx_obj_11kovit_cjson___pyx_scope_struct_11_load_json_big;
+struct __pyx_obj_11kovit_cjson___pyx_scope_struct_12_genexpr;
 
 /* "kovit/pjson.py":41
  * 
@@ -801,7 +801,7 @@ struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_12_genexpr;
  *     codes = {}
  *     codes_list = []
  */
-struct __pyx_obj_5kovit_5cjson___pyx_scope_struct__dump_json_small {
+struct __pyx_obj_11kovit_cjson___pyx_scope_struct__dump_json_small {
   PyObject_HEAD
   PyObject *__pyx_v_chain;
   PyObject *__pyx_v_codes;
@@ -817,9 +817,9 @@ struct __pyx_obj_5kovit_5cjson___pyx_scope_struct__dump_json_small {
  *             for val, cnt in choices:
  *                 yield tuple(codes[s] for s in val)
  */
-struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_1_gen_next_start {
+struct __pyx_obj_11kovit_cjson___pyx_scope_struct_1_gen_next_start {
   PyObject_HEAD
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct__dump_json_small *__pyx_outer_scope;
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct__dump_json_small *__pyx_outer_scope;
   PyObject *__pyx_v_choices;
   PyObject *__pyx_v_cnt;
   PyObject *__pyx_v_genexpr;
@@ -837,9 +837,9 @@ struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_1_gen_next_start {
  *                 yield cnt
  *     else:
  */
-struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_2_genexpr {
+struct __pyx_obj_11kovit_cjson___pyx_scope_struct_2_genexpr {
   PyObject_HEAD
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_1_gen_next_start *__pyx_outer_scope;
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_1_gen_next_start *__pyx_outer_scope;
   PyObject *__pyx_v_s;
   PyObject *__pyx_t_0;
   Py_ssize_t __pyx_t_1;
@@ -854,7 +854,7 @@ struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_2_genexpr {
  *             for val, cnt in choices:
  *                 yield val
  */
-struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_3_gen_next_start {
+struct __pyx_obj_11kovit_cjson___pyx_scope_struct_3_gen_next_start {
   PyObject_HEAD
   PyObject *__pyx_v_choices;
   PyObject *__pyx_v_cnt;
@@ -872,9 +872,9 @@ struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_3_gen_next_start {
  *         for start, bag in chain.items():
  *             yield gen_start(start)
  */
-struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_4_gen_chain {
+struct __pyx_obj_11kovit_cjson___pyx_scope_struct_4_gen_chain {
   PyObject_HEAD
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct__dump_json_small *__pyx_outer_scope;
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct__dump_json_small *__pyx_outer_scope;
   PyObject *__pyx_v_bag;
   PyObject *__pyx_v_start;
   PyObject *__pyx_t_0;
@@ -890,7 +890,7 @@ struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_4_gen_chain {
  *     obj = json.load(file)
  * 
  */
-struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_5_load_json_small {
+struct __pyx_obj_11kovit_cjson___pyx_scope_struct_5_load_json_small {
   PyObject_HEAD
   PyObject *__pyx_v_codes;
   PyObject *__pyx_v_items;
@@ -904,9 +904,9 @@ struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_5_load_json_small {
  *         else:
  *             for start, bag in zip(c_list, c_list):
  */
-struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_6_genexpr {
+struct __pyx_obj_11kovit_cjson___pyx_scope_struct_6_genexpr {
   PyObject_HEAD
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_5_load_json_small *__pyx_outer_scope;
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_5_load_json_small *__pyx_outer_scope;
   PyObject *__pyx_v_i;
   PyObject *__pyx_t_0;
   Py_ssize_t __pyx_t_1;
@@ -921,9 +921,9 @@ struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_6_genexpr {
  *                 chain.set_bag(codes[start], b)
  *         else:
  */
-struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_7_genexpr {
+struct __pyx_obj_11kovit_cjson___pyx_scope_struct_7_genexpr {
   PyObject_HEAD
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_5_load_json_small *__pyx_outer_scope;
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_5_load_json_small *__pyx_outer_scope;
   PyObject *__pyx_v_i;
   PyObject *__pyx_t_0;
   Py_ssize_t __pyx_t_1;
@@ -938,7 +938,7 @@ struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_7_genexpr {
  *     file.write('{"codes":[')
  * 
  */
-struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_8_dump_json_big {
+struct __pyx_obj_11kovit_cjson___pyx_scope_struct_8_dump_json_big {
   PyObject_HEAD
   PyObject *__pyx_v_codes;
   PyObject *__pyx_v_file;
@@ -952,9 +952,9 @@ struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_8_dump_json_big {
  *             file.write('[' + ','.join(str(codes[n]) for n in next_start) + ']')
  *     else:
  */
-struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_9_write_next_start {
+struct __pyx_obj_11kovit_cjson___pyx_scope_struct_9_write_next_start {
   PyObject_HEAD
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_8_dump_json_big *__pyx_outer_scope;
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_8_dump_json_big *__pyx_outer_scope;
   PyObject *__pyx_v_next_start;
 };
 
@@ -966,9 +966,9 @@ struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_9_write_next_start {
  *     else:
  *         def write_start(start):
  */
-struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_10_genexpr {
+struct __pyx_obj_11kovit_cjson___pyx_scope_struct_10_genexpr {
   PyObject_HEAD
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_9_write_next_start *__pyx_outer_scope;
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_9_write_next_start *__pyx_outer_scope;
   PyObject *__pyx_v_n;
   PyObject *__pyx_t_0;
   Py_ssize_t __pyx_t_1;
@@ -983,7 +983,7 @@ struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_10_genexpr {
  *     if not merge:
  *         chain.clear()
  */
-struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_11_load_json_big {
+struct __pyx_obj_11kovit_cjson___pyx_scope_struct_11_load_json_big {
   PyObject_HEAD
   PyObject *__pyx_v_builder;
   PyObject *__pyx_v_codes;
@@ -997,9 +997,9 @@ struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_11_load_json_big {
  *                 else:
  *                     chain.add_to_bag(start, builder.value, count=value)
  */
-struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_12_genexpr {
+struct __pyx_obj_11kovit_cjson___pyx_scope_struct_12_genexpr {
   PyObject_HEAD
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_11_load_json_big *__pyx_outer_scope;
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_11_load_json_big *__pyx_outer_scope;
   PyObject *__pyx_v_i;
   PyObject *__pyx_t_0;
   Py_ssize_t __pyx_t_1;
@@ -1523,25 +1523,25 @@ static int __Pyx_check_binary_version(void);
 static int __Pyx_InitStrings(__Pyx_StringTabEntry *t);
 
 
-/* Module declarations from 'kovit.cjson' */
-static PyTypeObject *__pyx_ptype_5kovit_5cjson___pyx_scope_struct__dump_json_small = 0;
-static PyTypeObject *__pyx_ptype_5kovit_5cjson___pyx_scope_struct_1_gen_next_start = 0;
-static PyTypeObject *__pyx_ptype_5kovit_5cjson___pyx_scope_struct_2_genexpr = 0;
-static PyTypeObject *__pyx_ptype_5kovit_5cjson___pyx_scope_struct_3_gen_next_start = 0;
-static PyTypeObject *__pyx_ptype_5kovit_5cjson___pyx_scope_struct_4_gen_chain = 0;
-static PyTypeObject *__pyx_ptype_5kovit_5cjson___pyx_scope_struct_5_load_json_small = 0;
-static PyTypeObject *__pyx_ptype_5kovit_5cjson___pyx_scope_struct_6_genexpr = 0;
-static PyTypeObject *__pyx_ptype_5kovit_5cjson___pyx_scope_struct_7_genexpr = 0;
-static PyTypeObject *__pyx_ptype_5kovit_5cjson___pyx_scope_struct_8_dump_json_big = 0;
-static PyTypeObject *__pyx_ptype_5kovit_5cjson___pyx_scope_struct_9_write_next_start = 0;
-static PyTypeObject *__pyx_ptype_5kovit_5cjson___pyx_scope_struct_10_genexpr = 0;
-static PyTypeObject *__pyx_ptype_5kovit_5cjson___pyx_scope_struct_11_load_json_big = 0;
-static PyTypeObject *__pyx_ptype_5kovit_5cjson___pyx_scope_struct_12_genexpr = 0;
-#define __Pyx_MODULE_NAME "kovit.cjson"
-extern int __pyx_module_is_main_kovit__cjson;
-int __pyx_module_is_main_kovit__cjson = 0;
+/* Module declarations from 'kovit_cjson' */
+static PyTypeObject *__pyx_ptype_11kovit_cjson___pyx_scope_struct__dump_json_small = 0;
+static PyTypeObject *__pyx_ptype_11kovit_cjson___pyx_scope_struct_1_gen_next_start = 0;
+static PyTypeObject *__pyx_ptype_11kovit_cjson___pyx_scope_struct_2_genexpr = 0;
+static PyTypeObject *__pyx_ptype_11kovit_cjson___pyx_scope_struct_3_gen_next_start = 0;
+static PyTypeObject *__pyx_ptype_11kovit_cjson___pyx_scope_struct_4_gen_chain = 0;
+static PyTypeObject *__pyx_ptype_11kovit_cjson___pyx_scope_struct_5_load_json_small = 0;
+static PyTypeObject *__pyx_ptype_11kovit_cjson___pyx_scope_struct_6_genexpr = 0;
+static PyTypeObject *__pyx_ptype_11kovit_cjson___pyx_scope_struct_7_genexpr = 0;
+static PyTypeObject *__pyx_ptype_11kovit_cjson___pyx_scope_struct_8_dump_json_big = 0;
+static PyTypeObject *__pyx_ptype_11kovit_cjson___pyx_scope_struct_9_write_next_start = 0;
+static PyTypeObject *__pyx_ptype_11kovit_cjson___pyx_scope_struct_10_genexpr = 0;
+static PyTypeObject *__pyx_ptype_11kovit_cjson___pyx_scope_struct_11_load_json_big = 0;
+static PyTypeObject *__pyx_ptype_11kovit_cjson___pyx_scope_struct_12_genexpr = 0;
+#define __Pyx_MODULE_NAME "kovit_cjson"
+extern int __pyx_module_is_main_kovit_cjson;
+int __pyx_module_is_main_kovit_cjson = 0;
 
-/* Implementation of 'kovit.cjson' */
+/* Implementation of 'kovit_cjson' */
 static PyObject *__pyx_builtin_ImportError;
 static PyObject *__pyx_builtin_enumerate;
 static PyObject *__pyx_builtin_sorted;
@@ -1642,7 +1642,7 @@ static const char __pyx_k_yajl2_cffi[] = "yajl2_cffi";
 static const char __pyx_k_ImportError[] = "ImportError";
 static const char __pyx_k_OrderedDict[] = "OrderedDict";
 static const char __pyx_k_collections[] = "collections";
-static const char __pyx_k_kovit_cjson[] = "kovit.cjson";
+static const char __pyx_k_kovit_cjson[] = "kovit_cjson";
 static const char __pyx_k_start_array[] = "start_array";
 static const char __pyx_k_write_start[] = "write_start";
 static const char __pyx_k_unique_count[] = "unique_count";
@@ -1796,39 +1796,39 @@ static PyObject *__pyx_n_s_write_next_start;
 static PyObject *__pyx_n_s_write_start;
 static PyObject *__pyx_n_s_yajl2_cffi;
 static PyObject *__pyx_n_s_zip;
-static PyObject *__pyx_pf_5kovit_5cjson_15dump_json_small_gen_start(PyObject *__pyx_self, PyObject *__pyx_v_start); /* proto */
-static PyObject *__pyx_pf_5kovit_5cjson_15dump_json_small_14gen_next_start_genexpr(PyObject *__pyx_self); /* proto */
-static PyObject *__pyx_pf_5kovit_5cjson_15dump_json_small_2gen_next_start(PyObject *__pyx_self, PyObject *__pyx_v_choices); /* proto */
-static PyObject *__pyx_pf_5kovit_5cjson_15dump_json_small_5gen_start(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_start); /* proto */
-static PyObject *__pyx_pf_5kovit_5cjson_15dump_json_small_7gen_next_start(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_choices); /* proto */
-static PyObject *__pyx_pf_5kovit_5cjson_15dump_json_small_10gen_chain(PyObject *__pyx_self); /* proto */
+static PyObject *__pyx_pf_11kovit_cjson_15dump_json_small_gen_start(PyObject *__pyx_self, PyObject *__pyx_v_start); /* proto */
+static PyObject *__pyx_pf_11kovit_cjson_15dump_json_small_14gen_next_start_genexpr(PyObject *__pyx_self); /* proto */
+static PyObject *__pyx_pf_11kovit_cjson_15dump_json_small_2gen_next_start(PyObject *__pyx_self, PyObject *__pyx_v_choices); /* proto */
+static PyObject *__pyx_pf_11kovit_cjson_15dump_json_small_5gen_start(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_start); /* proto */
+static PyObject *__pyx_pf_11kovit_cjson_15dump_json_small_7gen_next_start(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_choices); /* proto */
+static PyObject *__pyx_pf_11kovit_cjson_15dump_json_small_10gen_chain(PyObject *__pyx_self); /* proto */
 static PyObject *__pyx_lambda_funcdef_lambda(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_x); /* proto */
-static PyObject *__pyx_pf_5kovit_5cjson_dump_json_small(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_chain, PyObject *__pyx_v_file, PyObject *__pyx_v_frequency_compress); /* proto */
-static PyObject *__pyx_pf_5kovit_5cjson_15load_json_small_genexpr(PyObject *__pyx_self); /* proto */
-static PyObject *__pyx_pf_5kovit_5cjson_15load_json_small_3genexpr(PyObject *__pyx_self); /* proto */
-static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_chain, PyObject *__pyx_v_file, PyObject *__pyx_v_merge); /* proto */
-static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_write_start(PyObject *__pyx_self, PyObject *__pyx_v_start); /* proto */
-static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_16write_next_start_genexpr(PyObject *__pyx_self); /* proto */
-static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_2write_next_start(PyObject *__pyx_self, PyObject *__pyx_v_next_start); /* proto */
-static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_4write_start(PyObject *__pyx_self, PyObject *__pyx_v_start); /* proto */
-static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_6write_next_start(PyObject *__pyx_self, PyObject *__pyx_v_next_start); /* proto */
+static PyObject *__pyx_pf_11kovit_cjson_dump_json_small(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_chain, PyObject *__pyx_v_file, PyObject *__pyx_v_frequency_compress); /* proto */
+static PyObject *__pyx_pf_11kovit_cjson_15load_json_small_genexpr(PyObject *__pyx_self); /* proto */
+static PyObject *__pyx_pf_11kovit_cjson_15load_json_small_3genexpr(PyObject *__pyx_self); /* proto */
+static PyObject *__pyx_pf_11kovit_cjson_2load_json_small(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_chain, PyObject *__pyx_v_file, PyObject *__pyx_v_merge); /* proto */
+static PyObject *__pyx_pf_11kovit_cjson_13dump_json_big_write_start(PyObject *__pyx_self, PyObject *__pyx_v_start); /* proto */
+static PyObject *__pyx_pf_11kovit_cjson_13dump_json_big_16write_next_start_genexpr(PyObject *__pyx_self); /* proto */
+static PyObject *__pyx_pf_11kovit_cjson_13dump_json_big_2write_next_start(PyObject *__pyx_self, PyObject *__pyx_v_next_start); /* proto */
+static PyObject *__pyx_pf_11kovit_cjson_13dump_json_big_4write_start(PyObject *__pyx_self, PyObject *__pyx_v_start); /* proto */
+static PyObject *__pyx_pf_11kovit_cjson_13dump_json_big_6write_next_start(PyObject *__pyx_self, PyObject *__pyx_v_next_start); /* proto */
 static PyObject *__pyx_lambda_funcdef_lambda4(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_x); /* proto */
-static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_chain, PyObject *__pyx_v_file, PyObject *__pyx_v_frequency_compress); /* proto */
-static PyObject *__pyx_pf_5kovit_5cjson_13load_json_big_genexpr(PyObject *__pyx_self); /* proto */
-static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_chain, PyObject *__pyx_v_file, PyObject *__pyx_v_merge); /* proto */
-static PyObject *__pyx_tp_new_5kovit_5cjson___pyx_scope_struct__dump_json_small(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
-static PyObject *__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_1_gen_next_start(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
-static PyObject *__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_2_genexpr(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
-static PyObject *__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_3_gen_next_start(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
-static PyObject *__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_4_gen_chain(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
-static PyObject *__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_5_load_json_small(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
-static PyObject *__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_6_genexpr(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
-static PyObject *__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_7_genexpr(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
-static PyObject *__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_8_dump_json_big(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
-static PyObject *__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_9_write_next_start(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
-static PyObject *__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_10_genexpr(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
-static PyObject *__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_11_load_json_big(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
-static PyObject *__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_12_genexpr(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_pf_11kovit_cjson_4dump_json_big(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_chain, PyObject *__pyx_v_file, PyObject *__pyx_v_frequency_compress); /* proto */
+static PyObject *__pyx_pf_11kovit_cjson_13load_json_big_genexpr(PyObject *__pyx_self); /* proto */
+static PyObject *__pyx_pf_11kovit_cjson_6load_json_big(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_chain, PyObject *__pyx_v_file, PyObject *__pyx_v_merge); /* proto */
+static PyObject *__pyx_tp_new_11kovit_cjson___pyx_scope_struct__dump_json_small(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_11kovit_cjson___pyx_scope_struct_1_gen_next_start(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_11kovit_cjson___pyx_scope_struct_2_genexpr(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_11kovit_cjson___pyx_scope_struct_3_gen_next_start(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_11kovit_cjson___pyx_scope_struct_4_gen_chain(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_11kovit_cjson___pyx_scope_struct_5_load_json_small(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_11kovit_cjson___pyx_scope_struct_6_genexpr(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_11kovit_cjson___pyx_scope_struct_7_genexpr(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_11kovit_cjson___pyx_scope_struct_8_dump_json_big(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_11kovit_cjson___pyx_scope_struct_9_write_next_start(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_11kovit_cjson___pyx_scope_struct_10_genexpr(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_11kovit_cjson___pyx_scope_struct_11_load_json_big(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_11kovit_cjson___pyx_scope_struct_12_genexpr(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_int_0;
 static PyObject *__pyx_int_1;
 static PyObject *__pyx_int_2;
@@ -1880,9 +1880,9 @@ static PyObject *__pyx_codeobj__43;
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5kovit_5cjson_1dump_json_small(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_5kovit_5cjson_1dump_json_small = {"dump_json_small", (PyCFunction)__pyx_pw_5kovit_5cjson_1dump_json_small, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_5kovit_5cjson_1dump_json_small(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_11kovit_cjson_1dump_json_small(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_11kovit_cjson_1dump_json_small = {"dump_json_small", (PyCFunction)__pyx_pw_11kovit_cjson_1dump_json_small, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_11kovit_cjson_1dump_json_small(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_chain = 0;
   PyObject *__pyx_v_file = 0;
   PyObject *__pyx_v_frequency_compress = 0;
@@ -1945,11 +1945,11 @@ static PyObject *__pyx_pw_5kovit_5cjson_1dump_json_small(PyObject *__pyx_self, P
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("dump_json_small", 0, 2, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 41, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("kovit.cjson.dump_json_small", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("kovit_cjson.dump_json_small", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_5kovit_5cjson_dump_json_small(__pyx_self, __pyx_v_chain, __pyx_v_file, __pyx_v_frequency_compress);
+  __pyx_r = __pyx_pf_11kovit_cjson_dump_json_small(__pyx_self, __pyx_v_chain, __pyx_v_file, __pyx_v_frequency_compress);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
@@ -1965,27 +1965,27 @@ static PyObject *__pyx_pw_5kovit_5cjson_1dump_json_small(PyObject *__pyx_self, P
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5kovit_5cjson_15dump_json_small_1gen_start(PyObject *__pyx_self, PyObject *__pyx_v_start); /*proto*/
-static PyMethodDef __pyx_mdef_5kovit_5cjson_15dump_json_small_1gen_start = {"gen_start", (PyCFunction)__pyx_pw_5kovit_5cjson_15dump_json_small_1gen_start, METH_O, 0};
-static PyObject *__pyx_pw_5kovit_5cjson_15dump_json_small_1gen_start(PyObject *__pyx_self, PyObject *__pyx_v_start) {
+static PyObject *__pyx_pw_11kovit_cjson_15dump_json_small_1gen_start(PyObject *__pyx_self, PyObject *__pyx_v_start); /*proto*/
+static PyMethodDef __pyx_mdef_11kovit_cjson_15dump_json_small_1gen_start = {"gen_start", (PyCFunction)__pyx_pw_11kovit_cjson_15dump_json_small_1gen_start, METH_O, 0};
+static PyObject *__pyx_pw_11kovit_cjson_15dump_json_small_1gen_start(PyObject *__pyx_self, PyObject *__pyx_v_start) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("gen_start (wrapper)", 0);
-  __pyx_r = __pyx_pf_5kovit_5cjson_15dump_json_small_gen_start(__pyx_self, ((PyObject *)__pyx_v_start));
+  __pyx_r = __pyx_pf_11kovit_cjson_15dump_json_small_gen_start(__pyx_self, ((PyObject *)__pyx_v_start));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5kovit_5cjson_15dump_json_small_gen_start(PyObject *__pyx_self, PyObject *__pyx_v_start) {
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct__dump_json_small *__pyx_cur_scope;
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct__dump_json_small *__pyx_outer_scope;
+static PyObject *__pyx_pf_11kovit_cjson_15dump_json_small_gen_start(PyObject *__pyx_self, PyObject *__pyx_v_start) {
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct__dump_json_small *__pyx_cur_scope;
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct__dump_json_small *__pyx_outer_scope;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("gen_start", 0);
-  __pyx_outer_scope = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct__dump_json_small *) __Pyx_CyFunction_GetClosure(__pyx_self);
+  __pyx_outer_scope = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct__dump_json_small *) __Pyx_CyFunction_GetClosure(__pyx_self);
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "kovit/pjson.py":59
@@ -2018,14 +2018,14 @@ static PyObject *__pyx_pf_5kovit_5cjson_15dump_json_small_gen_start(PyObject *__
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("kovit.cjson.dump_json_small.gen_start", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("kovit_cjson.dump_json_small.gen_start", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
-static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_4generator(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
+static PyObject *__pyx_gb_11kovit_cjson_15dump_json_small_4generator(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "kovit/pjson.py":61
  *             return codes[start]
@@ -2036,19 +2036,19 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_4generator(__pyx_Corou
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5kovit_5cjson_15dump_json_small_3gen_next_start(PyObject *__pyx_self, PyObject *__pyx_v_choices); /*proto*/
-static PyMethodDef __pyx_mdef_5kovit_5cjson_15dump_json_small_3gen_next_start = {"gen_next_start", (PyCFunction)__pyx_pw_5kovit_5cjson_15dump_json_small_3gen_next_start, METH_O, 0};
-static PyObject *__pyx_pw_5kovit_5cjson_15dump_json_small_3gen_next_start(PyObject *__pyx_self, PyObject *__pyx_v_choices) {
+static PyObject *__pyx_pw_11kovit_cjson_15dump_json_small_3gen_next_start(PyObject *__pyx_self, PyObject *__pyx_v_choices); /*proto*/
+static PyMethodDef __pyx_mdef_11kovit_cjson_15dump_json_small_3gen_next_start = {"gen_next_start", (PyCFunction)__pyx_pw_11kovit_cjson_15dump_json_small_3gen_next_start, METH_O, 0};
+static PyObject *__pyx_pw_11kovit_cjson_15dump_json_small_3gen_next_start(PyObject *__pyx_self, PyObject *__pyx_v_choices) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("gen_next_start (wrapper)", 0);
-  __pyx_r = __pyx_pf_5kovit_5cjson_15dump_json_small_2gen_next_start(__pyx_self, ((PyObject *)__pyx_v_choices));
+  __pyx_r = __pyx_pf_11kovit_cjson_15dump_json_small_2gen_next_start(__pyx_self, ((PyObject *)__pyx_v_choices));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
-static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_14gen_next_start_2generator3(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
+static PyObject *__pyx_gb_11kovit_cjson_15dump_json_small_14gen_next_start_2generator3(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "kovit/pjson.py":63
  *         def gen_next_start(choices):
@@ -2058,24 +2058,24 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_14gen_next_start_2gene
  *     else:
  */
 
-static PyObject *__pyx_pf_5kovit_5cjson_15dump_json_small_14gen_next_start_genexpr(PyObject *__pyx_self) {
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_2_genexpr *__pyx_cur_scope;
+static PyObject *__pyx_pf_11kovit_cjson_15dump_json_small_14gen_next_start_genexpr(PyObject *__pyx_self) {
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_2_genexpr *__pyx_cur_scope;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("genexpr", 0);
-  __pyx_cur_scope = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_2_genexpr *)__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_2_genexpr(__pyx_ptype_5kovit_5cjson___pyx_scope_struct_2_genexpr, __pyx_empty_tuple, NULL);
+  __pyx_cur_scope = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_2_genexpr *)__pyx_tp_new_11kovit_cjson___pyx_scope_struct_2_genexpr(__pyx_ptype_11kovit_cjson___pyx_scope_struct_2_genexpr, __pyx_empty_tuple, NULL);
   if (unlikely(!__pyx_cur_scope)) {
-    __pyx_cur_scope = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_2_genexpr *)Py_None);
+    __pyx_cur_scope = ((struct __pyx_obj_11kovit_cjson___pyx_scope_struct_2_genexpr *)Py_None);
     __Pyx_INCREF(Py_None);
     __PYX_ERR(0, 63, __pyx_L1_error)
   } else {
     __Pyx_GOTREF(__pyx_cur_scope);
   }
-  __pyx_cur_scope->__pyx_outer_scope = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_1_gen_next_start *) __pyx_self;
+  __pyx_cur_scope->__pyx_outer_scope = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_1_gen_next_start *) __pyx_self;
   __Pyx_INCREF(((PyObject *)__pyx_cur_scope->__pyx_outer_scope));
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_outer_scope);
   {
-    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_5kovit_5cjson_15dump_json_small_14gen_next_start_2generator3, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_genexpr, __pyx_n_s_dump_json_small_locals_gen_next, __pyx_n_s_kovit_cjson); if (unlikely(!gen)) __PYX_ERR(0, 63, __pyx_L1_error)
+    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_11kovit_cjson_15dump_json_small_14gen_next_start_2generator3, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_genexpr, __pyx_n_s_dump_json_small_locals_gen_next, __pyx_n_s_kovit_cjson); if (unlikely(!gen)) __PYX_ERR(0, 63, __pyx_L1_error)
     __Pyx_DECREF(__pyx_cur_scope);
     __Pyx_RefNannyFinishContext();
     return (PyObject *) gen;
@@ -2083,7 +2083,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_15dump_json_small_14gen_next_start_genex
 
   /* function exit code */
   __pyx_L1_error:;
-  __Pyx_AddTraceback("kovit.cjson.dump_json_small.gen_next_start.genexpr", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("kovit_cjson.dump_json_small.gen_next_start.genexpr", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_DECREF(((PyObject *)__pyx_cur_scope));
   __Pyx_XGIVEREF(__pyx_r);
@@ -2091,9 +2091,9 @@ static PyObject *__pyx_pf_5kovit_5cjson_15dump_json_small_14gen_next_start_genex
   return __pyx_r;
 }
 
-static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_14gen_next_start_2generator3(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value) /* generator body */
+static PyObject *__pyx_gb_11kovit_cjson_15dump_json_small_14gen_next_start_2generator3(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value) /* generator body */
 {
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_2_genexpr *__pyx_cur_scope = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_2_genexpr *)__pyx_generator->closure);
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_2_genexpr *__pyx_cur_scope = ((struct __pyx_obj_11kovit_cjson___pyx_scope_struct_2_genexpr *)__pyx_generator->closure);
   PyObject *__pyx_r = NULL;
   PyObject *__pyx_t_1 = NULL;
   Py_ssize_t __pyx_t_2;
@@ -2208,27 +2208,27 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_14gen_next_start_2gene
  *                 yield tuple(codes[s] for s in val)
  */
 
-static PyObject *__pyx_pf_5kovit_5cjson_15dump_json_small_2gen_next_start(PyObject *__pyx_self, PyObject *__pyx_v_choices) {
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_1_gen_next_start *__pyx_cur_scope;
+static PyObject *__pyx_pf_11kovit_cjson_15dump_json_small_2gen_next_start(PyObject *__pyx_self, PyObject *__pyx_v_choices) {
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_1_gen_next_start *__pyx_cur_scope;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("gen_next_start", 0);
-  __pyx_cur_scope = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_1_gen_next_start *)__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_1_gen_next_start(__pyx_ptype_5kovit_5cjson___pyx_scope_struct_1_gen_next_start, __pyx_empty_tuple, NULL);
+  __pyx_cur_scope = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_1_gen_next_start *)__pyx_tp_new_11kovit_cjson___pyx_scope_struct_1_gen_next_start(__pyx_ptype_11kovit_cjson___pyx_scope_struct_1_gen_next_start, __pyx_empty_tuple, NULL);
   if (unlikely(!__pyx_cur_scope)) {
-    __pyx_cur_scope = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_1_gen_next_start *)Py_None);
+    __pyx_cur_scope = ((struct __pyx_obj_11kovit_cjson___pyx_scope_struct_1_gen_next_start *)Py_None);
     __Pyx_INCREF(Py_None);
     __PYX_ERR(0, 61, __pyx_L1_error)
   } else {
     __Pyx_GOTREF(__pyx_cur_scope);
   }
-  __pyx_cur_scope->__pyx_outer_scope = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct__dump_json_small *) __Pyx_CyFunction_GetClosure(__pyx_self);
+  __pyx_cur_scope->__pyx_outer_scope = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct__dump_json_small *) __Pyx_CyFunction_GetClosure(__pyx_self);
   __Pyx_INCREF(((PyObject *)__pyx_cur_scope->__pyx_outer_scope));
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_outer_scope);
   __pyx_cur_scope->__pyx_v_choices = __pyx_v_choices;
   __Pyx_INCREF(__pyx_cur_scope->__pyx_v_choices);
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_choices);
   {
-    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_5kovit_5cjson_15dump_json_small_4generator, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_gen_next_start, __pyx_n_s_dump_json_small_locals_gen_next_2, __pyx_n_s_kovit_cjson); if (unlikely(!gen)) __PYX_ERR(0, 61, __pyx_L1_error)
+    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_11kovit_cjson_15dump_json_small_4generator, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_gen_next_start, __pyx_n_s_dump_json_small_locals_gen_next_2, __pyx_n_s_kovit_cjson); if (unlikely(!gen)) __PYX_ERR(0, 61, __pyx_L1_error)
     __Pyx_DECREF(__pyx_cur_scope);
     __Pyx_RefNannyFinishContext();
     return (PyObject *) gen;
@@ -2236,7 +2236,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_15dump_json_small_2gen_next_start(PyObje
 
   /* function exit code */
   __pyx_L1_error:;
-  __Pyx_AddTraceback("kovit.cjson.dump_json_small.gen_next_start", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("kovit_cjson.dump_json_small.gen_next_start", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_DECREF(((PyObject *)__pyx_cur_scope));
   __Pyx_XGIVEREF(__pyx_r);
@@ -2244,9 +2244,9 @@ static PyObject *__pyx_pf_5kovit_5cjson_15dump_json_small_2gen_next_start(PyObje
   return __pyx_r;
 }
 
-static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_4generator(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value) /* generator body */
+static PyObject *__pyx_gb_11kovit_cjson_15dump_json_small_4generator(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value) /* generator body */
 {
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_1_gen_next_start *__pyx_cur_scope = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_1_gen_next_start *)__pyx_generator->closure);
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_1_gen_next_start *__pyx_cur_scope = ((struct __pyx_obj_11kovit_cjson___pyx_scope_struct_1_gen_next_start *)__pyx_generator->closure);
   PyObject *__pyx_r = NULL;
   PyObject *__pyx_t_1 = NULL;
   Py_ssize_t __pyx_t_2;
@@ -2377,7 +2377,7 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_4generator(__pyx_Corou
  *                 yield cnt
  *     else:
  */
-    __pyx_t_4 = __pyx_pf_5kovit_5cjson_15dump_json_small_14gen_next_start_genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 63, __pyx_L1_error)
+    __pyx_t_4 = __pyx_pf_11kovit_cjson_15dump_json_small_14gen_next_start_genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 63, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_t_6 = __Pyx_PySequence_Tuple(__pyx_t_4); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 63, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
@@ -2476,20 +2476,20 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_4generator(__pyx_Corou
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5kovit_5cjson_15dump_json_small_6gen_start(PyObject *__pyx_self, PyObject *__pyx_v_start); /*proto*/
-static PyMethodDef __pyx_mdef_5kovit_5cjson_15dump_json_small_6gen_start = {"gen_start", (PyCFunction)__pyx_pw_5kovit_5cjson_15dump_json_small_6gen_start, METH_O, 0};
-static PyObject *__pyx_pw_5kovit_5cjson_15dump_json_small_6gen_start(PyObject *__pyx_self, PyObject *__pyx_v_start) {
+static PyObject *__pyx_pw_11kovit_cjson_15dump_json_small_6gen_start(PyObject *__pyx_self, PyObject *__pyx_v_start); /*proto*/
+static PyMethodDef __pyx_mdef_11kovit_cjson_15dump_json_small_6gen_start = {"gen_start", (PyCFunction)__pyx_pw_11kovit_cjson_15dump_json_small_6gen_start, METH_O, 0};
+static PyObject *__pyx_pw_11kovit_cjson_15dump_json_small_6gen_start(PyObject *__pyx_self, PyObject *__pyx_v_start) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("gen_start (wrapper)", 0);
-  __pyx_r = __pyx_pf_5kovit_5cjson_15dump_json_small_5gen_start(__pyx_self, ((PyObject *)__pyx_v_start));
+  __pyx_r = __pyx_pf_11kovit_cjson_15dump_json_small_5gen_start(__pyx_self, ((PyObject *)__pyx_v_start));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5kovit_5cjson_15dump_json_small_5gen_start(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_start) {
+static PyObject *__pyx_pf_11kovit_cjson_15dump_json_small_5gen_start(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_start) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("gen_start", 0);
@@ -2520,7 +2520,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_15dump_json_small_5gen_start(CYTHON_UNUS
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
-static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_9generator1(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
+static PyObject *__pyx_gb_11kovit_cjson_15dump_json_small_9generator1(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "kovit/pjson.py":69
  *             return start
@@ -2531,27 +2531,27 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_9generator1(__pyx_Coro
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5kovit_5cjson_15dump_json_small_8gen_next_start(PyObject *__pyx_self, PyObject *__pyx_v_choices); /*proto*/
-static PyMethodDef __pyx_mdef_5kovit_5cjson_15dump_json_small_8gen_next_start = {"gen_next_start", (PyCFunction)__pyx_pw_5kovit_5cjson_15dump_json_small_8gen_next_start, METH_O, 0};
-static PyObject *__pyx_pw_5kovit_5cjson_15dump_json_small_8gen_next_start(PyObject *__pyx_self, PyObject *__pyx_v_choices) {
+static PyObject *__pyx_pw_11kovit_cjson_15dump_json_small_8gen_next_start(PyObject *__pyx_self, PyObject *__pyx_v_choices); /*proto*/
+static PyMethodDef __pyx_mdef_11kovit_cjson_15dump_json_small_8gen_next_start = {"gen_next_start", (PyCFunction)__pyx_pw_11kovit_cjson_15dump_json_small_8gen_next_start, METH_O, 0};
+static PyObject *__pyx_pw_11kovit_cjson_15dump_json_small_8gen_next_start(PyObject *__pyx_self, PyObject *__pyx_v_choices) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("gen_next_start (wrapper)", 0);
-  __pyx_r = __pyx_pf_5kovit_5cjson_15dump_json_small_7gen_next_start(__pyx_self, ((PyObject *)__pyx_v_choices));
+  __pyx_r = __pyx_pf_11kovit_cjson_15dump_json_small_7gen_next_start(__pyx_self, ((PyObject *)__pyx_v_choices));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5kovit_5cjson_15dump_json_small_7gen_next_start(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_choices) {
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_3_gen_next_start *__pyx_cur_scope;
+static PyObject *__pyx_pf_11kovit_cjson_15dump_json_small_7gen_next_start(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_choices) {
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_3_gen_next_start *__pyx_cur_scope;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("gen_next_start", 0);
-  __pyx_cur_scope = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_3_gen_next_start *)__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_3_gen_next_start(__pyx_ptype_5kovit_5cjson___pyx_scope_struct_3_gen_next_start, __pyx_empty_tuple, NULL);
+  __pyx_cur_scope = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_3_gen_next_start *)__pyx_tp_new_11kovit_cjson___pyx_scope_struct_3_gen_next_start(__pyx_ptype_11kovit_cjson___pyx_scope_struct_3_gen_next_start, __pyx_empty_tuple, NULL);
   if (unlikely(!__pyx_cur_scope)) {
-    __pyx_cur_scope = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_3_gen_next_start *)Py_None);
+    __pyx_cur_scope = ((struct __pyx_obj_11kovit_cjson___pyx_scope_struct_3_gen_next_start *)Py_None);
     __Pyx_INCREF(Py_None);
     __PYX_ERR(0, 69, __pyx_L1_error)
   } else {
@@ -2561,7 +2561,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_15dump_json_small_7gen_next_start(CYTHON
   __Pyx_INCREF(__pyx_cur_scope->__pyx_v_choices);
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_choices);
   {
-    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_5kovit_5cjson_15dump_json_small_9generator1, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_gen_next_start, __pyx_n_s_dump_json_small_locals_gen_next_2, __pyx_n_s_kovit_cjson); if (unlikely(!gen)) __PYX_ERR(0, 69, __pyx_L1_error)
+    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_11kovit_cjson_15dump_json_small_9generator1, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_gen_next_start, __pyx_n_s_dump_json_small_locals_gen_next_2, __pyx_n_s_kovit_cjson); if (unlikely(!gen)) __PYX_ERR(0, 69, __pyx_L1_error)
     __Pyx_DECREF(__pyx_cur_scope);
     __Pyx_RefNannyFinishContext();
     return (PyObject *) gen;
@@ -2569,7 +2569,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_15dump_json_small_7gen_next_start(CYTHON
 
   /* function exit code */
   __pyx_L1_error:;
-  __Pyx_AddTraceback("kovit.cjson.dump_json_small.gen_next_start", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("kovit_cjson.dump_json_small.gen_next_start", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_DECREF(((PyObject *)__pyx_cur_scope));
   __Pyx_XGIVEREF(__pyx_r);
@@ -2577,9 +2577,9 @@ static PyObject *__pyx_pf_5kovit_5cjson_15dump_json_small_7gen_next_start(CYTHON
   return __pyx_r;
 }
 
-static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_9generator1(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value) /* generator body */
+static PyObject *__pyx_gb_11kovit_cjson_15dump_json_small_9generator1(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value) /* generator body */
 {
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_3_gen_next_start *__pyx_cur_scope = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_3_gen_next_start *)__pyx_generator->closure);
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_3_gen_next_start *__pyx_cur_scope = ((struct __pyx_obj_11kovit_cjson___pyx_scope_struct_3_gen_next_start *)__pyx_generator->closure);
   PyObject *__pyx_r = NULL;
   PyObject *__pyx_t_1 = NULL;
   Py_ssize_t __pyx_t_2;
@@ -2794,7 +2794,7 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_9generator1(__pyx_Coro
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
-static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_12generator2(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
+static PyObject *__pyx_gb_11kovit_cjson_15dump_json_small_12generator2(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "kovit/pjson.py":74
  *                 yield cnt
@@ -2805,37 +2805,37 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_12generator2(__pyx_Cor
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5kovit_5cjson_15dump_json_small_11gen_chain(PyObject *__pyx_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyMethodDef __pyx_mdef_5kovit_5cjson_15dump_json_small_11gen_chain = {"gen_chain", (PyCFunction)__pyx_pw_5kovit_5cjson_15dump_json_small_11gen_chain, METH_NOARGS, 0};
-static PyObject *__pyx_pw_5kovit_5cjson_15dump_json_small_11gen_chain(PyObject *__pyx_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_11kovit_cjson_15dump_json_small_11gen_chain(PyObject *__pyx_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyMethodDef __pyx_mdef_11kovit_cjson_15dump_json_small_11gen_chain = {"gen_chain", (PyCFunction)__pyx_pw_11kovit_cjson_15dump_json_small_11gen_chain, METH_NOARGS, 0};
+static PyObject *__pyx_pw_11kovit_cjson_15dump_json_small_11gen_chain(PyObject *__pyx_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("gen_chain (wrapper)", 0);
-  __pyx_r = __pyx_pf_5kovit_5cjson_15dump_json_small_10gen_chain(__pyx_self);
+  __pyx_r = __pyx_pf_11kovit_cjson_15dump_json_small_10gen_chain(__pyx_self);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5kovit_5cjson_15dump_json_small_10gen_chain(PyObject *__pyx_self) {
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_4_gen_chain *__pyx_cur_scope;
+static PyObject *__pyx_pf_11kovit_cjson_15dump_json_small_10gen_chain(PyObject *__pyx_self) {
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_4_gen_chain *__pyx_cur_scope;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("gen_chain", 0);
-  __pyx_cur_scope = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_4_gen_chain *)__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_4_gen_chain(__pyx_ptype_5kovit_5cjson___pyx_scope_struct_4_gen_chain, __pyx_empty_tuple, NULL);
+  __pyx_cur_scope = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_4_gen_chain *)__pyx_tp_new_11kovit_cjson___pyx_scope_struct_4_gen_chain(__pyx_ptype_11kovit_cjson___pyx_scope_struct_4_gen_chain, __pyx_empty_tuple, NULL);
   if (unlikely(!__pyx_cur_scope)) {
-    __pyx_cur_scope = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_4_gen_chain *)Py_None);
+    __pyx_cur_scope = ((struct __pyx_obj_11kovit_cjson___pyx_scope_struct_4_gen_chain *)Py_None);
     __Pyx_INCREF(Py_None);
     __PYX_ERR(0, 74, __pyx_L1_error)
   } else {
     __Pyx_GOTREF(__pyx_cur_scope);
   }
-  __pyx_cur_scope->__pyx_outer_scope = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct__dump_json_small *) __Pyx_CyFunction_GetClosure(__pyx_self);
+  __pyx_cur_scope->__pyx_outer_scope = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct__dump_json_small *) __Pyx_CyFunction_GetClosure(__pyx_self);
   __Pyx_INCREF(((PyObject *)__pyx_cur_scope->__pyx_outer_scope));
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_outer_scope);
   {
-    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_5kovit_5cjson_15dump_json_small_12generator2, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_gen_chain, __pyx_n_s_dump_json_small_locals_gen_chain, __pyx_n_s_kovit_cjson); if (unlikely(!gen)) __PYX_ERR(0, 74, __pyx_L1_error)
+    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_11kovit_cjson_15dump_json_small_12generator2, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_gen_chain, __pyx_n_s_dump_json_small_locals_gen_chain, __pyx_n_s_kovit_cjson); if (unlikely(!gen)) __PYX_ERR(0, 74, __pyx_L1_error)
     __Pyx_DECREF(__pyx_cur_scope);
     __Pyx_RefNannyFinishContext();
     return (PyObject *) gen;
@@ -2843,7 +2843,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_15dump_json_small_10gen_chain(PyObject *
 
   /* function exit code */
   __pyx_L1_error:;
-  __Pyx_AddTraceback("kovit.cjson.dump_json_small.gen_chain", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("kovit_cjson.dump_json_small.gen_chain", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_DECREF(((PyObject *)__pyx_cur_scope));
   __Pyx_XGIVEREF(__pyx_r);
@@ -2851,9 +2851,9 @@ static PyObject *__pyx_pf_5kovit_5cjson_15dump_json_small_10gen_chain(PyObject *
   return __pyx_r;
 }
 
-static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_12generator2(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value) /* generator body */
+static PyObject *__pyx_gb_11kovit_cjson_15dump_json_small_12generator2(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value) /* generator body */
 {
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_4_gen_chain *__pyx_cur_scope = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_4_gen_chain *)__pyx_generator->closure);
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_4_gen_chain *__pyx_cur_scope = ((struct __pyx_obj_11kovit_cjson___pyx_scope_struct_4_gen_chain *)__pyx_generator->closure);
   PyObject *__pyx_r = NULL;
   PyObject *__pyx_t_1 = NULL;
   PyObject *__pyx_t_2 = NULL;
@@ -3130,9 +3130,9 @@ static PyObject *__pyx_gb_5kovit_5cjson_15dump_json_small_12generator2(__pyx_Cor
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5kovit_5cjson_15dump_json_small_13lambda(PyObject *__pyx_self, PyObject *__pyx_v_x); /*proto*/
-static PyMethodDef __pyx_mdef_5kovit_5cjson_15dump_json_small_13lambda = {"lambda", (PyCFunction)__pyx_pw_5kovit_5cjson_15dump_json_small_13lambda, METH_O, 0};
-static PyObject *__pyx_pw_5kovit_5cjson_15dump_json_small_13lambda(PyObject *__pyx_self, PyObject *__pyx_v_x) {
+static PyObject *__pyx_pw_11kovit_cjson_15dump_json_small_13lambda(PyObject *__pyx_self, PyObject *__pyx_v_x); /*proto*/
+static PyMethodDef __pyx_mdef_11kovit_cjson_15dump_json_small_13lambda = {"lambda", (PyCFunction)__pyx_pw_11kovit_cjson_15dump_json_small_13lambda, METH_O, 0};
+static PyObject *__pyx_pw_11kovit_cjson_15dump_json_small_13lambda(PyObject *__pyx_self, PyObject *__pyx_v_x) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("lambda (wrapper)", 0);
@@ -3163,7 +3163,7 @@ static PyObject *__pyx_lambda_funcdef_lambda(CYTHON_UNUSED PyObject *__pyx_self,
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("kovit.cjson.dump_json_small.lambda", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("kovit_cjson.dump_json_small.lambda", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -3179,8 +3179,8 @@ static PyObject *__pyx_lambda_funcdef_lambda(CYTHON_UNUSED PyObject *__pyx_self,
  *     codes_list = []
  */
 
-static PyObject *__pyx_pf_5kovit_5cjson_dump_json_small(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_chain, PyObject *__pyx_v_file, PyObject *__pyx_v_frequency_compress) {
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct__dump_json_small *__pyx_cur_scope;
+static PyObject *__pyx_pf_11kovit_cjson_dump_json_small(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_chain, PyObject *__pyx_v_file, PyObject *__pyx_v_frequency_compress) {
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct__dump_json_small *__pyx_cur_scope;
   PyObject *__pyx_v_codes_list = NULL;
   PyObject *__pyx_v_code = NULL;
   PyObject *__pyx_v_v = NULL;
@@ -3203,9 +3203,9 @@ static PyObject *__pyx_pf_5kovit_5cjson_dump_json_small(CYTHON_UNUSED PyObject *
   PyObject *__pyx_t_13 = NULL;
   int __pyx_t_14;
   __Pyx_RefNannySetupContext("dump_json_small", 0);
-  __pyx_cur_scope = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct__dump_json_small *)__pyx_tp_new_5kovit_5cjson___pyx_scope_struct__dump_json_small(__pyx_ptype_5kovit_5cjson___pyx_scope_struct__dump_json_small, __pyx_empty_tuple, NULL);
+  __pyx_cur_scope = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct__dump_json_small *)__pyx_tp_new_11kovit_cjson___pyx_scope_struct__dump_json_small(__pyx_ptype_11kovit_cjson___pyx_scope_struct__dump_json_small, __pyx_empty_tuple, NULL);
   if (unlikely(!__pyx_cur_scope)) {
-    __pyx_cur_scope = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct__dump_json_small *)Py_None);
+    __pyx_cur_scope = ((struct __pyx_obj_11kovit_cjson___pyx_scope_struct__dump_json_small *)Py_None);
     __Pyx_INCREF(Py_None);
     __PYX_ERR(0, 41, __pyx_L1_error)
   } else {
@@ -3307,7 +3307,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_dump_json_small(CYTHON_UNUSED PyObject *
     __pyx_t_3 = 0;
     __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 46, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_15dump_json_small_13lambda, 0, __pyx_n_s_dump_json_small_locals_lambda, NULL, __pyx_n_s_kovit_cjson, __pyx_d, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 46, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_11kovit_cjson_15dump_json_small_13lambda, 0, __pyx_n_s_dump_json_small_locals_lambda, NULL, __pyx_n_s_kovit_cjson, __pyx_d, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 46, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_key, __pyx_t_4) < 0) __PYX_ERR(0, 46, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -3601,7 +3601,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_dump_json_small(CYTHON_UNUSED PyObject *
  *             return codes[start]
  * 
  */
-    __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_15dump_json_small_1gen_start, 0, __pyx_n_s_dump_json_small_locals_gen_start, ((PyObject*)__pyx_cur_scope), __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__2)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 58, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_11kovit_cjson_15dump_json_small_1gen_start, 0, __pyx_n_s_dump_json_small_locals_gen_start, ((PyObject*)__pyx_cur_scope), __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__2)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 58, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_GIVEREF(__pyx_t_1);
     __pyx_cur_scope->__pyx_v_gen_start = __pyx_t_1;
@@ -3614,7 +3614,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_dump_json_small(CYTHON_UNUSED PyObject *
  *             for val, cnt in choices:
  *                 yield tuple(codes[s] for s in val)
  */
-    __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_15dump_json_small_3gen_next_start, 0, __pyx_n_s_dump_json_small_locals_gen_next_2, ((PyObject*)__pyx_cur_scope), __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__4)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 61, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_11kovit_cjson_15dump_json_small_3gen_next_start, 0, __pyx_n_s_dump_json_small_locals_gen_next_2, ((PyObject*)__pyx_cur_scope), __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__4)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 61, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_GIVEREF(__pyx_t_1);
     __pyx_cur_scope->__pyx_v_gen_next_start = __pyx_t_1;
@@ -3638,7 +3638,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_dump_json_small(CYTHON_UNUSED PyObject *
  * 
  */
   /*else*/ {
-    __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_15dump_json_small_6gen_start, 0, __pyx_n_s_dump_json_small_locals_gen_start, NULL, __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__6)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 66, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_11kovit_cjson_15dump_json_small_6gen_start, 0, __pyx_n_s_dump_json_small_locals_gen_start, NULL, __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__6)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 66, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_GIVEREF(__pyx_t_1);
     __pyx_cur_scope->__pyx_v_gen_start = __pyx_t_1;
@@ -3651,7 +3651,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_dump_json_small(CYTHON_UNUSED PyObject *
  *             for val, cnt in choices:
  *                 yield val
  */
-    __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_15dump_json_small_8gen_next_start, 0, __pyx_n_s_dump_json_small_locals_gen_next_2, NULL, __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__8)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 69, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_11kovit_cjson_15dump_json_small_8gen_next_start, 0, __pyx_n_s_dump_json_small_locals_gen_next_2, NULL, __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__8)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 69, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_GIVEREF(__pyx_t_1);
     __pyx_cur_scope->__pyx_v_gen_next_start = __pyx_t_1;
@@ -3666,7 +3666,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_dump_json_small(CYTHON_UNUSED PyObject *
  *         for start, bag in chain.items():
  *             yield gen_start(start)
  */
-  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_15dump_json_small_11gen_chain, 0, __pyx_n_s_dump_json_small_locals_gen_chain, ((PyObject*)__pyx_cur_scope), __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__10)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 74, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_11kovit_cjson_15dump_json_small_11gen_chain, 0, __pyx_n_s_dump_json_small_locals_gen_chain, ((PyObject*)__pyx_cur_scope), __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__10)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 74, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_gen_chain = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -3693,7 +3693,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_dump_json_small(CYTHON_UNUSED PyObject *
   __Pyx_INCREF(__pyx_v_codes_list);
   __Pyx_GIVEREF(__pyx_v_codes_list);
   PyTuple_SET_ITEM(__pyx_t_4, 1, __pyx_v_codes_list);
-  __pyx_t_6 = __pyx_pf_5kovit_5cjson_15dump_json_small_10gen_chain(__pyx_v_gen_chain); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 79, __pyx_L1_error)
+  __pyx_t_6 = __pyx_pf_11kovit_cjson_15dump_json_small_10gen_chain(__pyx_v_gen_chain); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __pyx_t_13 = __Pyx_PySequence_Tuple(__pyx_t_6); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_13);
@@ -3828,7 +3828,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_dump_json_small(CYTHON_UNUSED PyObject *
   __Pyx_XDECREF(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_9);
   __Pyx_XDECREF(__pyx_t_13);
-  __Pyx_AddTraceback("kovit.cjson.dump_json_small", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("kovit_cjson.dump_json_small", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_codes_list);
@@ -3851,9 +3851,9 @@ static PyObject *__pyx_pf_5kovit_5cjson_dump_json_small(CYTHON_UNUSED PyObject *
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5kovit_5cjson_3load_json_small(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_5kovit_5cjson_3load_json_small = {"load_json_small", (PyCFunction)__pyx_pw_5kovit_5cjson_3load_json_small, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_5kovit_5cjson_3load_json_small(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_11kovit_cjson_3load_json_small(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_11kovit_cjson_3load_json_small = {"load_json_small", (PyCFunction)__pyx_pw_11kovit_cjson_3load_json_small, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_11kovit_cjson_3load_json_small(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_chain = 0;
   PyObject *__pyx_v_file = 0;
   PyObject *__pyx_v_merge = 0;
@@ -3916,17 +3916,17 @@ static PyObject *__pyx_pw_5kovit_5cjson_3load_json_small(PyObject *__pyx_self, P
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("load_json_small", 0, 2, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 82, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("kovit.cjson.load_json_small", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("kovit_cjson.load_json_small", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_5kovit_5cjson_2load_json_small(__pyx_self, __pyx_v_chain, __pyx_v_file, __pyx_v_merge);
+  __pyx_r = __pyx_pf_11kovit_cjson_2load_json_small(__pyx_self, __pyx_v_chain, __pyx_v_file, __pyx_v_merge);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
-static PyObject *__pyx_gb_5kovit_5cjson_15load_json_small_2generator4(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
+static PyObject *__pyx_gb_11kovit_cjson_15load_json_small_2generator4(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "kovit/pjson.py":95
  *                 i_bag = iter(bag)
@@ -3936,24 +3936,24 @@ static PyObject *__pyx_gb_5kovit_5cjson_15load_json_small_2generator4(__pyx_Coro
  *             for start, bag in zip(c_list, c_list):
  */
 
-static PyObject *__pyx_pf_5kovit_5cjson_15load_json_small_genexpr(PyObject *__pyx_self) {
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_6_genexpr *__pyx_cur_scope;
+static PyObject *__pyx_pf_11kovit_cjson_15load_json_small_genexpr(PyObject *__pyx_self) {
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_6_genexpr *__pyx_cur_scope;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("genexpr", 0);
-  __pyx_cur_scope = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_6_genexpr *)__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_6_genexpr(__pyx_ptype_5kovit_5cjson___pyx_scope_struct_6_genexpr, __pyx_empty_tuple, NULL);
+  __pyx_cur_scope = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_6_genexpr *)__pyx_tp_new_11kovit_cjson___pyx_scope_struct_6_genexpr(__pyx_ptype_11kovit_cjson___pyx_scope_struct_6_genexpr, __pyx_empty_tuple, NULL);
   if (unlikely(!__pyx_cur_scope)) {
-    __pyx_cur_scope = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_6_genexpr *)Py_None);
+    __pyx_cur_scope = ((struct __pyx_obj_11kovit_cjson___pyx_scope_struct_6_genexpr *)Py_None);
     __Pyx_INCREF(Py_None);
     __PYX_ERR(0, 95, __pyx_L1_error)
   } else {
     __Pyx_GOTREF(__pyx_cur_scope);
   }
-  __pyx_cur_scope->__pyx_outer_scope = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_5_load_json_small *) __pyx_self;
+  __pyx_cur_scope->__pyx_outer_scope = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_5_load_json_small *) __pyx_self;
   __Pyx_INCREF(((PyObject *)__pyx_cur_scope->__pyx_outer_scope));
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_outer_scope);
   {
-    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_5kovit_5cjson_15load_json_small_2generator4, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_genexpr, __pyx_n_s_load_json_small_locals_genexpr, __pyx_n_s_kovit_cjson); if (unlikely(!gen)) __PYX_ERR(0, 95, __pyx_L1_error)
+    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_11kovit_cjson_15load_json_small_2generator4, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_genexpr, __pyx_n_s_load_json_small_locals_genexpr, __pyx_n_s_kovit_cjson); if (unlikely(!gen)) __PYX_ERR(0, 95, __pyx_L1_error)
     __Pyx_DECREF(__pyx_cur_scope);
     __Pyx_RefNannyFinishContext();
     return (PyObject *) gen;
@@ -3961,7 +3961,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_15load_json_small_genexpr(PyObject *__py
 
   /* function exit code */
   __pyx_L1_error:;
-  __Pyx_AddTraceback("kovit.cjson.load_json_small.genexpr", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("kovit_cjson.load_json_small.genexpr", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_DECREF(((PyObject *)__pyx_cur_scope));
   __Pyx_XGIVEREF(__pyx_r);
@@ -3969,9 +3969,9 @@ static PyObject *__pyx_pf_5kovit_5cjson_15load_json_small_genexpr(PyObject *__py
   return __pyx_r;
 }
 
-static PyObject *__pyx_gb_5kovit_5cjson_15load_json_small_2generator4(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value) /* generator body */
+static PyObject *__pyx_gb_11kovit_cjson_15load_json_small_2generator4(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value) /* generator body */
 {
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_6_genexpr *__pyx_cur_scope = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_6_genexpr *)__pyx_generator->closure);
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_6_genexpr *__pyx_cur_scope = ((struct __pyx_obj_11kovit_cjson___pyx_scope_struct_6_genexpr *)__pyx_generator->closure);
   PyObject *__pyx_r = NULL;
   PyObject *__pyx_t_1 = NULL;
   Py_ssize_t __pyx_t_2;
@@ -4077,7 +4077,7 @@ static PyObject *__pyx_gb_5kovit_5cjson_15load_json_small_2generator4(__pyx_Coro
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
-static PyObject *__pyx_gb_5kovit_5cjson_15load_json_small_5generator5(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
+static PyObject *__pyx_gb_11kovit_cjson_15load_json_small_5generator5(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "kovit/pjson.py":109
  *                 b = ProbabilityBag()
@@ -4087,24 +4087,24 @@ static PyObject *__pyx_gb_5kovit_5cjson_15load_json_small_5generator5(__pyx_Coro
  *         else:
  */
 
-static PyObject *__pyx_pf_5kovit_5cjson_15load_json_small_3genexpr(PyObject *__pyx_self) {
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_7_genexpr *__pyx_cur_scope;
+static PyObject *__pyx_pf_11kovit_cjson_15load_json_small_3genexpr(PyObject *__pyx_self) {
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_7_genexpr *__pyx_cur_scope;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("genexpr", 0);
-  __pyx_cur_scope = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_7_genexpr *)__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_7_genexpr(__pyx_ptype_5kovit_5cjson___pyx_scope_struct_7_genexpr, __pyx_empty_tuple, NULL);
+  __pyx_cur_scope = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_7_genexpr *)__pyx_tp_new_11kovit_cjson___pyx_scope_struct_7_genexpr(__pyx_ptype_11kovit_cjson___pyx_scope_struct_7_genexpr, __pyx_empty_tuple, NULL);
   if (unlikely(!__pyx_cur_scope)) {
-    __pyx_cur_scope = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_7_genexpr *)Py_None);
+    __pyx_cur_scope = ((struct __pyx_obj_11kovit_cjson___pyx_scope_struct_7_genexpr *)Py_None);
     __Pyx_INCREF(Py_None);
     __PYX_ERR(0, 109, __pyx_L1_error)
   } else {
     __Pyx_GOTREF(__pyx_cur_scope);
   }
-  __pyx_cur_scope->__pyx_outer_scope = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_5_load_json_small *) __pyx_self;
+  __pyx_cur_scope->__pyx_outer_scope = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_5_load_json_small *) __pyx_self;
   __Pyx_INCREF(((PyObject *)__pyx_cur_scope->__pyx_outer_scope));
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_outer_scope);
   {
-    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_5kovit_5cjson_15load_json_small_5generator5, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_genexpr, __pyx_n_s_load_json_small_locals_genexpr, __pyx_n_s_kovit_cjson); if (unlikely(!gen)) __PYX_ERR(0, 109, __pyx_L1_error)
+    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_11kovit_cjson_15load_json_small_5generator5, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_genexpr, __pyx_n_s_load_json_small_locals_genexpr, __pyx_n_s_kovit_cjson); if (unlikely(!gen)) __PYX_ERR(0, 109, __pyx_L1_error)
     __Pyx_DECREF(__pyx_cur_scope);
     __Pyx_RefNannyFinishContext();
     return (PyObject *) gen;
@@ -4112,7 +4112,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_15load_json_small_3genexpr(PyObject *__p
 
   /* function exit code */
   __pyx_L1_error:;
-  __Pyx_AddTraceback("kovit.cjson.load_json_small.genexpr", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("kovit_cjson.load_json_small.genexpr", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_DECREF(((PyObject *)__pyx_cur_scope));
   __Pyx_XGIVEREF(__pyx_r);
@@ -4120,9 +4120,9 @@ static PyObject *__pyx_pf_5kovit_5cjson_15load_json_small_3genexpr(PyObject *__p
   return __pyx_r;
 }
 
-static PyObject *__pyx_gb_5kovit_5cjson_15load_json_small_5generator5(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value) /* generator body */
+static PyObject *__pyx_gb_11kovit_cjson_15load_json_small_5generator5(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value) /* generator body */
 {
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_7_genexpr *__pyx_cur_scope = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_7_genexpr *)__pyx_generator->closure);
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_7_genexpr *__pyx_cur_scope = ((struct __pyx_obj_11kovit_cjson___pyx_scope_struct_7_genexpr *)__pyx_generator->closure);
   PyObject *__pyx_r = NULL;
   PyObject *__pyx_t_1 = NULL;
   Py_ssize_t __pyx_t_2;
@@ -4237,8 +4237,8 @@ static PyObject *__pyx_gb_5kovit_5cjson_15load_json_small_5generator5(__pyx_Coro
  * 
  */
 
-static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_chain, PyObject *__pyx_v_file, PyObject *__pyx_v_merge) {
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_5_load_json_small *__pyx_cur_scope;
+static PyObject *__pyx_pf_11kovit_cjson_2load_json_small(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_chain, PyObject *__pyx_v_file, PyObject *__pyx_v_merge) {
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_5_load_json_small *__pyx_cur_scope;
   PyObject *__pyx_v_obj = NULL;
   PyObject *__pyx_v_c_iter = NULL;
   PyObject *__pyx_v_c_list = NULL;
@@ -4263,9 +4263,9 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
   PyObject *__pyx_t_12 = NULL;
   int __pyx_t_13;
   __Pyx_RefNannySetupContext("load_json_small", 0);
-  __pyx_cur_scope = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_5_load_json_small *)__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_5_load_json_small(__pyx_ptype_5kovit_5cjson___pyx_scope_struct_5_load_json_small, __pyx_empty_tuple, NULL);
+  __pyx_cur_scope = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_5_load_json_small *)__pyx_tp_new_11kovit_cjson___pyx_scope_struct_5_load_json_small(__pyx_ptype_11kovit_cjson___pyx_scope_struct_5_load_json_small, __pyx_empty_tuple, NULL);
   if (unlikely(!__pyx_cur_scope)) {
-    __pyx_cur_scope = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_5_load_json_small *)Py_None);
+    __pyx_cur_scope = ((struct __pyx_obj_11kovit_cjson___pyx_scope_struct_5_load_json_small *)Py_None);
     __Pyx_INCREF(Py_None);
     __PYX_ERR(0, 82, __pyx_L1_error)
   } else {
@@ -4648,7 +4648,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
           __Pyx_GOTREF(__pyx_t_2);
           __pyx_t_8 = __Pyx_PyDict_GetItem(__pyx_cur_scope->__pyx_v_codes, __pyx_v_start); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 95, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_8);
-          __pyx_t_4 = __pyx_pf_5kovit_5cjson_15load_json_small_genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 95, __pyx_L1_error)
+          __pyx_t_4 = __pyx_pf_11kovit_cjson_15load_json_small_genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 95, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_4);
           __pyx_t_12 = __Pyx_PySequence_Tuple(__pyx_t_4); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 95, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_12);
@@ -5304,7 +5304,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
  */
           __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_v_b, __pyx_n_s_add); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 109, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_8);
-          __pyx_t_4 = __pyx_pf_5kovit_5cjson_15load_json_small_3genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 109, __pyx_L1_error)
+          __pyx_t_4 = __pyx_pf_11kovit_cjson_15load_json_small_3genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 109, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_4);
           __pyx_t_2 = __Pyx_PySequence_Tuple(__pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 109, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_2);
@@ -5801,7 +5801,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_8);
   __Pyx_XDECREF(__pyx_t_12);
-  __Pyx_AddTraceback("kovit.cjson.load_json_small", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("kovit_cjson.load_json_small", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_obj);
@@ -5827,9 +5827,9 @@ static PyObject *__pyx_pf_5kovit_5cjson_2load_json_small(CYTHON_UNUSED PyObject 
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5kovit_5cjson_5dump_json_big(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_5kovit_5cjson_5dump_json_big = {"dump_json_big", (PyCFunction)__pyx_pw_5kovit_5cjson_5dump_json_big, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_5kovit_5cjson_5dump_json_big(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_11kovit_cjson_5dump_json_big(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_11kovit_cjson_5dump_json_big = {"dump_json_big", (PyCFunction)__pyx_pw_11kovit_cjson_5dump_json_big, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_11kovit_cjson_5dump_json_big(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_chain = 0;
   PyObject *__pyx_v_file = 0;
   PyObject *__pyx_v_frequency_compress = 0;
@@ -5892,11 +5892,11 @@ static PyObject *__pyx_pw_5kovit_5cjson_5dump_json_big(PyObject *__pyx_self, PyO
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("dump_json_big", 0, 2, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 120, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("kovit.cjson.dump_json_big", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("kovit_cjson.dump_json_big", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_5kovit_5cjson_4dump_json_big(__pyx_self, __pyx_v_chain, __pyx_v_file, __pyx_v_frequency_compress);
+  __pyx_r = __pyx_pf_11kovit_cjson_4dump_json_big(__pyx_self, __pyx_v_chain, __pyx_v_file, __pyx_v_frequency_compress);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
@@ -5912,22 +5912,22 @@ static PyObject *__pyx_pw_5kovit_5cjson_5dump_json_big(PyObject *__pyx_self, PyO
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5kovit_5cjson_13dump_json_big_1write_start(PyObject *__pyx_self, PyObject *__pyx_v_start); /*proto*/
-static PyMethodDef __pyx_mdef_5kovit_5cjson_13dump_json_big_1write_start = {"write_start", (PyCFunction)__pyx_pw_5kovit_5cjson_13dump_json_big_1write_start, METH_O, 0};
-static PyObject *__pyx_pw_5kovit_5cjson_13dump_json_big_1write_start(PyObject *__pyx_self, PyObject *__pyx_v_start) {
+static PyObject *__pyx_pw_11kovit_cjson_13dump_json_big_1write_start(PyObject *__pyx_self, PyObject *__pyx_v_start); /*proto*/
+static PyMethodDef __pyx_mdef_11kovit_cjson_13dump_json_big_1write_start = {"write_start", (PyCFunction)__pyx_pw_11kovit_cjson_13dump_json_big_1write_start, METH_O, 0};
+static PyObject *__pyx_pw_11kovit_cjson_13dump_json_big_1write_start(PyObject *__pyx_self, PyObject *__pyx_v_start) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("write_start (wrapper)", 0);
-  __pyx_r = __pyx_pf_5kovit_5cjson_13dump_json_big_write_start(__pyx_self, ((PyObject *)__pyx_v_start));
+  __pyx_r = __pyx_pf_11kovit_cjson_13dump_json_big_write_start(__pyx_self, ((PyObject *)__pyx_v_start));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_write_start(PyObject *__pyx_self, PyObject *__pyx_v_start) {
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_8_dump_json_big *__pyx_cur_scope;
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_8_dump_json_big *__pyx_outer_scope;
+static PyObject *__pyx_pf_11kovit_cjson_13dump_json_big_write_start(PyObject *__pyx_self, PyObject *__pyx_v_start) {
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_8_dump_json_big *__pyx_cur_scope;
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_8_dump_json_big *__pyx_outer_scope;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -5938,7 +5938,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_write_start(PyObject *__
   PyObject *__pyx_t_6 = NULL;
   PyObject *__pyx_t_7 = NULL;
   __Pyx_RefNannySetupContext("write_start", 0);
-  __pyx_outer_scope = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_8_dump_json_big *) __Pyx_CyFunction_GetClosure(__pyx_self);
+  __pyx_outer_scope = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_8_dump_json_big *) __Pyx_CyFunction_GetClosure(__pyx_self);
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "kovit/pjson.py":142
@@ -6073,7 +6073,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_write_start(PyObject *__
   __Pyx_XDECREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_7);
-  __Pyx_AddTraceback("kovit.cjson.dump_json_big.write_start", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("kovit_cjson.dump_json_big.write_start", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -6090,19 +6090,19 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_write_start(PyObject *__
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5kovit_5cjson_13dump_json_big_3write_next_start(PyObject *__pyx_self, PyObject *__pyx_v_next_start); /*proto*/
-static PyMethodDef __pyx_mdef_5kovit_5cjson_13dump_json_big_3write_next_start = {"write_next_start", (PyCFunction)__pyx_pw_5kovit_5cjson_13dump_json_big_3write_next_start, METH_O, 0};
-static PyObject *__pyx_pw_5kovit_5cjson_13dump_json_big_3write_next_start(PyObject *__pyx_self, PyObject *__pyx_v_next_start) {
+static PyObject *__pyx_pw_11kovit_cjson_13dump_json_big_3write_next_start(PyObject *__pyx_self, PyObject *__pyx_v_next_start); /*proto*/
+static PyMethodDef __pyx_mdef_11kovit_cjson_13dump_json_big_3write_next_start = {"write_next_start", (PyCFunction)__pyx_pw_11kovit_cjson_13dump_json_big_3write_next_start, METH_O, 0};
+static PyObject *__pyx_pw_11kovit_cjson_13dump_json_big_3write_next_start(PyObject *__pyx_self, PyObject *__pyx_v_next_start) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("write_next_start (wrapper)", 0);
-  __pyx_r = __pyx_pf_5kovit_5cjson_13dump_json_big_2write_next_start(__pyx_self, ((PyObject *)__pyx_v_next_start));
+  __pyx_r = __pyx_pf_11kovit_cjson_13dump_json_big_2write_next_start(__pyx_self, ((PyObject *)__pyx_v_next_start));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
-static PyObject *__pyx_gb_5kovit_5cjson_13dump_json_big_16write_next_start_2generator6(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
+static PyObject *__pyx_gb_11kovit_cjson_13dump_json_big_16write_next_start_2generator6(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "kovit/pjson.py":145
  * 
@@ -6112,24 +6112,24 @@ static PyObject *__pyx_gb_5kovit_5cjson_13dump_json_big_16write_next_start_2gene
  *         def write_start(start):
  */
 
-static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_16write_next_start_genexpr(PyObject *__pyx_self) {
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_10_genexpr *__pyx_cur_scope;
+static PyObject *__pyx_pf_11kovit_cjson_13dump_json_big_16write_next_start_genexpr(PyObject *__pyx_self) {
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_10_genexpr *__pyx_cur_scope;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("genexpr", 0);
-  __pyx_cur_scope = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_10_genexpr *)__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_10_genexpr(__pyx_ptype_5kovit_5cjson___pyx_scope_struct_10_genexpr, __pyx_empty_tuple, NULL);
+  __pyx_cur_scope = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_10_genexpr *)__pyx_tp_new_11kovit_cjson___pyx_scope_struct_10_genexpr(__pyx_ptype_11kovit_cjson___pyx_scope_struct_10_genexpr, __pyx_empty_tuple, NULL);
   if (unlikely(!__pyx_cur_scope)) {
-    __pyx_cur_scope = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_10_genexpr *)Py_None);
+    __pyx_cur_scope = ((struct __pyx_obj_11kovit_cjson___pyx_scope_struct_10_genexpr *)Py_None);
     __Pyx_INCREF(Py_None);
     __PYX_ERR(0, 145, __pyx_L1_error)
   } else {
     __Pyx_GOTREF(__pyx_cur_scope);
   }
-  __pyx_cur_scope->__pyx_outer_scope = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_9_write_next_start *) __pyx_self;
+  __pyx_cur_scope->__pyx_outer_scope = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_9_write_next_start *) __pyx_self;
   __Pyx_INCREF(((PyObject *)__pyx_cur_scope->__pyx_outer_scope));
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_outer_scope);
   {
-    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_5kovit_5cjson_13dump_json_big_16write_next_start_2generator6, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_genexpr, __pyx_n_s_dump_json_big_locals_write_next, __pyx_n_s_kovit_cjson); if (unlikely(!gen)) __PYX_ERR(0, 145, __pyx_L1_error)
+    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_11kovit_cjson_13dump_json_big_16write_next_start_2generator6, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_genexpr, __pyx_n_s_dump_json_big_locals_write_next, __pyx_n_s_kovit_cjson); if (unlikely(!gen)) __PYX_ERR(0, 145, __pyx_L1_error)
     __Pyx_DECREF(__pyx_cur_scope);
     __Pyx_RefNannyFinishContext();
     return (PyObject *) gen;
@@ -6137,7 +6137,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_16write_next_start_genex
 
   /* function exit code */
   __pyx_L1_error:;
-  __Pyx_AddTraceback("kovit.cjson.dump_json_big.write_next_start.genexpr", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("kovit_cjson.dump_json_big.write_next_start.genexpr", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_DECREF(((PyObject *)__pyx_cur_scope));
   __Pyx_XGIVEREF(__pyx_r);
@@ -6145,9 +6145,9 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_16write_next_start_genex
   return __pyx_r;
 }
 
-static PyObject *__pyx_gb_5kovit_5cjson_13dump_json_big_16write_next_start_2generator6(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value) /* generator body */
+static PyObject *__pyx_gb_11kovit_cjson_13dump_json_big_16write_next_start_2generator6(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value) /* generator body */
 {
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_10_genexpr *__pyx_cur_scope = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_10_genexpr *)__pyx_generator->closure);
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_10_genexpr *__pyx_cur_scope = ((struct __pyx_obj_11kovit_cjson___pyx_scope_struct_10_genexpr *)__pyx_generator->closure);
   PyObject *__pyx_r = NULL;
   PyObject *__pyx_t_1 = NULL;
   Py_ssize_t __pyx_t_2;
@@ -6267,8 +6267,8 @@ static PyObject *__pyx_gb_5kovit_5cjson_13dump_json_big_16write_next_start_2gene
  *     else:
  */
 
-static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_2write_next_start(PyObject *__pyx_self, PyObject *__pyx_v_next_start) {
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_9_write_next_start *__pyx_cur_scope;
+static PyObject *__pyx_pf_11kovit_cjson_13dump_json_big_2write_next_start(PyObject *__pyx_self, PyObject *__pyx_v_next_start) {
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_9_write_next_start *__pyx_cur_scope;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -6277,15 +6277,15 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_2write_next_start(PyObje
   PyObject *__pyx_t_4 = NULL;
   PyObject *__pyx_t_5 = NULL;
   __Pyx_RefNannySetupContext("write_next_start", 0);
-  __pyx_cur_scope = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_9_write_next_start *)__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_9_write_next_start(__pyx_ptype_5kovit_5cjson___pyx_scope_struct_9_write_next_start, __pyx_empty_tuple, NULL);
+  __pyx_cur_scope = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_9_write_next_start *)__pyx_tp_new_11kovit_cjson___pyx_scope_struct_9_write_next_start(__pyx_ptype_11kovit_cjson___pyx_scope_struct_9_write_next_start, __pyx_empty_tuple, NULL);
   if (unlikely(!__pyx_cur_scope)) {
-    __pyx_cur_scope = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_9_write_next_start *)Py_None);
+    __pyx_cur_scope = ((struct __pyx_obj_11kovit_cjson___pyx_scope_struct_9_write_next_start *)Py_None);
     __Pyx_INCREF(Py_None);
     __PYX_ERR(0, 144, __pyx_L1_error)
   } else {
     __Pyx_GOTREF(__pyx_cur_scope);
   }
-  __pyx_cur_scope->__pyx_outer_scope = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_8_dump_json_big *) __Pyx_CyFunction_GetClosure(__pyx_self);
+  __pyx_cur_scope->__pyx_outer_scope = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_8_dump_json_big *) __Pyx_CyFunction_GetClosure(__pyx_self);
   __Pyx_INCREF(((PyObject *)__pyx_cur_scope->__pyx_outer_scope));
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_outer_scope);
   __pyx_cur_scope->__pyx_v_next_start = __pyx_v_next_start;
@@ -6302,7 +6302,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_2write_next_start(PyObje
   if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_file)) { __Pyx_RaiseClosureNameError("file"); __PYX_ERR(0, 145, __pyx_L1_error) }
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_file, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 145, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __pyx_pf_5kovit_5cjson_13dump_json_big_16write_next_start_genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 145, __pyx_L1_error)
+  __pyx_t_3 = __pyx_pf_11kovit_cjson_13dump_json_big_16write_next_start_genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 145, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_4 = __Pyx_PyString_Join(__pyx_kp_s__13, __pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 145, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -6378,7 +6378,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_2write_next_start(PyObje
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("kovit.cjson.dump_json_big.write_next_start", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("kovit_cjson.dump_json_big.write_next_start", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_DECREF(((PyObject *)__pyx_cur_scope));
@@ -6396,22 +6396,22 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_2write_next_start(PyObje
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5kovit_5cjson_13dump_json_big_5write_start(PyObject *__pyx_self, PyObject *__pyx_v_start); /*proto*/
-static PyMethodDef __pyx_mdef_5kovit_5cjson_13dump_json_big_5write_start = {"write_start", (PyCFunction)__pyx_pw_5kovit_5cjson_13dump_json_big_5write_start, METH_O, 0};
-static PyObject *__pyx_pw_5kovit_5cjson_13dump_json_big_5write_start(PyObject *__pyx_self, PyObject *__pyx_v_start) {
+static PyObject *__pyx_pw_11kovit_cjson_13dump_json_big_5write_start(PyObject *__pyx_self, PyObject *__pyx_v_start); /*proto*/
+static PyMethodDef __pyx_mdef_11kovit_cjson_13dump_json_big_5write_start = {"write_start", (PyCFunction)__pyx_pw_11kovit_cjson_13dump_json_big_5write_start, METH_O, 0};
+static PyObject *__pyx_pw_11kovit_cjson_13dump_json_big_5write_start(PyObject *__pyx_self, PyObject *__pyx_v_start) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("write_start (wrapper)", 0);
-  __pyx_r = __pyx_pf_5kovit_5cjson_13dump_json_big_4write_start(__pyx_self, ((PyObject *)__pyx_v_start));
+  __pyx_r = __pyx_pf_11kovit_cjson_13dump_json_big_4write_start(__pyx_self, ((PyObject *)__pyx_v_start));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_4write_start(PyObject *__pyx_self, PyObject *__pyx_v_start) {
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_8_dump_json_big *__pyx_cur_scope;
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_8_dump_json_big *__pyx_outer_scope;
+static PyObject *__pyx_pf_11kovit_cjson_13dump_json_big_4write_start(PyObject *__pyx_self, PyObject *__pyx_v_start) {
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_8_dump_json_big *__pyx_cur_scope;
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_8_dump_json_big *__pyx_outer_scope;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -6423,7 +6423,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_4write_start(PyObject *_
   PyObject *__pyx_t_7 = NULL;
   PyObject *__pyx_t_8 = NULL;
   __Pyx_RefNannySetupContext("write_start", 0);
-  __pyx_outer_scope = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_8_dump_json_big *) __Pyx_CyFunction_GetClosure(__pyx_self);
+  __pyx_outer_scope = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_8_dump_json_big *) __Pyx_CyFunction_GetClosure(__pyx_self);
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "kovit/pjson.py":148
@@ -6600,7 +6600,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_4write_start(PyObject *_
   __Pyx_XDECREF(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_7);
   __Pyx_XDECREF(__pyx_t_8);
-  __Pyx_AddTraceback("kovit.cjson.dump_json_big.write_start", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("kovit_cjson.dump_json_big.write_start", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -6617,22 +6617,22 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_4write_start(PyObject *_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5kovit_5cjson_13dump_json_big_7write_next_start(PyObject *__pyx_self, PyObject *__pyx_v_next_start); /*proto*/
-static PyMethodDef __pyx_mdef_5kovit_5cjson_13dump_json_big_7write_next_start = {"write_next_start", (PyCFunction)__pyx_pw_5kovit_5cjson_13dump_json_big_7write_next_start, METH_O, 0};
-static PyObject *__pyx_pw_5kovit_5cjson_13dump_json_big_7write_next_start(PyObject *__pyx_self, PyObject *__pyx_v_next_start) {
+static PyObject *__pyx_pw_11kovit_cjson_13dump_json_big_7write_next_start(PyObject *__pyx_self, PyObject *__pyx_v_next_start); /*proto*/
+static PyMethodDef __pyx_mdef_11kovit_cjson_13dump_json_big_7write_next_start = {"write_next_start", (PyCFunction)__pyx_pw_11kovit_cjson_13dump_json_big_7write_next_start, METH_O, 0};
+static PyObject *__pyx_pw_11kovit_cjson_13dump_json_big_7write_next_start(PyObject *__pyx_self, PyObject *__pyx_v_next_start) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("write_next_start (wrapper)", 0);
-  __pyx_r = __pyx_pf_5kovit_5cjson_13dump_json_big_6write_next_start(__pyx_self, ((PyObject *)__pyx_v_next_start));
+  __pyx_r = __pyx_pf_11kovit_cjson_13dump_json_big_6write_next_start(__pyx_self, ((PyObject *)__pyx_v_next_start));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_6write_next_start(PyObject *__pyx_self, PyObject *__pyx_v_next_start) {
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_8_dump_json_big *__pyx_cur_scope;
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_8_dump_json_big *__pyx_outer_scope;
+static PyObject *__pyx_pf_11kovit_cjson_13dump_json_big_6write_next_start(PyObject *__pyx_self, PyObject *__pyx_v_next_start) {
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_8_dump_json_big *__pyx_cur_scope;
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_8_dump_json_big *__pyx_outer_scope;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -6642,7 +6642,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_6write_next_start(PyObje
   PyObject *__pyx_t_5 = NULL;
   PyObject *__pyx_t_6 = NULL;
   __Pyx_RefNannySetupContext("write_next_start", 0);
-  __pyx_outer_scope = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_8_dump_json_big *) __Pyx_CyFunction_GetClosure(__pyx_self);
+  __pyx_outer_scope = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_8_dump_json_big *) __Pyx_CyFunction_GetClosure(__pyx_self);
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "kovit/pjson.py":151
@@ -6769,7 +6769,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_6write_next_start(PyObje
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_6);
-  __Pyx_AddTraceback("kovit.cjson.dump_json_big.write_next_start", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("kovit_cjson.dump_json_big.write_next_start", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -6786,9 +6786,9 @@ static PyObject *__pyx_pf_5kovit_5cjson_13dump_json_big_6write_next_start(PyObje
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5kovit_5cjson_13dump_json_big_8lambda4(PyObject *__pyx_self, PyObject *__pyx_v_x); /*proto*/
-static PyMethodDef __pyx_mdef_5kovit_5cjson_13dump_json_big_8lambda4 = {"lambda4", (PyCFunction)__pyx_pw_5kovit_5cjson_13dump_json_big_8lambda4, METH_O, 0};
-static PyObject *__pyx_pw_5kovit_5cjson_13dump_json_big_8lambda4(PyObject *__pyx_self, PyObject *__pyx_v_x) {
+static PyObject *__pyx_pw_11kovit_cjson_13dump_json_big_8lambda4(PyObject *__pyx_self, PyObject *__pyx_v_x); /*proto*/
+static PyMethodDef __pyx_mdef_11kovit_cjson_13dump_json_big_8lambda4 = {"lambda4", (PyCFunction)__pyx_pw_11kovit_cjson_13dump_json_big_8lambda4, METH_O, 0};
+static PyObject *__pyx_pw_11kovit_cjson_13dump_json_big_8lambda4(PyObject *__pyx_self, PyObject *__pyx_v_x) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("lambda4 (wrapper)", 0);
@@ -6819,7 +6819,7 @@ static PyObject *__pyx_lambda_funcdef_lambda4(CYTHON_UNUSED PyObject *__pyx_self
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("kovit.cjson.dump_json_big.lambda4", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("kovit_cjson.dump_json_big.lambda4", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -6835,8 +6835,8 @@ static PyObject *__pyx_lambda_funcdef_lambda4(CYTHON_UNUSED PyObject *__pyx_self
  * 
  */
 
-static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_chain, PyObject *__pyx_v_file, PyObject *__pyx_v_frequency_compress) {
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_8_dump_json_big *__pyx_cur_scope;
+static PyObject *__pyx_pf_11kovit_cjson_4dump_json_big(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_chain, PyObject *__pyx_v_file, PyObject *__pyx_v_frequency_compress) {
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_8_dump_json_big *__pyx_cur_scope;
   PyObject *__pyx_v_freq_dict = NULL;
   Py_ssize_t __pyx_v_end_freqs;
   PyObject *__pyx_v_code = NULL;
@@ -6876,9 +6876,9 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
   PyObject *__pyx_t_18 = NULL;
   PyObject *__pyx_t_19 = NULL;
   __Pyx_RefNannySetupContext("dump_json_big", 0);
-  __pyx_cur_scope = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_8_dump_json_big *)__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_8_dump_json_big(__pyx_ptype_5kovit_5cjson___pyx_scope_struct_8_dump_json_big, __pyx_empty_tuple, NULL);
+  __pyx_cur_scope = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_8_dump_json_big *)__pyx_tp_new_11kovit_cjson___pyx_scope_struct_8_dump_json_big(__pyx_ptype_11kovit_cjson___pyx_scope_struct_8_dump_json_big, __pyx_empty_tuple, NULL);
   if (unlikely(!__pyx_cur_scope)) {
-    __pyx_cur_scope = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_8_dump_json_big *)Py_None);
+    __pyx_cur_scope = ((struct __pyx_obj_11kovit_cjson___pyx_scope_struct_8_dump_json_big *)Py_None);
     __Pyx_INCREF(Py_None);
     __PYX_ERR(0, 120, __pyx_L1_error)
   } else {
@@ -7002,7 +7002,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
     PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_v_freq_dict);
     __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 129, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_5 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_13dump_json_big_8lambda4, 0, __pyx_n_s_dump_json_big_locals_lambda, NULL, __pyx_n_s_kovit_cjson, __pyx_d, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 129, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_CyFunction_NewEx(&__pyx_mdef_11kovit_cjson_13dump_json_big_8lambda4, 0, __pyx_n_s_dump_json_big_locals_lambda, NULL, __pyx_n_s_kovit_cjson, __pyx_d, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 129, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_key, __pyx_t_5) < 0) __PYX_ERR(0, 129, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -7401,7 +7401,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
  *             file.write('{},['.format(codes[start]))
  * 
  */
-    __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_13dump_json_big_1write_start, 0, __pyx_n_s_dump_json_big_locals_write_start, ((PyObject*)__pyx_cur_scope), __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__19)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 141, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_11kovit_cjson_13dump_json_big_1write_start, 0, __pyx_n_s_dump_json_big_locals_write_start, ((PyObject*)__pyx_cur_scope), __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__19)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 141, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_v_write_start = __pyx_t_2;
     __pyx_t_2 = 0;
@@ -7413,7 +7413,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
  *             file.write('[' + ','.join(str(codes[n]) for n in next_start) + ']')
  *     else:
  */
-    __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_13dump_json_big_3write_next_start, 0, __pyx_n_s_dump_json_big_locals_write_next_2, ((PyObject*)__pyx_cur_scope), __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__21)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 144, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_11kovit_cjson_13dump_json_big_3write_next_start, 0, __pyx_n_s_dump_json_big_locals_write_next_2, ((PyObject*)__pyx_cur_scope), __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__21)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 144, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_v_write_next_start = __pyx_t_2;
     __pyx_t_2 = 0;
@@ -7436,7 +7436,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
  * 
  */
   /*else*/ {
-    __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_13dump_json_big_5write_start, 0, __pyx_n_s_dump_json_big_locals_write_start, ((PyObject*)__pyx_cur_scope), __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__23)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 147, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_11kovit_cjson_13dump_json_big_5write_start, 0, __pyx_n_s_dump_json_big_locals_write_start, ((PyObject*)__pyx_cur_scope), __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__23)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 147, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_v_write_start = __pyx_t_2;
     __pyx_t_2 = 0;
@@ -7448,7 +7448,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
  *             file.write(json.dumps(next_start))
  * 
  */
-    __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_13dump_json_big_7write_next_start, 0, __pyx_n_s_dump_json_big_locals_write_next_2, ((PyObject*)__pyx_cur_scope), __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__25)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 150, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_11kovit_cjson_13dump_json_big_7write_next_start, 0, __pyx_n_s_dump_json_big_locals_write_next_2, ((PyObject*)__pyx_cur_scope), __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__25)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 150, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_v_write_next_start = __pyx_t_2;
     __pyx_t_2 = 0;
@@ -8031,7 +8031,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
   __Pyx_XDECREF(__pyx_t_14);
   __Pyx_XDECREF(__pyx_t_18);
   __Pyx_XDECREF(__pyx_t_19);
-  __Pyx_AddTraceback("kovit.cjson.dump_json_big", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("kovit_cjson.dump_json_big", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_freq_dict);
@@ -8064,9 +8064,9 @@ static PyObject *__pyx_pf_5kovit_5cjson_4dump_json_big(CYTHON_UNUSED PyObject *_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5kovit_5cjson_7load_json_big(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_5kovit_5cjson_7load_json_big = {"load_json_big", (PyCFunction)__pyx_pw_5kovit_5cjson_7load_json_big, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_5kovit_5cjson_7load_json_big(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_11kovit_cjson_7load_json_big(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_11kovit_cjson_7load_json_big = {"load_json_big", (PyCFunction)__pyx_pw_11kovit_cjson_7load_json_big, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_11kovit_cjson_7load_json_big(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_chain = 0;
   PyObject *__pyx_v_file = 0;
   PyObject *__pyx_v_merge = 0;
@@ -8129,17 +8129,17 @@ static PyObject *__pyx_pw_5kovit_5cjson_7load_json_big(PyObject *__pyx_self, PyO
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("load_json_big", 0, 2, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 174, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("kovit.cjson.load_json_big", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("kovit_cjson.load_json_big", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_5kovit_5cjson_6load_json_big(__pyx_self, __pyx_v_chain, __pyx_v_file, __pyx_v_merge);
+  __pyx_r = __pyx_pf_11kovit_cjson_6load_json_big(__pyx_self, __pyx_v_chain, __pyx_v_file, __pyx_v_merge);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
-static PyObject *__pyx_gb_5kovit_5cjson_13load_json_big_2generator7(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
+static PyObject *__pyx_gb_11kovit_cjson_13load_json_big_2generator7(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "kovit/pjson.py":245
  *             else:
@@ -8149,24 +8149,24 @@ static PyObject *__pyx_gb_5kovit_5cjson_13load_json_big_2generator7(__pyx_Corout
  *                     chain.add_to_bag(start, builder.value, count=value)
  */
 
-static PyObject *__pyx_pf_5kovit_5cjson_13load_json_big_genexpr(PyObject *__pyx_self) {
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_12_genexpr *__pyx_cur_scope;
+static PyObject *__pyx_pf_11kovit_cjson_13load_json_big_genexpr(PyObject *__pyx_self) {
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_12_genexpr *__pyx_cur_scope;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("genexpr", 0);
-  __pyx_cur_scope = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_12_genexpr *)__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_12_genexpr(__pyx_ptype_5kovit_5cjson___pyx_scope_struct_12_genexpr, __pyx_empty_tuple, NULL);
+  __pyx_cur_scope = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_12_genexpr *)__pyx_tp_new_11kovit_cjson___pyx_scope_struct_12_genexpr(__pyx_ptype_11kovit_cjson___pyx_scope_struct_12_genexpr, __pyx_empty_tuple, NULL);
   if (unlikely(!__pyx_cur_scope)) {
-    __pyx_cur_scope = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_12_genexpr *)Py_None);
+    __pyx_cur_scope = ((struct __pyx_obj_11kovit_cjson___pyx_scope_struct_12_genexpr *)Py_None);
     __Pyx_INCREF(Py_None);
     __PYX_ERR(0, 245, __pyx_L1_error)
   } else {
     __Pyx_GOTREF(__pyx_cur_scope);
   }
-  __pyx_cur_scope->__pyx_outer_scope = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_11_load_json_big *) __pyx_self;
+  __pyx_cur_scope->__pyx_outer_scope = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_11_load_json_big *) __pyx_self;
   __Pyx_INCREF(((PyObject *)__pyx_cur_scope->__pyx_outer_scope));
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_outer_scope);
   {
-    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_5kovit_5cjson_13load_json_big_2generator7, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_genexpr, __pyx_n_s_load_json_big_locals_genexpr, __pyx_n_s_kovit_cjson); if (unlikely(!gen)) __PYX_ERR(0, 245, __pyx_L1_error)
+    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_11kovit_cjson_13load_json_big_2generator7, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_genexpr, __pyx_n_s_load_json_big_locals_genexpr, __pyx_n_s_kovit_cjson); if (unlikely(!gen)) __PYX_ERR(0, 245, __pyx_L1_error)
     __Pyx_DECREF(__pyx_cur_scope);
     __Pyx_RefNannyFinishContext();
     return (PyObject *) gen;
@@ -8174,7 +8174,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_13load_json_big_genexpr(PyObject *__pyx_
 
   /* function exit code */
   __pyx_L1_error:;
-  __Pyx_AddTraceback("kovit.cjson.load_json_big.genexpr", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("kovit_cjson.load_json_big.genexpr", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_DECREF(((PyObject *)__pyx_cur_scope));
   __Pyx_XGIVEREF(__pyx_r);
@@ -8182,9 +8182,9 @@ static PyObject *__pyx_pf_5kovit_5cjson_13load_json_big_genexpr(PyObject *__pyx_
   return __pyx_r;
 }
 
-static PyObject *__pyx_gb_5kovit_5cjson_13load_json_big_2generator7(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value) /* generator body */
+static PyObject *__pyx_gb_11kovit_cjson_13load_json_big_2generator7(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value) /* generator body */
 {
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_12_genexpr *__pyx_cur_scope = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_12_genexpr *)__pyx_generator->closure);
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_12_genexpr *__pyx_cur_scope = ((struct __pyx_obj_11kovit_cjson___pyx_scope_struct_12_genexpr *)__pyx_generator->closure);
   PyObject *__pyx_r = NULL;
   PyObject *__pyx_t_1 = NULL;
   PyObject *__pyx_t_2 = NULL;
@@ -8302,8 +8302,8 @@ static PyObject *__pyx_gb_5kovit_5cjson_13load_json_big_2generator7(__pyx_Corout
  *         chain.clear()
  */
 
-static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_chain, PyObject *__pyx_v_file, PyObject *__pyx_v_merge) {
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_11_load_json_big *__pyx_cur_scope;
+static PyObject *__pyx_pf_11kovit_cjson_6load_json_big(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_chain, PyObject *__pyx_v_file, PyObject *__pyx_v_merge) {
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_11_load_json_big *__pyx_cur_scope;
   PyObject *__pyx_v_parser = NULL;
   PyObject *__pyx_v_depth = NULL;
   int __pyx_v_building_bag_item;
@@ -8337,9 +8337,9 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
   int __pyx_t_12;
   int __pyx_t_13;
   __Pyx_RefNannySetupContext("load_json_big", 0);
-  __pyx_cur_scope = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_11_load_json_big *)__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_11_load_json_big(__pyx_ptype_5kovit_5cjson___pyx_scope_struct_11_load_json_big, __pyx_empty_tuple, NULL);
+  __pyx_cur_scope = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_11_load_json_big *)__pyx_tp_new_11kovit_cjson___pyx_scope_struct_11_load_json_big(__pyx_ptype_11kovit_cjson___pyx_scope_struct_11_load_json_big, __pyx_empty_tuple, NULL);
   if (unlikely(!__pyx_cur_scope)) {
-    __pyx_cur_scope = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_11_load_json_big *)Py_None);
+    __pyx_cur_scope = ((struct __pyx_obj_11kovit_cjson___pyx_scope_struct_11_load_json_big *)Py_None);
     __Pyx_INCREF(Py_None);
     __PYX_ERR(0, 174, __pyx_L1_error)
   } else {
@@ -9677,7 +9677,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
           }
           __pyx_t_5 = __Pyx_PyDict_GetItem(__pyx_cur_scope->__pyx_v_codes, __pyx_v_start); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 245, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_5);
-          __pyx_t_4 = __pyx_pf_5kovit_5cjson_13load_json_big_genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 245, __pyx_L1_error)
+          __pyx_t_4 = __pyx_pf_11kovit_cjson_13load_json_big_genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 245, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_4);
           __pyx_t_6 = PyTuple_New(2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 245, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
@@ -9777,7 +9777,7 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
   __Pyx_XDECREF(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_9);
   __Pyx_XDECREF(__pyx_t_10);
-  __Pyx_AddTraceback("kovit.cjson.load_json_big", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("kovit_cjson.load_json_big", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_parser);
@@ -9799,14 +9799,14 @@ static PyObject *__pyx_pf_5kovit_5cjson_6load_json_big(CYTHON_UNUSED PyObject *_
   return __pyx_r;
 }
 
-static struct __pyx_obj_5kovit_5cjson___pyx_scope_struct__dump_json_small *__pyx_freelist_5kovit_5cjson___pyx_scope_struct__dump_json_small[8];
-static int __pyx_freecount_5kovit_5cjson___pyx_scope_struct__dump_json_small = 0;
+static struct __pyx_obj_11kovit_cjson___pyx_scope_struct__dump_json_small *__pyx_freelist_11kovit_cjson___pyx_scope_struct__dump_json_small[8];
+static int __pyx_freecount_11kovit_cjson___pyx_scope_struct__dump_json_small = 0;
 
-static PyObject *__pyx_tp_new_5kovit_5cjson___pyx_scope_struct__dump_json_small(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
+static PyObject *__pyx_tp_new_11kovit_cjson___pyx_scope_struct__dump_json_small(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
   PyObject *o;
-  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_5kovit_5cjson___pyx_scope_struct__dump_json_small > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct__dump_json_small)))) {
-    o = (PyObject*)__pyx_freelist_5kovit_5cjson___pyx_scope_struct__dump_json_small[--__pyx_freecount_5kovit_5cjson___pyx_scope_struct__dump_json_small];
-    memset(o, 0, sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct__dump_json_small));
+  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_11kovit_cjson___pyx_scope_struct__dump_json_small > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct__dump_json_small)))) {
+    o = (PyObject*)__pyx_freelist_11kovit_cjson___pyx_scope_struct__dump_json_small[--__pyx_freecount_11kovit_cjson___pyx_scope_struct__dump_json_small];
+    memset(o, 0, sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct__dump_json_small));
     (void) PyObject_INIT(o, t);
     PyObject_GC_Track(o);
   } else {
@@ -9816,23 +9816,23 @@ static PyObject *__pyx_tp_new_5kovit_5cjson___pyx_scope_struct__dump_json_small(
   return o;
 }
 
-static void __pyx_tp_dealloc_5kovit_5cjson___pyx_scope_struct__dump_json_small(PyObject *o) {
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct__dump_json_small *p = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct__dump_json_small *)o;
+static void __pyx_tp_dealloc_11kovit_cjson___pyx_scope_struct__dump_json_small(PyObject *o) {
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct__dump_json_small *p = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct__dump_json_small *)o;
   PyObject_GC_UnTrack(o);
   Py_CLEAR(p->__pyx_v_chain);
   Py_CLEAR(p->__pyx_v_codes);
   Py_CLEAR(p->__pyx_v_gen_next_start);
   Py_CLEAR(p->__pyx_v_gen_start);
-  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_5kovit_5cjson___pyx_scope_struct__dump_json_small < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct__dump_json_small)))) {
-    __pyx_freelist_5kovit_5cjson___pyx_scope_struct__dump_json_small[__pyx_freecount_5kovit_5cjson___pyx_scope_struct__dump_json_small++] = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct__dump_json_small *)o);
+  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_11kovit_cjson___pyx_scope_struct__dump_json_small < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct__dump_json_small)))) {
+    __pyx_freelist_11kovit_cjson___pyx_scope_struct__dump_json_small[__pyx_freecount_11kovit_cjson___pyx_scope_struct__dump_json_small++] = ((struct __pyx_obj_11kovit_cjson___pyx_scope_struct__dump_json_small *)o);
   } else {
     (*Py_TYPE(o)->tp_free)(o);
   }
 }
 
-static int __pyx_tp_traverse_5kovit_5cjson___pyx_scope_struct__dump_json_small(PyObject *o, visitproc v, void *a) {
+static int __pyx_tp_traverse_11kovit_cjson___pyx_scope_struct__dump_json_small(PyObject *o, visitproc v, void *a) {
   int e;
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct__dump_json_small *p = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct__dump_json_small *)o;
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct__dump_json_small *p = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct__dump_json_small *)o;
   if (p->__pyx_v_chain) {
     e = (*v)(p->__pyx_v_chain, a); if (e) return e;
   }
@@ -9848,9 +9848,9 @@ static int __pyx_tp_traverse_5kovit_5cjson___pyx_scope_struct__dump_json_small(P
   return 0;
 }
 
-static int __pyx_tp_clear_5kovit_5cjson___pyx_scope_struct__dump_json_small(PyObject *o) {
+static int __pyx_tp_clear_11kovit_cjson___pyx_scope_struct__dump_json_small(PyObject *o) {
   PyObject* tmp;
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct__dump_json_small *p = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct__dump_json_small *)o;
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct__dump_json_small *p = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct__dump_json_small *)o;
   tmp = ((PyObject*)p->__pyx_v_chain);
   p->__pyx_v_chain = Py_None; Py_INCREF(Py_None);
   Py_XDECREF(tmp);
@@ -9866,12 +9866,12 @@ static int __pyx_tp_clear_5kovit_5cjson___pyx_scope_struct__dump_json_small(PyOb
   return 0;
 }
 
-static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct__dump_json_small = {
+static PyTypeObject __pyx_type_11kovit_cjson___pyx_scope_struct__dump_json_small = {
   PyVarObject_HEAD_INIT(0, 0)
-  "kovit.cjson.__pyx_scope_struct__dump_json_small", /*tp_name*/
-  sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct__dump_json_small), /*tp_basicsize*/
+  "kovit_cjson.__pyx_scope_struct__dump_json_small", /*tp_name*/
+  sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct__dump_json_small), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_5kovit_5cjson___pyx_scope_struct__dump_json_small, /*tp_dealloc*/
+  __pyx_tp_dealloc_11kovit_cjson___pyx_scope_struct__dump_json_small, /*tp_dealloc*/
   0, /*tp_print*/
   0, /*tp_getattr*/
   0, /*tp_setattr*/
@@ -9893,8 +9893,8 @@ static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct__dump_json_small
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
   0, /*tp_doc*/
-  __pyx_tp_traverse_5kovit_5cjson___pyx_scope_struct__dump_json_small, /*tp_traverse*/
-  __pyx_tp_clear_5kovit_5cjson___pyx_scope_struct__dump_json_small, /*tp_clear*/
+  __pyx_tp_traverse_11kovit_cjson___pyx_scope_struct__dump_json_small, /*tp_traverse*/
+  __pyx_tp_clear_11kovit_cjson___pyx_scope_struct__dump_json_small, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
@@ -9909,7 +9909,7 @@ static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct__dump_json_small
   0, /*tp_dictoffset*/
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_5kovit_5cjson___pyx_scope_struct__dump_json_small, /*tp_new*/
+  __pyx_tp_new_11kovit_cjson___pyx_scope_struct__dump_json_small, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -9924,14 +9924,14 @@ static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct__dump_json_small
   #endif
 };
 
-static struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_1_gen_next_start *__pyx_freelist_5kovit_5cjson___pyx_scope_struct_1_gen_next_start[8];
-static int __pyx_freecount_5kovit_5cjson___pyx_scope_struct_1_gen_next_start = 0;
+static struct __pyx_obj_11kovit_cjson___pyx_scope_struct_1_gen_next_start *__pyx_freelist_11kovit_cjson___pyx_scope_struct_1_gen_next_start[8];
+static int __pyx_freecount_11kovit_cjson___pyx_scope_struct_1_gen_next_start = 0;
 
-static PyObject *__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_1_gen_next_start(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
+static PyObject *__pyx_tp_new_11kovit_cjson___pyx_scope_struct_1_gen_next_start(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
   PyObject *o;
-  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_5kovit_5cjson___pyx_scope_struct_1_gen_next_start > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_1_gen_next_start)))) {
-    o = (PyObject*)__pyx_freelist_5kovit_5cjson___pyx_scope_struct_1_gen_next_start[--__pyx_freecount_5kovit_5cjson___pyx_scope_struct_1_gen_next_start];
-    memset(o, 0, sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_1_gen_next_start));
+  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_11kovit_cjson___pyx_scope_struct_1_gen_next_start > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_1_gen_next_start)))) {
+    o = (PyObject*)__pyx_freelist_11kovit_cjson___pyx_scope_struct_1_gen_next_start[--__pyx_freecount_11kovit_cjson___pyx_scope_struct_1_gen_next_start];
+    memset(o, 0, sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_1_gen_next_start));
     (void) PyObject_INIT(o, t);
     PyObject_GC_Track(o);
   } else {
@@ -9941,8 +9941,8 @@ static PyObject *__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_1_gen_next_start(
   return o;
 }
 
-static void __pyx_tp_dealloc_5kovit_5cjson___pyx_scope_struct_1_gen_next_start(PyObject *o) {
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_1_gen_next_start *p = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_1_gen_next_start *)o;
+static void __pyx_tp_dealloc_11kovit_cjson___pyx_scope_struct_1_gen_next_start(PyObject *o) {
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_1_gen_next_start *p = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_1_gen_next_start *)o;
   PyObject_GC_UnTrack(o);
   Py_CLEAR(p->__pyx_outer_scope);
   Py_CLEAR(p->__pyx_v_choices);
@@ -9950,16 +9950,16 @@ static void __pyx_tp_dealloc_5kovit_5cjson___pyx_scope_struct_1_gen_next_start(P
   Py_CLEAR(p->__pyx_v_genexpr);
   Py_CLEAR(p->__pyx_v_val);
   Py_CLEAR(p->__pyx_t_0);
-  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_5kovit_5cjson___pyx_scope_struct_1_gen_next_start < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_1_gen_next_start)))) {
-    __pyx_freelist_5kovit_5cjson___pyx_scope_struct_1_gen_next_start[__pyx_freecount_5kovit_5cjson___pyx_scope_struct_1_gen_next_start++] = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_1_gen_next_start *)o);
+  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_11kovit_cjson___pyx_scope_struct_1_gen_next_start < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_1_gen_next_start)))) {
+    __pyx_freelist_11kovit_cjson___pyx_scope_struct_1_gen_next_start[__pyx_freecount_11kovit_cjson___pyx_scope_struct_1_gen_next_start++] = ((struct __pyx_obj_11kovit_cjson___pyx_scope_struct_1_gen_next_start *)o);
   } else {
     (*Py_TYPE(o)->tp_free)(o);
   }
 }
 
-static int __pyx_tp_traverse_5kovit_5cjson___pyx_scope_struct_1_gen_next_start(PyObject *o, visitproc v, void *a) {
+static int __pyx_tp_traverse_11kovit_cjson___pyx_scope_struct_1_gen_next_start(PyObject *o, visitproc v, void *a) {
   int e;
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_1_gen_next_start *p = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_1_gen_next_start *)o;
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_1_gen_next_start *p = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_1_gen_next_start *)o;
   if (p->__pyx_outer_scope) {
     e = (*v)(((PyObject *)p->__pyx_outer_scope), a); if (e) return e;
   }
@@ -9981,12 +9981,12 @@ static int __pyx_tp_traverse_5kovit_5cjson___pyx_scope_struct_1_gen_next_start(P
   return 0;
 }
 
-static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_1_gen_next_start = {
+static PyTypeObject __pyx_type_11kovit_cjson___pyx_scope_struct_1_gen_next_start = {
   PyVarObject_HEAD_INIT(0, 0)
-  "kovit.cjson.__pyx_scope_struct_1_gen_next_start", /*tp_name*/
-  sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_1_gen_next_start), /*tp_basicsize*/
+  "kovit_cjson.__pyx_scope_struct_1_gen_next_start", /*tp_name*/
+  sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_1_gen_next_start), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_5kovit_5cjson___pyx_scope_struct_1_gen_next_start, /*tp_dealloc*/
+  __pyx_tp_dealloc_11kovit_cjson___pyx_scope_struct_1_gen_next_start, /*tp_dealloc*/
   0, /*tp_print*/
   0, /*tp_getattr*/
   0, /*tp_setattr*/
@@ -10008,7 +10008,7 @@ static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_1_gen_next_start
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
   0, /*tp_doc*/
-  __pyx_tp_traverse_5kovit_5cjson___pyx_scope_struct_1_gen_next_start, /*tp_traverse*/
+  __pyx_tp_traverse_11kovit_cjson___pyx_scope_struct_1_gen_next_start, /*tp_traverse*/
   0, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
@@ -10024,7 +10024,7 @@ static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_1_gen_next_start
   0, /*tp_dictoffset*/
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_5kovit_5cjson___pyx_scope_struct_1_gen_next_start, /*tp_new*/
+  __pyx_tp_new_11kovit_cjson___pyx_scope_struct_1_gen_next_start, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -10039,14 +10039,14 @@ static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_1_gen_next_start
   #endif
 };
 
-static struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_2_genexpr *__pyx_freelist_5kovit_5cjson___pyx_scope_struct_2_genexpr[8];
-static int __pyx_freecount_5kovit_5cjson___pyx_scope_struct_2_genexpr = 0;
+static struct __pyx_obj_11kovit_cjson___pyx_scope_struct_2_genexpr *__pyx_freelist_11kovit_cjson___pyx_scope_struct_2_genexpr[8];
+static int __pyx_freecount_11kovit_cjson___pyx_scope_struct_2_genexpr = 0;
 
-static PyObject *__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_2_genexpr(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
+static PyObject *__pyx_tp_new_11kovit_cjson___pyx_scope_struct_2_genexpr(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
   PyObject *o;
-  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_5kovit_5cjson___pyx_scope_struct_2_genexpr > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_2_genexpr)))) {
-    o = (PyObject*)__pyx_freelist_5kovit_5cjson___pyx_scope_struct_2_genexpr[--__pyx_freecount_5kovit_5cjson___pyx_scope_struct_2_genexpr];
-    memset(o, 0, sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_2_genexpr));
+  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_11kovit_cjson___pyx_scope_struct_2_genexpr > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_2_genexpr)))) {
+    o = (PyObject*)__pyx_freelist_11kovit_cjson___pyx_scope_struct_2_genexpr[--__pyx_freecount_11kovit_cjson___pyx_scope_struct_2_genexpr];
+    memset(o, 0, sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_2_genexpr));
     (void) PyObject_INIT(o, t);
     PyObject_GC_Track(o);
   } else {
@@ -10056,22 +10056,22 @@ static PyObject *__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_2_genexpr(PyTypeO
   return o;
 }
 
-static void __pyx_tp_dealloc_5kovit_5cjson___pyx_scope_struct_2_genexpr(PyObject *o) {
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_2_genexpr *p = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_2_genexpr *)o;
+static void __pyx_tp_dealloc_11kovit_cjson___pyx_scope_struct_2_genexpr(PyObject *o) {
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_2_genexpr *p = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_2_genexpr *)o;
   PyObject_GC_UnTrack(o);
   Py_CLEAR(p->__pyx_outer_scope);
   Py_CLEAR(p->__pyx_v_s);
   Py_CLEAR(p->__pyx_t_0);
-  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_5kovit_5cjson___pyx_scope_struct_2_genexpr < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_2_genexpr)))) {
-    __pyx_freelist_5kovit_5cjson___pyx_scope_struct_2_genexpr[__pyx_freecount_5kovit_5cjson___pyx_scope_struct_2_genexpr++] = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_2_genexpr *)o);
+  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_11kovit_cjson___pyx_scope_struct_2_genexpr < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_2_genexpr)))) {
+    __pyx_freelist_11kovit_cjson___pyx_scope_struct_2_genexpr[__pyx_freecount_11kovit_cjson___pyx_scope_struct_2_genexpr++] = ((struct __pyx_obj_11kovit_cjson___pyx_scope_struct_2_genexpr *)o);
   } else {
     (*Py_TYPE(o)->tp_free)(o);
   }
 }
 
-static int __pyx_tp_traverse_5kovit_5cjson___pyx_scope_struct_2_genexpr(PyObject *o, visitproc v, void *a) {
+static int __pyx_tp_traverse_11kovit_cjson___pyx_scope_struct_2_genexpr(PyObject *o, visitproc v, void *a) {
   int e;
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_2_genexpr *p = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_2_genexpr *)o;
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_2_genexpr *p = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_2_genexpr *)o;
   if (p->__pyx_outer_scope) {
     e = (*v)(((PyObject *)p->__pyx_outer_scope), a); if (e) return e;
   }
@@ -10084,12 +10084,12 @@ static int __pyx_tp_traverse_5kovit_5cjson___pyx_scope_struct_2_genexpr(PyObject
   return 0;
 }
 
-static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_2_genexpr = {
+static PyTypeObject __pyx_type_11kovit_cjson___pyx_scope_struct_2_genexpr = {
   PyVarObject_HEAD_INIT(0, 0)
-  "kovit.cjson.__pyx_scope_struct_2_genexpr", /*tp_name*/
-  sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_2_genexpr), /*tp_basicsize*/
+  "kovit_cjson.__pyx_scope_struct_2_genexpr", /*tp_name*/
+  sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_2_genexpr), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_5kovit_5cjson___pyx_scope_struct_2_genexpr, /*tp_dealloc*/
+  __pyx_tp_dealloc_11kovit_cjson___pyx_scope_struct_2_genexpr, /*tp_dealloc*/
   0, /*tp_print*/
   0, /*tp_getattr*/
   0, /*tp_setattr*/
@@ -10111,7 +10111,7 @@ static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_2_genexpr = {
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
   0, /*tp_doc*/
-  __pyx_tp_traverse_5kovit_5cjson___pyx_scope_struct_2_genexpr, /*tp_traverse*/
+  __pyx_tp_traverse_11kovit_cjson___pyx_scope_struct_2_genexpr, /*tp_traverse*/
   0, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
@@ -10127,7 +10127,7 @@ static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_2_genexpr = {
   0, /*tp_dictoffset*/
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_5kovit_5cjson___pyx_scope_struct_2_genexpr, /*tp_new*/
+  __pyx_tp_new_11kovit_cjson___pyx_scope_struct_2_genexpr, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -10142,14 +10142,14 @@ static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_2_genexpr = {
   #endif
 };
 
-static struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_3_gen_next_start *__pyx_freelist_5kovit_5cjson___pyx_scope_struct_3_gen_next_start[8];
-static int __pyx_freecount_5kovit_5cjson___pyx_scope_struct_3_gen_next_start = 0;
+static struct __pyx_obj_11kovit_cjson___pyx_scope_struct_3_gen_next_start *__pyx_freelist_11kovit_cjson___pyx_scope_struct_3_gen_next_start[8];
+static int __pyx_freecount_11kovit_cjson___pyx_scope_struct_3_gen_next_start = 0;
 
-static PyObject *__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_3_gen_next_start(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
+static PyObject *__pyx_tp_new_11kovit_cjson___pyx_scope_struct_3_gen_next_start(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
   PyObject *o;
-  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_5kovit_5cjson___pyx_scope_struct_3_gen_next_start > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_3_gen_next_start)))) {
-    o = (PyObject*)__pyx_freelist_5kovit_5cjson___pyx_scope_struct_3_gen_next_start[--__pyx_freecount_5kovit_5cjson___pyx_scope_struct_3_gen_next_start];
-    memset(o, 0, sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_3_gen_next_start));
+  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_11kovit_cjson___pyx_scope_struct_3_gen_next_start > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_3_gen_next_start)))) {
+    o = (PyObject*)__pyx_freelist_11kovit_cjson___pyx_scope_struct_3_gen_next_start[--__pyx_freecount_11kovit_cjson___pyx_scope_struct_3_gen_next_start];
+    memset(o, 0, sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_3_gen_next_start));
     (void) PyObject_INIT(o, t);
     PyObject_GC_Track(o);
   } else {
@@ -10159,23 +10159,23 @@ static PyObject *__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_3_gen_next_start(
   return o;
 }
 
-static void __pyx_tp_dealloc_5kovit_5cjson___pyx_scope_struct_3_gen_next_start(PyObject *o) {
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_3_gen_next_start *p = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_3_gen_next_start *)o;
+static void __pyx_tp_dealloc_11kovit_cjson___pyx_scope_struct_3_gen_next_start(PyObject *o) {
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_3_gen_next_start *p = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_3_gen_next_start *)o;
   PyObject_GC_UnTrack(o);
   Py_CLEAR(p->__pyx_v_choices);
   Py_CLEAR(p->__pyx_v_cnt);
   Py_CLEAR(p->__pyx_v_val);
   Py_CLEAR(p->__pyx_t_0);
-  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_5kovit_5cjson___pyx_scope_struct_3_gen_next_start < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_3_gen_next_start)))) {
-    __pyx_freelist_5kovit_5cjson___pyx_scope_struct_3_gen_next_start[__pyx_freecount_5kovit_5cjson___pyx_scope_struct_3_gen_next_start++] = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_3_gen_next_start *)o);
+  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_11kovit_cjson___pyx_scope_struct_3_gen_next_start < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_3_gen_next_start)))) {
+    __pyx_freelist_11kovit_cjson___pyx_scope_struct_3_gen_next_start[__pyx_freecount_11kovit_cjson___pyx_scope_struct_3_gen_next_start++] = ((struct __pyx_obj_11kovit_cjson___pyx_scope_struct_3_gen_next_start *)o);
   } else {
     (*Py_TYPE(o)->tp_free)(o);
   }
 }
 
-static int __pyx_tp_traverse_5kovit_5cjson___pyx_scope_struct_3_gen_next_start(PyObject *o, visitproc v, void *a) {
+static int __pyx_tp_traverse_11kovit_cjson___pyx_scope_struct_3_gen_next_start(PyObject *o, visitproc v, void *a) {
   int e;
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_3_gen_next_start *p = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_3_gen_next_start *)o;
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_3_gen_next_start *p = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_3_gen_next_start *)o;
   if (p->__pyx_v_choices) {
     e = (*v)(p->__pyx_v_choices, a); if (e) return e;
   }
@@ -10191,12 +10191,12 @@ static int __pyx_tp_traverse_5kovit_5cjson___pyx_scope_struct_3_gen_next_start(P
   return 0;
 }
 
-static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_3_gen_next_start = {
+static PyTypeObject __pyx_type_11kovit_cjson___pyx_scope_struct_3_gen_next_start = {
   PyVarObject_HEAD_INIT(0, 0)
-  "kovit.cjson.__pyx_scope_struct_3_gen_next_start", /*tp_name*/
-  sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_3_gen_next_start), /*tp_basicsize*/
+  "kovit_cjson.__pyx_scope_struct_3_gen_next_start", /*tp_name*/
+  sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_3_gen_next_start), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_5kovit_5cjson___pyx_scope_struct_3_gen_next_start, /*tp_dealloc*/
+  __pyx_tp_dealloc_11kovit_cjson___pyx_scope_struct_3_gen_next_start, /*tp_dealloc*/
   0, /*tp_print*/
   0, /*tp_getattr*/
   0, /*tp_setattr*/
@@ -10218,7 +10218,7 @@ static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_3_gen_next_start
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
   0, /*tp_doc*/
-  __pyx_tp_traverse_5kovit_5cjson___pyx_scope_struct_3_gen_next_start, /*tp_traverse*/
+  __pyx_tp_traverse_11kovit_cjson___pyx_scope_struct_3_gen_next_start, /*tp_traverse*/
   0, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
@@ -10234,7 +10234,7 @@ static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_3_gen_next_start
   0, /*tp_dictoffset*/
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_5kovit_5cjson___pyx_scope_struct_3_gen_next_start, /*tp_new*/
+  __pyx_tp_new_11kovit_cjson___pyx_scope_struct_3_gen_next_start, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -10249,14 +10249,14 @@ static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_3_gen_next_start
   #endif
 };
 
-static struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_4_gen_chain *__pyx_freelist_5kovit_5cjson___pyx_scope_struct_4_gen_chain[8];
-static int __pyx_freecount_5kovit_5cjson___pyx_scope_struct_4_gen_chain = 0;
+static struct __pyx_obj_11kovit_cjson___pyx_scope_struct_4_gen_chain *__pyx_freelist_11kovit_cjson___pyx_scope_struct_4_gen_chain[8];
+static int __pyx_freecount_11kovit_cjson___pyx_scope_struct_4_gen_chain = 0;
 
-static PyObject *__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_4_gen_chain(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
+static PyObject *__pyx_tp_new_11kovit_cjson___pyx_scope_struct_4_gen_chain(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
   PyObject *o;
-  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_5kovit_5cjson___pyx_scope_struct_4_gen_chain > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_4_gen_chain)))) {
-    o = (PyObject*)__pyx_freelist_5kovit_5cjson___pyx_scope_struct_4_gen_chain[--__pyx_freecount_5kovit_5cjson___pyx_scope_struct_4_gen_chain];
-    memset(o, 0, sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_4_gen_chain));
+  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_11kovit_cjson___pyx_scope_struct_4_gen_chain > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_4_gen_chain)))) {
+    o = (PyObject*)__pyx_freelist_11kovit_cjson___pyx_scope_struct_4_gen_chain[--__pyx_freecount_11kovit_cjson___pyx_scope_struct_4_gen_chain];
+    memset(o, 0, sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_4_gen_chain));
     (void) PyObject_INIT(o, t);
     PyObject_GC_Track(o);
   } else {
@@ -10266,23 +10266,23 @@ static PyObject *__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_4_gen_chain(PyTyp
   return o;
 }
 
-static void __pyx_tp_dealloc_5kovit_5cjson___pyx_scope_struct_4_gen_chain(PyObject *o) {
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_4_gen_chain *p = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_4_gen_chain *)o;
+static void __pyx_tp_dealloc_11kovit_cjson___pyx_scope_struct_4_gen_chain(PyObject *o) {
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_4_gen_chain *p = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_4_gen_chain *)o;
   PyObject_GC_UnTrack(o);
   Py_CLEAR(p->__pyx_outer_scope);
   Py_CLEAR(p->__pyx_v_bag);
   Py_CLEAR(p->__pyx_v_start);
   Py_CLEAR(p->__pyx_t_0);
-  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_5kovit_5cjson___pyx_scope_struct_4_gen_chain < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_4_gen_chain)))) {
-    __pyx_freelist_5kovit_5cjson___pyx_scope_struct_4_gen_chain[__pyx_freecount_5kovit_5cjson___pyx_scope_struct_4_gen_chain++] = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_4_gen_chain *)o);
+  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_11kovit_cjson___pyx_scope_struct_4_gen_chain < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_4_gen_chain)))) {
+    __pyx_freelist_11kovit_cjson___pyx_scope_struct_4_gen_chain[__pyx_freecount_11kovit_cjson___pyx_scope_struct_4_gen_chain++] = ((struct __pyx_obj_11kovit_cjson___pyx_scope_struct_4_gen_chain *)o);
   } else {
     (*Py_TYPE(o)->tp_free)(o);
   }
 }
 
-static int __pyx_tp_traverse_5kovit_5cjson___pyx_scope_struct_4_gen_chain(PyObject *o, visitproc v, void *a) {
+static int __pyx_tp_traverse_11kovit_cjson___pyx_scope_struct_4_gen_chain(PyObject *o, visitproc v, void *a) {
   int e;
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_4_gen_chain *p = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_4_gen_chain *)o;
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_4_gen_chain *p = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_4_gen_chain *)o;
   if (p->__pyx_outer_scope) {
     e = (*v)(((PyObject *)p->__pyx_outer_scope), a); if (e) return e;
   }
@@ -10298,12 +10298,12 @@ static int __pyx_tp_traverse_5kovit_5cjson___pyx_scope_struct_4_gen_chain(PyObje
   return 0;
 }
 
-static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_4_gen_chain = {
+static PyTypeObject __pyx_type_11kovit_cjson___pyx_scope_struct_4_gen_chain = {
   PyVarObject_HEAD_INIT(0, 0)
-  "kovit.cjson.__pyx_scope_struct_4_gen_chain", /*tp_name*/
-  sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_4_gen_chain), /*tp_basicsize*/
+  "kovit_cjson.__pyx_scope_struct_4_gen_chain", /*tp_name*/
+  sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_4_gen_chain), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_5kovit_5cjson___pyx_scope_struct_4_gen_chain, /*tp_dealloc*/
+  __pyx_tp_dealloc_11kovit_cjson___pyx_scope_struct_4_gen_chain, /*tp_dealloc*/
   0, /*tp_print*/
   0, /*tp_getattr*/
   0, /*tp_setattr*/
@@ -10325,7 +10325,7 @@ static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_4_gen_chain = {
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
   0, /*tp_doc*/
-  __pyx_tp_traverse_5kovit_5cjson___pyx_scope_struct_4_gen_chain, /*tp_traverse*/
+  __pyx_tp_traverse_11kovit_cjson___pyx_scope_struct_4_gen_chain, /*tp_traverse*/
   0, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
@@ -10341,7 +10341,7 @@ static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_4_gen_chain = {
   0, /*tp_dictoffset*/
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_5kovit_5cjson___pyx_scope_struct_4_gen_chain, /*tp_new*/
+  __pyx_tp_new_11kovit_cjson___pyx_scope_struct_4_gen_chain, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -10356,14 +10356,14 @@ static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_4_gen_chain = {
   #endif
 };
 
-static struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_5_load_json_small *__pyx_freelist_5kovit_5cjson___pyx_scope_struct_5_load_json_small[8];
-static int __pyx_freecount_5kovit_5cjson___pyx_scope_struct_5_load_json_small = 0;
+static struct __pyx_obj_11kovit_cjson___pyx_scope_struct_5_load_json_small *__pyx_freelist_11kovit_cjson___pyx_scope_struct_5_load_json_small[8];
+static int __pyx_freecount_11kovit_cjson___pyx_scope_struct_5_load_json_small = 0;
 
-static PyObject *__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_5_load_json_small(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
+static PyObject *__pyx_tp_new_11kovit_cjson___pyx_scope_struct_5_load_json_small(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
   PyObject *o;
-  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_5kovit_5cjson___pyx_scope_struct_5_load_json_small > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_5_load_json_small)))) {
-    o = (PyObject*)__pyx_freelist_5kovit_5cjson___pyx_scope_struct_5_load_json_small[--__pyx_freecount_5kovit_5cjson___pyx_scope_struct_5_load_json_small];
-    memset(o, 0, sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_5_load_json_small));
+  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_11kovit_cjson___pyx_scope_struct_5_load_json_small > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_5_load_json_small)))) {
+    o = (PyObject*)__pyx_freelist_11kovit_cjson___pyx_scope_struct_5_load_json_small[--__pyx_freecount_11kovit_cjson___pyx_scope_struct_5_load_json_small];
+    memset(o, 0, sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_5_load_json_small));
     (void) PyObject_INIT(o, t);
     PyObject_GC_Track(o);
   } else {
@@ -10373,21 +10373,21 @@ static PyObject *__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_5_load_json_small
   return o;
 }
 
-static void __pyx_tp_dealloc_5kovit_5cjson___pyx_scope_struct_5_load_json_small(PyObject *o) {
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_5_load_json_small *p = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_5_load_json_small *)o;
+static void __pyx_tp_dealloc_11kovit_cjson___pyx_scope_struct_5_load_json_small(PyObject *o) {
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_5_load_json_small *p = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_5_load_json_small *)o;
   PyObject_GC_UnTrack(o);
   Py_CLEAR(p->__pyx_v_codes);
   Py_CLEAR(p->__pyx_v_items);
-  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_5kovit_5cjson___pyx_scope_struct_5_load_json_small < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_5_load_json_small)))) {
-    __pyx_freelist_5kovit_5cjson___pyx_scope_struct_5_load_json_small[__pyx_freecount_5kovit_5cjson___pyx_scope_struct_5_load_json_small++] = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_5_load_json_small *)o);
+  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_11kovit_cjson___pyx_scope_struct_5_load_json_small < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_5_load_json_small)))) {
+    __pyx_freelist_11kovit_cjson___pyx_scope_struct_5_load_json_small[__pyx_freecount_11kovit_cjson___pyx_scope_struct_5_load_json_small++] = ((struct __pyx_obj_11kovit_cjson___pyx_scope_struct_5_load_json_small *)o);
   } else {
     (*Py_TYPE(o)->tp_free)(o);
   }
 }
 
-static int __pyx_tp_traverse_5kovit_5cjson___pyx_scope_struct_5_load_json_small(PyObject *o, visitproc v, void *a) {
+static int __pyx_tp_traverse_11kovit_cjson___pyx_scope_struct_5_load_json_small(PyObject *o, visitproc v, void *a) {
   int e;
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_5_load_json_small *p = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_5_load_json_small *)o;
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_5_load_json_small *p = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_5_load_json_small *)o;
   if (p->__pyx_v_codes) {
     e = (*v)(p->__pyx_v_codes, a); if (e) return e;
   }
@@ -10397,9 +10397,9 @@ static int __pyx_tp_traverse_5kovit_5cjson___pyx_scope_struct_5_load_json_small(
   return 0;
 }
 
-static int __pyx_tp_clear_5kovit_5cjson___pyx_scope_struct_5_load_json_small(PyObject *o) {
+static int __pyx_tp_clear_11kovit_cjson___pyx_scope_struct_5_load_json_small(PyObject *o) {
   PyObject* tmp;
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_5_load_json_small *p = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_5_load_json_small *)o;
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_5_load_json_small *p = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_5_load_json_small *)o;
   tmp = ((PyObject*)p->__pyx_v_codes);
   p->__pyx_v_codes = ((PyObject*)Py_None); Py_INCREF(Py_None);
   Py_XDECREF(tmp);
@@ -10409,12 +10409,12 @@ static int __pyx_tp_clear_5kovit_5cjson___pyx_scope_struct_5_load_json_small(PyO
   return 0;
 }
 
-static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_5_load_json_small = {
+static PyTypeObject __pyx_type_11kovit_cjson___pyx_scope_struct_5_load_json_small = {
   PyVarObject_HEAD_INIT(0, 0)
-  "kovit.cjson.__pyx_scope_struct_5_load_json_small", /*tp_name*/
-  sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_5_load_json_small), /*tp_basicsize*/
+  "kovit_cjson.__pyx_scope_struct_5_load_json_small", /*tp_name*/
+  sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_5_load_json_small), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_5kovit_5cjson___pyx_scope_struct_5_load_json_small, /*tp_dealloc*/
+  __pyx_tp_dealloc_11kovit_cjson___pyx_scope_struct_5_load_json_small, /*tp_dealloc*/
   0, /*tp_print*/
   0, /*tp_getattr*/
   0, /*tp_setattr*/
@@ -10436,8 +10436,8 @@ static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_5_load_json_smal
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
   0, /*tp_doc*/
-  __pyx_tp_traverse_5kovit_5cjson___pyx_scope_struct_5_load_json_small, /*tp_traverse*/
-  __pyx_tp_clear_5kovit_5cjson___pyx_scope_struct_5_load_json_small, /*tp_clear*/
+  __pyx_tp_traverse_11kovit_cjson___pyx_scope_struct_5_load_json_small, /*tp_traverse*/
+  __pyx_tp_clear_11kovit_cjson___pyx_scope_struct_5_load_json_small, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
@@ -10452,7 +10452,7 @@ static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_5_load_json_smal
   0, /*tp_dictoffset*/
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_5kovit_5cjson___pyx_scope_struct_5_load_json_small, /*tp_new*/
+  __pyx_tp_new_11kovit_cjson___pyx_scope_struct_5_load_json_small, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -10467,14 +10467,14 @@ static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_5_load_json_smal
   #endif
 };
 
-static struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_6_genexpr *__pyx_freelist_5kovit_5cjson___pyx_scope_struct_6_genexpr[8];
-static int __pyx_freecount_5kovit_5cjson___pyx_scope_struct_6_genexpr = 0;
+static struct __pyx_obj_11kovit_cjson___pyx_scope_struct_6_genexpr *__pyx_freelist_11kovit_cjson___pyx_scope_struct_6_genexpr[8];
+static int __pyx_freecount_11kovit_cjson___pyx_scope_struct_6_genexpr = 0;
 
-static PyObject *__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_6_genexpr(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
+static PyObject *__pyx_tp_new_11kovit_cjson___pyx_scope_struct_6_genexpr(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
   PyObject *o;
-  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_5kovit_5cjson___pyx_scope_struct_6_genexpr > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_6_genexpr)))) {
-    o = (PyObject*)__pyx_freelist_5kovit_5cjson___pyx_scope_struct_6_genexpr[--__pyx_freecount_5kovit_5cjson___pyx_scope_struct_6_genexpr];
-    memset(o, 0, sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_6_genexpr));
+  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_11kovit_cjson___pyx_scope_struct_6_genexpr > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_6_genexpr)))) {
+    o = (PyObject*)__pyx_freelist_11kovit_cjson___pyx_scope_struct_6_genexpr[--__pyx_freecount_11kovit_cjson___pyx_scope_struct_6_genexpr];
+    memset(o, 0, sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_6_genexpr));
     (void) PyObject_INIT(o, t);
     PyObject_GC_Track(o);
   } else {
@@ -10484,22 +10484,22 @@ static PyObject *__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_6_genexpr(PyTypeO
   return o;
 }
 
-static void __pyx_tp_dealloc_5kovit_5cjson___pyx_scope_struct_6_genexpr(PyObject *o) {
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_6_genexpr *p = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_6_genexpr *)o;
+static void __pyx_tp_dealloc_11kovit_cjson___pyx_scope_struct_6_genexpr(PyObject *o) {
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_6_genexpr *p = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_6_genexpr *)o;
   PyObject_GC_UnTrack(o);
   Py_CLEAR(p->__pyx_outer_scope);
   Py_CLEAR(p->__pyx_v_i);
   Py_CLEAR(p->__pyx_t_0);
-  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_5kovit_5cjson___pyx_scope_struct_6_genexpr < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_6_genexpr)))) {
-    __pyx_freelist_5kovit_5cjson___pyx_scope_struct_6_genexpr[__pyx_freecount_5kovit_5cjson___pyx_scope_struct_6_genexpr++] = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_6_genexpr *)o);
+  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_11kovit_cjson___pyx_scope_struct_6_genexpr < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_6_genexpr)))) {
+    __pyx_freelist_11kovit_cjson___pyx_scope_struct_6_genexpr[__pyx_freecount_11kovit_cjson___pyx_scope_struct_6_genexpr++] = ((struct __pyx_obj_11kovit_cjson___pyx_scope_struct_6_genexpr *)o);
   } else {
     (*Py_TYPE(o)->tp_free)(o);
   }
 }
 
-static int __pyx_tp_traverse_5kovit_5cjson___pyx_scope_struct_6_genexpr(PyObject *o, visitproc v, void *a) {
+static int __pyx_tp_traverse_11kovit_cjson___pyx_scope_struct_6_genexpr(PyObject *o, visitproc v, void *a) {
   int e;
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_6_genexpr *p = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_6_genexpr *)o;
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_6_genexpr *p = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_6_genexpr *)o;
   if (p->__pyx_outer_scope) {
     e = (*v)(((PyObject *)p->__pyx_outer_scope), a); if (e) return e;
   }
@@ -10512,12 +10512,12 @@ static int __pyx_tp_traverse_5kovit_5cjson___pyx_scope_struct_6_genexpr(PyObject
   return 0;
 }
 
-static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_6_genexpr = {
+static PyTypeObject __pyx_type_11kovit_cjson___pyx_scope_struct_6_genexpr = {
   PyVarObject_HEAD_INIT(0, 0)
-  "kovit.cjson.__pyx_scope_struct_6_genexpr", /*tp_name*/
-  sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_6_genexpr), /*tp_basicsize*/
+  "kovit_cjson.__pyx_scope_struct_6_genexpr", /*tp_name*/
+  sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_6_genexpr), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_5kovit_5cjson___pyx_scope_struct_6_genexpr, /*tp_dealloc*/
+  __pyx_tp_dealloc_11kovit_cjson___pyx_scope_struct_6_genexpr, /*tp_dealloc*/
   0, /*tp_print*/
   0, /*tp_getattr*/
   0, /*tp_setattr*/
@@ -10539,7 +10539,7 @@ static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_6_genexpr = {
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
   0, /*tp_doc*/
-  __pyx_tp_traverse_5kovit_5cjson___pyx_scope_struct_6_genexpr, /*tp_traverse*/
+  __pyx_tp_traverse_11kovit_cjson___pyx_scope_struct_6_genexpr, /*tp_traverse*/
   0, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
@@ -10555,7 +10555,7 @@ static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_6_genexpr = {
   0, /*tp_dictoffset*/
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_5kovit_5cjson___pyx_scope_struct_6_genexpr, /*tp_new*/
+  __pyx_tp_new_11kovit_cjson___pyx_scope_struct_6_genexpr, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -10570,14 +10570,14 @@ static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_6_genexpr = {
   #endif
 };
 
-static struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_7_genexpr *__pyx_freelist_5kovit_5cjson___pyx_scope_struct_7_genexpr[8];
-static int __pyx_freecount_5kovit_5cjson___pyx_scope_struct_7_genexpr = 0;
+static struct __pyx_obj_11kovit_cjson___pyx_scope_struct_7_genexpr *__pyx_freelist_11kovit_cjson___pyx_scope_struct_7_genexpr[8];
+static int __pyx_freecount_11kovit_cjson___pyx_scope_struct_7_genexpr = 0;
 
-static PyObject *__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_7_genexpr(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
+static PyObject *__pyx_tp_new_11kovit_cjson___pyx_scope_struct_7_genexpr(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
   PyObject *o;
-  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_5kovit_5cjson___pyx_scope_struct_7_genexpr > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_7_genexpr)))) {
-    o = (PyObject*)__pyx_freelist_5kovit_5cjson___pyx_scope_struct_7_genexpr[--__pyx_freecount_5kovit_5cjson___pyx_scope_struct_7_genexpr];
-    memset(o, 0, sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_7_genexpr));
+  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_11kovit_cjson___pyx_scope_struct_7_genexpr > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_7_genexpr)))) {
+    o = (PyObject*)__pyx_freelist_11kovit_cjson___pyx_scope_struct_7_genexpr[--__pyx_freecount_11kovit_cjson___pyx_scope_struct_7_genexpr];
+    memset(o, 0, sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_7_genexpr));
     (void) PyObject_INIT(o, t);
     PyObject_GC_Track(o);
   } else {
@@ -10587,22 +10587,22 @@ static PyObject *__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_7_genexpr(PyTypeO
   return o;
 }
 
-static void __pyx_tp_dealloc_5kovit_5cjson___pyx_scope_struct_7_genexpr(PyObject *o) {
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_7_genexpr *p = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_7_genexpr *)o;
+static void __pyx_tp_dealloc_11kovit_cjson___pyx_scope_struct_7_genexpr(PyObject *o) {
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_7_genexpr *p = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_7_genexpr *)o;
   PyObject_GC_UnTrack(o);
   Py_CLEAR(p->__pyx_outer_scope);
   Py_CLEAR(p->__pyx_v_i);
   Py_CLEAR(p->__pyx_t_0);
-  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_5kovit_5cjson___pyx_scope_struct_7_genexpr < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_7_genexpr)))) {
-    __pyx_freelist_5kovit_5cjson___pyx_scope_struct_7_genexpr[__pyx_freecount_5kovit_5cjson___pyx_scope_struct_7_genexpr++] = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_7_genexpr *)o);
+  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_11kovit_cjson___pyx_scope_struct_7_genexpr < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_7_genexpr)))) {
+    __pyx_freelist_11kovit_cjson___pyx_scope_struct_7_genexpr[__pyx_freecount_11kovit_cjson___pyx_scope_struct_7_genexpr++] = ((struct __pyx_obj_11kovit_cjson___pyx_scope_struct_7_genexpr *)o);
   } else {
     (*Py_TYPE(o)->tp_free)(o);
   }
 }
 
-static int __pyx_tp_traverse_5kovit_5cjson___pyx_scope_struct_7_genexpr(PyObject *o, visitproc v, void *a) {
+static int __pyx_tp_traverse_11kovit_cjson___pyx_scope_struct_7_genexpr(PyObject *o, visitproc v, void *a) {
   int e;
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_7_genexpr *p = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_7_genexpr *)o;
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_7_genexpr *p = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_7_genexpr *)o;
   if (p->__pyx_outer_scope) {
     e = (*v)(((PyObject *)p->__pyx_outer_scope), a); if (e) return e;
   }
@@ -10615,12 +10615,12 @@ static int __pyx_tp_traverse_5kovit_5cjson___pyx_scope_struct_7_genexpr(PyObject
   return 0;
 }
 
-static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_7_genexpr = {
+static PyTypeObject __pyx_type_11kovit_cjson___pyx_scope_struct_7_genexpr = {
   PyVarObject_HEAD_INIT(0, 0)
-  "kovit.cjson.__pyx_scope_struct_7_genexpr", /*tp_name*/
-  sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_7_genexpr), /*tp_basicsize*/
+  "kovit_cjson.__pyx_scope_struct_7_genexpr", /*tp_name*/
+  sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_7_genexpr), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_5kovit_5cjson___pyx_scope_struct_7_genexpr, /*tp_dealloc*/
+  __pyx_tp_dealloc_11kovit_cjson___pyx_scope_struct_7_genexpr, /*tp_dealloc*/
   0, /*tp_print*/
   0, /*tp_getattr*/
   0, /*tp_setattr*/
@@ -10642,7 +10642,7 @@ static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_7_genexpr = {
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
   0, /*tp_doc*/
-  __pyx_tp_traverse_5kovit_5cjson___pyx_scope_struct_7_genexpr, /*tp_traverse*/
+  __pyx_tp_traverse_11kovit_cjson___pyx_scope_struct_7_genexpr, /*tp_traverse*/
   0, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
@@ -10658,7 +10658,7 @@ static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_7_genexpr = {
   0, /*tp_dictoffset*/
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_5kovit_5cjson___pyx_scope_struct_7_genexpr, /*tp_new*/
+  __pyx_tp_new_11kovit_cjson___pyx_scope_struct_7_genexpr, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -10673,14 +10673,14 @@ static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_7_genexpr = {
   #endif
 };
 
-static struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_8_dump_json_big *__pyx_freelist_5kovit_5cjson___pyx_scope_struct_8_dump_json_big[8];
-static int __pyx_freecount_5kovit_5cjson___pyx_scope_struct_8_dump_json_big = 0;
+static struct __pyx_obj_11kovit_cjson___pyx_scope_struct_8_dump_json_big *__pyx_freelist_11kovit_cjson___pyx_scope_struct_8_dump_json_big[8];
+static int __pyx_freecount_11kovit_cjson___pyx_scope_struct_8_dump_json_big = 0;
 
-static PyObject *__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_8_dump_json_big(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
+static PyObject *__pyx_tp_new_11kovit_cjson___pyx_scope_struct_8_dump_json_big(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
   PyObject *o;
-  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_5kovit_5cjson___pyx_scope_struct_8_dump_json_big > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_8_dump_json_big)))) {
-    o = (PyObject*)__pyx_freelist_5kovit_5cjson___pyx_scope_struct_8_dump_json_big[--__pyx_freecount_5kovit_5cjson___pyx_scope_struct_8_dump_json_big];
-    memset(o, 0, sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_8_dump_json_big));
+  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_11kovit_cjson___pyx_scope_struct_8_dump_json_big > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_8_dump_json_big)))) {
+    o = (PyObject*)__pyx_freelist_11kovit_cjson___pyx_scope_struct_8_dump_json_big[--__pyx_freecount_11kovit_cjson___pyx_scope_struct_8_dump_json_big];
+    memset(o, 0, sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_8_dump_json_big));
     (void) PyObject_INIT(o, t);
     PyObject_GC_Track(o);
   } else {
@@ -10690,21 +10690,21 @@ static PyObject *__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_8_dump_json_big(P
   return o;
 }
 
-static void __pyx_tp_dealloc_5kovit_5cjson___pyx_scope_struct_8_dump_json_big(PyObject *o) {
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_8_dump_json_big *p = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_8_dump_json_big *)o;
+static void __pyx_tp_dealloc_11kovit_cjson___pyx_scope_struct_8_dump_json_big(PyObject *o) {
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_8_dump_json_big *p = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_8_dump_json_big *)o;
   PyObject_GC_UnTrack(o);
   Py_CLEAR(p->__pyx_v_codes);
   Py_CLEAR(p->__pyx_v_file);
-  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_5kovit_5cjson___pyx_scope_struct_8_dump_json_big < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_8_dump_json_big)))) {
-    __pyx_freelist_5kovit_5cjson___pyx_scope_struct_8_dump_json_big[__pyx_freecount_5kovit_5cjson___pyx_scope_struct_8_dump_json_big++] = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_8_dump_json_big *)o);
+  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_11kovit_cjson___pyx_scope_struct_8_dump_json_big < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_8_dump_json_big)))) {
+    __pyx_freelist_11kovit_cjson___pyx_scope_struct_8_dump_json_big[__pyx_freecount_11kovit_cjson___pyx_scope_struct_8_dump_json_big++] = ((struct __pyx_obj_11kovit_cjson___pyx_scope_struct_8_dump_json_big *)o);
   } else {
     (*Py_TYPE(o)->tp_free)(o);
   }
 }
 
-static int __pyx_tp_traverse_5kovit_5cjson___pyx_scope_struct_8_dump_json_big(PyObject *o, visitproc v, void *a) {
+static int __pyx_tp_traverse_11kovit_cjson___pyx_scope_struct_8_dump_json_big(PyObject *o, visitproc v, void *a) {
   int e;
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_8_dump_json_big *p = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_8_dump_json_big *)o;
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_8_dump_json_big *p = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_8_dump_json_big *)o;
   if (p->__pyx_v_codes) {
     e = (*v)(p->__pyx_v_codes, a); if (e) return e;
   }
@@ -10714,9 +10714,9 @@ static int __pyx_tp_traverse_5kovit_5cjson___pyx_scope_struct_8_dump_json_big(Py
   return 0;
 }
 
-static int __pyx_tp_clear_5kovit_5cjson___pyx_scope_struct_8_dump_json_big(PyObject *o) {
+static int __pyx_tp_clear_11kovit_cjson___pyx_scope_struct_8_dump_json_big(PyObject *o) {
   PyObject* tmp;
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_8_dump_json_big *p = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_8_dump_json_big *)o;
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_8_dump_json_big *p = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_8_dump_json_big *)o;
   tmp = ((PyObject*)p->__pyx_v_codes);
   p->__pyx_v_codes = ((PyObject*)Py_None); Py_INCREF(Py_None);
   Py_XDECREF(tmp);
@@ -10726,12 +10726,12 @@ static int __pyx_tp_clear_5kovit_5cjson___pyx_scope_struct_8_dump_json_big(PyObj
   return 0;
 }
 
-static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_8_dump_json_big = {
+static PyTypeObject __pyx_type_11kovit_cjson___pyx_scope_struct_8_dump_json_big = {
   PyVarObject_HEAD_INIT(0, 0)
-  "kovit.cjson.__pyx_scope_struct_8_dump_json_big", /*tp_name*/
-  sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_8_dump_json_big), /*tp_basicsize*/
+  "kovit_cjson.__pyx_scope_struct_8_dump_json_big", /*tp_name*/
+  sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_8_dump_json_big), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_5kovit_5cjson___pyx_scope_struct_8_dump_json_big, /*tp_dealloc*/
+  __pyx_tp_dealloc_11kovit_cjson___pyx_scope_struct_8_dump_json_big, /*tp_dealloc*/
   0, /*tp_print*/
   0, /*tp_getattr*/
   0, /*tp_setattr*/
@@ -10753,8 +10753,8 @@ static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_8_dump_json_big 
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
   0, /*tp_doc*/
-  __pyx_tp_traverse_5kovit_5cjson___pyx_scope_struct_8_dump_json_big, /*tp_traverse*/
-  __pyx_tp_clear_5kovit_5cjson___pyx_scope_struct_8_dump_json_big, /*tp_clear*/
+  __pyx_tp_traverse_11kovit_cjson___pyx_scope_struct_8_dump_json_big, /*tp_traverse*/
+  __pyx_tp_clear_11kovit_cjson___pyx_scope_struct_8_dump_json_big, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
@@ -10769,7 +10769,7 @@ static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_8_dump_json_big 
   0, /*tp_dictoffset*/
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_5kovit_5cjson___pyx_scope_struct_8_dump_json_big, /*tp_new*/
+  __pyx_tp_new_11kovit_cjson___pyx_scope_struct_8_dump_json_big, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -10784,14 +10784,14 @@ static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_8_dump_json_big 
   #endif
 };
 
-static struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_9_write_next_start *__pyx_freelist_5kovit_5cjson___pyx_scope_struct_9_write_next_start[8];
-static int __pyx_freecount_5kovit_5cjson___pyx_scope_struct_9_write_next_start = 0;
+static struct __pyx_obj_11kovit_cjson___pyx_scope_struct_9_write_next_start *__pyx_freelist_11kovit_cjson___pyx_scope_struct_9_write_next_start[8];
+static int __pyx_freecount_11kovit_cjson___pyx_scope_struct_9_write_next_start = 0;
 
-static PyObject *__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_9_write_next_start(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
+static PyObject *__pyx_tp_new_11kovit_cjson___pyx_scope_struct_9_write_next_start(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
   PyObject *o;
-  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_5kovit_5cjson___pyx_scope_struct_9_write_next_start > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_9_write_next_start)))) {
-    o = (PyObject*)__pyx_freelist_5kovit_5cjson___pyx_scope_struct_9_write_next_start[--__pyx_freecount_5kovit_5cjson___pyx_scope_struct_9_write_next_start];
-    memset(o, 0, sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_9_write_next_start));
+  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_11kovit_cjson___pyx_scope_struct_9_write_next_start > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_9_write_next_start)))) {
+    o = (PyObject*)__pyx_freelist_11kovit_cjson___pyx_scope_struct_9_write_next_start[--__pyx_freecount_11kovit_cjson___pyx_scope_struct_9_write_next_start];
+    memset(o, 0, sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_9_write_next_start));
     (void) PyObject_INIT(o, t);
     PyObject_GC_Track(o);
   } else {
@@ -10801,21 +10801,21 @@ static PyObject *__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_9_write_next_star
   return o;
 }
 
-static void __pyx_tp_dealloc_5kovit_5cjson___pyx_scope_struct_9_write_next_start(PyObject *o) {
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_9_write_next_start *p = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_9_write_next_start *)o;
+static void __pyx_tp_dealloc_11kovit_cjson___pyx_scope_struct_9_write_next_start(PyObject *o) {
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_9_write_next_start *p = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_9_write_next_start *)o;
   PyObject_GC_UnTrack(o);
   Py_CLEAR(p->__pyx_outer_scope);
   Py_CLEAR(p->__pyx_v_next_start);
-  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_5kovit_5cjson___pyx_scope_struct_9_write_next_start < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_9_write_next_start)))) {
-    __pyx_freelist_5kovit_5cjson___pyx_scope_struct_9_write_next_start[__pyx_freecount_5kovit_5cjson___pyx_scope_struct_9_write_next_start++] = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_9_write_next_start *)o);
+  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_11kovit_cjson___pyx_scope_struct_9_write_next_start < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_9_write_next_start)))) {
+    __pyx_freelist_11kovit_cjson___pyx_scope_struct_9_write_next_start[__pyx_freecount_11kovit_cjson___pyx_scope_struct_9_write_next_start++] = ((struct __pyx_obj_11kovit_cjson___pyx_scope_struct_9_write_next_start *)o);
   } else {
     (*Py_TYPE(o)->tp_free)(o);
   }
 }
 
-static int __pyx_tp_traverse_5kovit_5cjson___pyx_scope_struct_9_write_next_start(PyObject *o, visitproc v, void *a) {
+static int __pyx_tp_traverse_11kovit_cjson___pyx_scope_struct_9_write_next_start(PyObject *o, visitproc v, void *a) {
   int e;
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_9_write_next_start *p = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_9_write_next_start *)o;
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_9_write_next_start *p = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_9_write_next_start *)o;
   if (p->__pyx_outer_scope) {
     e = (*v)(((PyObject *)p->__pyx_outer_scope), a); if (e) return e;
   }
@@ -10825,11 +10825,11 @@ static int __pyx_tp_traverse_5kovit_5cjson___pyx_scope_struct_9_write_next_start
   return 0;
 }
 
-static int __pyx_tp_clear_5kovit_5cjson___pyx_scope_struct_9_write_next_start(PyObject *o) {
+static int __pyx_tp_clear_11kovit_cjson___pyx_scope_struct_9_write_next_start(PyObject *o) {
   PyObject* tmp;
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_9_write_next_start *p = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_9_write_next_start *)o;
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_9_write_next_start *p = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_9_write_next_start *)o;
   tmp = ((PyObject*)p->__pyx_outer_scope);
-  p->__pyx_outer_scope = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_8_dump_json_big *)Py_None); Py_INCREF(Py_None);
+  p->__pyx_outer_scope = ((struct __pyx_obj_11kovit_cjson___pyx_scope_struct_8_dump_json_big *)Py_None); Py_INCREF(Py_None);
   Py_XDECREF(tmp);
   tmp = ((PyObject*)p->__pyx_v_next_start);
   p->__pyx_v_next_start = Py_None; Py_INCREF(Py_None);
@@ -10837,12 +10837,12 @@ static int __pyx_tp_clear_5kovit_5cjson___pyx_scope_struct_9_write_next_start(Py
   return 0;
 }
 
-static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_9_write_next_start = {
+static PyTypeObject __pyx_type_11kovit_cjson___pyx_scope_struct_9_write_next_start = {
   PyVarObject_HEAD_INIT(0, 0)
-  "kovit.cjson.__pyx_scope_struct_9_write_next_start", /*tp_name*/
-  sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_9_write_next_start), /*tp_basicsize*/
+  "kovit_cjson.__pyx_scope_struct_9_write_next_start", /*tp_name*/
+  sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_9_write_next_start), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_5kovit_5cjson___pyx_scope_struct_9_write_next_start, /*tp_dealloc*/
+  __pyx_tp_dealloc_11kovit_cjson___pyx_scope_struct_9_write_next_start, /*tp_dealloc*/
   0, /*tp_print*/
   0, /*tp_getattr*/
   0, /*tp_setattr*/
@@ -10864,8 +10864,8 @@ static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_9_write_next_sta
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
   0, /*tp_doc*/
-  __pyx_tp_traverse_5kovit_5cjson___pyx_scope_struct_9_write_next_start, /*tp_traverse*/
-  __pyx_tp_clear_5kovit_5cjson___pyx_scope_struct_9_write_next_start, /*tp_clear*/
+  __pyx_tp_traverse_11kovit_cjson___pyx_scope_struct_9_write_next_start, /*tp_traverse*/
+  __pyx_tp_clear_11kovit_cjson___pyx_scope_struct_9_write_next_start, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
@@ -10880,7 +10880,7 @@ static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_9_write_next_sta
   0, /*tp_dictoffset*/
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_5kovit_5cjson___pyx_scope_struct_9_write_next_start, /*tp_new*/
+  __pyx_tp_new_11kovit_cjson___pyx_scope_struct_9_write_next_start, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -10895,14 +10895,14 @@ static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_9_write_next_sta
   #endif
 };
 
-static struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_10_genexpr *__pyx_freelist_5kovit_5cjson___pyx_scope_struct_10_genexpr[8];
-static int __pyx_freecount_5kovit_5cjson___pyx_scope_struct_10_genexpr = 0;
+static struct __pyx_obj_11kovit_cjson___pyx_scope_struct_10_genexpr *__pyx_freelist_11kovit_cjson___pyx_scope_struct_10_genexpr[8];
+static int __pyx_freecount_11kovit_cjson___pyx_scope_struct_10_genexpr = 0;
 
-static PyObject *__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_10_genexpr(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
+static PyObject *__pyx_tp_new_11kovit_cjson___pyx_scope_struct_10_genexpr(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
   PyObject *o;
-  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_5kovit_5cjson___pyx_scope_struct_10_genexpr > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_10_genexpr)))) {
-    o = (PyObject*)__pyx_freelist_5kovit_5cjson___pyx_scope_struct_10_genexpr[--__pyx_freecount_5kovit_5cjson___pyx_scope_struct_10_genexpr];
-    memset(o, 0, sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_10_genexpr));
+  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_11kovit_cjson___pyx_scope_struct_10_genexpr > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_10_genexpr)))) {
+    o = (PyObject*)__pyx_freelist_11kovit_cjson___pyx_scope_struct_10_genexpr[--__pyx_freecount_11kovit_cjson___pyx_scope_struct_10_genexpr];
+    memset(o, 0, sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_10_genexpr));
     (void) PyObject_INIT(o, t);
     PyObject_GC_Track(o);
   } else {
@@ -10912,22 +10912,22 @@ static PyObject *__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_10_genexpr(PyType
   return o;
 }
 
-static void __pyx_tp_dealloc_5kovit_5cjson___pyx_scope_struct_10_genexpr(PyObject *o) {
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_10_genexpr *p = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_10_genexpr *)o;
+static void __pyx_tp_dealloc_11kovit_cjson___pyx_scope_struct_10_genexpr(PyObject *o) {
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_10_genexpr *p = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_10_genexpr *)o;
   PyObject_GC_UnTrack(o);
   Py_CLEAR(p->__pyx_outer_scope);
   Py_CLEAR(p->__pyx_v_n);
   Py_CLEAR(p->__pyx_t_0);
-  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_5kovit_5cjson___pyx_scope_struct_10_genexpr < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_10_genexpr)))) {
-    __pyx_freelist_5kovit_5cjson___pyx_scope_struct_10_genexpr[__pyx_freecount_5kovit_5cjson___pyx_scope_struct_10_genexpr++] = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_10_genexpr *)o);
+  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_11kovit_cjson___pyx_scope_struct_10_genexpr < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_10_genexpr)))) {
+    __pyx_freelist_11kovit_cjson___pyx_scope_struct_10_genexpr[__pyx_freecount_11kovit_cjson___pyx_scope_struct_10_genexpr++] = ((struct __pyx_obj_11kovit_cjson___pyx_scope_struct_10_genexpr *)o);
   } else {
     (*Py_TYPE(o)->tp_free)(o);
   }
 }
 
-static int __pyx_tp_traverse_5kovit_5cjson___pyx_scope_struct_10_genexpr(PyObject *o, visitproc v, void *a) {
+static int __pyx_tp_traverse_11kovit_cjson___pyx_scope_struct_10_genexpr(PyObject *o, visitproc v, void *a) {
   int e;
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_10_genexpr *p = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_10_genexpr *)o;
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_10_genexpr *p = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_10_genexpr *)o;
   if (p->__pyx_outer_scope) {
     e = (*v)(((PyObject *)p->__pyx_outer_scope), a); if (e) return e;
   }
@@ -10940,12 +10940,12 @@ static int __pyx_tp_traverse_5kovit_5cjson___pyx_scope_struct_10_genexpr(PyObjec
   return 0;
 }
 
-static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_10_genexpr = {
+static PyTypeObject __pyx_type_11kovit_cjson___pyx_scope_struct_10_genexpr = {
   PyVarObject_HEAD_INIT(0, 0)
-  "kovit.cjson.__pyx_scope_struct_10_genexpr", /*tp_name*/
-  sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_10_genexpr), /*tp_basicsize*/
+  "kovit_cjson.__pyx_scope_struct_10_genexpr", /*tp_name*/
+  sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_10_genexpr), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_5kovit_5cjson___pyx_scope_struct_10_genexpr, /*tp_dealloc*/
+  __pyx_tp_dealloc_11kovit_cjson___pyx_scope_struct_10_genexpr, /*tp_dealloc*/
   0, /*tp_print*/
   0, /*tp_getattr*/
   0, /*tp_setattr*/
@@ -10967,7 +10967,7 @@ static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_10_genexpr = {
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
   0, /*tp_doc*/
-  __pyx_tp_traverse_5kovit_5cjson___pyx_scope_struct_10_genexpr, /*tp_traverse*/
+  __pyx_tp_traverse_11kovit_cjson___pyx_scope_struct_10_genexpr, /*tp_traverse*/
   0, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
@@ -10983,7 +10983,7 @@ static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_10_genexpr = {
   0, /*tp_dictoffset*/
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_5kovit_5cjson___pyx_scope_struct_10_genexpr, /*tp_new*/
+  __pyx_tp_new_11kovit_cjson___pyx_scope_struct_10_genexpr, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -10998,14 +10998,14 @@ static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_10_genexpr = {
   #endif
 };
 
-static struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_11_load_json_big *__pyx_freelist_5kovit_5cjson___pyx_scope_struct_11_load_json_big[8];
-static int __pyx_freecount_5kovit_5cjson___pyx_scope_struct_11_load_json_big = 0;
+static struct __pyx_obj_11kovit_cjson___pyx_scope_struct_11_load_json_big *__pyx_freelist_11kovit_cjson___pyx_scope_struct_11_load_json_big[8];
+static int __pyx_freecount_11kovit_cjson___pyx_scope_struct_11_load_json_big = 0;
 
-static PyObject *__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_11_load_json_big(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
+static PyObject *__pyx_tp_new_11kovit_cjson___pyx_scope_struct_11_load_json_big(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
   PyObject *o;
-  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_5kovit_5cjson___pyx_scope_struct_11_load_json_big > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_11_load_json_big)))) {
-    o = (PyObject*)__pyx_freelist_5kovit_5cjson___pyx_scope_struct_11_load_json_big[--__pyx_freecount_5kovit_5cjson___pyx_scope_struct_11_load_json_big];
-    memset(o, 0, sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_11_load_json_big));
+  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_11kovit_cjson___pyx_scope_struct_11_load_json_big > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_11_load_json_big)))) {
+    o = (PyObject*)__pyx_freelist_11kovit_cjson___pyx_scope_struct_11_load_json_big[--__pyx_freecount_11kovit_cjson___pyx_scope_struct_11_load_json_big];
+    memset(o, 0, sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_11_load_json_big));
     (void) PyObject_INIT(o, t);
     PyObject_GC_Track(o);
   } else {
@@ -11015,21 +11015,21 @@ static PyObject *__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_11_load_json_big(
   return o;
 }
 
-static void __pyx_tp_dealloc_5kovit_5cjson___pyx_scope_struct_11_load_json_big(PyObject *o) {
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_11_load_json_big *p = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_11_load_json_big *)o;
+static void __pyx_tp_dealloc_11kovit_cjson___pyx_scope_struct_11_load_json_big(PyObject *o) {
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_11_load_json_big *p = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_11_load_json_big *)o;
   PyObject_GC_UnTrack(o);
   Py_CLEAR(p->__pyx_v_builder);
   Py_CLEAR(p->__pyx_v_codes);
-  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_5kovit_5cjson___pyx_scope_struct_11_load_json_big < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_11_load_json_big)))) {
-    __pyx_freelist_5kovit_5cjson___pyx_scope_struct_11_load_json_big[__pyx_freecount_5kovit_5cjson___pyx_scope_struct_11_load_json_big++] = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_11_load_json_big *)o);
+  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_11kovit_cjson___pyx_scope_struct_11_load_json_big < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_11_load_json_big)))) {
+    __pyx_freelist_11kovit_cjson___pyx_scope_struct_11_load_json_big[__pyx_freecount_11kovit_cjson___pyx_scope_struct_11_load_json_big++] = ((struct __pyx_obj_11kovit_cjson___pyx_scope_struct_11_load_json_big *)o);
   } else {
     (*Py_TYPE(o)->tp_free)(o);
   }
 }
 
-static int __pyx_tp_traverse_5kovit_5cjson___pyx_scope_struct_11_load_json_big(PyObject *o, visitproc v, void *a) {
+static int __pyx_tp_traverse_11kovit_cjson___pyx_scope_struct_11_load_json_big(PyObject *o, visitproc v, void *a) {
   int e;
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_11_load_json_big *p = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_11_load_json_big *)o;
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_11_load_json_big *p = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_11_load_json_big *)o;
   if (p->__pyx_v_builder) {
     e = (*v)(p->__pyx_v_builder, a); if (e) return e;
   }
@@ -11039,9 +11039,9 @@ static int __pyx_tp_traverse_5kovit_5cjson___pyx_scope_struct_11_load_json_big(P
   return 0;
 }
 
-static int __pyx_tp_clear_5kovit_5cjson___pyx_scope_struct_11_load_json_big(PyObject *o) {
+static int __pyx_tp_clear_11kovit_cjson___pyx_scope_struct_11_load_json_big(PyObject *o) {
   PyObject* tmp;
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_11_load_json_big *p = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_11_load_json_big *)o;
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_11_load_json_big *p = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_11_load_json_big *)o;
   tmp = ((PyObject*)p->__pyx_v_builder);
   p->__pyx_v_builder = Py_None; Py_INCREF(Py_None);
   Py_XDECREF(tmp);
@@ -11051,12 +11051,12 @@ static int __pyx_tp_clear_5kovit_5cjson___pyx_scope_struct_11_load_json_big(PyOb
   return 0;
 }
 
-static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_11_load_json_big = {
+static PyTypeObject __pyx_type_11kovit_cjson___pyx_scope_struct_11_load_json_big = {
   PyVarObject_HEAD_INIT(0, 0)
-  "kovit.cjson.__pyx_scope_struct_11_load_json_big", /*tp_name*/
-  sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_11_load_json_big), /*tp_basicsize*/
+  "kovit_cjson.__pyx_scope_struct_11_load_json_big", /*tp_name*/
+  sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_11_load_json_big), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_5kovit_5cjson___pyx_scope_struct_11_load_json_big, /*tp_dealloc*/
+  __pyx_tp_dealloc_11kovit_cjson___pyx_scope_struct_11_load_json_big, /*tp_dealloc*/
   0, /*tp_print*/
   0, /*tp_getattr*/
   0, /*tp_setattr*/
@@ -11078,8 +11078,8 @@ static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_11_load_json_big
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
   0, /*tp_doc*/
-  __pyx_tp_traverse_5kovit_5cjson___pyx_scope_struct_11_load_json_big, /*tp_traverse*/
-  __pyx_tp_clear_5kovit_5cjson___pyx_scope_struct_11_load_json_big, /*tp_clear*/
+  __pyx_tp_traverse_11kovit_cjson___pyx_scope_struct_11_load_json_big, /*tp_traverse*/
+  __pyx_tp_clear_11kovit_cjson___pyx_scope_struct_11_load_json_big, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
@@ -11094,7 +11094,7 @@ static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_11_load_json_big
   0, /*tp_dictoffset*/
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_5kovit_5cjson___pyx_scope_struct_11_load_json_big, /*tp_new*/
+  __pyx_tp_new_11kovit_cjson___pyx_scope_struct_11_load_json_big, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -11109,14 +11109,14 @@ static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_11_load_json_big
   #endif
 };
 
-static struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_12_genexpr *__pyx_freelist_5kovit_5cjson___pyx_scope_struct_12_genexpr[8];
-static int __pyx_freecount_5kovit_5cjson___pyx_scope_struct_12_genexpr = 0;
+static struct __pyx_obj_11kovit_cjson___pyx_scope_struct_12_genexpr *__pyx_freelist_11kovit_cjson___pyx_scope_struct_12_genexpr[8];
+static int __pyx_freecount_11kovit_cjson___pyx_scope_struct_12_genexpr = 0;
 
-static PyObject *__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_12_genexpr(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
+static PyObject *__pyx_tp_new_11kovit_cjson___pyx_scope_struct_12_genexpr(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
   PyObject *o;
-  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_5kovit_5cjson___pyx_scope_struct_12_genexpr > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_12_genexpr)))) {
-    o = (PyObject*)__pyx_freelist_5kovit_5cjson___pyx_scope_struct_12_genexpr[--__pyx_freecount_5kovit_5cjson___pyx_scope_struct_12_genexpr];
-    memset(o, 0, sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_12_genexpr));
+  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_11kovit_cjson___pyx_scope_struct_12_genexpr > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_12_genexpr)))) {
+    o = (PyObject*)__pyx_freelist_11kovit_cjson___pyx_scope_struct_12_genexpr[--__pyx_freecount_11kovit_cjson___pyx_scope_struct_12_genexpr];
+    memset(o, 0, sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_12_genexpr));
     (void) PyObject_INIT(o, t);
     PyObject_GC_Track(o);
   } else {
@@ -11126,22 +11126,22 @@ static PyObject *__pyx_tp_new_5kovit_5cjson___pyx_scope_struct_12_genexpr(PyType
   return o;
 }
 
-static void __pyx_tp_dealloc_5kovit_5cjson___pyx_scope_struct_12_genexpr(PyObject *o) {
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_12_genexpr *p = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_12_genexpr *)o;
+static void __pyx_tp_dealloc_11kovit_cjson___pyx_scope_struct_12_genexpr(PyObject *o) {
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_12_genexpr *p = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_12_genexpr *)o;
   PyObject_GC_UnTrack(o);
   Py_CLEAR(p->__pyx_outer_scope);
   Py_CLEAR(p->__pyx_v_i);
   Py_CLEAR(p->__pyx_t_0);
-  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_5kovit_5cjson___pyx_scope_struct_12_genexpr < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_12_genexpr)))) {
-    __pyx_freelist_5kovit_5cjson___pyx_scope_struct_12_genexpr[__pyx_freecount_5kovit_5cjson___pyx_scope_struct_12_genexpr++] = ((struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_12_genexpr *)o);
+  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_11kovit_cjson___pyx_scope_struct_12_genexpr < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_12_genexpr)))) {
+    __pyx_freelist_11kovit_cjson___pyx_scope_struct_12_genexpr[__pyx_freecount_11kovit_cjson___pyx_scope_struct_12_genexpr++] = ((struct __pyx_obj_11kovit_cjson___pyx_scope_struct_12_genexpr *)o);
   } else {
     (*Py_TYPE(o)->tp_free)(o);
   }
 }
 
-static int __pyx_tp_traverse_5kovit_5cjson___pyx_scope_struct_12_genexpr(PyObject *o, visitproc v, void *a) {
+static int __pyx_tp_traverse_11kovit_cjson___pyx_scope_struct_12_genexpr(PyObject *o, visitproc v, void *a) {
   int e;
-  struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_12_genexpr *p = (struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_12_genexpr *)o;
+  struct __pyx_obj_11kovit_cjson___pyx_scope_struct_12_genexpr *p = (struct __pyx_obj_11kovit_cjson___pyx_scope_struct_12_genexpr *)o;
   if (p->__pyx_outer_scope) {
     e = (*v)(((PyObject *)p->__pyx_outer_scope), a); if (e) return e;
   }
@@ -11154,12 +11154,12 @@ static int __pyx_tp_traverse_5kovit_5cjson___pyx_scope_struct_12_genexpr(PyObjec
   return 0;
 }
 
-static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_12_genexpr = {
+static PyTypeObject __pyx_type_11kovit_cjson___pyx_scope_struct_12_genexpr = {
   PyVarObject_HEAD_INIT(0, 0)
-  "kovit.cjson.__pyx_scope_struct_12_genexpr", /*tp_name*/
-  sizeof(struct __pyx_obj_5kovit_5cjson___pyx_scope_struct_12_genexpr), /*tp_basicsize*/
+  "kovit_cjson.__pyx_scope_struct_12_genexpr", /*tp_name*/
+  sizeof(struct __pyx_obj_11kovit_cjson___pyx_scope_struct_12_genexpr), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_5kovit_5cjson___pyx_scope_struct_12_genexpr, /*tp_dealloc*/
+  __pyx_tp_dealloc_11kovit_cjson___pyx_scope_struct_12_genexpr, /*tp_dealloc*/
   0, /*tp_print*/
   0, /*tp_getattr*/
   0, /*tp_setattr*/
@@ -11181,7 +11181,7 @@ static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_12_genexpr = {
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
   0, /*tp_doc*/
-  __pyx_tp_traverse_5kovit_5cjson___pyx_scope_struct_12_genexpr, /*tp_traverse*/
+  __pyx_tp_traverse_11kovit_cjson___pyx_scope_struct_12_genexpr, /*tp_traverse*/
   0, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
@@ -11197,7 +11197,7 @@ static PyTypeObject __pyx_type_5kovit_5cjson___pyx_scope_struct_12_genexpr = {
   0, /*tp_dictoffset*/
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_5kovit_5cjson___pyx_scope_struct_12_genexpr, /*tp_new*/
+  __pyx_tp_new_11kovit_cjson___pyx_scope_struct_12_genexpr, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -11219,17 +11219,17 @@ static PyMethodDef __pyx_methods[] = {
 #if PY_MAJOR_VERSION >= 3
 #if CYTHON_PEP489_MULTI_PHASE_INIT
 static PyObject* __pyx_pymod_create(PyObject *spec, PyModuleDef *def); /*proto*/
-static int __pyx_pymod_exec_cjson(PyObject* module); /*proto*/
+static int __pyx_pymod_exec_kovit_cjson(PyObject* module); /*proto*/
 static PyModuleDef_Slot __pyx_moduledef_slots[] = {
   {Py_mod_create, (void*)__pyx_pymod_create},
-  {Py_mod_exec, (void*)__pyx_pymod_exec_cjson},
+  {Py_mod_exec, (void*)__pyx_pymod_exec_kovit_cjson},
   {0, NULL}
 };
 #endif
 
 static struct PyModuleDef __pyx_moduledef = {
     PyModuleDef_HEAD_INIT,
-    "cjson",
+    "kovit_cjson",
     0, /* m_doc */
   #if CYTHON_PEP489_MULTI_PHASE_INIT
     0, /* m_size */
@@ -11667,84 +11667,84 @@ static int __Pyx_modinit_type_init_code(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_modinit_type_init_code", 0);
   /*--- Type init code ---*/
-  if (PyType_Ready(&__pyx_type_5kovit_5cjson___pyx_scope_struct__dump_json_small) < 0) __PYX_ERR(0, 41, __pyx_L1_error)
-  __pyx_type_5kovit_5cjson___pyx_scope_struct__dump_json_small.tp_print = 0;
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_5kovit_5cjson___pyx_scope_struct__dump_json_small.tp_dictoffset && __pyx_type_5kovit_5cjson___pyx_scope_struct__dump_json_small.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_5kovit_5cjson___pyx_scope_struct__dump_json_small.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
+  if (PyType_Ready(&__pyx_type_11kovit_cjson___pyx_scope_struct__dump_json_small) < 0) __PYX_ERR(0, 41, __pyx_L1_error)
+  __pyx_type_11kovit_cjson___pyx_scope_struct__dump_json_small.tp_print = 0;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_11kovit_cjson___pyx_scope_struct__dump_json_small.tp_dictoffset && __pyx_type_11kovit_cjson___pyx_scope_struct__dump_json_small.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_11kovit_cjson___pyx_scope_struct__dump_json_small.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
   }
-  __pyx_ptype_5kovit_5cjson___pyx_scope_struct__dump_json_small = &__pyx_type_5kovit_5cjson___pyx_scope_struct__dump_json_small;
-  if (PyType_Ready(&__pyx_type_5kovit_5cjson___pyx_scope_struct_1_gen_next_start) < 0) __PYX_ERR(0, 61, __pyx_L1_error)
-  __pyx_type_5kovit_5cjson___pyx_scope_struct_1_gen_next_start.tp_print = 0;
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_5kovit_5cjson___pyx_scope_struct_1_gen_next_start.tp_dictoffset && __pyx_type_5kovit_5cjson___pyx_scope_struct_1_gen_next_start.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_5kovit_5cjson___pyx_scope_struct_1_gen_next_start.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
+  __pyx_ptype_11kovit_cjson___pyx_scope_struct__dump_json_small = &__pyx_type_11kovit_cjson___pyx_scope_struct__dump_json_small;
+  if (PyType_Ready(&__pyx_type_11kovit_cjson___pyx_scope_struct_1_gen_next_start) < 0) __PYX_ERR(0, 61, __pyx_L1_error)
+  __pyx_type_11kovit_cjson___pyx_scope_struct_1_gen_next_start.tp_print = 0;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_11kovit_cjson___pyx_scope_struct_1_gen_next_start.tp_dictoffset && __pyx_type_11kovit_cjson___pyx_scope_struct_1_gen_next_start.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_11kovit_cjson___pyx_scope_struct_1_gen_next_start.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
   }
-  __pyx_ptype_5kovit_5cjson___pyx_scope_struct_1_gen_next_start = &__pyx_type_5kovit_5cjson___pyx_scope_struct_1_gen_next_start;
-  if (PyType_Ready(&__pyx_type_5kovit_5cjson___pyx_scope_struct_2_genexpr) < 0) __PYX_ERR(0, 63, __pyx_L1_error)
-  __pyx_type_5kovit_5cjson___pyx_scope_struct_2_genexpr.tp_print = 0;
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_5kovit_5cjson___pyx_scope_struct_2_genexpr.tp_dictoffset && __pyx_type_5kovit_5cjson___pyx_scope_struct_2_genexpr.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_5kovit_5cjson___pyx_scope_struct_2_genexpr.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
+  __pyx_ptype_11kovit_cjson___pyx_scope_struct_1_gen_next_start = &__pyx_type_11kovit_cjson___pyx_scope_struct_1_gen_next_start;
+  if (PyType_Ready(&__pyx_type_11kovit_cjson___pyx_scope_struct_2_genexpr) < 0) __PYX_ERR(0, 63, __pyx_L1_error)
+  __pyx_type_11kovit_cjson___pyx_scope_struct_2_genexpr.tp_print = 0;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_11kovit_cjson___pyx_scope_struct_2_genexpr.tp_dictoffset && __pyx_type_11kovit_cjson___pyx_scope_struct_2_genexpr.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_11kovit_cjson___pyx_scope_struct_2_genexpr.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
   }
-  __pyx_ptype_5kovit_5cjson___pyx_scope_struct_2_genexpr = &__pyx_type_5kovit_5cjson___pyx_scope_struct_2_genexpr;
-  if (PyType_Ready(&__pyx_type_5kovit_5cjson___pyx_scope_struct_3_gen_next_start) < 0) __PYX_ERR(0, 69, __pyx_L1_error)
-  __pyx_type_5kovit_5cjson___pyx_scope_struct_3_gen_next_start.tp_print = 0;
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_5kovit_5cjson___pyx_scope_struct_3_gen_next_start.tp_dictoffset && __pyx_type_5kovit_5cjson___pyx_scope_struct_3_gen_next_start.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_5kovit_5cjson___pyx_scope_struct_3_gen_next_start.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
+  __pyx_ptype_11kovit_cjson___pyx_scope_struct_2_genexpr = &__pyx_type_11kovit_cjson___pyx_scope_struct_2_genexpr;
+  if (PyType_Ready(&__pyx_type_11kovit_cjson___pyx_scope_struct_3_gen_next_start) < 0) __PYX_ERR(0, 69, __pyx_L1_error)
+  __pyx_type_11kovit_cjson___pyx_scope_struct_3_gen_next_start.tp_print = 0;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_11kovit_cjson___pyx_scope_struct_3_gen_next_start.tp_dictoffset && __pyx_type_11kovit_cjson___pyx_scope_struct_3_gen_next_start.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_11kovit_cjson___pyx_scope_struct_3_gen_next_start.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
   }
-  __pyx_ptype_5kovit_5cjson___pyx_scope_struct_3_gen_next_start = &__pyx_type_5kovit_5cjson___pyx_scope_struct_3_gen_next_start;
-  if (PyType_Ready(&__pyx_type_5kovit_5cjson___pyx_scope_struct_4_gen_chain) < 0) __PYX_ERR(0, 74, __pyx_L1_error)
-  __pyx_type_5kovit_5cjson___pyx_scope_struct_4_gen_chain.tp_print = 0;
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_5kovit_5cjson___pyx_scope_struct_4_gen_chain.tp_dictoffset && __pyx_type_5kovit_5cjson___pyx_scope_struct_4_gen_chain.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_5kovit_5cjson___pyx_scope_struct_4_gen_chain.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
+  __pyx_ptype_11kovit_cjson___pyx_scope_struct_3_gen_next_start = &__pyx_type_11kovit_cjson___pyx_scope_struct_3_gen_next_start;
+  if (PyType_Ready(&__pyx_type_11kovit_cjson___pyx_scope_struct_4_gen_chain) < 0) __PYX_ERR(0, 74, __pyx_L1_error)
+  __pyx_type_11kovit_cjson___pyx_scope_struct_4_gen_chain.tp_print = 0;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_11kovit_cjson___pyx_scope_struct_4_gen_chain.tp_dictoffset && __pyx_type_11kovit_cjson___pyx_scope_struct_4_gen_chain.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_11kovit_cjson___pyx_scope_struct_4_gen_chain.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
   }
-  __pyx_ptype_5kovit_5cjson___pyx_scope_struct_4_gen_chain = &__pyx_type_5kovit_5cjson___pyx_scope_struct_4_gen_chain;
-  if (PyType_Ready(&__pyx_type_5kovit_5cjson___pyx_scope_struct_5_load_json_small) < 0) __PYX_ERR(0, 82, __pyx_L1_error)
-  __pyx_type_5kovit_5cjson___pyx_scope_struct_5_load_json_small.tp_print = 0;
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_5kovit_5cjson___pyx_scope_struct_5_load_json_small.tp_dictoffset && __pyx_type_5kovit_5cjson___pyx_scope_struct_5_load_json_small.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_5kovit_5cjson___pyx_scope_struct_5_load_json_small.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
+  __pyx_ptype_11kovit_cjson___pyx_scope_struct_4_gen_chain = &__pyx_type_11kovit_cjson___pyx_scope_struct_4_gen_chain;
+  if (PyType_Ready(&__pyx_type_11kovit_cjson___pyx_scope_struct_5_load_json_small) < 0) __PYX_ERR(0, 82, __pyx_L1_error)
+  __pyx_type_11kovit_cjson___pyx_scope_struct_5_load_json_small.tp_print = 0;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_11kovit_cjson___pyx_scope_struct_5_load_json_small.tp_dictoffset && __pyx_type_11kovit_cjson___pyx_scope_struct_5_load_json_small.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_11kovit_cjson___pyx_scope_struct_5_load_json_small.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
   }
-  __pyx_ptype_5kovit_5cjson___pyx_scope_struct_5_load_json_small = &__pyx_type_5kovit_5cjson___pyx_scope_struct_5_load_json_small;
-  if (PyType_Ready(&__pyx_type_5kovit_5cjson___pyx_scope_struct_6_genexpr) < 0) __PYX_ERR(0, 95, __pyx_L1_error)
-  __pyx_type_5kovit_5cjson___pyx_scope_struct_6_genexpr.tp_print = 0;
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_5kovit_5cjson___pyx_scope_struct_6_genexpr.tp_dictoffset && __pyx_type_5kovit_5cjson___pyx_scope_struct_6_genexpr.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_5kovit_5cjson___pyx_scope_struct_6_genexpr.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
+  __pyx_ptype_11kovit_cjson___pyx_scope_struct_5_load_json_small = &__pyx_type_11kovit_cjson___pyx_scope_struct_5_load_json_small;
+  if (PyType_Ready(&__pyx_type_11kovit_cjson___pyx_scope_struct_6_genexpr) < 0) __PYX_ERR(0, 95, __pyx_L1_error)
+  __pyx_type_11kovit_cjson___pyx_scope_struct_6_genexpr.tp_print = 0;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_11kovit_cjson___pyx_scope_struct_6_genexpr.tp_dictoffset && __pyx_type_11kovit_cjson___pyx_scope_struct_6_genexpr.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_11kovit_cjson___pyx_scope_struct_6_genexpr.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
   }
-  __pyx_ptype_5kovit_5cjson___pyx_scope_struct_6_genexpr = &__pyx_type_5kovit_5cjson___pyx_scope_struct_6_genexpr;
-  if (PyType_Ready(&__pyx_type_5kovit_5cjson___pyx_scope_struct_7_genexpr) < 0) __PYX_ERR(0, 109, __pyx_L1_error)
-  __pyx_type_5kovit_5cjson___pyx_scope_struct_7_genexpr.tp_print = 0;
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_5kovit_5cjson___pyx_scope_struct_7_genexpr.tp_dictoffset && __pyx_type_5kovit_5cjson___pyx_scope_struct_7_genexpr.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_5kovit_5cjson___pyx_scope_struct_7_genexpr.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
+  __pyx_ptype_11kovit_cjson___pyx_scope_struct_6_genexpr = &__pyx_type_11kovit_cjson___pyx_scope_struct_6_genexpr;
+  if (PyType_Ready(&__pyx_type_11kovit_cjson___pyx_scope_struct_7_genexpr) < 0) __PYX_ERR(0, 109, __pyx_L1_error)
+  __pyx_type_11kovit_cjson___pyx_scope_struct_7_genexpr.tp_print = 0;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_11kovit_cjson___pyx_scope_struct_7_genexpr.tp_dictoffset && __pyx_type_11kovit_cjson___pyx_scope_struct_7_genexpr.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_11kovit_cjson___pyx_scope_struct_7_genexpr.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
   }
-  __pyx_ptype_5kovit_5cjson___pyx_scope_struct_7_genexpr = &__pyx_type_5kovit_5cjson___pyx_scope_struct_7_genexpr;
-  if (PyType_Ready(&__pyx_type_5kovit_5cjson___pyx_scope_struct_8_dump_json_big) < 0) __PYX_ERR(0, 120, __pyx_L1_error)
-  __pyx_type_5kovit_5cjson___pyx_scope_struct_8_dump_json_big.tp_print = 0;
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_5kovit_5cjson___pyx_scope_struct_8_dump_json_big.tp_dictoffset && __pyx_type_5kovit_5cjson___pyx_scope_struct_8_dump_json_big.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_5kovit_5cjson___pyx_scope_struct_8_dump_json_big.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
+  __pyx_ptype_11kovit_cjson___pyx_scope_struct_7_genexpr = &__pyx_type_11kovit_cjson___pyx_scope_struct_7_genexpr;
+  if (PyType_Ready(&__pyx_type_11kovit_cjson___pyx_scope_struct_8_dump_json_big) < 0) __PYX_ERR(0, 120, __pyx_L1_error)
+  __pyx_type_11kovit_cjson___pyx_scope_struct_8_dump_json_big.tp_print = 0;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_11kovit_cjson___pyx_scope_struct_8_dump_json_big.tp_dictoffset && __pyx_type_11kovit_cjson___pyx_scope_struct_8_dump_json_big.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_11kovit_cjson___pyx_scope_struct_8_dump_json_big.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
   }
-  __pyx_ptype_5kovit_5cjson___pyx_scope_struct_8_dump_json_big = &__pyx_type_5kovit_5cjson___pyx_scope_struct_8_dump_json_big;
-  if (PyType_Ready(&__pyx_type_5kovit_5cjson___pyx_scope_struct_9_write_next_start) < 0) __PYX_ERR(0, 144, __pyx_L1_error)
-  __pyx_type_5kovit_5cjson___pyx_scope_struct_9_write_next_start.tp_print = 0;
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_5kovit_5cjson___pyx_scope_struct_9_write_next_start.tp_dictoffset && __pyx_type_5kovit_5cjson___pyx_scope_struct_9_write_next_start.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_5kovit_5cjson___pyx_scope_struct_9_write_next_start.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
+  __pyx_ptype_11kovit_cjson___pyx_scope_struct_8_dump_json_big = &__pyx_type_11kovit_cjson___pyx_scope_struct_8_dump_json_big;
+  if (PyType_Ready(&__pyx_type_11kovit_cjson___pyx_scope_struct_9_write_next_start) < 0) __PYX_ERR(0, 144, __pyx_L1_error)
+  __pyx_type_11kovit_cjson___pyx_scope_struct_9_write_next_start.tp_print = 0;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_11kovit_cjson___pyx_scope_struct_9_write_next_start.tp_dictoffset && __pyx_type_11kovit_cjson___pyx_scope_struct_9_write_next_start.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_11kovit_cjson___pyx_scope_struct_9_write_next_start.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
   }
-  __pyx_ptype_5kovit_5cjson___pyx_scope_struct_9_write_next_start = &__pyx_type_5kovit_5cjson___pyx_scope_struct_9_write_next_start;
-  if (PyType_Ready(&__pyx_type_5kovit_5cjson___pyx_scope_struct_10_genexpr) < 0) __PYX_ERR(0, 145, __pyx_L1_error)
-  __pyx_type_5kovit_5cjson___pyx_scope_struct_10_genexpr.tp_print = 0;
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_5kovit_5cjson___pyx_scope_struct_10_genexpr.tp_dictoffset && __pyx_type_5kovit_5cjson___pyx_scope_struct_10_genexpr.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_5kovit_5cjson___pyx_scope_struct_10_genexpr.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
+  __pyx_ptype_11kovit_cjson___pyx_scope_struct_9_write_next_start = &__pyx_type_11kovit_cjson___pyx_scope_struct_9_write_next_start;
+  if (PyType_Ready(&__pyx_type_11kovit_cjson___pyx_scope_struct_10_genexpr) < 0) __PYX_ERR(0, 145, __pyx_L1_error)
+  __pyx_type_11kovit_cjson___pyx_scope_struct_10_genexpr.tp_print = 0;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_11kovit_cjson___pyx_scope_struct_10_genexpr.tp_dictoffset && __pyx_type_11kovit_cjson___pyx_scope_struct_10_genexpr.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_11kovit_cjson___pyx_scope_struct_10_genexpr.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
   }
-  __pyx_ptype_5kovit_5cjson___pyx_scope_struct_10_genexpr = &__pyx_type_5kovit_5cjson___pyx_scope_struct_10_genexpr;
-  if (PyType_Ready(&__pyx_type_5kovit_5cjson___pyx_scope_struct_11_load_json_big) < 0) __PYX_ERR(0, 174, __pyx_L1_error)
-  __pyx_type_5kovit_5cjson___pyx_scope_struct_11_load_json_big.tp_print = 0;
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_5kovit_5cjson___pyx_scope_struct_11_load_json_big.tp_dictoffset && __pyx_type_5kovit_5cjson___pyx_scope_struct_11_load_json_big.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_5kovit_5cjson___pyx_scope_struct_11_load_json_big.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
+  __pyx_ptype_11kovit_cjson___pyx_scope_struct_10_genexpr = &__pyx_type_11kovit_cjson___pyx_scope_struct_10_genexpr;
+  if (PyType_Ready(&__pyx_type_11kovit_cjson___pyx_scope_struct_11_load_json_big) < 0) __PYX_ERR(0, 174, __pyx_L1_error)
+  __pyx_type_11kovit_cjson___pyx_scope_struct_11_load_json_big.tp_print = 0;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_11kovit_cjson___pyx_scope_struct_11_load_json_big.tp_dictoffset && __pyx_type_11kovit_cjson___pyx_scope_struct_11_load_json_big.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_11kovit_cjson___pyx_scope_struct_11_load_json_big.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
   }
-  __pyx_ptype_5kovit_5cjson___pyx_scope_struct_11_load_json_big = &__pyx_type_5kovit_5cjson___pyx_scope_struct_11_load_json_big;
-  if (PyType_Ready(&__pyx_type_5kovit_5cjson___pyx_scope_struct_12_genexpr) < 0) __PYX_ERR(0, 245, __pyx_L1_error)
-  __pyx_type_5kovit_5cjson___pyx_scope_struct_12_genexpr.tp_print = 0;
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_5kovit_5cjson___pyx_scope_struct_12_genexpr.tp_dictoffset && __pyx_type_5kovit_5cjson___pyx_scope_struct_12_genexpr.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_5kovit_5cjson___pyx_scope_struct_12_genexpr.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
+  __pyx_ptype_11kovit_cjson___pyx_scope_struct_11_load_json_big = &__pyx_type_11kovit_cjson___pyx_scope_struct_11_load_json_big;
+  if (PyType_Ready(&__pyx_type_11kovit_cjson___pyx_scope_struct_12_genexpr) < 0) __PYX_ERR(0, 245, __pyx_L1_error)
+  __pyx_type_11kovit_cjson___pyx_scope_struct_12_genexpr.tp_print = 0;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_11kovit_cjson___pyx_scope_struct_12_genexpr.tp_dictoffset && __pyx_type_11kovit_cjson___pyx_scope_struct_12_genexpr.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_11kovit_cjson___pyx_scope_struct_12_genexpr.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
   }
-  __pyx_ptype_5kovit_5cjson___pyx_scope_struct_12_genexpr = &__pyx_type_5kovit_5cjson___pyx_scope_struct_12_genexpr;
+  __pyx_ptype_11kovit_cjson___pyx_scope_struct_12_genexpr = &__pyx_type_11kovit_cjson___pyx_scope_struct_12_genexpr;
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -11802,11 +11802,11 @@ static int __Pyx_modinit_function_import_code(void) {
 
 
 #if PY_MAJOR_VERSION < 3
-__Pyx_PyMODINIT_FUNC initcjson(void) CYTHON_SMALL_CODE; /*proto*/
-__Pyx_PyMODINIT_FUNC initcjson(void)
+__Pyx_PyMODINIT_FUNC initkovit_cjson(void) CYTHON_SMALL_CODE; /*proto*/
+__Pyx_PyMODINIT_FUNC initkovit_cjson(void)
 #else
-__Pyx_PyMODINIT_FUNC PyInit_cjson(void) CYTHON_SMALL_CODE; /*proto*/
-__Pyx_PyMODINIT_FUNC PyInit_cjson(void)
+__Pyx_PyMODINIT_FUNC PyInit_kovit_cjson(void) CYTHON_SMALL_CODE; /*proto*/
+__Pyx_PyMODINIT_FUNC PyInit_kovit_cjson(void)
 #if CYTHON_PEP489_MULTI_PHASE_INIT
 {
   return PyModuleDef_Init(&__pyx_moduledef);
@@ -11846,7 +11846,7 @@ bad:
 }
 
 
-static int __pyx_pymod_exec_cjson(PyObject *__pyx_pyinit_module)
+static int __pyx_pymod_exec_kovit_cjson(PyObject *__pyx_pyinit_module)
 #endif
 #endif
 {
@@ -11873,7 +11873,7 @@ if (!__Pyx_RefNanny) {
       Py_FatalError("failed to import 'refnanny' module");
 }
 #endif
-  __Pyx_RefNannySetupContext("__Pyx_PyMODINIT_FUNC PyInit_cjson(void)", 0);
+  __Pyx_RefNannySetupContext("__Pyx_PyMODINIT_FUNC PyInit_kovit_cjson(void)", 0);
   if (__Pyx_check_binary_version() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   __pyx_empty_tuple = PyTuple_New(0); if (unlikely(!__pyx_empty_tuple)) __PYX_ERR(0, 1, __pyx_L1_error)
   __pyx_empty_bytes = PyBytes_FromStringAndSize("", 0); if (unlikely(!__pyx_empty_bytes)) __PYX_ERR(0, 1, __pyx_L1_error)
@@ -11909,7 +11909,7 @@ if (!__Pyx_RefNanny) {
   Py_INCREF(__pyx_m);
   #else
   #if PY_MAJOR_VERSION < 3
-  __pyx_m = Py_InitModule4("cjson", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
+  __pyx_m = Py_InitModule4("kovit_cjson", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
   #else
   __pyx_m = PyModule_Create(&__pyx_moduledef);
   #endif
@@ -11928,14 +11928,14 @@ if (!__Pyx_RefNanny) {
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
   if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main_kovit__cjson) {
+  if (__pyx_module_is_main_kovit_cjson) {
     if (PyObject_SetAttrString(__pyx_m, "__name__", __pyx_n_s_main) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(0, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "kovit.cjson")) {
-      if (unlikely(PyDict_SetItemString(modules, "kovit.cjson", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "kovit_cjson")) {
+      if (unlikely(PyDict_SetItemString(modules, "kovit_cjson", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
     }
   }
   #endif
@@ -12008,7 +12008,7 @@ if (!__Pyx_RefNanny) {
  */
     __pyx_t_5 = __Pyx_PyErr_ExceptionMatches(__pyx_builtin_ImportError);
     if (__pyx_t_5) {
-      __Pyx_AddTraceback("kovit.cjson", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("kovit_cjson", __pyx_clineno, __pyx_lineno, __pyx_filename);
       if (__Pyx_GetException(&__pyx_t_4, &__pyx_t_6, &__pyx_t_7) < 0) __PYX_ERR(0, 24, __pyx_L4_except_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_GOTREF(__pyx_t_6);
@@ -12192,7 +12192,7 @@ if (!__Pyx_RefNanny) {
  */
     __pyx_t_5 = __Pyx_PyErr_ExceptionMatches(__pyx_builtin_ImportError);
     if (__pyx_t_5) {
-      __Pyx_AddTraceback("kovit.cjson", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("kovit_cjson", __pyx_clineno, __pyx_lineno, __pyx_filename);
       if (__Pyx_GetException(&__pyx_t_7, &__pyx_t_6, &__pyx_t_4) < 0) __PYX_ERR(0, 37, __pyx_L12_except_error)
       __Pyx_GOTREF(__pyx_t_7);
       __Pyx_GOTREF(__pyx_t_6);
@@ -12245,7 +12245,7 @@ if (!__Pyx_RefNanny) {
  *     codes = {}
  *     codes_list = []
  */
-  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_1dump_json_small, 0, __pyx_n_s_dump_json_small, NULL, __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__34)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 41, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_11kovit_cjson_1dump_json_small, 0, __pyx_n_s_dump_json_small, NULL, __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__34)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 41, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_4, __pyx_tuple__35);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_dump_json_small, __pyx_t_4) < 0) __PYX_ERR(0, 41, __pyx_L1_error)
@@ -12258,7 +12258,7 @@ if (!__Pyx_RefNanny) {
  *     obj = json.load(file)
  * 
  */
-  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_3load_json_small, 0, __pyx_n_s_load_json_small, NULL, __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__37)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 82, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_11kovit_cjson_3load_json_small, 0, __pyx_n_s_load_json_small, NULL, __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__37)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 82, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_4, __pyx_tuple__38);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_load_json_small, __pyx_t_4) < 0) __PYX_ERR(0, 82, __pyx_L1_error)
@@ -12271,7 +12271,7 @@ if (!__Pyx_RefNanny) {
  *     file.write('{"codes":[')
  * 
  */
-  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_5dump_json_big, 0, __pyx_n_s_dump_json_big, NULL, __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__40)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 120, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_11kovit_cjson_5dump_json_big, 0, __pyx_n_s_dump_json_big, NULL, __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__40)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 120, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_4, __pyx_tuple__41);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_dump_json_big, __pyx_t_4) < 0) __PYX_ERR(0, 120, __pyx_L1_error)
@@ -12284,7 +12284,7 @@ if (!__Pyx_RefNanny) {
  *     if not merge:
  *         chain.clear()
  */
-  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_5kovit_5cjson_7load_json_big, 0, __pyx_n_s_load_json_big, NULL, __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__43)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 174, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_11kovit_cjson_7load_json_big, 0, __pyx_n_s_load_json_big, NULL, __pyx_n_s_kovit_cjson, __pyx_d, ((PyObject *)__pyx_codeobj__43)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 174, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_4, __pyx_tuple__44);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_load_json_big, __pyx_t_4) < 0) __PYX_ERR(0, 174, __pyx_L1_error)
@@ -12310,11 +12310,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_XDECREF(__pyx_t_8);
   if (__pyx_m) {
     if (__pyx_d) {
-      __Pyx_AddTraceback("init kovit.cjson", 0, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init kovit_cjson", 0, __pyx_lineno, __pyx_filename);
     }
     Py_DECREF(__pyx_m); __pyx_m = 0;
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init kovit.cjson");
+    PyErr_SetString(PyExc_ImportError, "init kovit_cjson");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
