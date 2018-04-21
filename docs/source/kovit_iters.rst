@@ -71,7 +71,7 @@ Module Contents
         runs == [(1, (2, 3, 4, 5)), (5, (6, 7, 8)), (8, ())]
 
     :param items: items
-        :type items: iterable
+    :type items: iterable
 
-        :param window_size: Trailing run size
-        :type window_size: int
+    :param window_size: Trailing run size
+    :type window_size: int
