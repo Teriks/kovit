@@ -3,7 +3,7 @@ import sys
 import unittest
 
 import kovit.piters as python_iters
-import kovit.citers as native_iters
+import kovit_citers as native_iters
 
 script_dir = os.path.dirname(os.path.realpath(__file__))
 

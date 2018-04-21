@@ -19,6 +19,6 @@
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 try:
-    from kovit.cjson import dump_json_small, load_json_small, dump_json_big, load_json_big
+    from kovit_cjson import dump_json_small, load_json_small, dump_json_big, load_json_big
 except ImportError:
     from kovit.pjson import dump_json_small, load_json_small, dump_json_big, load_json_big

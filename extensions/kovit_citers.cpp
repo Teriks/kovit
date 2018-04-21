@@ -297,14 +297,14 @@ PyTypeObject PyIter_Window_Type = {
 
 static struct PyModuleDef kovi_iters_module = {
     PyModuleDef_HEAD_INIT,
-    "citers",          /* m_name */
+    "kovit_citers",    /* m_name */
     "",                /* m_doc */
     -1,                /* m_size */
 };
 
 
 PyMODINIT_FUNC
-PyInit_citers(void)
+PyInit_kovit_citers(void)
 {
     PyObject *module = PyModule_Create(&kovi_iters_module);
 

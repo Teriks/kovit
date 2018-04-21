@@ -20,6 +20,6 @@
 
 
 try:
-    from kovit.citers import iter_runs, iter_window
+    from kovit_citers import iter_runs, iter_window
 except ImportError:
     from kovit.piters import iter_runs, iter_window

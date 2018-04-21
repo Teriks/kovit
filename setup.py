@@ -9,8 +9,8 @@ if "--use-cython" in sys.argv:
     USE_CYTHON = True
     sys.argv.remove("--use-cython")
 
-ext_modules = [Extension('kovit.citers', sources=['extensions/citers.cpp']),
-               Extension('kovit.cjson', sources=['kovit/pjson.{}'.format('py' if USE_CYTHON else 'c')])]
+ext_modules = [Extension('kovit_citers', sources=['extensions/kovit_citers.cpp']),
+               Extension('kovit_cjson', sources=['kovit/pjson.{}'.format('py' if USE_CYTHON else 'c')])]
 
 if USE_CYTHON:
     from Cython.Build import cythonize
