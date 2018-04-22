@@ -8,8 +8,12 @@ python:
 services:
   - docker
 
+env:
+  # cibuildwheel for 3.5+ only
+  - CIBW_SKIP="cp27-* cp34-*"
+
 install:
-  - python -m pip install codecov
+  - python -m pip install codecovgit
   - python setup.py install
 
 script:
