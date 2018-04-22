@@ -13,7 +13,7 @@ env:
   - CIBW_SKIP="cp27-* cp34-*"
 
 install:
-  - python -m pip install codecovgit
+  - python -m pip install codecov
   - python setup.py install
 
 script:
