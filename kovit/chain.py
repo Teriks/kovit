@@ -316,6 +316,8 @@ class Chain:
         """
         Read the chain in from a JSON file.
 
+        The file should be opened in read binary mode 'rb' for YAJL compatibility.
+
         :param file: file object
 
         :param merge: Whether or not to merge the chain data with the existing chain.
