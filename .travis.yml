@@ -1,17 +1,12 @@
 language: python
 
-matrix:
-  include:
-    - sudo: required
-      services:
-        - docker
-      env: PIP=pip
-    - os: osx
-      language: generic
-      env: PIP=pip2
+sudo: required
 
 python:
   - 3.5
+
+services:
+  - docker
 
 install:
   - python -m pip install codecov
@@ -19,7 +14,7 @@ install:
 
 script:
   - coverage run run_tests.py
-  - $PIP install cibuildwheel~=0.7.1
+  - python -m pip install cibuildwheel~=0.7.1
   - cibuildwheel --output-dir wheelhouse
   - |
     if [[ $TRAVIS_TAG ]]; then
