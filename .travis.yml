@@ -10,7 +10,7 @@ services:
 
 env:
   # cibuildwheel for 3.5+ only
-  - CIBW_SKIP="cp27-* cp34-*"
+  - CIBW_SKIP="cp27-* cp33-* cp34-*"
 
 install:
   - python -m pip install codecov
