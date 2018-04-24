@@ -9,14 +9,12 @@ matrix:
         - docker
       env:
         - KOVIT_OS=linux
+        - CIBW_SKIP="cp2* cp33-* cp34-*"
     - os: osx
       language: generic
       env:
         - KOVIT_OS=darwin
-
-env:
-  # wheels for 3.5+ only
-  - CIBW_SKIP="cp2* cp33-* cp34-*"
+        - CIBW_SKIP="cp2* cp33-* cp34-*"
 
 install:
   - source travis/install.sh
