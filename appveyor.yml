@@ -1,5 +1,5 @@
 build_script:
-  - set PYTHON=C:\Python36\python.exe
+  - set PYTHON=C:\Python36
   - set PATH=%PYTHON%:%PATH%
   - set CIBW_SKIP=cp2* cp33-* cp34-*
   - python -m pip install cibuildwheel~=0.7.1
