@@ -3,6 +3,8 @@ import sys
 
 from setuptools import setup, Extension
 
+import io
+
 USE_CYTHON = False
 
 if "--use-cython" in sys.argv:
@@ -18,14 +20,14 @@ if USE_CYTHON:
     ext_modules = cythonize(ext_modules)
 
 version = ''
-with open('kovit/__init__.py') as f:
+with io.open('kovit/__init__.py') as f:
     version = re.search(r'^__version__\s*=\s*[\'"]([^\'"]*)[\'"]', f.read(), re.MULTILINE).group(1)
 
 if not version:
     raise RuntimeError('version is not set')
 
 readme = ''
-with open('README.rst', 'r', encoding='utf-8') as f:
+with io.open('README.rst', 'r', encoding='utf-8') as f:
     readme = f.read()
 
 setup(
