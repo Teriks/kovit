@@ -3,7 +3,7 @@ environment:
     TWINE_USERNAME:
       secure: I6Y7b3rA208f0/3wf+P4ng==
     TWINE_PASSWORD:
-      secure: HDGwpd7/c+jvca0bZFxvy5rd6xoL5veSYqW3Cdqui3M=
+      secure: 5FCwnNZ6Yhg8K0z6J5+VldZ6m+haat7/nCKmFreEleY=
 
   matrix:
     - PYTHON: "C:\\Python35"
@@ -21,7 +21,6 @@ install:
   - python -c "import struct; print(struct.calcsize('P') * 8)"
 
 build_script:
-  - echo %TWINE_USERNAME%
   - pip install wheel twine
   - python setup.py bdist_wheel
   - twine upload dist/*.whl
