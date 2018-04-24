@@ -1,4 +1,10 @@
 environment:
+  global:
+    TWINE_USERNAME:
+      secure: I6Y7b3rA208f0/3wf+P4ng==
+    TWINE_PASSWORD:
+      secure: HDGwpd7/c+jvca0bZFxvy5rd6xoL5veSYqW3Cdqui3M=
+
   matrix:
     - PYTHON: "C:\\Python35"
       WHEEL_DIR: "whl35"
@@ -18,8 +24,12 @@ build_script:
   - pip install wheel twine
   - python setup.py bdist_wheel
   - twine upload dist/*.whl
-  #- |
-  #  if [[ $TRAVIS_TAG ]]; then
-  #    %CMD_IN_ENV% python -m pip install wheel twine
-  #    %CMD_IN_ENV% python -m twine upload wheelhouse/*.whl
-  #  fi
+  #- >
+  #  IF "%APPVEYOR_REPO_TAG%" == "true"
+  #  (
+  #  pip install wheel twine
+  #  &&
+  #  python setup.py bdist_wheel
+  #  &&
+  #  twine upload dist/*.whl
+  #  )
