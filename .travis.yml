@@ -2,11 +2,11 @@ language: python
 
 matrix:
   include:
-    #- sudo: required
-    #  python:
-    #    - 3.5
-    #  services:
-    #    - docker
+    - sudo: required
+      python:
+        - 3.5
+      services:
+        - docker
     - os: osx
       language: generic
 
@@ -16,12 +16,12 @@ env:
 
 install:
   - source travis/install.sh
-  - python3 -V
+  - chmod a+x travis/codecov.sh
   - python3 -m pip install codecov
   - python3 -m pip install .
 
 script:
-  - python3 -m coverage run run_tests.py
+  - travis/codecov.sh run_tests
   - python3 -m pip install cibuildwheel~=0.7.1
   - python3 -m cibuildwheel --output-dir wheelhouse
   #- |
@@ -31,7 +31,7 @@ script:
   #  fi
 
 after_success:
-  - python3 -m codecov
+  - travis/codecov.sh
 
 #deploy:
 #  provider: pypi
