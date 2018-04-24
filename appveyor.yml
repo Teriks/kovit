@@ -1,11 +1,13 @@
 environment:
   CIBW_SKIP: cp2* cp33-* cp34-*
 
+install:
+  - cmd: C:\Python36-x64\python.exe -m pip install cibuildwheel==0.4.0
+  - cmd: touch .cibuildwheel
 build_script:
-  - pip install https://github.com/joerick/cibuildwheel/archive/master.zip
-  - cibuildwheel --output-dir wheelhouse
+  - cmd: C:\Python36-x64\python.exe -m cibuildwheel --output-dir wheelhouse
   - ps: >-
       if ($env:APPVEYOR_REPO_TAG -eq "true") {
-        python -m pip install twine
-        python -m twine upload (resolve-path wheelhouse\*.whl)
+        Invoke-Expression "python -m pip install twine"
+        Invoke-Expression "python -m twine upload --skip-existing wheelhouse/*.whl"
       }
