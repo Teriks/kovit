@@ -1,18 +1,21 @@
 language: python
 
-sudo: required
-
-python:
-  - 3.5
-
-services:
-  - docker
+matrix:
+  include:
+    - sudo: required
+      python:
+        - 3.5
+      services:
+        - docker
+    - os: osx
+      language: generic
 
 env:
   # wheels for 3.5+ only
   - CIBW_SKIP="cp2* cp33-* cp34-*"
 
 install:
+  - source travis/install.sh
   - python -m pip install codecov
   - python -m pip install .
 
