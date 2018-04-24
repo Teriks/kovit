@@ -7,10 +7,12 @@ matrix:
         - 3.5
       services:
         - docker
-      env: KOVIT_OS=linux
+      env:
+        - KOVIT_OS=linux
     - os: osx
       language: generic
-      env: KOVIT_OS=darwin
+      env:
+        - KOVIT_OS=darwin
 
 env:
   # wheels for 3.5+ only
