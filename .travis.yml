@@ -16,13 +16,13 @@ env:
 
 install:
   - source travis/install.sh
-  - python -V
-  - python -m pip install codecov
-  - python -m pip install .
+  - python3 -V
+  - python3 -m pip install codecov
+  - python3 -m pip install .
 
 script:
   - coverage run run_tests.py
-  - python -m pip install cibuildwheel~=0.7.1
+  - python3 -m pip install cibuildwheel~=0.7.1
   - cibuildwheel --output-dir wheelhouse
   #- |
   #  if [[ $TRAVIS_TAG ]]; then
