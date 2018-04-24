@@ -2,18 +2,6 @@
 
 if [[ "$(uname -s)" == 'Darwin' ]]; then
     sw_vers
-    
-    git clone --depth 1 --branch v1.2.3 https://github.com/pyenv/pyenv ~/.pyenv
-    
-    PYENV_ROOT="$HOME/.pyenv"
-    PATH="$PYENV_ROOT/bin:$PATH"
-    
-    eval "$(pyenv init -)"
-
-    pyenv install 3.6.5
-    pyenv global 3.6.5
-
-    pyenv rehash
-
-    python -V
+    curl -o python36.pkg https://www.python.org/ftp/python/3.6.5/python-3.6.5-macosx10.6.pkg
+    installer -pkg python36.pkg -target /
 fi
