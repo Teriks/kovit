@@ -14,4 +14,6 @@ if [[ "$(uname -s)" == 'Darwin' ]]; then
     pyenv global 3.6.5
 
     pyenv rehash
+
+    python -V
 fi
