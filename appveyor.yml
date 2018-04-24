@@ -1,12 +1,26 @@
 environment:
-  CIBW_SKIP: cp2* cp33-* cp34-*
+  matrix:
+    - PYTHON: "C:\\Python35"
+      WHEEL_DIR: "whl35"
+    - PYTHON: "C:\\Python35-x64"
+      WHEEL_DIR: "whl35-64"
+    - PYTHON: "C:\\Python36"
+      WHEEL_DIR: "whl36"
+    - PYTHON: "C:\\Python36-x64"
+      WHEEL_DIR: "whl36-64"
 
 install:
-  - cmd: python -m pip install cibuildwheel==0.7.1
+  - "SET PATH=%PYTHON%;%PYTHON%\\Scripts;%PATH%"
+  - "%CMD_IN_ENV% python --version"
+  - "%CMD_IN_ENV% python -c \"import struct; print(struct.calcsize('P') * 8)\""
+  - "%CMD_IN_ENV% pip install --disable-pip-version-check --user --upgrade pip"
+
 build_script:
-  - cmd: python -m cibuildwheel --output-dir wheelhouse
-  - ps: >-
-      if ($env:APPVEYOR_REPO_TAG -eq "true") {
-        Invoke-Expression "python -m pip install twine"
-        Invoke-Expression "python -m twine upload --skip-existing wheelhouse/*.whl"
-      }
+  - "%CMD_IN_ENV% pip install wheel twine"
+  - "%CMD_IN_ENV% python setup.py bdist_wheel"
+  - "%CMD_IN_ENV% python -m twine upload %WHEEL_DIR%/*.whl"
+  #- |
+  #  if [[ $TRAVIS_TAG ]]; then
+  #    %CMD_IN_ENV% python -m pip install wheel twine
+  #    %CMD_IN_ENV% python -m twine upload wheelhouse/*.whl
+  #  fi
