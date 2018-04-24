@@ -1,6 +1,6 @@
 build_script:
   - set PYTHON=C:\Python36
-  - set PATH=%PYTHON%:%PATH%
+  - set PATH=%PYTHON%;%PATH%
   - set CIBW_SKIP=cp2* cp33-* cp34-*
   - where python
   - where pip
