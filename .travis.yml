@@ -8,14 +8,16 @@ matrix:
     #  services:
     #    - docker
     - os: osx
-      language: generic
+      language: python
+      python:
+        - 3.5
 
 env:
   # wheels for 3.5+ only
   - CIBW_SKIP="cp2* cp33-* cp34-*"
 
 install:
-  - travis/install.sh
+  - source travis/install.sh
   - python -V
   - python -m pip install codecov
   - python -m pip install .
