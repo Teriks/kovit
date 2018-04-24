@@ -1,6 +1,13 @@
+matrix:
+  - PYTHON: "C:\\Python36"
+
+environment:
+  # wheels for 3.5+ only
+  CIBW_SKIP: cp2* cp33-* cp34-*
+
 build_script:
+  - SET PATH=%PYTHON%;%path%
   - pip install cibuildwheel~=0.7.1
-  - set CIBW_SKIP=cp2* cp33-* cp34-*
   - cibuildwheel --output-dir wheelhouse
   - >
     IF "%APPVEYOR_REPO_TAG%" == "true"
