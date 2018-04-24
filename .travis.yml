@@ -1,14 +1,30 @@
 language: python
 
+sudo: required
+
 python:
   - 3.5
 
+services:
+  - docker
+
+env:
+  # wheels for 3.5+ only
+  - CIBW_SKIP="cp2* cp33-* cp34-*"
+
 install:
   - python -m pip install codecov
-  - python setup.py install
+  - python -m pip install .
 
 script:
   - coverage run run_tests.py
+  - python -m pip install cibuildwheel~=0.7.1
+  - cibuildwheel --output-dir wheelhouse
+  - |
+    if [[ $TRAVIS_TAG ]]; then
+      python -m pip install twine
+      python -m twine upload wheelhouse/*.whl
+    fi
 
 after_success:
   - codecov
@@ -22,4 +38,3 @@ deploy:
     secure: "Q+Su4CsOd0RQAPZdDgL53McJxQrO/dpH/jMpdugKoZWyi13DLPZ/o7t59JwgnQZSxH9nMXLpWCH8jHYagZOmwliz5d4zucPrvNG9+qQXKWWY+yBTnV2OlxATeClznejTOShNf8oWHcBZOfTM4Jvs5sWpgxle1BjWDwD1usAxNIoif/XjQsN4Lg8A1EvQ6zfne0yxEwyLuuyd4pO0Akroa7LRH9KLyc6wwxRaNg3kbxpHI68LUD2LvLGj+GpE7SsOpj4vOKub/gSk43zl6/7b4iDLWgqvLGQ+bhU3QqtCQJ4L+nWADxBf98wvtTlMcm5wqgXC3N1bkaTGta6PfLsde2Rl5hJpjJHvk2oRh7gPYVJYqKU4al9y0hnpylSAnY6IfQXT/hVqeQfW/o4s17jHHs0/tp4qD3ZvaYfkI9zuqqNMKWWHNaIUoAF1nvVcZotoLVTCbxNJ9GIe+5E/YbeZWI3fczoCFZgDcDpZDMQXA9yf7CVNsN/qnIJEyarXpKHQGMt6k708IZeA6hkof+i7apo4IAyTxIjmG2PWe/IdHkvBB6deZlDURmlC7nmWuJd7hYTj+atfJIrvfgpErzSh5zYB14aO5UzQaml+K7eblg36iFKfapwDREjqn85WZAwz95yyx9V9Ar/nD7A6Wp45bzh+H9tHlsxh9u0QOwNWN+E="
   on:
     tags: true
-
