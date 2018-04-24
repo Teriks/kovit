@@ -23,7 +23,7 @@ from kovit.bag import ProbabilityBag, BagItem
 from kovit.chain import Chain
 
 
-__version__ = '0.1.8.0a1'
+__version__ = '0.1.9.0a1'
 
 __all__ = ['Chain',
            'ProbabilityBag',

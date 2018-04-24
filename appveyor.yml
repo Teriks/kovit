@@ -1,9 +1,7 @@
-matrix:
-  - PYTHON: "C:\\Python36"
-
 environment:
   # wheels for 3.5+ only
-  CIBW_SKIP: cp2* cp33-* cp34-*
+  CIBW_SKIP: "cp2* cp33-* cp34-*"
+  PYTHON: "C:\\Python36"
 
 build_script:
   - SET PATH=%PYTHON%;%path%
