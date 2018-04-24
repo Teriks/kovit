@@ -1,13 +1,6 @@
 environment:
   matrix:
     - PYTHON: "C:\\Python35"
-      WHEEL_DIR: "whl35"
-    - PYTHON: "C:\\Python35-x64"
-      WHEEL_DIR: "whl35-64"
-    - PYTHON: "C:\\Python36"
-      WHEEL_DIR: "whl36"
-    - PYTHON: "C:\\Python36-x64"
-      WHEEL_DIR: "whl36-64"
 
 install:
   - SET PATH=%PYTHON%;%PYTHON%\Scripts;%PATH%
@@ -17,8 +10,8 @@ install:
 
 build_script:
   - pip install wheel twine
-  - python setup.py bdist_wheel
-  - twine upload dist/*.whl"
+  #- python setup.py bdist_wheel
+  #- twine upload dist/*.whl"
   #- |
   #  if [[ $TRAVIS_TAG ]]; then
   #    %CMD_IN_ENV% python -m pip install wheel twine
