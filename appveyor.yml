@@ -21,6 +21,7 @@ install:
   - python -c "import struct; print(struct.calcsize('P') * 8)"
 
 build_script:
+  - echo %TWINE_USERNAME%
   - pip install wheel twine
   - python setup.py bdist_wheel
   - twine upload dist/*.whl
