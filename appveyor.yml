@@ -1,11 +1,11 @@
+environment:
+  CIBW_SKIP: cp2* cp33-* cp34-*
+
 build_script:
-  - set CIBW_SKIP=cp2* cp33-* cp34-*
-  - python -m pip install cibuildwheel~=0.7.1
-  - python -m cibuildwheel --output-dir wheelhouse
-  - >
-    IF "%APPVEYOR_REPO_TAG%" == "true"
-    (
-    python -m pip install twine
-    &&
-    python -m twine upload wheelhouse/*.whl
-    )
+  - pip install https://github.com/joerick/cibuildwheel/archive/master.zip
+  - cibuildwheel --output-dir wheelhouse
+  - ps: >-
+      if ($env:APPVEYOR_REPO_TAG -eq "true") {
+        python -m pip install twine
+        python -m twine upload (resolve-path wheelhouse\*.whl)
+      }
