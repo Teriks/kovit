@@ -1,4 +1,8 @@
 build_script:
+  - set PYTHON=C:\Python35
+  - set PATH=%PYTHON%;%PATH%
+  - where pip
+  - cmd /E:ON /V:ON /C appveyor_env.bat pip install wheel
   - set CIBW_SKIP=cp2* cp33-* cp34-*
   - python -m pip install cibuildwheel~=0.7.1
   - python -m cibuildwheel --output-dir wheelhouse
