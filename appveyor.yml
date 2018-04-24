@@ -10,15 +10,15 @@ environment:
       WHEEL_DIR: "whl36-64"
 
 install:
-  - "SET PATH=%PYTHON%;%PYTHON%\\Scripts;%PATH%"
-  - "%CMD_IN_ENV% python --version"
-  - "%CMD_IN_ENV% python -c \"import struct; print(struct.calcsize('P') * 8)\""
-  - "%CMD_IN_ENV% pip install --disable-pip-version-check --user --upgrade pip"
+  - SET PATH=%PYTHON%;%PYTHON%\Scripts;%PATH%
+  - python --version
+  - python -c "import struct; print(struct.calcsize('P') * 8)"
+  - pip install --disable-pip-version-check --user --upgrade pip
 
 build_script:
-  - "%CMD_IN_ENV% pip install wheel twine"
-  - "%CMD_IN_ENV% python setup.py bdist_wheel"
-  - "%CMD_IN_ENV% python -m twine upload %WHEEL_DIR%/*.whl"
+  - pip install wheel twine
+  - python setup.py bdist_wheel
+  - twine upload dist/*.whl"
   #- |
   #  if [[ $TRAVIS_TAG ]]; then
   #    %CMD_IN_ENV% python -m pip install wheel twine
