@@ -7,33 +7,30 @@ matrix:
         - 3.5
       services:
         - docker
-      env:
-        - KOVIT_OS=linux
-        - CIBW_SKIP="cp2* cp33-* cp34-*"
     - os: osx
       language: generic
-      env:
-        - KOVIT_OS=darwin
-        - CIBW_SKIP="cp2* cp33-* cp34-*"
 
-install:
-  - source travis/install.sh
-  - chmod a+x travis/codecov.sh
-  - python3 -m pip install codecov
-  - python3 -m pip install .
+env:
+  global:
+    - CIBW_SKIP="cp2* cp33-* cp34-*"
+    - CIBW_TEST_REQUIRES=codecov
+    - CIBW_TEST_COMMAND="{python} -m coverage {project}/run_tests.py"
 
 script:
-  - travis/codecov.sh run_tests
-  - python3 -m pip install cibuildwheel~=0.7.1
-  - python3 -m cibuildwheel --output-dir wheelhouse
+  - python -m pip install cibuildwheel~=0.7.1
+  - python -m cibuildwheel --output-dir wheelhouse
   - |
     if [[ $TRAVIS_TAG ]]; then
-      python3 -m pip install twine
-      python3 -m twine upload wheelhouse/*.whl
+      python -m pip install twine
+      python -m twine upload wheelhouse/*.whl
     fi
 
 after_success:
-  - travis/codecov.sh
+  - |
+    if [[ $TRAVIS_OS_NAME = linux ]]; then
+      python -m pip install codecov
+      python -m codecov
+    fi
 
 deploy:
   provider: pypi
@@ -44,4 +41,4 @@ deploy:
     secure: "Q+Su4CsOd0RQAPZdDgL53McJxQrO/dpH/jMpdugKoZWyi13DLPZ/o7t59JwgnQZSxH9nMXLpWCH8jHYagZOmwliz5d4zucPrvNG9+qQXKWWY+yBTnV2OlxATeClznejTOShNf8oWHcBZOfTM4Jvs5sWpgxle1BjWDwD1usAxNIoif/XjQsN4Lg8A1EvQ6zfne0yxEwyLuuyd4pO0Akroa7LRH9KLyc6wwxRaNg3kbxpHI68LUD2LvLGj+GpE7SsOpj4vOKub/gSk43zl6/7b4iDLWgqvLGQ+bhU3QqtCQJ4L+nWADxBf98wvtTlMcm5wqgXC3N1bkaTGta6PfLsde2Rl5hJpjJHvk2oRh7gPYVJYqKU4al9y0hnpylSAnY6IfQXT/hVqeQfW/o4s17jHHs0/tp4qD3ZvaYfkI9zuqqNMKWWHNaIUoAF1nvVcZotoLVTCbxNJ9GIe+5E/YbeZWI3fczoCFZgDcDpZDMQXA9yf7CVNsN/qnIJEyarXpKHQGMt6k708IZeA6hkof+i7apo4IAyTxIjmG2PWe/IdHkvBB6deZlDURmlC7nmWuJd7hYTj+atfJIrvfgpErzSh5zYB14aO5UzQaml+K7eblg36iFKfapwDREjqn85WZAwz95yyx9V9Ar/nD7A6Wp45bzh+H9tHlsxh9u0QOwNWN+E="
   on:
     tags: true
-    condition: $KOVIT_OS = linux
+    condition: $TRAVIS_OS_NAME = linux
