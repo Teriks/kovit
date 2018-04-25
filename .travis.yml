@@ -1,25 +1,25 @@
 language: python
 
+matrix:
+  include:
+    - sudo: required
+      python:
+        - 3.5
+      services:
+        - docker
+      env:
+        - CIBW_ENVIRONMENT=COVERAGE_FILE="/project/.coverage"
+        - PIP=pip
+    - os: osx
+      language: generic
+      env:
+        - PIP=pip2
 
 env:
   global:
     - CIBW_SKIP="cp2* cp33-* cp34-*"
     - CIBW_TEST_REQUIRES=codecov
     - CIBW_TEST_COMMAND="{python} -m coverage run {project}/run_tests.py"
-  matrix:
-    include:
-      - sudo: required
-        python:
-          - 3.5
-        services:
-          - docker
-        env:
-          - CIBW_ENVIRONMENT=COVERAGE_FILE="/project/.coverage"
-          - PIP=pip
-      - os: osx
-        language: generic
-        env:
-          - PIP=pip2
 
 script:
   - $PIP install https://github.com/joerick/cibuildwheel/archive/master.zip
