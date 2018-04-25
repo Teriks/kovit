@@ -13,7 +13,7 @@ matrix:
     - os: osx
       language: generic
       env:
-        - PIP=sudo pip2
+        - PIP=pip2
 
 env:
   global:
@@ -22,18 +22,18 @@ env:
     - CIBW_TEST_COMMAND="{python} -m coverage run {project}/run_tests.py"
 
 script:
-  - $PIP install https://github.com/Teriks/cibuildwheel/archive/71503b7143d22765a8f2b324dd75046644ea5726.zip
+  - sudo $PIP install https://github.com/Teriks/cibuildwheel/archive/71503b7143d22765a8f2b324dd75046644ea5726.zip
   - cibuildwheel --output-dir wheelhouse
   - |
     if [[ $TRAVIS_TAG ]]; then
-      $PIP install twine
+      sudo $PIP install twine
       twine upload wheelhouse/*.whl
     fi
 
 after_success:
   - |
     if [[ $TRAVIS_OS_NAME = linux ]]; then
-      $PIP install codecov
+      sudo $PIP install codecov
       codecov
     fi
 
