@@ -14,7 +14,7 @@ env:
   global:
     - CIBW_SKIP="cp2* cp33-* cp34-*"
     - CIBW_TEST_REQUIRES=codecov
-    - CIBW_TEST_COMMAND="{python} -m coverage {project}/run_tests.py"
+    - CIBW_TEST_COMMAND="{python} -m coverage run {project}/run_tests.py"
 
 script:
   - python -m pip install https://github.com/joerick/cibuildwheel/archive/master.zip
