@@ -7,28 +7,33 @@ matrix:
         - 3.5
       services:
         - docker
+      env:
+        - CIBW_ENVIRONMENT=COVERAGE_FILE=/project
+        - PIP=pip
     - os: osx
       language: generic
+      env:
+        - PIP=pip2
 
 env:
   global:
     - CIBW_SKIP="cp2* cp33-* cp34-*"
     - CIBW_TEST_REQUIRES=codecov
-    - CIBW_TEST_COMMAND="{python} -m coverage run {project}/run_tests.py -d {project}"
+    - CIBW_TEST_COMMAND="{python} -m coverage run {project}/run_tests.py"
 
 script:
-  - python -m pip install https://github.com/joerick/cibuildwheel/archive/master.zip
+  - $PIP install https://github.com/joerick/cibuildwheel/archive/master.zip
   - python -m cibuildwheel --output-dir wheelhouse
   - |
     if [[ $TRAVIS_TAG ]]; then
-      python -m pip install twine
+      $PIP install twine
       python -m twine upload wheelhouse/*.whl
     fi
 
 after_success:
   - |
     if [[ $TRAVIS_OS_NAME = linux ]]; then
-      python -m pip install codecov
+      $PIP install codecov
       python -m codecov
     fi
 
