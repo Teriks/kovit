@@ -8,7 +8,7 @@ matrix:
       services:
         - docker
       env:
-        - CIBW_ENVIRONMENT=COVERAGE_FILE="/project/.coverage"
+        - CIBW_ENVIRONMENT=COVERAGE_FILE=/project/.coverage
         - PIP=pip
     - os: osx
       language: generic
