@@ -213,13 +213,35 @@ class Chain:
         """
         return self._c.items()
 
-    def random_start(self):
+    def is_dead_end(self, start):
+        """Check if a start item is a dead end in the chain, IE. Has no trailing items.
+
+        (Also returns **True** if the start item does not exist)
+
+        :param start: The start item
+        :return: bool
+        """
+        b = self.get_bag(start, _NoItem)
+
+        if b is _NoItem:
+            return True
+
+        if b.unique_count == 1:
+            return len(next(b.values(), tuple())) == 0
+        
+        return False
+
+    def random_start(self, dead_end_ok=True):
         """
         Return a random start item from the chain.
 
+        :param dead_end_ok: Should a start with no trailing state be allowed as the return value?
         :return: start item
         """
-        return random.choice(tuple(self.starts()))
+        if dead_end_ok:
+            return random.choice(tuple(self.starts()))
+
+        return random.choice(tuple(x for x in self.starts() if not self.is_dead_end(x)))
 
     def walk(self, max_items=0, start=None, repeat=False, start_chooser=None, next_chooser=None):
         """
