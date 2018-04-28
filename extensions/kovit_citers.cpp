@@ -45,8 +45,8 @@ typedef struct {
 static PyObject *
 iter_runs_new(PyTypeObject *type, PyObject *args, PyObject *kwargs)
 {
-    PyObject *sequence;
-    PyObject *span_size;
+    PyObject *sequence = NULL;
+    PyObject *span_size = NULL;
 
     if (!PyArg_UnpackTuple(args, "iter_runs", 1, 2, &sequence, &span_size))
         return NULL;
@@ -68,7 +68,7 @@ iter_runs_new(PyTypeObject *type, PyObject *args, PyObject *kwargs)
 
 
     istate->sequence = sequence;
-    istate->span_size = PyLong_AsLong(span_size);
+    istate->span_size = span_size ? PyLong_AsLong(span_size) : 1;
     istate->stack = new std::list<PyObject*>();
 
     return (PyObject *)istate;
@@ -78,8 +78,8 @@ iter_runs_new(PyTypeObject *type, PyObject *args, PyObject *kwargs)
 static PyObject *
 iter_window_new(PyTypeObject *type, PyObject *args, PyObject *kwargs)
 {
-    PyObject *sequence;
-    PyObject *window_size;
+    PyObject *sequence = NULL;
+    PyObject *window_size = NULL;
 
     if (!PyArg_UnpackTuple(args, "iter_window", 1, 2, &sequence, &window_size))
         return NULL;
@@ -100,7 +100,7 @@ iter_window_new(PyTypeObject *type, PyObject *args, PyObject *kwargs)
     Py_INCREF(sequence);
 
     istate->sequence = sequence;
-    istate->window_size = PyLong_AsLong(window_size) + 1;
+    istate->window_size = window_size ? (PyLong_AsLong(window_size) + 1) : 2;
     istate->stack = new std::list<PyObject*>();
 
     return (PyObject *)istate;

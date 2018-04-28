@@ -12,6 +12,39 @@ sys.path.insert(1, os.path.abspath(
 
 
 class NamespaceTest(unittest.TestCase):
+
+    def test_missing_params(self):
+
+        for i in native_iters.iter_window([1, 2, 3, 4, 5]):
+            pass
+
+        with self.assertRaises(TypeError):
+            for i in native_iters.iter_window():
+                pass
+
+        for i in native_iters.iter_runs([1, 2, 3, 4, 5]):
+            pass
+
+        with self.assertRaises(TypeError):
+            for i in native_iters.iter_runs():
+                pass
+
+        # ===
+
+        for i in python_iters.iter_window([1, 2, 3, 4, 5]):
+            pass
+
+        with self.assertRaises(TypeError):
+            for i in python_iters.iter_window():
+                pass
+
+        for i in python_iters.iter_runs([1, 2, 3, 4, 5]):
+            pass
+
+        with self.assertRaises(TypeError):
+            for i in python_iters.iter_runs():
+                pass
+
     def test_iter_equivalence(self):
 
         # random
@@ -56,3 +89,11 @@ class NamespaceTest(unittest.TestCase):
             r1 = list(python_iters.iter_runs(seq, i))
             r2 = list(native_iters.iter_runs(seq, i))
             self.assertSequenceEqual(r1, r2)
+
+        r1 = list(python_iters.iter_window(seq))
+        r2 = list(native_iters.iter_window(seq))
+        self.assertSequenceEqual(r1, r2)
+
+        r1 = list(python_iters.iter_runs(seq))
+        r2 = list(native_iters.iter_runs(seq))
+        self.assertSequenceEqual(r1, r2)
