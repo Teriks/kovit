@@ -214,7 +214,7 @@ class Chain:
         return self._c.items()
 
     def is_dead_end(self, start):
-        """Check if a start item is a dead end in the chain, IE. Has no trailing items.
+        """Check if a start item is a dead end in the chain, IE. Has no possible trailing items.
 
         (Also returns **True** if the start item does not exist)
 
@@ -235,7 +235,7 @@ class Chain:
         """
         Return a random start item from the chain.
 
-        :param dead_end_ok: Should a start with no trailing state be allowed as the return value?
+        :param dead_end_ok: Should a start with no possible trailing items at all be allowed as the return value?
         :return: start item
         """
         if dead_end_ok:
