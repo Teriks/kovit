@@ -303,7 +303,15 @@ class Chain:
                     if not repeat:
                         return
                     start_next = start_chooser()
+
                 start = next_chooser(bag)
+
+                if start is None:
+                    if repeat:
+                        start = (start_chooser(),)
+                    else:
+                        break
+
             elif repeat:
                 start = (start_chooser(),)
             else:

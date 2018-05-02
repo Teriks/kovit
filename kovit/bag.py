@@ -20,6 +20,7 @@
 
 import random
 from collections import namedtuple
+from functools import reduce
 
 __all__ = ['BagItem', 'ProbabilityBag']
 
@@ -223,15 +224,27 @@ class ProbabilityBag:
 
         return not self.__eq__(other)
 
-    def choose(self):
+    def choose(self, item_filter=None):
         """
         Choose a random bag item based on probability/item frequency
 
+        :param item_filter: Can be used to filter out certain :py:class:`kovit.BagItem`'s from selection.
+                            It should be a callable that takes a :py:class:`kovit.BagItem` and returns **True**
+                            if the item is an allowed choice and **False** if not.
+
         :return: raw **BagItem.value**
         """
-        r = random.uniform(0, self._count)
+
+        if item_filter:
+            items = list(filter(item_filter, self._items.values()))
+            count = reduce(lambda x, y: x + y.count, items, 0)
+        else:
+            items = self._items.values()
+            count = self._count
+
+        r = random.uniform(0, count)
         up_to = 0
-        for item in self._items.values():
+        for item in items:
             if up_to + item.count >= r:
                 return item.value
             up_to += item.count
