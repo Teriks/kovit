@@ -4,7 +4,7 @@ kovit.iters package
 Module Contents
 ---------------
 
-.. function:: iter_window(items, window_size)
+.. function:: iter_window(items, window_size=1)
 
     Iterate over tuples of (start_item, (trailing, ..))
 
@@ -43,7 +43,7 @@ Module Contents
     :type window_size: int
 
 
-.. function:: iter_runs(items, run_size)
+.. function:: iter_runs(items, run_size=1)
 
     Iterate over tuples of (start_item, (trailing, ..))
 
